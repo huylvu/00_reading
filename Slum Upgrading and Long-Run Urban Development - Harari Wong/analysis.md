@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-04-26
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf090/8287039
 - **Nguồn PDF dùng để phân tích sâu:** bản tác giả tháng 9/2024, https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/HarariWong_SlumUpgrading_Sept2024.pdf
-- **Trạng thái lưu trên GitHub:** Đang cập nhật trong lượt chạy này; sẽ ghi lại đường dẫn repo cụ thể sau khi lưu xong.
+- **Trạng thái lưu trên GitHub:** Đã lưu `analysis.md` và `analysis.pdf` tại `huylvu/00_reading/Slum Upgrading and Long-Run Urban Development - Harari Wong/`
 - **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này do bộ công cụ hiện có không hỗ trợ đầy đủ việc tạo đúng cấu trúc thư mục và tải đồng thời file Markdown/PDF thường lên Drive theo yêu cầu.
 
 ## Vì sao mình chọn paper này hôm nay
@@ -21,8 +21,9 @@ Trong nhóm paper top 5 gần đây về micro applied và development economics
 - **Thông tin xuất bản đã xác minh:** bài ở dạng corrected proof, DOI `10.1093/restud/rdaf090`, accepted ngày 2024-09-24, published ngày 2025-10-15
 - **Nguồn công khai đáng tin cậy để xác minh:** trang bài báo trên Oxford Academic
 - **Nguồn PDF tốt nhất có thể tìm được công khai:** bản tác giả tháng 9/2024 trên trang faculty Wharton
+- **Tình trạng lưu file PDF gốc của paper:** chưa lưu được file PDF gốc vào GitHub trong lượt chạy này vì môi trường hiện tại truy cập được nội dung PDF công khai để đọc và xác minh, nhưng không tải được raw PDF bytes từ nguồn ngoài theo cách ổn định để lưu lại như một file độc lập.
 
-**Ghi chú về độ khớp phiên bản:** metadata xuất bản được xác minh từ trang journal 2025, còn phân tích sâu bên dưới dựa chủ yếu trên bản PDF tác giả tháng 9/2024. Một vài con số tóm tắt trong abstract trên trang journal và trong bản PDF công khai chênh nhẹ nhau, nên ở những chỗ đó mình ghi rõ nguồn của con số.
+**Ghi chú về độ khớp phiên bản:** metadata xuất bản được xác minh từ trang journal 2025, còn phân tích sâu bên dưới dựa chủ yếu trên bản PDF tác giả 9/2024. Một vài con số tóm tắt trong abstract trên trang journal và trong bản PDF công khai chênh nhẹ nhau, nên ở những chỗ đó mình ghi rõ nguồn của con số.
 
 ## 2. Executive Summary
 
