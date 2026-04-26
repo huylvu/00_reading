@@ -5,7 +5,7 @@
 - Ngày agent chạy: 2026-04-26
 - Nguồn chính: https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag015/8507231
 - Nguồn PDF dùng để phân tích: https://insights.som.yale.edu/sites/default/files/2025-08/Peer%20Effects%20and%20the%20Gender%20Gap%20in%20Corporate%20Leadership.pdf
-- Trạng thái lưu trên GitHub: Mục tiêu của lượt chạy này là lưu `analysis.md` lên repo `huylvu/00_reading` tại thư mục `Peer Effects and the Gender Gap in Corporate Leadership - Hampole Truffa Wong/`; `analysis.pdf` được tạo cục bộ nhưng có thể chưa được đồng bộ lên GitHub nếu môi trường không hỗ trợ upload binary ổn định trong cùng lượt
+- Trạng thái lưu trên GitHub: `analysis.md` đã được lưu thành công lên repo `huylvu/00_reading` tại thư mục `Peer Effects and the Gender Gap in Corporate Leadership - Hampole Truffa Wong/`; `analysis.pdf` đã được tạo cục bộ nhưng chưa được đồng bộ lên GitHub trong lượt này; PDF gốc của paper mới được xác minh nguồn công khai chứ chưa được lưu file thật lên repo
 - Trạng thái lưu trên Google Drive: Bỏ qua trong lượt chạy này vì khả năng hiện có không hỗ trợ nhất quán việc dựng đúng cấu trúc folder và tải lên đồng thời Markdown/PDF thường
 
 ## 1. Metadata
