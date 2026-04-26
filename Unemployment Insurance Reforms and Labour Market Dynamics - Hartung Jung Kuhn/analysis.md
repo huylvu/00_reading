@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/article/93/1/517/8093016
 - **DOI:** https://doi.org/10.1093/restud/rdaf019
 - **Nguồn PDF dùng để phân tích:** https://www.restud.com/wp-content/uploads/2025/03/Unemployment_Insurance_and_Separation_Rates.pdf
-- **Trạng thái lưu trên GitHub:** dự kiến lưu `analysis.md` và `analysis.html`; chưa lưu `analysis.pdf`; chưa lưu PDF gốc của paper vì chưa tải được file nhị phân ổn định từ nguồn ngoài trong lượt chạy này
+- **Trạng thái lưu trên GitHub:** đã lưu `analysis.md` và `analysis.html` tại thư mục `Unemployment Insurance Reforms and Labour Market Dynamics - Hartung Jung Kuhn/`; chưa lưu `analysis.pdf`; chưa lưu PDF gốc của paper vì chưa tải được file nhị phân ổn định từ nguồn ngoài trong lượt chạy này
 - **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này để tránh tạo bản Google Doc nửa vời; GitHub vẫn là nơi lưu trữ chính
 
 ## 1. Metadata
@@ -350,8 +350,8 @@ Nếu phải tóm bài trong một câu, thì câu đó là: **Hartz reforms kh�
 
 ## 13. Ghi chú lưu trữ và giới hạn của lượt chạy
 
-- `analysis.md`: chuẩn bị đầy đủ để lưu lên GitHub
-- `analysis.html`: có thể tạo từ bản Markdown và lưu lên GitHub như bản dễ đọc hơn
+- `analysis.md`: đã lưu lên GitHub
+- `analysis.html`: đã render và lưu lên GitHub như bản dễ đọc hơn
 - `analysis.pdf`: chưa tạo trong lượt chạy này để tránh ghi nhận mập mờ khi chưa có đường upload binary thật sự chắc chắn
 - PDF gốc của paper: đã xác minh được nguồn PDF công khai rất tốt, nhưng chưa lưu được file PDF nhị phân lên GitHub do giới hạn tải file nguồn ngoài trong môi trường hiện tại
 - Google Drive: bỏ qua trong lượt chạy này; không tuyên bố đã tạo Google Doc hay tracker
