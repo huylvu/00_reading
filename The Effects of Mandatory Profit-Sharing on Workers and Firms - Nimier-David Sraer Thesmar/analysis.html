@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Effects of Mandatory Profit-Sharing on Workers and Firms: Evidence from France</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Effects of Mandatory Profit-Sharing on Workers and
+Firms: Evidence from France</h1>
+</header>
+<h1
+id="the-effects-of-mandatory-profit-sharing-on-workers-and-firms-evidence-from-france">The
+Effects of Mandatory Profit-Sharing on Workers and Firms: Evidence from
+France</h1>
+<ul>
+<li>Tác giả: Elio Nimier-David, David Sraer, David Thesmar</li>
+<li>Journal: <em>The Quarterly Journal of Economics</em> (accepted
+manuscript / advance article)</li>
+<li>Năm: 2026</li>
+<li>Ngày agent chạy: 2026-04-26</li>
+<li>Nguồn chính đã xác minh:
+https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag022</li>
+<li>Nguồn PDF dùng để phân tích:
+https://www.nber.org/system/files/working_papers/w31804/w31804.pdf</li>
+<li>Ghi chú về phiên bản PDF: PDF công khai tốt nhất mình dùng để đọc
+sâu là NBER Working Paper 31804, bản <code>Revised August 2025</code>.
+Trang QJE xác nhận bài đã xuất hiện dưới dạng accepted manuscript ngày
+24/04/2026, nhưng PDF chính thức của QJE không mở công khai trong môi
+trường này.</li>
+<li>Trạng thái lưu trên GitHub:
+<ul>
+<li><code>analysis.md</code>: đã lưu</li>
+<li><code>analysis.html</code>: đã lưu</li>
+<li><code>analysis.pdf</code>: chưa lưu, vì lượt chạy này không có đường
+xuất và upload PDF nhị phân đủ chắc chắn để coi là hoàn tất</li>
+<li>PDF gốc của paper: chưa lưu lên GitHub; mình mới xác minh được nguồn
+PDF công khai đáng tin cậy và dùng chính nguồn đó để phân tích</li>
+</ul></li>
+<li>Trạng thái lưu trên Google Drive: bỏ qua trong lượt chạy này để
+tránh làm nửa vời; lưu trữ chính được thực hiện trên GitHub</li>
+</ul>
+<h2 id="executive-summary">Executive summary</h2>
+<p>Paper hỏi một câu rất cơ bản nhưng lâu nay khó trả lời sạch: khi nhà
+nước buộc doanh nghiệp chia một phần lợi nhuận cho người lao động, ai
+thực sự hưởng lợi và doanh nghiệp có bị méo mó mạnh hay không? Bối cảnh
+là nước Pháp, nơi từ năm 1967 các công ty trên 100 lao động phải chia
+một phần “excess profits” cho nhân viên; từ năm 1991 ngưỡng này hạ từ
+100 xuống 50 lao động.</p>
+<p>Điểm hay của paper là tác giả khai thác đúng cú thay đổi ngưỡng này
+để tạo ra một thiết kế quasi-experiment rất thuyết phục. Họ kết hợp dữ
+liệu hành chính cấp doanh nghiệp với dữ liệu employer-employee linked
+data để nhìn được cả phía firm lẫn phía worker. Kết luận trung tâm là
+mandatory profit-sharing chủ yếu là một công cụ phân phối lại lợi nhuận
+từ chủ sở hữu sang người lao động, đặc biệt là lao động kỹ năng thấp và
+trung bình, chứ không phải một công cụ làm tăng năng suất. Labor share
+tăng khoảng 1.8 điểm phần trăm, profit share giảm khoảng 1.4 điểm phần
+trăm, nhưng đầu tư và productivity hầu như không đổi.</p>
+<p>Bài đáng đọc vì nó nói rất rõ một điều hay bị lẫn trong tranh luận
+chính sách: một chính sách “share profits with workers” không nhất thiết
+hoạt động qua kênh khuyến khích năng suất. Nó có thể chủ yếu là một dạng
+thuế tương đối ít méo mó đánh vào lợi nhuận rồi chuyển trực tiếp cho lao
+động trong cùng doanh nghiệp. Với applied micro, đây là một paper rất
+đẹp về cách nối labor, public finance, firm behavior, và incidence trong
+cùng một design.</p>
+<h2 id="research-question-and-motivation">Research question and
+motivation</h2>
+<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
+<p>Paper theo đuổi ba câu hỏi gắn với nhau:</p>
+<ol type="1">
+<li>Mandatory profit-sharing có thực sự làm tăng thu nhập của người lao
+động, hay doanh nghiệp chỉ bù trừ bằng cách giảm lương cơ bản?</li>
+<li>Chính sách này có làm tăng productivity nhờ “align incentives” giữa
+worker và owner hay không?</li>
+<li>Nếu chính sách làm tăng chi phí doanh nghiệp, doanh nghiệp phản ứng
+như thế nào: giảm đầu tư, né ngưỡng quy định, hay điều chỉnh theo cách
+khác?</li>
+</ol>
+<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực
+tiễn</h3>
+<p>Lập luận ủng hộ profit-sharing thường dựa trên hai ý. Một là
+fairness: khi doanh nghiệp có lợi nhuận cao, người lao động nên cùng
+hưởng. Hai là efficiency: nếu compensation gắn với lợi nhuận thì worker
+sẽ nỗ lực hơn, ít vắng mặt hơn, ít xung đột hơn, và cuối cùng năng suất
+tăng. Vấn đề là hầu hết bằng chứng trước đây dựa trên quan sát tự chọn:
+doanh nghiệp nào tự nguyện dùng profit-sharing có thể vốn đã khác doanh
+nghiệp không dùng.</p>
+<p>Paper nhấn mạnh hai khó khăn lớn của văn liệu cũ. Thứ nhất là
+endogeneity trong việc doanh nghiệp chọn có áp dụng profit-sharing hay
+không. Thứ hai là data limitation: để nghiên cứu nghiêm túc cần ghép
+được thông tin profit-sharing với dữ liệu kế toán cấp firm và, tốt hơn
+nữa, dữ liệu cấp worker.</p>
+<h3 id="khoảng-trống-paper-muốn-lấp-vào">Khoảng trống paper muốn lấp
+vào</h3>
+<p>Khoảng trống chính là thiếu bằng chứng quasi-experimental quy mô lớn
+về incidence và real effects của profit-sharing bắt buộc. Paper này lấp
+vào khoảng trống đó bằng cách khai thác một reform rất phù hợp cho
+causal inference và dùng dữ liệu hành chính đủ rộng để không rơi vào vấn
+đề sample nhỏ.</p>
+<h2 id="main-contribution">Main contribution</h2>
+<h3 id="đóng-góp-về-identification">1. Đóng góp về identification</h3>
+<p>Đóng góp lớn nhất là biến một thay đổi ngưỡng chính sách của Pháp
+thành một thí nghiệm tự nhiên. Việc ngưỡng bắt buộc giảm từ 100 xuống 50
+lao động năm 1991 tạo ra một treatment group rất tự nhiên: các firm cỡ
+vừa trước reform trở thành firm bắt buộc phải chia lợi nhuận sau
+reform.</p>
+<h3 id="đóng-góp-về-dữ-liệu">2. Đóng góp về dữ liệu</h3>
+<p>Paper dùng universe of corporate tax files có chứa trực tiếp thông
+tin profit-sharing và ghép với linked employer-employee panel covering
+khoảng 4% lực lượng lao động khu vực tư. Nhờ vậy, tác giả không chỉ nói
+được “firm trả nhiều hơn” mà còn nói được “ai trong firm hưởng lợi”.</p>
+<h3 id="đóng-góp-về-nội-dung-kinh-tế">3. Đóng góp về nội dung kinh
+tế</h3>
+<p>Kết quả của paper đặt lại trọng tâm tranh luận. Chính sách này không
+cho thấy tác động năng suất đáng kể. Thay vào đó, nó hoạt động chủ yếu
+như một công cụ phân phối lại trong nội bộ firm, với lợi ích tập trung
+vào lao động kỹ năng thấp và trung bình. Đây là một kết quả rất quan
+trọng vì nó tách bạch rõ equity effect và efficiency effect.</p>
+<h3 id="đóng-góp-về-policy-design">4. Đóng góp về policy design</h3>
+<p>Paper cũng chỉ ra rằng profit-sharing bắt buộc khác corporate income
+tax ở vài điểm quan trọng. Vì worker có động cơ theo dõi lợi nhuận báo
+cáo khi thu nhập của họ gắn với nó, avoidance ở intensive margin có thể
+thấp hơn ta tưởng. Ngược lại, avoidance xuất hiện mạnh hơn ở extensive
+margin, tức là doanh nghiệp né ngưỡng quy mô.</p>
+<h2 id="identification-or-methodology">Identification or
+methodology</h2>
+<h2 id="bối-cảnh-thể-chế">Bối cảnh thể chế</h2>
+<p>Luật của Pháp yêu cầu firm trên ngưỡng quy mô phải dành một khoản
+<code>RSP</code> để chia cho worker. Công thức cốt lõi lấy một phần
+excess profits, tức là lợi nhuận ròng vượt quá 5% book equity, rồi scale
+theo labor share của firm. Paper nhấn mạnh intuition của công thức này:
+5% được xem như “mức lợi nhuận công bằng” cho shareholder; phần vượt
+trên mức đó thì worker cũng nên được hưởng.</p>
+<p>Tác giả hiệu chỉnh đơn giản và cho thấy đây là một policy khá lớn về
+lượng: với median firm, mandatory profit-sharing tương đương khoảng 9.5%
+pre-tax income; trong dữ liệu, với firm subject to regulation và có
+excess profits dương, khoản này trung bình bằng khoảng 10.5% pre-tax
+income.</p>
+<h2 id="thiết-kế-nhận-dạng-chính">Thiết kế nhận dạng chính</h2>
+<p>Paper không dùng RD quanh ngưỡng vì firm có thể chủ động kiểm soát vị
+trí của mình quanh threshold. Thay vào đó, paper dùng intent-to-treat
+difference-in-differences.</p>
+<h3 id="treatment-và-control">Treatment và control</h3>
+<ul>
+<li>Treatment group: firm có 55-85 lao động trong 1989-1990. Nếu không
+đổi mạnh employment, các firm này sẽ bắt đầu bị bắt buộc share profits
+sau reform 1991.</li>
+<li>Small control group: firm có 35-45 lao động, khó bị quy định chạm
+tới.</li>
+<li>Large control group: firm có 120-300 lao động, đã nằm trên ngưỡng cả
+trước lẫn sau reform.</li>
+</ul>
+<p>Tác giả cố ý loại firm quá gần ngưỡng 50 và 100 để tránh
+contamination từ né luật hoặc bunching nội sinh.</p>
+<h3 id="assumption-cốt-lõi">Assumption cốt lõi</h3>
+<p>Giả định chính là parallel trends: nếu không có reform, outcomes của
+nhóm 55-85 sẽ diễn biến tương tự hai nhóm control. Paper cho thấy trước
+1991 các trend giữa treated và controls nhìn khá song song cho các
+outcomes chính.</p>
+<h3 id="vì-sao-design-này-mạnh">Vì sao design này mạnh</h3>
+<ul>
+<li>Có cú policy shock rõ về thời gian: 1991.</li>
+<li>Có treatment intensity khá sạch theo quy mô doanh nghiệp trước
+reform.</li>
+<li>Có hai control groups ở hai phía quy mô để giảm lo ngại rằng kết quả
+chỉ phản ánh size-specific business cycle effects.</li>
+<li>Có thể dùng shock này làm instrument cho actual profit-sharing trong
+TSLS để đi từ ITT sang LATE cho compliers.</li>
+</ul>
+<h2 id="bunching-analysis">Bunching analysis</h2>
+<p>Trước khi vào DiD, paper làm một revealed-preference exercise rất
+hay: nếu policy này thật sự có lợi cho firm, ta không nên thấy firm cố ở
+dưới ngưỡng. Nhưng dữ liệu cho thấy trước reform có excess density 22.3%
+ở khoảng 95-99 lao động, và bunching này biến mất sau khi ngưỡng hạ
+xuống 50. Điều này là bằng chứng trực tiếp rằng firm nhìn mandatory
+profit-sharing như một chi phí ròng đáng kể.</p>
+<p>Paper còn kiểm tra xem bunching là “thật” hay chỉ do under-reporting
+employment:</p>
+<ul>
+<li>Không thấy discontinuity của labor cost per employee quanh ngưỡng
+100.</li>
+<li>So sánh với measure employment từ payroll tax data cho thấy không có
+bằng chứng under-reporting đủ lớn để giải thích toàn bộ bunching.</li>
+<li>Firm ngay dưới ngưỡng còn có profitability cao hơn, phù hợp với câu
+chuyện firm profitable có động cơ né luật mạnh hơn.</li>
+</ul>
+<p>Đây là một phần rất đẹp vì nó không chỉ hỗ trợ identification, mà còn
+tự nó trả lời một câu hỏi kinh tế quan trọng: policy có tạo ra
+distortion ở margin nào.</p>
+<h2 id="outcomes-và-cơ-chế-ước-lượng">Outcomes và cơ chế ước lượng</h2>
+<p>Paper xét:</p>
+<ul>
+<li>profit-sharing response</li>
+<li>labor share, wage share, total compensation share, profit share</li>
+<li>productivity như TFP</li>
+<li>investment, capital growth, capital-labor ratio</li>
+<li>softer outcomes như sick days và extra hours</li>
+<li>worker-level wages và total compensation theo nhóm kỹ năng</li>
+</ul>
+<p>Ngoài reduced-form DiD, tác giả còn dùng TSLS để ước lượng tác động
+của actual profit-sharing, và thêm triple-difference theo mức excess
+profits trước reform để đo “exposure” dị biệt của firm đối với
+policy.</p>
+<h2 id="điểm-mạnh-và-điểm-dễ-bị-nghi-ngờ">Điểm mạnh và điểm dễ bị nghi
+ngờ</h2>
+<h3 id="điểm-mạnh">Điểm mạnh</h3>
+<ul>
+<li>Policy shock rất rõ và hợp logic kinh tế.</li>
+<li>Kết hợp firm-level và worker-level data.</li>
+<li>Có hai control groups thay vì một.</li>
+<li>Có bunching evidence như một validation mạnh cho economic bite của
+regulation.</li>
+<li>Có cả reduced-form, IV, và triple-difference, nên không chỉ dựa vào
+một specification duy nhất.</li>
+</ul>
+<h3 id="điểm-dễ-bị-nghi-ngờ-hoặc-cần-cẩn-trọng">Điểm dễ bị nghi ngờ hoặc
+cần cẩn trọng</h3>
+<ul>
+<li>Vì treatment gắn với size thresholds, luôn còn lo ngại size-related
+confounders.</li>
+<li>ITT không đo được long-run equilibrium effects quá xa; chính tác giả
+thừa nhận hạn chế này.</li>
+<li>Worker-level data không quan sát trực tiếp khoản profit-sharing nhận
+được cho từng worker, nên phải suy từ wage và total compensation ở level
+phù hợp.</li>
+<li>Một số diễn giải về wage rigidity là hợp lý nhưng vẫn là diễn giải
+cơ chế, không phải chứng minh cơ chế hoàn toàn trực tiếp.</li>
+</ul>
+<h2 id="results-and-interpretation">Results and interpretation</h2>
+<h2 id="policy-thực-sự-làm-profit-sharing-tăng">1. Policy thực sự làm
+profit-sharing tăng</h2>
+<p>Sau reform, tỷ lệ firm treated báo cáo profit-sharing dương tăng
+mạnh, từ khoảng 10% trước 1990 lên khoảng 40% sau đó, trong khi hai nhóm
+control không có break tương tự. Đây là first-stage rất mạnh.</p>
+<h2 id="incidence-ở-cấp-firm-worker-hưởng-owner-chịu">2. Incidence ở cấp
+firm: worker hưởng, owner chịu</h2>
+<p>Kết quả headline là total compensation share tăng khoảng 1.8 điểm
+phần trăm. Wage share không tăng tương ứng, nghĩa là phần tăng này đến
+từ profit-sharing bổ sung, không phải lương cơ bản. Đồng thời profit
+share giảm khoảng 1.4 điểm phần trăm. Trong phần kết luận, paper nhấn
+mạnh hơn 3/4 phần tăng labor cost được gánh bởi owner thông qua profits
+thấp hơn.</p>
+<p>Diễn giải kinh tế ở đây rất quan trọng: nếu firm có thể hoàn toàn bù
+trừ bằng cách hạ base wages, ta đã không thấy total compensation của
+worker tăng và profit share của owner giảm mạnh như vậy. Paper cho thấy
+incidence chủ yếu rơi vào shareholder, không phải worker.</p>
+<h2 id="không-có-bằng-chứng-productivity-gains-đáng-kể">3. Không có bằng
+chứng productivity gains đáng kể</h2>
+<p>Một trong những lập luận kinh điển ủng hộ profit-sharing là worker sẽ
+nỗ lực hơn. Nhưng paper không thấy điều này:</p>
+<ul>
+<li>TFP không tăng một cách có ý nghĩa thống kê.</li>
+<li>Sick days không giảm.</li>
+<li>Xác suất làm extra hours không tăng.</li>
+</ul>
+<p>Tức là kênh “alignment of interests” trong bối cảnh này dường như yếu
+hơn nhiều so với rhetoric chính sách.</p>
+<h2 id="không-có-bằng-chứng-đầu-tư-giảm-mạnh">4. Không có bằng chứng đầu
+tư giảm mạnh</h2>
+<p>Paper cũng không tìm thấy tác động rõ lên investment ratio, capital
+growth, hay capital-labor ratio. Các point estimates thường hơi âm nhưng
+nhỏ và không có ý nghĩa thống kê. Điều này cũng hợp với simple model
+calibration của paper: wedge lên user cost of capital chỉ cỡ 0.43 điểm
+phần trăm, tức rất nhỏ tương đối so với standard user cost.</p>
+<p>Thông điệp là policy này không tạo ra cú bóp méo đầu tư lớn trong
+intensive margin của firm đã ở trên ngưỡng.</p>
+<h2 id="distortion-nằm-ở-extensive-margin-né-ngưỡng-quy-mô">5.
+Distortion nằm ở extensive margin: né ngưỡng quy mô</h2>
+<p>Trong khi intensive margin khá yên, extensive margin lại phản ứng
+thật. Firm quanh ngưỡng 100 trước reform và quanh ngưỡng 50 sau reform
+có xác suất ở lại dưới ngưỡng hoặc rơi xuống dưới ngưỡng cao hơn sau khi
+regulation bắt đầu ràng buộc. Tức là policy tạo incentive cho firm tránh
+lớn lên quá một mốc nào đó.</p>
+<p>Đây là một kết quả rất đáng nhớ: cùng một chính sách có thể
+“non-distortive” trong investment/productivity conditional on being
+treated, nhưng lại distort firm size distribution ở margin
+entry/expansion quanh threshold.</p>
+<h2 id="dị-biệt-theo-kỹ-năng-đây-là-phần-hay-nhất-của-paper">6. Dị biệt
+theo kỹ năng: đây là phần hay nhất của paper</h2>
+<p>Worker-level analysis cho thấy bức tranh rất không đồng nhất:</p>
+<ul>
+<li>High-skill workers có base wage giảm để bù gần như hết phần
+profit-sharing họ nhận.</li>
+<li>Low-skill và medium-skill workers không bị base wage offset tương
+tự.</li>
+<li>Trong TSLS, profit-sharing làm total compensation tăng khoảng 3.5%
+cho toàn bộ worker sample.</li>
+<li>Hiệu ứng tích cực này tập trung ở low- and medium-skill workers; với
+average high-skill worker, tác động lên total compensation không khác 0
+về mặt thống kê.</li>
+</ul>
+<p>Đây là một kết quả cực quan trọng. Nó cho thấy cùng một policy “chia
+lợi nhuận cho worker” nhưng không phải worker nào cũng hưởng như nhau.
+Trong institutional setting của Pháp, phần tiến bộ của policy đến từ chỗ
+wage rigidity mạnh hơn ở đáy phân phối kỹ năng.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">What is special or
+elegant about the paper</h2>
+<p>Có ít nhất năm điểm khiến paper này rất đẹp.</p>
+<h3
+id="nó-nối-một-policy-rất-thể-chế-với-một-câu-hỏi-incidence-rất-cơ-bản">1.
+Nó nối một policy rất “thể chế” với một câu hỏi incidence rất cơ
+bản</h3>
+<p>Paper không hỏi một câu hào nhoáng. Nó hỏi ai thực sự được lợi khi
+buộc firm chia profits. Nhưng nhờ chọn đúng setting, câu hỏi đơn giản
+này trở thành một đóng góp rất có trọng lượng.</p>
+<h3
+id="bunching-không-chỉ-là-kiểm-tra-phụ-mà-là-một-phần-của-lập-luận-kinh-tế">2.
+Bunching không chỉ là kiểm tra phụ, mà là một phần của lập luận kinh
+tế</h3>
+<p>Nhiều paper coi bunching như ancillary evidence. Ở đây, bunching trực
+tiếp trả lời liệu firm có xem policy là costly hay không. Nó làm cho
+phần institutional economics và revealed preference gắn chặt vào
+nhau.</p>
+<h3 id="thiết-kế-rất-applied-micro-đúng-chất">3. Thiết kế rất “applied
+micro đúng chất”</h3>
+<p>Không cố nhồi một mô hình quá nặng. Không cố diễn giải mọi thứ bằng
+một con số duy nhất. Họ đi từ institution -&gt; descriptive economic
+bite -&gt; DiD -&gt; IV -&gt; heterogeneity -&gt; interpretation. Nhịp
+paper rất chặt.</p>
+<h3 id="kết-quả-chính-là-một-kết-quả-anti-romantic">4. Kết quả chính là
+một kết quả “anti-romantic”</h3>
+<p>Policy không làm miracles. Nó không boost productivity. Nhưng nó vẫn
+có giá trị vì phân phối lại lợi nhuận tương đối trực tiếp và ít méo ở
+nhiều margin. Đây là loại kết quả rất đáng tin vì nó không cố kể một câu
+chuyện quá đẹp.</p>
+<h3 id="paper-dạy-cách-đọc-distortion-theo-nhiều-margin">5. Paper dạy
+cách đọc distortion theo nhiều margin</h3>
+<p>Một bài học nghiên cứu rất hay ở đây là đừng hỏi “policy có distort
+hay không” theo nghĩa chung chung. Hãy hỏi distort ở margin nào. Paper
+cho thấy intensive margin và extensive margin có thể cho hai câu trả lời
+rất khác nhau.</p>
+<h2 id="required-background-knowledge">Required background
+knowledge</h2>
+<h2 id="incidence-trong-public-finance-và-labor-economics">1. Incidence
+trong public finance và labor economics</h2>
+<p>Để hiểu paper, cần nắm khái niệm incidence: về mặt pháp lý policy có
+thể buộc firm trả, nhưng về mặt kinh tế burden cuối cùng có thể rơi vào
+worker, shareholder, consumer, hay một kết hợp. Ở đây câu hỏi incidence
+là liệu profit-sharing có được bù trừ bằng lower wages hay không.</p>
+<h2 id="difference-in-differences">2. Difference-in-differences</h2>
+<p>DiD so sánh thay đổi theo thời gian giữa nhóm bị tác động và nhóm
+không bị tác động. Mấu chốt là giả định parallel trends: nếu không có
+reform, outcomes của hai nhóm sẽ biến động giống nhau.</p>
+<h2 id="intent-to-treat-và-late-tsls">3. Intent-to-treat và LATE /
+TSLS</h2>
+<p>Không phải mọi firm trong treatment bucket sau reform đều thực sự
+chia lợi nhuận với cùng cường độ. Vì vậy paper báo cáo cả ITT và
+IV/LATE. ITT đo tác động của việc “bị đưa vào vùng policy”. LATE đo tác
+động trên compliers, tức các firm thật sự thay đổi behavior vì policy
+shock.</p>
+<h2 id="bunching">4. Bunching</h2>
+<p>Bunching là hiện tượng density của một biến nhảy vọt ngay dưới một
+ngưỡng chính sách. Trong applied micro, bunching thường được dùng để
+phát hiện phản ứng tối ưu hóa khi có kink/notch hoặc size-dependent
+regulation.</p>
+<h2 id="wage-rigidity">5. Wage rigidity</h2>
+<p>Wage rigidity là việc lương, nhất là lương cơ bản, không điều chỉnh
+linh hoạt xuống dưới dù firm có incentive làm vậy. Ở Pháp, paper lập
+luận rigidity cao do collective agreements phủ rộng và minimum wage ràng
+buộc. Đây là chìa khóa để hiểu vì sao low-skill workers thực sự hưởng
+lợi.</p>
+<h2 id="extensive-margin-versus-intensive-margin">6. Extensive margin
+versus intensive margin</h2>
+<ul>
+<li>Extensive margin ở đây là quyết định giữ firm dưới threshold quy
+mô.</li>
+<li>Intensive margin là điều chỉnh profits, wages, investment,
+productivity conditional on hoạt động ở một size nhất định.</li>
+</ul>
+<p>Phân biệt hai margin này là cốt lõi để hiểu toàn bộ paper.</p>
+<h2 id="limitations-and-open-questions">Limitations and open
+questions</h2>
+<h3 id="long-run-effects-chưa-được-chốt-hoàn-toàn">1. Long-run effects
+chưa được chốt hoàn toàn</h3>
+<p>Paper khá thuyết phục về short- và medium-run, nhưng với very
+long-run equilibrium effects thì chính tác giả cũng dè dặt. Theo thời
+gian, firm có thể đổi size bucket, thay composition lao động, hay thay
+contracting practices theo cách ITT khó theo dõi trọn vẹn.</p>
+<h3 id="cơ-chế-wage-rigidity-chủ-yếu-là-diễn-giải-hợp-lý">2. Cơ chế wage
+rigidity chủ yếu là diễn giải hợp lý</h3>
+<p>Paper có bằng chứng dị biệt theo skill rất phù hợp với wage rigidity,
+nhưng đó vẫn chưa phải kiểm định cơ chế trực tiếp ở cấp bargaining table
+hay contract-level clauses.</p>
+<h3 id="external-validity-phụ-thuộc-thể-chế-lao-động">3. External
+validity phụ thuộc thể chế lao động</h3>
+<p>Kết quả có thể rất khác trong môi trường lao động linh hoạt hơn Pháp.
+Ở nơi wage-setting mềm hơn, firm có thể offset profit-sharing mạnh hơn,
+làm worker hưởng ít hơn.</p>
+<h3 id="policy-evaluation-chưa-bao-trùm-mọi-welfare-margin">4. Policy
+evaluation chưa bao trùm mọi welfare margin</h3>
+<p>Paper rất mạnh về wages, profits, investment, productivity, nhưng ít
+hơn ở các margin như turnover chất lượng cao, morale lâu dài, intra-firm
+cooperation, hay political economy của worker voice.</p>
+<h3 id="threshold-effects-luôn-gợi-câu-hỏi-về-firm-dynamics">5.
+Threshold effects luôn gợi câu hỏi về firm dynamics</h3>
+<p>Nếu policy tạo động cơ tránh tăng quy mô, câu hỏi mở là chi phí
+aggregate của misallocation này lớn đến đâu trong dài hạn, nhất là khi
+nhiều regulation khác cũng gắn với thresholds.</p>
+<h2 id="takeaways-for-a-researcher">Takeaways for a researcher</h2>
+<ol type="1">
+<li>Nếu muốn thuyết phục về incidence, chỉ nhìn wage bill ở cấp firm
+thường chưa đủ; linked employer-employee data cho phép thấy ai trong
+firm thực sự hưởng lợi.</li>
+<li>Một policy có thể rất ít méo ở intensive margin nhưng vẫn tạo
+distortion đáng kể ở extensive margin. Đừng gộp mọi margin vào một kết
+luận chung chung.</li>
+<li>Bunching evidence có thể làm nhiều hơn vai trò “descriptive
+appendix”; nó có thể là một phần trung tâm của economic argument.</li>
+<li>Khi treatment gắn với size thresholds, dùng hai control groups ở hai
+phía quy mô là một cách rất hay để giảm lo ngại rằng bạn chỉ đang nhặt
+size trends.</li>
+<li>Heterogeneity theo skill hay bargaining power thường không phải phần
+phụ. Trong paper này, đó là nơi bản chất phân phối của policy lộ ra rõ
+nhất.</li>
+<li>Câu chuyện cơ chế nên bám chặt vào institutions. Ở đây wage rigidity
+không phải một buzzword; nó gắn với minimum wage, collective agreements,
+và bối cảnh lao động Pháp.</li>
+<li>Một paper applied micro rất mạnh không nhất thiết cần kết quả
+“positive” về efficiency. Một null result đáng tin về productivity đôi
+khi lại chính là đóng góp lớn nhất.</li>
+</ol>
+<h2 id="vietnam-relevance-and-extension">Vietnam relevance and
+extension</h2>
+<h2 id="paper-này-có-liên-quan-gì-tới-việt-nam">Paper này có liên quan
+gì tới Việt Nam?</h2>
+<p>Rất có. Việt Nam cũng là một nền kinh tế nơi tranh luận về “chia sẻ
+thành quả tăng trưởng”, thưởng theo hiệu quả, và quan hệ giữa tiền lương
+với lợi nhuận doanh nghiệp vẫn rất sống động. Dù không có một chế độ
+mandatory profit-sharing giống Pháp, ý tưởng cốt lõi của paper chạm đúng
+những câu hỏi lớn ở Việt Nam:</p>
+<ul>
+<li>Khi doanh nghiệp tăng lợi nhuận, người lao động có được hưởng
+không?</li>
+<li>Các khoản thưởng, chia sẻ lợi nhuận, hay quỹ phúc lợi có thay thế
+cho lương cơ bản hay không?</li>
+<li>Chính sách buộc doanh nghiệp chia sẻ lợi ích có làm méo đầu tư hoặc
+quy mô doanh nghiệp không?</li>
+</ul>
+<h2 id="có-thể-triển-khai-ý-tưởng-này-ở-việt-nam-không">Có thể triển
+khai ý tưởng này ở Việt Nam không?</h2>
+<p>Có thể, nhưng phải chọn setting khéo.</p>
+<h3 id="những-điều-kiện-cần-có">Những điều kiện cần có</h3>
+<ul>
+<li>Dữ liệu doanh nghiệp đủ chi tiết về lao động, quỹ lương, lợi nhuận,
+và ideally panel theo thời gian</li>
+<li>Nếu muốn làm mạnh như paper này, cần linked employer-employee data
+hoặc ít nhất dữ liệu payroll ở cấp người lao động</li>
+<li>Một policy shock rõ: ví dụ thay đổi quy định về thưởng, quỹ khen
+thưởng-phúc lợi ở khu vực DNNN, thay đổi luật lao động, hay thay đổi
+ngưỡng/quy tắc áp dụng chế độ chia sẻ lợi ích</li>
+</ul>
+<h3 id="trở-ngại-chính">Trở ngại chính</h3>
+<ul>
+<li>Dữ liệu linked employer-employee ở Việt Nam khó tiếp cận hơn
+nhiều</li>
+<li>Compensation ngoài lương cơ bản có thể ghi nhận không chuẩn hoặc
+không đầy đủ</li>
+<li>Compliance và reporting quality có thể thấp hơn, khiến distinction
+giữa real adjustment và misreporting khó hơn</li>
+<li>Nếu không có shock thể chế đủ rõ, causal identification sẽ yếu</li>
+</ul>
+<h2 id="các-hướng-mở-rộng-phù-hợp-với-việt-nam">Các hướng mở rộng phù
+hợp với Việt Nam</h2>
+<h3
+id="profit-sharing-và-wage-incidence-trong-doanh-nghiệp-nhà-nước-hoặc-doanh-nghiệp-cổ-phần-hóa">1.
+Profit-sharing và wage incidence trong doanh nghiệp nhà nước hoặc doanh
+nghiệp cổ phần hóa</h3>
+<p>Một câu hỏi rất hợp Việt Nam là sau cổ phần hóa hay sau thay đổi quy
+chế thưởng, phần lợi nhuận giữ lại và phần trả cho lao động thay đổi thế
+nào, và ai hưởng trong firm.</p>
+<h3
+id="thưởng-cuối-năm-productivity-bonuses-và-wage-rigidity-ở-khu-công-nghiệp">2.
+Thưởng cuối năm, productivity bonuses, và wage rigidity ở khu công
+nghiệp</h3>
+<p>Ở các khu công nghiệp, rất nhiều khoản thu nhập ngoài lương cơ bản
+tồn tại dưới dạng thưởng, phụ cấp, hay bonus gắn với hiệu quả. Một
+research design tốt có thể hỏi liệu các khoản này bổ sung hay thay thế
+lương cơ bản, đặc biệt ở nhóm lao động lương thấp.</p>
+<h3
+id="size-dependent-regulation-và-bunching-của-doanh-nghiệp-việt-nam">3.
+Size-dependent regulation và bunching của doanh nghiệp Việt Nam</h3>
+<p>Paper gợi một câu hỏi lớn hơn: bất kỳ quy định nào gắn theo ngưỡng
+lao động hay doanh thu ở Việt Nam có tạo bunching không? Nếu có,
+distortion aggregate lớn tới đâu?</p>
+<h2
+id="research-questions-có-thể-phát-triển-từ-paper-này-trong-bối-cảnh-việt-nam">3
+research questions có thể phát triển từ paper này trong bối cảnh Việt
+Nam</h2>
+<ol type="1">
+<li>Khi doanh nghiệp bị ràng buộc bởi một quy định mới về thưởng hoặc
+phúc lợi lao động, thu nhập thực của lao động có tăng hay doanh nghiệp
+bù lại bằng cách điều chỉnh lương cơ bản?</li>
+<li>Các quy định lao động hoặc bảo hiểm gắn với ngưỡng số lao động có
+khiến doanh nghiệp Việt Nam bunch dưới ngưỡng hay không?</li>
+<li>Các khoản thưởng hiệu quả ở doanh nghiệp sản xuất xuất khẩu có làm
+tăng năng suất thực sự, hay chủ yếu là công cụ phân phối lại rents trong
+firm?</li>
+</ol>
+<h2 id="vì-sao-mình-chọn-paper-này-hôm-nay">Vì sao mình chọn paper này
+hôm nay</h2>
+<p>Mình chọn paper này vì ba lý do. Thứ nhất, đây là một bài top 5 rất
+mới: trang QJE ghi accepted manuscript ngày 24/04/2026. Thứ hai, nó nằm
+đúng giao điểm của applied micro, labor, public finance, và firm
+behavior. Thứ ba, đây là loại paper có bài học phương pháp rất rõ cho
+người làm nghiên cứu: institutional detail tốt, identification sạch,
+heterogeneity có ý nghĩa kinh tế, và kết luận chính sách không bị phóng
+đại.</p>
+<h2 id="nguồn-tham-chiếu-chính-đã-dùng">Nguồn tham chiếu chính đã
+dùng</h2>
+<ol type="1">
+<li>Trang bài báo QJE:
+https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag022</li>
+<li>PDF công khai dùng để đọc sâu:
+https://www.nber.org/system/files/working_papers/w31804/w31804.pdf</li>
+<li>Trang NBER xác minh metadata working paper:
+https://www.nber.org/papers/w31804</li>
+</ol>
+</body>
+</html>
