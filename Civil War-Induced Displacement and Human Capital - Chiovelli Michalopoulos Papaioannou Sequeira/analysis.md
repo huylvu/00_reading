@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-04-27
 - **Nguồn bài báo chính:** https://doi.org/10.1093/qje/qjag009
 - **Nguồn PDF tốt nhất đã xác minh:** Bản PDF chính thức trên Oxford Academic có nút PDF tại trang bài báo; ngoài ra có working paper công khai qua Universidad de Montevideo/RePEc: https://www2.um.edu.uy/fcee_papers/2020/Civil_War_Induced_Displacement_and_Human_Capital.pdf
-- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` sẽ được cập nhật theo kết quả upload thực tế; `analysis.pdf` chưa tạo; PDF gốc chưa lưu nếu chưa upload được file nhị phân thật sự
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công tại repo `huylvu/00_reading` trong thư mục `Civil War-Induced Displacement and Human Capital - Chiovelli Michalopoulos Papaioannou Sequeira/`; `analysis.pdf` chưa tạo; PDF gốc chưa lưu vì chưa upload được file nhị phân thật sự
 - **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này do bộ công cụ hiện có chưa hỗ trợ nhất quán việc tạo Google Doc và tracker đúng folder đích
 
 ## 1. Metadata
@@ -369,7 +369,7 @@ Nói ngắn gọn, câu hỏi “trẻ em bị di chuyển tới đâu và ở t
 
 ## Trạng thái file trong lượt chạy này
 
-- `analysis.md`: đã tạo cục bộ, sẽ chỉ được coi là lưu GitHub thành công nếu thao tác tạo file trên repo thành công
-- `analysis.html`: dự kiến tạo từ nội dung này; chỉ được coi là lưu GitHub thành công nếu thao tác tạo file trên repo thành công
+- `analysis.md`: đã lưu thành công lên GitHub
+- `analysis.html`: đã tạo và lưu thành công lên GitHub
 - `analysis.pdf`: chưa tạo trong lượt chạy này
 - `PDF gốc của paper`: mới xác minh được nguồn PDF công khai; chưa coi là đã lưu GitHub vì chưa upload được file nhị phân thật sự
