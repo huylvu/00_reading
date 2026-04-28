@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Religion, Education, and the State - Analysis</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; line-height: 1.65; margin: 40px auto; max-width: 860px; padding: 0 20px; color: #222; }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { font-size: 2rem; margin-bottom: 0.2rem; }
+    h2 { margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem; }
+    h3 { margin-top: 1.25rem; }
+    ul, ol { padding-left: 1.4rem; }
+    code { background: #f5f5f5; padding: 0.08rem 0.3rem; border-radius: 4px; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: #555; }
+  </style>
+</head>
+<body>
+<h1>Religion, Education, and the State</h1>
+<ul class="meta">
+<li><strong>Tác giả:</strong> Samuel Bazzi, Masyhur Hilmy, Benjamin Marx</li>
+<li><strong>Journal:</strong> The Review of Economic Studies</li>
+<li><strong>Năm:</strong> 2025</li>
+<li><strong>Ngày agent chạy:</strong> 2026-04-28</li>
+<li><strong>Nguồn bài báo chính:</strong> <a href="https://doi.org/10.1093/restud/rdaf071">https://doi.org/10.1093/restud/rdaf071</a></li>
+<li><strong>Nguồn PDF tốt nhất đã xác minh:</strong> bản manuscript chính thức trên ReStud: <a href="https://www.restud.com/wp-content/uploads/2025/08/M33636manuscript_only.pdf">https://www.restud.com/wp-content/uploads/2025/08/M33636manuscript_only.pdf</a></li>
+<li><strong>Nguồn PDF đối chiếu thêm:</strong> NBER Working Paper 27073, bản revised October 2024: <a href="https://www.nber.org/papers/w27073">https://www.nber.org/papers/w27073</a></li>
+<li><strong>Trạng thái lưu trên GitHub:</strong> <code>analysis.md</code> và <code>analysis.html</code> đã được lưu thành công trong thư mục <code>Religion, Education, and the State - Bazzi Hilmy Marx/</code> của repo <code>huylvu/00_reading</code>; <code>analysis.pdf</code> chưa được tạo; PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa lưu binary lên repo</li>
+<li><strong>Trạng thái lưu trên Google Drive:</strong> bỏ qua trong lượt này do chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách nhất quán</li>
+<li><strong>Ghi chú về PDF gốc:</strong> đã xác minh được nguồn PDF công khai rất tốt, nhưng môi trường chạy hiện không tải raw binary từ nguồn ngoài một cách ổn định; vì vậy lượt này chưa lưu được file PDF gốc vào GitHub</li>
+</ul>
+<p>Bản HTML này phản ánh trung thực nội dung của <code>analysis.md</code>. Do giới hạn upload binary trong lượt chạy này, bài gốc PDF mới được xác minh nguồn, chưa được lưu lên repo.</p>
+<h2>Executive summary</h2>
+<p>Paper này hỏi một câu rất hay trong development economics và political economy: khi nhà nước mở rộng giáo dục đại chúng để xây dựng quốc gia, điều gì xảy ra nếu trước đó đã tồn tại một hệ thống giáo dục tôn giáo đủ mạnh, có nguồn lực riêng, và có tính chính danh xã hội riêng? Trực giác đơn giản thường là trường công sẽ lấn át trường tôn giáo và làm xã hội thế tục hơn. Bài này cho thấy điều đó không nhất thiết đúng.</p>
+<p>Lấy bối cảnh Indonesia và chương trình xây hơn 61.000 trường tiểu học công SD INPRES giai đoạn 1973-1980, các tác giả chỉ ra rằng khu vực giáo dục Hồi giáo không bị crowd out. Ngược lại, khu vực này phản ứng chiến lược: mở thêm trường trong cùng các thị trường, tận dụng waqf và cú sốc giá lúa để huy động nguồn lực, hấp thụ nhu cầu học tiếp ở bậc trung học, và về dài hạn còn tăng mức độ “đậm đặc” tôn giáo trong chương trình học. Kết quả ròng là học sinh bớt học madrasa ở tiểu học nhưng lại chuyển sang madrasa ở trung học, khiến tổng phơi nhiễm với giáo dục Hồi giáo tăng lên.</p>
+<p>Điểm làm bài này rất đáng đọc là nó nối được ba mảng văn liệu thường đứng khá xa nhau: economics of education, state capacity/nation building, và economics of religion. Bài cũng rất đẹp về mặt empirical design: tác giả dùng nhiều lớp dữ liệu lịch sử và đương đại, kết hợp DID, synthetic DID, event-study ở cấp làng, phân tích chọn trường theo cohort, và kiểm tra tác động dài hạn lên hành vi chính trị, bản sắc, và truyền giá trị qua thế hệ.</p>
+<h2>Research question and motivation</h2>
+<h3>Câu hỏi trung tâm</h3>
+<p>Nhà nước có thể dùng mở rộng giáo dục công để đồng nhất hóa chương trình học, củng cố bản sắc dân tộc, và làm suy yếu hệ thống giáo dục tôn giáo hay không, khi giáo dục tôn giáo vốn là một nhà cung cấp công tương tranh?</p>
+<h3>Động lực học thuật</h3>
+<p>Có hai literatures liên quan nhưng chưa nối trọn với nhau. Một là literature về mass schooling và nation building: giáo dục đại chúng giúp chuẩn hóa ngôn ngữ, ý thức hệ, và năng lực nhà nước. Hai là literature về ideology/backlash: các cải cách nhà nước có thể gây phản ứng ngược về văn hóa hoặc tôn giáo. Khoảng trống mà paper lấp vào là vai trò của <strong>phản ứng cân bằng của nhà cung cấp ngoài nhà nước</strong>. Nếu trường tôn giáo không đứng yên mà đáp trả chiến lược, thì tác động cuối cùng của school expansion có thể rất khác với tác động trực tiếp.</p>
+<h3>Động lực thực tiễn</h3>
+<p>Indonesia là case lý tưởng vì vừa là nước Hồi giáo lớn nhất thế giới, vừa có hệ thống giáo dục kép tồn tại dai dẳng. Chương trình SD INPRES là một trong những đợt school construction lớn nhất từng được triển khai ở một nước đang phát triển, nên đây là nơi rất phù hợp để hỏi xem mở rộng trường công có thật sự đồng nghĩa với secularization hay không.</p>
+<h2>Main contribution</h2>
+<p>Bài đóng góp ở bốn chỗ chính: một khung nhìn cân bằng về cạnh tranh giữa state và non-state providers; một bộ dữ liệu ghép rất hiếm về entry trường, school choice, curriculum, bầu cử và religiosity; một empirical design nhiều lớp gồm DID, synthetic DID và event-study; và một substantive insight rất mạnh rằng mass schooling có thể vô tình làm religiosity bền hơn thay vì yếu đi.</p>
+<h2>Identification or methodology</h2>
+<p>Chính phủ Suharto triển khai SD INPRES từ 1973, xây hơn 61.000 trường tiểu học công trong giai đoạn 1973-1980. Việc phân bổ trường giữa các district dựa vào số trẻ em không đi học năm 1971. Tác giả dùng cường độ này để làm DID ở cấp district, dùng synthetic DID để xử lý lo ngại về pre-trends, rồi khai thác timing entry ở cấp village để chạy event-study động. Song song, họ dùng phân tích cohort kiểu Duflo để xem exposed cohorts thay đổi lựa chọn loại trường ở bậc học cao nhất như thế nào. Cuối cùng, paper nối các thay đổi về market structure sang bầu cử, identity, Arabic literacy, piety và truyền giá trị qua thế hệ.</p>
+<h2>Results and interpretation</h2>
+<p>Kết quả chính của paper có thể tóm lại như sau. Thứ nhất, khu vực giáo dục Hồi giáo phản ứng bằng cách mở thêm trường ở nơi nhà nước xây nhiều trường công hơn, chứ không bị lấn át. Thứ hai, phản ứng đó mạnh hơn ở nơi có waqf và điều kiện tài trợ tốt hơn. Thứ ba, trường Hồi giáo mới còn phân hóa curriculum theo hướng tôn giáo đậm hơn thay vì hội tụ về chuẩn thế tục. Thứ tư, exposed cohorts bớt học madrasa ở tiểu học nhưng tăng học madrasa ở trung học, nên phơi nhiễm ròng với giáo dục Hồi giáo tăng. Thứ năm, school expansion không giúp củng cố national identity theo nghĩa mà nhà nước mong muốn; thay vào đó Arabic literacy và một số hành vi piety tăng lên. Thứ sáu, các thay đổi này kéo dài sang thế hệ sau thông qua marriage matching và transmission trong hộ.</p>
+<h2>What is special or elegant about the paper</h2>
+<p>Điểm đẹp nhất của bài là nó không dừng ở chỗ “chính sách có tác động gì lên người học” mà hỏi “đối thủ của nhà nước phản ứng ra sao”. Từ đó paper biến một policy shock quá quen thuộc trong development economics thành một câu chuyện mới về equilibrium adaptation, curriculum differentiation và cultural persistence.</p>
+<h2>Required background knowledge</h2>
+<p>Để đọc paper trơn tru, người đọc nên nắm DID, synthetic DID, event-study với staggered adoption, logic selection khi nhìn school choice ở các bậc học khác nhau, vai trò của waqf trong tài trợ trường Hồi giáo, và literature về nation building qua giáo dục đại chúng.</p>
+<h2>Limitations and open questions</h2>
+<p>Giới hạn chính là một số cơ chế tư tưởng vẫn phải suy ra từ nhiều mảnh bằng chứng gián tiếp; các proxy như Arabic literacy hay language use không đo trọn vẹn national identity; và external validity ra ngoài Indonesia cần thận trọng vì nơi đây có mạng lưới waqf và dual system rất đặc thù. Câu hỏi mở lớn là: khi nào state expansion sẽ crowd out non-state providers, và khi nào lại khiến họ thích nghi mạnh hơn?</p>
+<h2>Takeaways for a researcher</h2>
+<ol>
+<li>Đừng chỉ đo direct effect của policy; hãy đo phản ứng cân bằng của institutions cạnh tranh.</li>
+<li>Một policy shock kinh điển vẫn có thể tạo ra research frontier mới nếu đổi câu hỏi.</li>
+<li>Financing margins như waqf hay commodity booms có thể quyết định việc backlash có biến thành tổ chức thật hay không.</li>
+<li>Administrative data về year and place of entry của organizations là tài sản cực mạnh cho applied micro.</li>
+<li>Nên nối supply, demand, beliefs và intergenerational transmission nếu muốn câu chuyện causal đủ sâu.</li>
+</ol>
+<h2>Vietnam relevance and extension</h2>
+<p>Việt Nam không có dual schooling tôn giáo lớn như Indonesia, nhưng logic của paper rất gợi mở cho các bối cảnh mà nhà nước mở rộng dịch vụ công trong khi các nhà cung cấp ngoài nhà nước có legitimacy riêng. Các hướng gần nhất có thể là giáo dục ngoài công lập theo bản sắc riêng, đào tạo nghề, dịch vụ xã hội ở vùng dân tộc thiểu số, hoặc những nơi local institutions có sức hút lớn hơn formal state provision.</p>
+<h2>Vì sao paper này được chọn hôm nay</h2>
+<p>Mình chọn paper này vì nó đúng micro applied/development, nằm ở top 5 journal economics, rất mới trong ReStud, có public PDF rất tốt, và có một kết quả phản trực giác nhưng cực kỳ đáng học: mở rộng trường công không mặc nhiên kéo xã hội về phía secularization nếu khu vực tôn giáo đủ mạnh để thích nghi.</p>
+<h2>Trạng thái lưu trữ và giới hạn thực thi của lượt chạy</h2>
+<ul>
+<li><code>analysis.md</code>: đã lưu lên GitHub</li>
+<li><code>analysis.html</code>: đã lưu lên GitHub</li>
+<li><code>analysis.pdf</code>: chưa tạo trong lượt này</li>
+<li>PDF gốc của paper: đã xác minh được nguồn PDF công khai rất tốt, nhưng hiện chưa coi là đã lưu lên GitHub vì môi trường chưa tải được raw binary PDF ổn định từ nguồn ngoài</li>
+<li>Google Drive: bỏ qua trong lượt này</li>
+</ul>
+</body>
+</html>
