@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-04-29
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf088/8275590
 - **Nguồn PDF tốt nhất đã xác minh:** bản working paper trên trang MIT Economics, ngày 5 May 2023: https://economics.mit.edu/sites/default/files/2023-05/Forest_Fires_Paper_0.pdf
-- **Trạng thái lưu trên GitHub:** sẽ cập nhật ở cuối file sau khi lưu trữ hoàn tất
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công trong repo `huylvu/00_reading` tại thư mục `The Origins and Control of Forest Fires in the Tropics - Balboni Burgess Olken/`
 - **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách nhất quán
 
 ## Executive summary
@@ -254,9 +254,9 @@ Mình chọn paper này vì ba lý do. Thứ nhất, đây là paper top 5 rất
 
 ## Final status update
 
-- **GitHub analysis.md:** pending
-- **GitHub analysis.html:** pending
+- **GitHub analysis.md:** đã lưu thành công tại https://github.com/huylvu/00_reading/blob/main/The%20Origins%20and%20Control%20of%20Forest%20Fires%20in%20the%20Tropics%20-%20Balboni%20Burgess%20Olken/analysis.md
+- **GitHub analysis.html:** đã lưu thành công tại https://github.com/huylvu/00_reading/blob/main/The%20Origins%20and%20Control%20of%20Forest%20Fires%20in%20the%20Tropics%20-%20Balboni%20Burgess%20Olken/analysis.html
 - **GitHub analysis.pdf:** chưa tạo trong lượt này
 - **GitHub paper PDF:** chưa lưu; mới xác minh được nguồn PDF công khai, nhưng môi trường chạy này chưa tải được raw PDF bytes từ nguồn ngoài để upload lại một cách ổn định
 - **Google Drive:** skipped
-- **Email sent:** pending
+- **Email sent:** đã gửi thành công tới `huymaeco@gmail.com` dưới dạng email văn bản không đính kèm; email đã nêu rõ link GitHub, trạng thái không có attachment, và giới hạn liên quan tới PDF gốc/Google Drive
