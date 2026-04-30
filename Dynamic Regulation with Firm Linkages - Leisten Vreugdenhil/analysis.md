@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-05-01 (Asia/Saigon)
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag013/8445259
 - **Nguồn PDF dùng để phân tích:** https://nvreug.github.io/paper/dynamic_regulation.pdf
-- **Trạng thái lưu trên GitHub:** `analysis.md`, `analysis.html`, và `analysis-style.css` được chuẩn bị để lưu trong thư mục `Dynamic Regulation with Firm Linkages - Leisten Vreugdenhil/` của repo `huylvu/00_reading`; `analysis.pdf` chưa tạo trong lượt này; PDF gốc của paper mới xác minh được nguồn công khai, chưa tải và lưu nhị phân vào repo trong lượt này.
+- **Trạng thái lưu trên GitHub:** `analysis.md`, `analysis.html`, và `analysis-style.css` đã được lưu thành công trong thư mục `Dynamic Regulation with Firm Linkages - Leisten Vreugdenhil/` của repo `huylvu/00_reading`; `analysis.pdf` chưa tạo trong lượt này; PDF gốc của paper mới xác minh được nguồn công khai, chưa tải và lưu nhị phân vào repo trong lượt này.
 - **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker đúng thư mục đích một cách nhất quán.
 
 ## 1. Metadata
