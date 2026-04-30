@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-04-30
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf104/8402958
 - **Nguồn PDF tốt nhất đã xác minh:** PDF chính thức open-access của Oxford Academic: https://academic.oup.com/restud/advance-article-pdf/doi/10.1093/restud/rdaf104/66116759/rdaf104.pdf
-- **Trạng thái lưu trên GitHub:** `analysis.md` đang được chuẩn bị; `analysis.html` sẽ được tạo nếu render sạch; `analysis.pdf` chưa tạo; PDF gốc của paper mới xác minh được nguồn công khai, chưa coi là đã lưu lên GitHub cho tới khi upload binary thành công.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công trong repo `huylvu/00_reading` tại thư mục `Bridges - Tompsett/`; `analysis.pdf` chưa tạo; PDF gốc của paper mới xác minh được nguồn công khai và chưa lưu lên GitHub trong lượt này.
 - **Trạng thái Google Drive:** bỏ qua trong lượt này để tránh lưu nửa vời; GitHub là nơi lưu trữ chính.
 
 ## 1. Metadata
