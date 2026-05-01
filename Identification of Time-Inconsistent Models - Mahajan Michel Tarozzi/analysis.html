@@ -152,6 +152,8 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
     ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       font-size: inherit;
@@ -164,61 +166,131 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Identification of Time-Inconsistent Models: The Case of Insecticide-Treated Nets</h1>
+<h1 class="title">Identification of Time-Inconsistent Models: The Case
+of Insecticide-Treated Nets</h1>
 </header>
-<h1>Identification of Time-Inconsistent Models: The Case of Insecticide-Treated Nets</h1>
+<h1
+id="identification-of-time-inconsistent-models-the-case-of-insecticide-treated-nets">Identification
+of Time-Inconsistent Models: The Case of Insecticide-Treated Nets</h1>
 <ul>
-<li><strong>Tác giả:</strong> Aprajit Mahajan, Christian Michel, Alessandro Tarozzi</li>
+<li><strong>Tác giả:</strong> Aprajit Mahajan, Christian Michel,
+Alessandro Tarozzi</li>
 <li><strong>Journal:</strong> The Review of Economic Studies</li>
 <li><strong>Năm:</strong> 2026</li>
 <li><strong>Ngày agent chạy:</strong> 2026-05-02 (+07)</li>
-<li><strong>Nguồn bài báo chính:</strong> https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag018/8504516</li>
-<li><strong>Nguồn PDF dùng để phân tích:</strong> bản manuscript công khai trên ReStud tại https://www.restud.com/wp-content/uploads/2026/02/restud.pdf; đối chiếu thêm với NBER Working Paper 27198, bản revised May 2023 tại https://www.nber.org/system/files/working_papers/w27198/revisions/w27198.rev1.pdf</li>
-<li><strong>Trạng thái lưu trên GitHub:</strong> dự kiến lưu <code>analysis.md</code> và <code>analysis.html</code>; <code>analysis.pdf</code> chưa tạo trong lượt này; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai cho tới khi có bước upload file nhị phân thành công</li>
-<li><strong>Trạng thái lưu trên Google Drive:</strong> bỏ qua trong lượt chạy này vì bộ công cụ hiện có không hỗ trợ chắc chắn việc tạo đúng Google Doc và tracker trong đúng folder đích</li>
+<li><strong>Nguồn bài báo chính:</strong>
+https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag018/8504516</li>
+<li><strong>Nguồn PDF dùng để phân tích:</strong> bản manuscript công
+khai trên ReStud tại
+https://www.restud.com/wp-content/uploads/2026/02/restud.pdf; đối chiếu
+thêm với NBER Working Paper 27198, bản revised May 2023 tại
+https://www.nber.org/system/files/working_papers/w27198/revisions/w27198.rev1.pdf</li>
+<li><strong>Trạng thái lưu trên GitHub:</strong> đã lưu thành công
+<code>analysis.md</code> và <code>analysis.html</code> trong repo
+<code>huylvu/00_reading</code>; <code>analysis.pdf</code> chưa tạo trong
+lượt này; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai,
+chưa lưu binary lên GitHub trong lượt chạy này</li>
+<li><strong>Trạng thái lưu trên Google Drive:</strong> bỏ qua trong lượt
+chạy này vì bộ công cụ hiện có không hỗ trợ chắc chắn việc tạo đúng
+Google Doc và tracker trong đúng folder đích</li>
 </ul>
-<h2>1. Metadata</h2>
+<h2 id="metadata">1. Metadata</h2>
 <ul>
-<li><strong>Tiêu đề paper:</strong> Identification of Time-Inconsistent Models: The Case of Insecticide-Treated Nets</li>
-<li><strong>Tác giả:</strong> Aprajit Mahajan, Christian Michel, Alessandro Tarozzi</li>
+<li><strong>Tiêu đề paper:</strong> Identification of Time-Inconsistent
+Models: The Case of Insecticide-Treated Nets</li>
+<li><strong>Tác giả:</strong> Aprajit Mahajan, Christian Michel,
+Alessandro Tarozzi</li>
 <li><strong>Journal:</strong> The Review of Economic Studies</li>
 <li><strong>Năm:</strong> 2026</li>
-<li><strong>Link bài báo:</strong> https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag018/8504516</li>
-<li><strong>Link PDF đã xác minh:</strong> https://www.restud.com/wp-content/uploads/2026/02/restud.pdf</li>
-<li><strong>Ghi chú về PDF:</strong> đã xác minh được nguồn PDF công khai rất tốt để đọc sâu, nhưng trong giai đoạn đầu của lượt chạy này chưa mặc định coi là đã lưu file PDF gốc lên GitHub; điều đó chỉ được xem là hoàn tất nếu bước upload file nhị phân thực sự thành công.</li>
+<li><strong>Link bài báo:</strong>
+https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag018/8504516</li>
+<li><strong>Link PDF đã xác minh:</strong>
+https://www.restud.com/wp-content/uploads/2026/02/restud.pdf</li>
+<li><strong>Ghi chú về PDF:</strong> đã xác minh được nguồn PDF công
+khai rất tốt để đọc sâu, nhưng trong giai đoạn đầu của lượt chạy này
+chưa mặc định coi là đã lưu file PDF gốc lên GitHub; điều đó chỉ được
+xem là hoàn tất nếu bước upload file nhị phân thực sự thành công.</li>
 </ul>
-<h2>2. Executive summary</h2>
-<p>Paper hỏi một câu vừa behavioral vừa development rất hay: liệu việc hộ nghèo không mua hoặc không bảo dưỡng insecticide-treated nets (ITNs) có phản ánh present bias và time inconsistency hay không, và nếu có thì ta nhận dạng được loại tác nhân nào, ở mức độ nào?</p>
-<p>Bài trả lời bằng hai bước. Bước một là xây dựng một dynamic discrete choice model với nhiều loại tác nhân không quan sát được, cho phép vừa có người time-consistent, vừa có người time-inconsistent, lại còn phân biệt giữa sophisticated và naive. Bước hai là đem mô hình đó xuống dữ liệu thực địa về mua và tái xử lý màn chống muỗi ở Odisha, Ấn Độ, nơi tác giả có dữ liệu panel ba kỳ, dữ liệu beliefs, và proxy về time preferences.</p>
-<p>Kết quả chính rất mạnh. Bài cho thấy khoảng hai phần ba mẫu là time-inconsistent; xấp xỉ một phần ba là time-consistent, khoảng một nửa là naive inconsistent, và khoảng một phần sáu là sophisticated inconsistent. Cả naive lẫn sophisticated đều present-biased khá mạnh. Counterfactuals cho thấy under-investment do present bias gây ra chi phí kỳ vọng về malaria rất lớn, cỡ khoảng bốn lần giá một chiếc ITN trong bản ReStud.</p>
-<p>Đây là paper đáng đọc vì nó kết hợp được ba thứ hiếm khi đi cùng nhau: một bài toán nhận dạng rất khó trong structural econometrics, một ứng dụng development economics thật sự có ý nghĩa sức khỏe cộng đồng, và một kết quả behavioral không rơi vào kiểu kể chuyện mơ hồ mà đi tới đo lường cụ thể phân bố type và welfare cost.</p>
-<h2>3. Research question and motivation</h2>
-<h3>Câu hỏi trung tâm</h3>
+<h2 id="executive-summary">2. Executive summary</h2>
+<p>Paper hỏi một câu vừa behavioral vừa development rất hay: liệu việc
+hộ nghèo không mua hoặc không bảo dưỡng insecticide-treated nets (ITNs)
+có phản ánh present bias và time inconsistency hay không, và nếu có thì
+ta nhận dạng được loại tác nhân nào, ở mức độ nào?</p>
+<p>Bài trả lời bằng hai bước. Bước một là xây dựng một dynamic discrete
+choice model với nhiều loại tác nhân không quan sát được, cho phép vừa
+có người time-consistent, vừa có người time-inconsistent, lại còn phân
+biệt giữa sophisticated và naive. Bước hai là đem mô hình đó xuống dữ
+liệu thực địa về mua và tái xử lý màn chống muỗi ở Odisha, Ấn Độ, nơi
+tác giả có dữ liệu panel ba kỳ, dữ liệu beliefs, và proxy về time
+preferences.</p>
+<p>Kết quả chính rất mạnh. Bài cho thấy khoảng hai phần ba mẫu là
+time-inconsistent; xấp xỉ một phần ba là time-consistent, khoảng một nửa
+là naive inconsistent, và khoảng một phần sáu là sophisticated
+inconsistent. Cả naive lẫn sophisticated đều present-biased khá mạnh.
+Counterfactuals cho thấy under-investment do present bias gây ra chi phí
+kỳ vọng về malaria rất lớn, cỡ khoảng bốn lần giá một chiếc ITN trong
+bản ReStud.</p>
+<p>Đây là paper đáng đọc vì nó kết hợp được ba thứ hiếm khi đi cùng
+nhau: một bài toán nhận dạng rất khó trong structural econometrics, một
+ứng dụng development economics thật sự có ý nghĩa sức khỏe cộng đồng, và
+một kết quả behavioral không rơi vào kiểu kể chuyện mơ hồ mà đi tới đo
+lường cụ thể phân bố type và welfare cost.</p>
+<h2 id="research-question-and-motivation">3. Research question and
+motivation</h2>
+<h3 id="câu-hỏi-trung-tâm">Câu hỏi trung tâm</h3>
 <p>Paper muốn biết:</p>
-<ol>
-<li>Có thể nhận dạng được time-preference parameters trong dynamic choice model có time inconsistency và unobserved heterogeneity hay không?</li>
-<li>Nếu có, trong bối cảnh đầu tư phòng ngừa sức khỏe ở vùng nghèo, tỷ trọng các loại tác nhân time-consistent, naive inconsistent, và sophisticated inconsistent là bao nhiêu?</li>
-<li>Present bias làm thay đổi quyết định mua ITN, mua gói cam kết re-treatment, và hành vi re-treatment về sau đến mức nào?</li>
+<ol type="1">
+<li>Có thể nhận dạng được time-preference parameters trong dynamic
+choice model có time inconsistency và unobserved heterogeneity hay
+không?</li>
+<li>Nếu có, trong bối cảnh đầu tư phòng ngừa sức khỏe ở vùng nghèo, tỷ
+trọng các loại tác nhân time-consistent, naive inconsistent, và
+sophisticated inconsistent là bao nhiêu?</li>
+<li>Present bias làm thay đổi quyết định mua ITN, mua gói cam kết
+re-treatment, và hành vi re-treatment về sau đến mức nào?</li>
 </ol>
-<h3>Bối cảnh học thuật và thực tiễn</h3>
-<p>Trong văn liệu behavioral, present bias thường được dùng để giải thích vì sao người nghèo đầu tư quá ít vào những hoạt động có lợi dài hạn như tiết kiệm, phòng bệnh, hay giáo dục. Nhưng nói như vậy thì dễ; chứng minh được bằng dữ liệu hành vi động thì khó hơn nhiều. Vấn đề lớn là ngay cả discount factor chuẩn trong dynamic discrete choice còn thường không được nhận dạng, nên với mô hình beta-delta có time inconsistency thì bài toán còn khó hơn.</p>
-<p>Về mặt thực tiễn, ITNs là một công nghệ phòng malaria rất rẻ so với lợi ích kỳ vọng, nhưng nhiều hộ vẫn không mua hoặc không duy trì re-treatment dù tin rằng màn có hiệu quả. Điều này tạo ra một setting rất phù hợp để kiểm tra xem present bias có thật sự là một cơ chế quan trọng hay không.</p>
-<h3>Khoảng trống bài muốn lấp</h3>
+<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực
+tiễn</h3>
+<p>Trong văn liệu behavioral, present bias thường được dùng để giải
+thích vì sao người nghèo đầu tư quá ít vào những hoạt động có lợi dài
+hạn như tiết kiệm, phòng bệnh, hay giáo dục. Nhưng nói như vậy thì dễ;
+chứng minh được bằng dữ liệu hành vi động thì khó hơn nhiều. Vấn đề lớn
+là ngay cả discount factor chuẩn trong dynamic discrete choice còn
+thường không được nhận dạng, nên với mô hình beta-delta có time
+inconsistency thì bài toán còn khó hơn.</p>
+<p>Về mặt thực tiễn, ITNs là một công nghệ phòng malaria rất rẻ so với
+lợi ích kỳ vọng, nhưng nhiều hộ vẫn không mua hoặc không duy trì
+re-treatment dù tin rằng màn có hiệu quả. Điều này tạo ra một setting
+rất phù hợp để kiểm tra xem present bias có thật sự là một cơ chế quan
+trọng hay không.</p>
+<h3 id="khoảng-trống-bài-muốn-lấp">Khoảng trống bài muốn lấp</h3>
 <p>Khoảng trống chính có hai lớp:</p>
-<ol>
-<li>Văn liệu structural về time inconsistency thiếu các kết quả nhận dạng đủ mạnh khi agent type là không quan sát được và preferences dị biệt.</li>
-<li>Văn liệu development/health có nhiều bằng chứng reduced-form về under-adoption của preventive technology, nhưng ít bài đo lường trực tiếp phân bố loại time preferences và lượng hóa welfare cost của present bias trong một bài toán thực địa cụ thể.</li>
+<ol type="1">
+<li>Văn liệu structural về time inconsistency thiếu các kết quả nhận
+dạng đủ mạnh khi agent type là không quan sát được và preferences dị
+biệt.</li>
+<li>Văn liệu development/health có nhiều bằng chứng reduced-form về
+under-adoption của preventive technology, nhưng ít bài đo lường trực
+tiếp phân bố loại time preferences và lượng hóa welfare cost của present
+bias trong một bài toán thực địa cụ thể.</li>
 </ol>
-<h2>4. Main contribution</h2>
-<h3>Đóng góp lý thuyết - nhận dạng</h3>
+<h2 id="main-contribution">4. Main contribution</h2>
+<h3 id="đóng-góp-lý-thuyết---nhận-dạng">Đóng góp lý thuyết - nhận
+dạng</h3>
 <p>Đây là đóng góp lớn nhất của paper. Tác giả chỉ ra điều kiện để:</p>
 <ul>
-<li>point-identify được type probabilities và preference parameters cho time-consistent và sophisticated agents;</li>
-<li>có sharp set-identification cho naive và partially sophisticated agents trong trường hợp tổng quát;</li>
-<li>và có thể point-identify rộng hơn nếu thêm các giả định bổ sung quen thuộc.</li>
+<li>point-identify được type probabilities và preference parameters cho
+time-consistent và sophisticated agents;</li>
+<li>có sharp set-identification cho naive và partially sophisticated
+agents trong trường hợp tổng quát;</li>
+<li>và có thể point-identify rộng hơn nếu thêm các giả định bổ sung quen
+thuộc.</li>
 </ul>
-<p>Điểm hay ở đây là paper không né khó khăn nhận dạng bằng cách giả sử chỉ có một type hay giả sử type được quan sát trực tiếp. Thay vào đó, họ cho phép có nhiều unobserved types và vẫn đi tới kết quả đủ sắc.</p>
-<h3>Đóng góp về dữ liệu và thiết kế thực nghiệm</h3>
+<p>Điểm hay ở đây là paper không né khó khăn nhận dạng bằng cách giả sử
+chỉ có một type hay giả sử type được quan sát trực tiếp. Thay vào đó, họ
+cho phép có nhiều unobserved types và vẫn đi tới kết quả đủ sắc.</p>
+<h3 id="đóng-góp-về-dữ-liệu-và-thiết-kế-thực-nghiệm">Đóng góp về dữ liệu
+và thiết kế thực nghiệm</h3>
 <p>Paper tận dụng dữ liệu rất “may đo” cho bài toán nhận dạng:</p>
 <ul>
 <li>panel decisions qua ba kỳ;</li>
@@ -227,38 +299,69 @@
 <li>lựa chọn giữa standard contract và commitment contract;</li>
 <li>quyết định re-treatment thực tế sau đó.</li>
 </ul>
-<p>Những thành phần này không chỉ làm dữ liệu phong phú hơn, mà còn trực tiếp đóng vai trò trong chiến lược nhận dạng.</p>
-<h3>Đóng góp applied micro/development</h3>
-<p>Trong ứng dụng Odisha, bài cho thấy present bias không chỉ là một câu chuyện tâm lý chung chung. Nó có thể giải thích một phần lớn under-investment vào phòng bệnh và tạo ra chi phí malaria đáng kể. Ngoài ra, kết quả rằng commitment product không nhất thiết được sophisticated agents ưa thích hơn là một đóng góp behavioral rất đáng nhớ, vì nó cảnh báo chống lại suy luận ngược quá đơn giản từ lựa chọn commitment sang “ý thức tự kiểm soát”.</p>
-<h2>5. Identification or methodology</h2>
-<h3>Khung mô hình</h3>
-<p>Paper xây dựng một dynamic discrete choice model với finite action space và finite state space, tối thiểu cần ba periods để time inconsistency kiểu beta-delta có thể bộc lộ trong hành vi. Tác nhân có thể là:</p>
+<p>Những thành phần này không chỉ làm dữ liệu phong phú hơn, mà còn trực
+tiếp đóng vai trò trong chiến lược nhận dạng.</p>
+<h3 id="đóng-góp-applied-microdevelopment">Đóng góp applied
+micro/development</h3>
+<p>Trong ứng dụng Odisha, bài cho thấy present bias không chỉ là một câu
+chuyện tâm lý chung chung. Nó có thể giải thích một phần lớn
+under-investment vào phòng bệnh và tạo ra chi phí malaria đáng kể. Ngoài
+ra, kết quả rằng commitment product không nhất thiết được sophisticated
+agents ưa thích hơn là một đóng góp behavioral rất đáng nhớ, vì nó cảnh
+báo chống lại suy luận ngược quá đơn giản từ lựa chọn commitment sang “ý
+thức tự kiểm soát”.</p>
+<h2 id="identification-or-methodology">5. Identification or
+methodology</h2>
+<h3 id="khung-mô-hình">Khung mô hình</h3>
+<p>Paper xây dựng một dynamic discrete choice model với finite action
+space và finite state space, tối thiểu cần ba periods để time
+inconsistency kiểu beta-delta có thể bộc lộ trong hành vi. Tác nhân có
+thể là:</p>
 <ul>
 <li><strong>time-consistent</strong></li>
-<li><strong>time-inconsistent sophisticated</strong>: biết mình sẽ bị present bias ở tương lai</li>
-<li><strong>time-inconsistent naive</strong>: không nội suy đúng sự present bias của chính mình trong tương lai</li>
+<li><strong>time-inconsistent sophisticated</strong>: biết mình sẽ bị
+present bias ở tương lai</li>
+<li><strong>time-inconsistent naive</strong>: không nội suy đúng sự
+present bias của chính mình trong tương lai</li>
 </ul>
-<p>Type là không quan sát được hoàn toàn, nhưng có thể có proxy không hoàn hảo.</p>
-<h3>Logic nhận dạng</h3>
-<p>Trở ngại xuất phát từ kết quả kinh điển: discount parameters trong dynamic choice thường không tự nhận dạng được từ behavior quan sát đơn thuần. Bài vượt qua trở ngại này bằng hai exclusion restrictions cốt lõi:</p>
-<ol>
-<li>Có biến <code>z</code> chỉ ảnh hưởng current utility thông qua perceived value của future states.</li>
-<li>Có biến <code>r</code> là proxy tín hiệu về type; conditional on type và observables, <code>r</code> không mang thêm thông tin trực tiếp về choice.</li>
+<p>Type là không quan sát được hoàn toàn, nhưng có thể có proxy không
+hoàn hảo.</p>
+<h3 id="logic-nhận-dạng">Logic nhận dạng</h3>
+<p>Trở ngại xuất phát từ kết quả kinh điển: discount parameters trong
+dynamic choice thường không tự nhận dạng được từ behavior quan sát đơn
+thuần. Bài vượt qua trở ngại này bằng hai exclusion restrictions cốt
+lõi:</p>
+<ol type="1">
+<li>Có biến <code>z</code> chỉ ảnh hưởng current utility thông qua
+perceived value của future states.</li>
+<li>Có biến <code>r</code> là proxy tín hiệu về type; conditional on
+type và observables, <code>r</code> không mang thêm thông tin trực tiếp
+về choice.</li>
 </ol>
 <p>Trong ứng dụng:</p>
 <ul>
-<li><code>z</code> được gắn với elicited beliefs về evolution của state variables;</li>
+<li><code>z</code> được gắn với elicited beliefs về evolution của state
+variables;</li>
 <li><code>r</code> là các chỉ báo survey về time preferences.</li>
 </ul>
-<p>Tác giả còn yêu cầu <code>r</code> đủ informative về types theo một điều kiện kiểu monotone likelihood ratio. Điểm quan trọng là paper không cần <code>r</code> map một-một sang type. Điều này hợp lý hơn nhiều về mặt thực nghiệm.</p>
-<h3>Ứng dụng thực địa</h3>
-<p>Dữ liệu đến từ 621 households ở 47 villages nơi BISWA cho khách hàng microfinance cơ hội mua ITNs trả chậm. Sau loại trừ những quan sát không phù hợp, mẫu phân tích còn 566 households.</p>
+<p>Tác giả còn yêu cầu <code>r</code> đủ informative về types theo một
+điều kiện kiểu monotone likelihood ratio. Điểm quan trọng là paper không
+cần <code>r</code> map một-một sang type. Điều này hợp lý hơn nhiều về
+mặt thực nghiệm.</p>
+<h3 id="ứng-dụng-thực-địa">Ứng dụng thực địa</h3>
+<p>Dữ liệu đến từ 621 households ở 47 villages nơi BISWA cho khách hàng
+microfinance cơ hội mua ITNs trả chậm. Sau loại trừ những quan sát không
+phù hợp, mẫu phân tích còn 566 households.</p>
 <p>Intervention có hai hợp đồng:</p>
 <ul>
-<li><strong>Contract b</strong>: mua ITN trên tín dụng, rồi sau 6 và 12 tháng nếu muốn re-treatment thì trả thêm tiền mặt tại thời điểm đó.</li>
-<li><strong>Contract c</strong>: mua ITN kèm luôn hai lần re-treatment trong cùng gói tín dụng, tức là một dạng commitment contract.</li>
+<li><strong>Contract b</strong>: mua ITN trên tín dụng, rồi sau 6 và 12
+tháng nếu muốn re-treatment thì trả thêm tiền mặt tại thời điểm đó.</li>
+<li><strong>Contract c</strong>: mua ITN kèm luôn hai lần re-treatment
+trong cùng gói tín dụng, tức là một dạng commitment contract.</li>
 </ul>
-<p>Theo paper, giá tín dụng của contract b là Rs. 173 cho single net và Rs. 223 cho double net; contract c là Rs. 203 và Rs. 259. Re-treatment dưới contract b tốn thêm Rs. 15 hoặc Rs. 18 mỗi lần.</p>
+<p>Theo paper, giá tín dụng của contract b là Rs. 173 cho single net và
+Rs. 223 cho double net; contract c là Rs. 203 và Rs. 259. Re-treatment
+dưới contract b tốn thêm Rs. 15 hoặc Rs. 18 mỗi lần.</p>
 <p>Thiết kế thời gian cũng quan trọng:</p>
 <ul>
 <li>baseline survey: March-April 2007</li>
@@ -267,140 +370,263 @@
 <li>re-treatment lần một: khoảng 6 tháng sau</li>
 <li>re-treatment lần hai: khoảng 12 tháng sau</li>
 </ul>
-<h3>Điểm mạnh của phương pháp</h3>
-<ol>
-<li>Paper nối chặt phần theory và phần empirics. Dữ liệu beliefs và proxy type không chỉ là “thêm biến kiểm soát”, mà là phần sống còn của nhận dạng.</li>
-<li>Cho phép multiple unobserved types, nên vừa thực tế hơn, vừa cho ra object rất đáng quan tâm về policy: phân bố type trong dân số.</li>
-<li>Ứng dụng lên hành vi thực địa giàu tính động, thay vì chỉ dựa vào survey choices hay lab tasks.</li>
+<h3 id="điểm-mạnh-của-phương-pháp">Điểm mạnh của phương pháp</h3>
+<ol type="1">
+<li>Paper nối chặt phần theory và phần empirics. Dữ liệu beliefs và
+proxy type không chỉ là “thêm biến kiểm soát”, mà là phần sống còn của
+nhận dạng.</li>
+<li>Cho phép multiple unobserved types, nên vừa thực tế hơn, vừa cho ra
+object rất đáng quan tâm về policy: phân bố type trong dân số.</li>
+<li>Ứng dụng lên hành vi thực địa giàu tính động, thay vì chỉ dựa vào
+survey choices hay lab tasks.</li>
 </ol>
-<h3>Điểm dễ bị nghi ngờ</h3>
-<ol>
-<li>Hai exclusion restrictions là hợp lý nhưng về bản chất khó kiểm định trực tiếp.</li>
-<li>Proxy <code>r</code> cho time preference có thể lẫn với những thứ khác như perceived returns hay kỳ vọng income, nên dù paper đã xử lý cẩn thận, đây vẫn là nơi người đọc nên đặt dấu hỏi.</li>
-<li>Mô hình ba kỳ là tối thiểu để nhận dạng, nhưng cũng là một abstraction khá gọn của một quá trình ra quyết định thực tế có thể kéo dài và phức tạp hơn.</li>
+<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
+<ol type="1">
+<li>Hai exclusion restrictions là hợp lý nhưng về bản chất khó kiểm định
+trực tiếp.</li>
+<li>Proxy <code>r</code> cho time preference có thể lẫn với những thứ
+khác như perceived returns hay kỳ vọng income, nên dù paper đã xử lý cẩn
+thận, đây vẫn là nơi người đọc nên đặt dấu hỏi.</li>
+<li>Mô hình ba kỳ là tối thiểu để nhận dạng, nhưng cũng là một
+abstraction khá gọn của một quá trình ra quyết định thực tế có thể kéo
+dài và phức tạp hơn.</li>
 </ol>
-<h2>6. Results and interpretation</h2>
-<h3>Các sự kiện thực nghiệm quan trọng</h3>
-<p>Ngay ở dữ liệu mô tả, paper đã cho thấy một pattern rất phù hợp với câu chuyện commitment:</p>
+<h2 id="results-and-interpretation">6. Results and interpretation</h2>
+<h3 id="các-sự-kiện-thực-nghiệm-quan-trọng">Các sự kiện thực nghiệm quan
+trọng</h3>
+<p>Ngay ở dữ liệu mô tả, paper đã cho thấy một pattern rất phù hợp với
+câu chuyện commitment:</p>
 <ul>
 <li>khoảng gần một nửa mẫu không mua ITNs dù malaria burden cao;</li>
-<li>sau 6 tháng, khoảng <strong>92%</strong> ITNs mua với contract c được re-treated;</li>
-<li>con số tương ứng với contract b chỉ khoảng <strong>36%</strong>;</li>
-<li>sau 12 tháng, re-treatment dưới contract c vẫn cao, còn contract b giảm thêm gần một nửa.</li>
+<li>sau 6 tháng, khoảng <strong>92%</strong> ITNs mua với contract c
+được re-treated;</li>
+<li>con số tương ứng với contract b chỉ khoảng
+<strong>36%</strong>;</li>
+<li>sau 12 tháng, re-treatment dưới contract c vẫn cao, còn contract b
+giảm thêm gần một nửa.</li>
 </ul>
-<p>Chênh lệch này cho thấy vấn đề không chỉ nằm ở adoption ban đầu, mà còn ở maintenance sau đó, tức đúng kiểu quyết định liên thời gian mà present bias có thể phá vỡ.</p>
-<h3>Kết quả structural cốt lõi</h3>
+<p>Chênh lệch này cho thấy vấn đề không chỉ nằm ở adoption ban đầu, mà
+còn ở maintenance sau đó, tức đúng kiểu quyết định liên thời gian mà
+present bias có thể phá vỡ.</p>
+<h3 id="kết-quả-structural-cốt-lõi">Kết quả structural cốt lõi</h3>
 <p>Ước lượng ưa thích nhất của paper cho thấy:</p>
 <ul>
-<li>khoảng <strong>1/3</strong> respondents là <strong>time-consistent</strong></li>
-<li>khoảng <strong>1/2</strong> là <strong>naive inconsistent</strong></li>
-<li>khoảng <strong>1/6</strong> là <strong>sophisticated inconsistent</strong></li>
+<li>khoảng <strong>1/3</strong> respondents là
+<strong>time-consistent</strong></li>
+<li>khoảng <strong>1/2</strong> là <strong>naive
+inconsistent</strong></li>
+<li>khoảng <strong>1/6</strong> là <strong>sophisticated
+inconsistent</strong></li>
 </ul>
 <p>Paper còn cho thấy present bias rất mạnh ở hai nhóm inconsistent:</p>
 <ul>
 <li>beta của naive agents khoảng <strong>0.06</strong></li>
 <li>beta của sophisticated agents khoảng <strong>0.16</strong></li>
 </ul>
-<p>Điều này có nghĩa là không chỉ có time inconsistency phổ biến, mà cường độ present bias cũng lớn. Trong khi đó, discount factor của consistent agents được ước lượng gần 1.</p>
-<h3>Commitment không đơn giản như textbook intuition</h3>
-<p>Một kết quả rất hay là <strong>commitment products không đặc biệt hấp dẫn hơn đối với sophisticated agents</strong>. Thậm chí paper cho thấy việc mua commitment contract lại cao hơn ở các hộ naive. Đây là một cú nhắc mạnh rằng:</p>
+<p>Điều này có nghĩa là không chỉ có time inconsistency phổ biến, mà
+cường độ present bias cũng lớn. Trong khi đó, discount factor của
+consistent agents được ước lượng gần 1.</p>
+<h3 id="commitment-không-đơn-giản-như-textbook-intuition">Commitment
+không đơn giản như textbook intuition</h3>
+<p>Một kết quả rất hay là <strong>commitment products không đặc biệt hấp
+dẫn hơn đối với sophisticated agents</strong>. Thậm chí paper cho thấy
+việc mua commitment contract lại cao hơn ở các hộ naive. Đây là một cú
+nhắc mạnh rằng:</p>
 <ul>
 <li>không nên suy từ “chọn commitment” sang “agent sophisticated”;</li>
-<li>choice data đơn lẻ có thể che lấp heterogeneity về beliefs, income expectations, hay perceived returns.</li>
+<li>choice data đơn lẻ có thể che lấp heterogeneity về beliefs, income
+expectations, hay perceived returns.</li>
 </ul>
-<h3>Welfare cost và counterfactuals</h3>
-<p>Paper lượng hóa chi phí malaria phát sinh thêm do present bias gây ra under-investment vào ITNs và re-treatment. Ở median household, <strong>tổng chi phí kỳ vọng không chiết khấu</strong> do present bias gây thêm vào khoảng:</p>
+<h3 id="welfare-cost-và-counterfactuals">Welfare cost và
+counterfactuals</h3>
+<p>Paper lượng hóa chi phí malaria phát sinh thêm do present bias gây ra
+under-investment vào ITNs và re-treatment. Ở median household,
+<strong>tổng chi phí kỳ vọng không chiết khấu</strong> do present bias
+gây thêm vào khoảng:</p>
 <ul>
-<li><strong>Rs. 488</strong> nếu dùng ước lượng protective power của ITNs từ meta-analysis</li>
-<li><strong>Rs. 812</strong> nếu dùng elicited beliefs của households</li>
+<li><strong>Rs. 488</strong> nếu dùng ước lượng protective power của
+ITNs từ meta-analysis</li>
+<li><strong>Rs. 812</strong> nếu dùng elicited beliefs của
+households</li>
 </ul>
-<p>Paper cũng diễn giải rằng đây tương đương khoảng <strong>3-5 ngày công bị mất</strong> do malaria. So với giá một chiếc ITN, chi phí này là rất lớn.</p>
+<p>Paper cũng diễn giải rằng đây tương đương khoảng <strong>3-5 ngày
+công bị mất</strong> do malaria. So với giá một chiếc ITN, chi phí này
+là rất lớn.</p>
 <p>Về counterfactual pricing, paper cho thấy:</p>
 <ul>
-<li>tăng giá re-treatment làm giảm rõ re-treatment dưới standard contract;</li>
-<li>gần như không ảnh hưởng tới re-treatment dưới commitment contract;</li>
-<li>và có thể làm households rời khỏi commitment purchase sang không mua gì cả;</li>
-<li>trong khi giảm giá re-treatment lại cải thiện re-treatment và tăng hấp dẫn của phương án commitment.</li>
+<li>tăng giá re-treatment làm giảm rõ re-treatment dưới standard
+contract;</li>
+<li>gần như không ảnh hưởng tới re-treatment dưới commitment
+contract;</li>
+<li>và có thể làm households rời khỏi commitment purchase sang không mua
+gì cả;</li>
+<li>trong khi giảm giá re-treatment lại cải thiện re-treatment và tăng
+hấp dẫn của phương án commitment.</li>
 </ul>
-<p>Ý nghĩa kinh tế ở đây là present bias không chỉ làm méo hành vi hiện tại, mà còn tương tác mạnh với cấu trúc pricing và timing của hợp đồng.</p>
-<h2>7. What is special or elegant about the paper</h2>
+<p>Ý nghĩa kinh tế ở đây là present bias không chỉ làm méo hành vi hiện
+tại, mà còn tương tác mạnh với cấu trúc pricing và timing của hợp
+đồng.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">7. What is special
+or elegant about the paper</h2>
 <p>Có ba điểm khiến paper này rất đáng nhớ.</p>
-<h3>Một bài structural nhưng không “bay khỏi mặt đất”</h3>
-<p>Nhiều bài structural behavioral hoặc rất đẹp về mặt theory nhưng xa dữ liệu, hoặc có dữ liệu hay nhưng identification lỏng. Paper này làm được cả hai: phần nhận dạng chặt, còn phần ứng dụng lại bám vào một vấn đề development rất thực.</p>
-<h3>Dùng dữ liệu beliefs theo cách thật sự có nội dung</h3>
-<p>Trong applied micro, elicited beliefs đôi khi chỉ được thêm vào cho “đủ giàu”. Ở đây, beliefs là một phần thật sự của identification strategy. Đó là điểm rất đẹp về thiết kế nghiên cứu.</p>
-<h3>Phá vỡ một shortcut suy luận phổ biến</h3>
-<p>Nhiều người quen nghĩ rằng “ai chọn commitment product thì hẳn là sophisticated”. Paper này cho thấy suy luận đó quá đơn giản. Đây là một bài học rất quan trọng cho empirical behavioral IO/labor/development: cùng một observed action có thể đến từ nhiều latent types khác nhau.</p>
-<h2>8. Required background knowledge</h2>
-<p>Để đọc paper này thoải mái, người đọc nên có nền tảng ở bốn cụm kiến thức sau.</p>
-<h3>Time inconsistency và present bias</h3>
-<p>Mô hình beta-delta nói rằng agent discount tương lai theo hai thành phần:</p>
+<h3 id="một-bài-structural-nhưng-không-bay-khỏi-mặt-đất">Một bài
+structural nhưng không “bay khỏi mặt đất”</h3>
+<p>Nhiều bài structural behavioral hoặc rất đẹp về mặt theory nhưng xa
+dữ liệu, hoặc có dữ liệu hay nhưng identification lỏng. Paper này làm
+được cả hai: phần nhận dạng chặt, còn phần ứng dụng lại bám vào một vấn
+đề development rất thực.</p>
+<h3 id="dùng-dữ-liệu-beliefs-theo-cách-thật-sự-có-nội-dung">Dùng dữ liệu
+beliefs theo cách thật sự có nội dung</h3>
+<p>Trong applied micro, elicited beliefs đôi khi chỉ được thêm vào cho
+“đủ giàu”. Ở đây, beliefs là một phần thật sự của identification
+strategy. Đó là điểm rất đẹp về thiết kế nghiên cứu.</p>
+<h3 id="phá-vỡ-một-shortcut-suy-luận-phổ-biến">Phá vỡ một shortcut suy
+luận phổ biến</h3>
+<p>Nhiều người quen nghĩ rằng “ai chọn commitment product thì hẳn là
+sophisticated”. Paper này cho thấy suy luận đó quá đơn giản. Đây là một
+bài học rất quan trọng cho empirical behavioral IO/labor/development:
+cùng một observed action có thể đến từ nhiều latent types khác nhau.</p>
+<h2 id="required-background-knowledge">8. Required background
+knowledge</h2>
+<p>Để đọc paper này thoải mái, người đọc nên có nền tảng ở bốn cụm kiến
+thức sau.</p>
+<h3 id="time-inconsistency-và-present-bias">Time inconsistency và
+present bias</h3>
+<p>Mô hình beta-delta nói rằng agent discount tương lai theo hai thành
+phần:</p>
 <ul>
-<li><code>delta</code>: mức patience tiêu chuẩn giữa các kỳ tương lai</li>
-<li><code>beta</code>: mức bias chống lại việc trì hoãn chi phí hoặc ưa trì hoãn đầu tư khi quyết định hôm nay</li>
+<li><code>delta</code>: mức patience tiêu chuẩn giữa các kỳ tương
+lai</li>
+<li><code>beta</code>: mức bias chống lại việc trì hoãn chi phí hoặc ưa
+trì hoãn đầu tư khi quyết định hôm nay</li>
 </ul>
-<p>Nếu <code>beta &lt; 1</code>, agent present-biased. Nếu agent biết điều đó về “bản thân tương lai”, agent là sophisticated; nếu không, agent là naive.</p>
-<h3>Dynamic discrete choice</h3>
-<p>Đây là lớp mô hình trong đó tác nhân chọn giữa một số hành động rời rạc qua thời gian, và payoff hiện tại lẫn state tương lai đều phụ thuộc vào hành động hiện tại. Vấn đề chính là behavior hôm nay phản ánh cả utility hiện tại lẫn continuation value.</p>
-<h3>Identification với unobserved heterogeneity</h3>
-<p>Khi type không quan sát được, observed choices là một mixture của nhiều decision rules khác nhau. Muốn tách chúng ra cần thêm structure hoặc thêm nguồn biến thiên có nội dung. Bài này dùng exclusion restrictions và type proxies để làm việc đó.</p>
-<h3>Bối cảnh health economics/development</h3>
-<p>ITNs là công nghệ phòng malaria đã được chứng minh hiệu quả. Nhưng hiệu quả thực tế phụ thuộc không chỉ vào mua ban đầu mà còn vào sử dụng và bảo dưỡng về sau. Vì thế bài toán ở đây là một bài toán adoption-and-maintenance chứ không chỉ take-up một lần.</p>
-<h2>9. Limitations and open questions</h2>
-<h3>Hạn chế chính</h3>
-<ol>
-<li><strong>Exclusion restrictions khó kiểm định trực tiếp.</strong> Đây là đánh đổi quen thuộc của structural work: muốn nhận dạng sâu thì phải chấp nhận một số giả định mạnh hơn reduced-form work.</li>
-<li><strong>External validity có giới hạn.</strong> Setting là Odisha, ITNs, microfinance client households, và một loại quyết định preventive health cụ thể.</li>
-<li><strong>Proxy contamination.</strong> Các câu trả lời survey dùng làm proxy cho time preference có thể còn phản ánh literacy, expectations, hoặc perceived returns.</li>
-<li><strong>Mô hình rút gọn thời gian thành ba kỳ.</strong> Điều này cần cho nhận dạng, nhưng có thể bỏ sót một số dynamic margin tinh hơn của hành vi thực tế.</li>
+<p>Nếu <code>beta &lt; 1</code>, agent present-biased. Nếu agent biết
+điều đó về “bản thân tương lai”, agent là sophisticated; nếu không,
+agent là naive.</p>
+<h3 id="dynamic-discrete-choice">Dynamic discrete choice</h3>
+<p>Đây là lớp mô hình trong đó tác nhân chọn giữa một số hành động rời
+rạc qua thời gian, và payoff hiện tại lẫn state tương lai đều phụ thuộc
+vào hành động hiện tại. Vấn đề chính là behavior hôm nay phản ánh cả
+utility hiện tại lẫn continuation value.</p>
+<h3 id="identification-với-unobserved-heterogeneity">Identification với
+unobserved heterogeneity</h3>
+<p>Khi type không quan sát được, observed choices là một mixture của
+nhiều decision rules khác nhau. Muốn tách chúng ra cần thêm structure
+hoặc thêm nguồn biến thiên có nội dung. Bài này dùng exclusion
+restrictions và type proxies để làm việc đó.</p>
+<h3 id="bối-cảnh-health-economicsdevelopment">Bối cảnh health
+economics/development</h3>
+<p>ITNs là công nghệ phòng malaria đã được chứng minh hiệu quả. Nhưng
+hiệu quả thực tế phụ thuộc không chỉ vào mua ban đầu mà còn vào sử dụng
+và bảo dưỡng về sau. Vì thế bài toán ở đây là một bài toán
+adoption-and-maintenance chứ không chỉ take-up một lần.</p>
+<h2 id="limitations-and-open-questions">9. Limitations and open
+questions</h2>
+<h3 id="hạn-chế-chính">Hạn chế chính</h3>
+<ol type="1">
+<li><strong>Exclusion restrictions khó kiểm định trực tiếp.</strong> Đây
+là đánh đổi quen thuộc của structural work: muốn nhận dạng sâu thì phải
+chấp nhận một số giả định mạnh hơn reduced-form work.</li>
+<li><strong>External validity có giới hạn.</strong> Setting là Odisha,
+ITNs, microfinance client households, và một loại quyết định preventive
+health cụ thể.</li>
+<li><strong>Proxy contamination.</strong> Các câu trả lời survey dùng
+làm proxy cho time preference có thể còn phản ánh literacy,
+expectations, hoặc perceived returns.</li>
+<li><strong>Mô hình rút gọn thời gian thành ba kỳ.</strong> Điều này cần
+cho nhận dạng, nhưng có thể bỏ sót một số dynamic margin tinh hơn của
+hành vi thực tế.</li>
 </ol>
-<h3>Câu hỏi mở</h3>
-<ol>
-<li>Phân bố types này có ổn định qua sản phẩm và domain khác không, hay chỉ đặc trưng cho preventive health?</li>
-<li>Nếu cho households tiếp cận nudges, reminders, hay small liquidity support thì present bias sẽ biểu hiện khác thế nào?</li>
-<li>Có thể kết hợp data kiểu paper này với administrative health records hoặc passive usage data để giảm phụ thuộc vào self-reports không?</li>
+<h3 id="câu-hỏi-mở">Câu hỏi mở</h3>
+<ol type="1">
+<li>Phân bố types này có ổn định qua sản phẩm và domain khác không, hay
+chỉ đặc trưng cho preventive health?</li>
+<li>Nếu cho households tiếp cận nudges, reminders, hay small liquidity
+support thì present bias sẽ biểu hiện khác thế nào?</li>
+<li>Có thể kết hợp data kiểu paper này với administrative health records
+hoặc passive usage data để giảm phụ thuộc vào self-reports không?</li>
 </ol>
-<h2>10. Takeaways for a researcher</h2>
-<ol>
-<li>Nếu muốn nghiên cứu present bias bằng dữ liệu thực địa, chỉ có observed choices thường là chưa đủ; cần dữ liệu beliefs, type proxies, hoặc institutional variation có nội dung nhận dạng.</li>
-<li>Một commitment product không tự động “đo” sophistication. Cần rất cẩn thận khi suy latent type từ một hành vi duy nhất.</li>
-<li>Khi nghiên cứu low adoption của preventive technologies, nên tách riêng decision ban đầu và decision maintenance sau đó.</li>
-<li>Một applied paper mạnh thường thành công vì dữ liệu được thiết kế từ đầu cho câu hỏi nhận dạng, chứ không chỉ vì econometrics tinh vi.</li>
-<li>Đừng xem heterogeneity là nuisance parameter. Trong paper này, chính distribution of types là một kết quả policy-relevant.</li>
-<li>Structural work thuyết phục nhất khi gắn được estimated parameters với welfare-relevant counterfactuals, như chi phí malaria hay ngày công bị mất ở đây.</li>
+<h2 id="takeaways-for-a-researcher">10. Takeaways for a researcher</h2>
+<ol type="1">
+<li>Nếu muốn nghiên cứu present bias bằng dữ liệu thực địa, chỉ có
+observed choices thường là chưa đủ; cần dữ liệu beliefs, type proxies,
+hoặc institutional variation có nội dung nhận dạng.</li>
+<li>Một commitment product không tự động “đo” sophistication. Cần rất
+cẩn thận khi suy latent type từ một hành vi duy nhất.</li>
+<li>Khi nghiên cứu low adoption của preventive technologies, nên tách
+riêng decision ban đầu và decision maintenance sau đó.</li>
+<li>Một applied paper mạnh thường thành công vì dữ liệu được thiết kế từ
+đầu cho câu hỏi nhận dạng, chứ không chỉ vì econometrics tinh vi.</li>
+<li>Đừng xem heterogeneity là nuisance parameter. Trong paper này, chính
+distribution of types là một kết quả policy-relevant.</li>
+<li>Structural work thuyết phục nhất khi gắn được estimated parameters
+với welfare-relevant counterfactuals, như chi phí malaria hay ngày công
+bị mất ở đây.</li>
 </ol>
-<h2>11. Vietnam relevance and extension</h2>
-<h3>Liên hệ với Việt Nam</h3>
-<p>Việt Nam hiện không còn là bối cảnh malaria đại trà như nhiều vùng ở Ấn Độ hay châu Phi, nhưng ý tưởng của paper vẫn rất hợp với applied micro ở Việt Nam nếu dịch sang những quyết định đầu tư phòng ngừa có chi phí nhỏ hôm nay và lợi ích lớn về sau.</p>
+<h2 id="vietnam-relevance-and-extension">11. Vietnam relevance and
+extension</h2>
+<h3 id="liên-hệ-với-việt-nam">Liên hệ với Việt Nam</h3>
+<p>Việt Nam hiện không còn là bối cảnh malaria đại trà như nhiều vùng ở
+Ấn Độ hay châu Phi, nhưng ý tưởng của paper vẫn rất hợp với applied
+micro ở Việt Nam nếu dịch sang những quyết định đầu tư phòng ngừa có chi
+phí nhỏ hôm nay và lợi ích lớn về sau.</p>
 <p>Các ví dụ gần hơn với Việt Nam:</p>
 <ul>
-<li>tái mua hoặc bảo trì màn/tấm lọc ở vùng sốt rét cục bộ hoặc vùng rừng núi</li>
-<li>tiêm nhắc lại, khám định kỳ, hay preventive maternal-child health</li>
+<li>tái mua hoặc bảo trì màn/tấm lọc ở vùng sốt rét cục bộ hoặc vùng
+rừng núi</li>
+<li>tiêm nhắc lại, khám định kỳ, hay preventive maternal-child
+health</li>
 <li>gia hạn bảo hiểm y tế hộ gia đình hoặc bảo hiểm vi mô</li>
 <li>đầu tư vào water filters, nhà tiêu hợp vệ sinh, hay xử lý nước</li>
-<li>tuân thủ các khoản chi nhỏ nhưng lặp lại để duy trì hiệu quả của một chương trình công</li>
+<li>tuân thủ các khoản chi nhỏ nhưng lặp lại để duy trì hiệu quả của một
+chương trình công</li>
 </ul>
-<h3>Điều kiện cần nếu làm ở Việt Nam</h3>
-<ol>
-<li>Cần panel data theo thời gian về decision ban đầu và maintenance.</li>
-<li>Cần một thiết kế có variation về contract timing, giá, hoặc bundling để nhìn thấy behavioral margin.</li>
-<li>Nếu muốn đi theo tinh thần paper này, cần thu thêm elicited beliefs và proxy về time preferences thay vì chỉ đo outcomes.</li>
-<li>Cần đối tác triển khai đủ mạnh, như trung tâm y tế, tổ chức vi mô, doanh nghiệp phân phối công nghệ sức khỏe, hoặc chính quyền địa phương.</li>
+<h3 id="điều-kiện-cần-nếu-làm-ở-việt-nam">Điều kiện cần nếu làm ở Việt
+Nam</h3>
+<ol type="1">
+<li>Cần panel data theo thời gian về decision ban đầu và
+maintenance.</li>
+<li>Cần một thiết kế có variation về contract timing, giá, hoặc bundling
+để nhìn thấy behavioral margin.</li>
+<li>Nếu muốn đi theo tinh thần paper này, cần thu thêm elicited beliefs
+và proxy về time preferences thay vì chỉ đo outcomes.</li>
+<li>Cần đối tác triển khai đủ mạnh, như trung tâm y tế, tổ chức vi mô,
+doanh nghiệp phân phối công nghệ sức khỏe, hoặc chính quyền địa
+phương.</li>
 </ol>
-<h3>Trở ngại chính</h3>
-<ol>
-<li>Dữ liệu beliefs chất lượng cao rất khó thu nếu survey design không tốt.</li>
-<li>Attrition và measurement error sẽ đặc biệt nguy hiểm trong bài toán dynamic choice.</li>
-<li>Một số sản phẩm ở Việt Nam có external validity khác hẳn ITNs; present bias có thể trộn với trust, misinformation, hoặc liquidity constraints mạnh hơn.</li>
+<h3 id="trở-ngại-chính">Trở ngại chính</h3>
+<ol type="1">
+<li>Dữ liệu beliefs chất lượng cao rất khó thu nếu survey design không
+tốt.</li>
+<li>Attrition và measurement error sẽ đặc biệt nguy hiểm trong bài toán
+dynamic choice.</li>
+<li>Một số sản phẩm ở Việt Nam có external validity khác hẳn ITNs;
+present bias có thể trộn với trust, misinformation, hoặc liquidity
+constraints mạnh hơn.</li>
 </ol>
-<h3>Hướng mở rộng cho bối cảnh Việt Nam</h3>
-<ol>
-<li><strong>Preventive health maintenance:</strong> Liệu households có present bias trong việc duy trì các khoản đầu tư sức khỏe nhỏ nhưng định kỳ, như nước sạch, thuốc phòng, hay khám định kỳ?</li>
-<li><strong>Insurance renewal and commitment design:</strong> Việc bundle chi phí gia hạn hoặc thiết kế auto-renew có làm tăng duy trì bảo hiểm ở nhóm lao động phi chính thức không?</li>
-<li><strong>Education and child investment:</strong> Trong các khoản đầu tư nhỏ nhưng lặp lại cho trẻ em, như lớp phụ đạo, vitamin, hay di chuyển đến trường, present bias của phụ huynh biểu hiện ra sao?</li>
+<h3 id="hướng-mở-rộng-cho-bối-cảnh-việt-nam">Hướng mở rộng cho bối cảnh
+Việt Nam</h3>
+<ol type="1">
+<li><strong>Preventive health maintenance:</strong> Liệu households có
+present bias trong việc duy trì các khoản đầu tư sức khỏe nhỏ nhưng định
+kỳ, như nước sạch, thuốc phòng, hay khám định kỳ?</li>
+<li><strong>Insurance renewal and commitment design:</strong> Việc
+bundle chi phí gia hạn hoặc thiết kế auto-renew có làm tăng duy trì bảo
+hiểm ở nhóm lao động phi chính thức không?</li>
+<li><strong>Education and child investment:</strong> Trong các khoản đầu
+tư nhỏ nhưng lặp lại cho trẻ em, như lớp phụ đạo, vitamin, hay di chuyển
+đến trường, present bias của phụ huynh biểu hiện ra sao?</li>
 </ol>
-<h2>12. Đánh giá cuối cùng</h2>
-<p>Đây là một paper rất mạnh và khá hiếm theo nghĩa “đúng top 5 applied/development nhưng còn dạy được cách làm research”. Nếu đọc để học một ý tưởng, đó là: behavioral frictions chỉ thật sự thuyết phục khi ta gắn chúng với một bài toán nhận dạng rõ ràng và một môi trường dữ liệu được thiết kế có chủ đích.</p>
-<p>Nếu đọc để học một bài học lớn hơn, đó là: trong các quyết định phòng ngừa của hộ nghèo, vấn đề không chỉ là “có tiền hay không”, mà còn là cấu trúc thời gian của chi phí, sự hiện diện của maintenance margin, và cách heterogeneity ẩn trong dân số làm cho observed choices trở nên dễ bị hiểu sai.</p>
+<h2 id="đánh-giá-cuối-cùng">12. Đánh giá cuối cùng</h2>
+<p>Đây là một paper rất mạnh và khá hiếm theo nghĩa “đúng top 5
+applied/development nhưng còn dạy được cách làm research”. Nếu đọc để
+học một ý tưởng, đó là: behavioral frictions chỉ thật sự thuyết phục khi
+ta gắn chúng với một bài toán nhận dạng rõ ràng và một môi trường dữ
+liệu được thiết kế có chủ đích.</p>
+<p>Nếu đọc để học một bài học lớn hơn, đó là: trong các quyết định phòng
+ngừa của hộ nghèo, vấn đề không chỉ là “có tiền hay không”, mà còn là
+cấu trúc thời gian của chi phí, sự hiện diện của maintenance margin, và
+cách heterogeneity ẩn trong dân số làm cho observed choices trở nên dễ
+bị hiểu sai.</p>
 </body>
 </html>
