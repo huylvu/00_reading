@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-05-02 (+07)
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag018/8504516
 - **Nguồn PDF dùng để phân tích:** bản manuscript công khai trên ReStud tại https://www.restud.com/wp-content/uploads/2026/02/restud.pdf; đối chiếu thêm với NBER Working Paper 27198, bản revised May 2023 tại https://www.nber.org/system/files/working_papers/w27198/revisions/w27198.rev1.pdf
-- **Trạng thái lưu trên GitHub:** dự kiến lưu `analysis.md` và `analysis.html`; `analysis.pdf` chưa tạo trong lượt này; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai cho tới khi có bước upload file nhị phân thành công
+- **Trạng thái lưu trên GitHub:** đã lưu thành công `analysis.md` và `analysis.html` trong repo `huylvu/00_reading`; `analysis.pdf` chưa tạo trong lượt này; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa lưu binary lên GitHub trong lượt chạy này
 - **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này vì bộ công cụ hiện có không hỗ trợ chắc chắn việc tạo đúng Google Doc và tracker trong đúng folder đích
 
 ## 1. Metadata
