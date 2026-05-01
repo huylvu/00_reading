@@ -1,611 +1,182 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bridges - Anna Tompsett</title>
   <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
+    :root {
+      --bg: #f7f4ee;
+      --paper: #fffdfa;
+      --ink: #1d1b19;
+      --muted: #6a6258;
+      --line: #d9d0c4;
+      --accent: #8c4b2f;
+      --accent-soft: #efe2d7;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #efe5d6 0%, var(--bg) 18%, #f8f6f2 100%);
+      color: var(--ink);
+      font: 17px/1.7 Georgia, "Times New Roman", serif;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    .sheet {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 48px rgba(60, 42, 20, 0.08);
+      padding: 34px 34px 42px;
+    }
+    h1, h2, h3 { line-height: 1.25; margin: 0; }
+    h1 { font-size: 2.3rem; margin-bottom: 8px; }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    h3 { font-size: 1.05rem; margin-top: 18px; }
+    p, li { margin: 10px 0; }
+    ul, ol { padding-left: 22px; }
+    .meta {
+      margin: 22px 0 28px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+    }
+    .muted { color: var(--muted); }
+    code {
+      background: #f3eee7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    a { color: var(--accent); }
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      main { padding: 18px 10px 32px; }
+      .sheet { padding: 20px 18px 28px; }
+      h1 { font-size: 1.8rem; }
+    }
   </style>
-  <link rel="stylesheet" href="analysis-style.css" />
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">Bridges - Anna Tompsett</h1>
-</header>
-<h1 id="bridges">Bridges</h1>
-<ul>
-<li><strong>Tác giả:</strong> Anna Tompsett</li>
-<li><strong>Journal:</strong> The Review of Economic Studies</li>
-<li><strong>Năm:</strong> 2026 (advance access publication 23 December
-2025)</li>
-<li><strong>Ngày agent chạy:</strong> 2026-04-30</li>
-<li><strong>Nguồn bài báo chính:</strong>
-https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf104/8402958</li>
-<li><strong>Nguồn PDF tốt nhất đã xác minh:</strong> PDF chính thức
-open-access của Oxford Academic:
-https://academic.oup.com/restud/advance-article-pdf/doi/10.1093/restud/rdaf104/66116759/rdaf104.pdf</li>
-<li><strong>Trạng thái lưu trên GitHub:</strong>
-<code>analysis.md</code> và <code>analysis.html</code> đã lưu thành
-công trong repo <code>huylvu/00_reading</code> tại thư mục
-<code>Bridges - Tompsett/</code>; <code>analysis.pdf</code> chưa tạo;
-PDF gốc của paper mới xác minh được nguồn công khai và chưa lưu lên
-GitHub trong lượt này.</li>
-<li><strong>Trạng thái Google Drive:</strong> bỏ qua trong lượt này để
-tránh lưu nửa vời; GitHub là nơi lưu trữ chính.</li>
-</ul>
-<h2 id="metadata">1. Metadata</h2>
-<ul>
-<li><strong>Tiêu đề paper:</strong> Bridges</li>
-<li><strong>Tác giả:</strong> Anna Tompsett</li>
-<li><strong>Journal:</strong> The Review of Economic Studies</li>
-<li><strong>DOI:</strong> 10.1093/restud/rdaf104</li>
-<li><strong>Năm / trạng thái xuất bản:</strong> ReStud 2026; advance
-access publication ngày 23/12/2025</li>
-<li><strong>Link bài báo:</strong>
-https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf104/8402958</li>
-<li><strong>Link PDF:</strong>
-https://academic.oup.com/restud/advance-article-pdf/doi/10.1093/restud/rdaf104/66116759/rdaf104.pdf</li>
-<li><strong>Phạm vi JEL:</strong> O18, R11, R12</li>
-</ul>
-<h2 id="executive-summary">2. Executive summary</h2>
-<p>Paper hỏi một câu rất kinh điển nhưng khó trả lời sạch: hạ tầng giao
-thông đường bộ thực sự làm tăng hoạt động kinh tế, hay ta chỉ đang nhìn
-thấy việc cầu đường được đặt ở những nơi vốn đã có tiềm năng? Tompsett
-chọn một thành phần hạ tầng rất cụ thể là <strong>cầu bắc qua các sông
-lớn ở Mỹ</strong>, rồi dùng đúng đặc điểm địa lý và lịch sử xây cầu để
-tạo ra hai chiến lược nhận dạng bổ sung cho nhau.</p>
-<p>Kết quả chính có hai lớp. Ở <strong>quy mô nhỏ, rất địa
-phương</strong>, những khu vực gần cầu và gần trục giao thông hơn lại có
-<strong>thu nhập bình quân đầu người thấp hơn</strong> nhưng <strong>mật
-độ dân số cao hơn</strong>. Ở <strong>quy mô lớn và theo thời gian
-dài</strong>, khi một county được cải thiện mạnh về khoảng cách tới cầu,
-<strong>giá trị đất nông nghiệp tăng tích lũy khoảng 9% và dân số tăng
-khoảng 5% sau 30-40 năm</strong>. Bài báo giải hòa hai kết quả tưởng như
-mâu thuẫn này bằng một câu chuyện kinh tế địa lý động: hạ tầng tạo lợi
-thế năng suất và thúc đẩy đô thị hóa, nhưng khi thành phố lớn lên, quá
-trình sorting nội đô và suburbanization có thể đẩy hộ giàu ra xa trung
-tâm lịch sử, để lại thu nhập thấp hơn ngay sát trục giao thông cũ.</p>
-<p>Đây là bài đáng đọc vì nó không chỉ trả lời “hạ tầng có tác động
-không”, mà còn chỉ ra rằng <strong>dấu của tác động phụ thuộc mạnh vào
-thang đo không gian và thời gian</strong>. Đó là bài học rất lớn cho
-applied micro và development: nếu không tách rõ “tăng trưởng thực” với
-“tái phân bổ trong không gian”, ta rất dễ đọc sai dữ liệu.</p>
-<h2 id="research-question-and-motivation">3. Research question and
-motivation</h2>
-<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
-<p>Hạ tầng giao thông đường bộ có tác động nhân quả như thế nào đến hoạt
-động kinh tế, dân cư, và cấu trúc không gian của nền kinh tế? Cụ thể
-hơn:</p>
-<ol type="1">
-<li>Gần hạ tầng hơn có làm một nơi trở nên giàu hơn không?</li>
-<li>Nếu có, tác động đó xuất hiện qua kênh nào: tăng năng suất thực,
-tăng dân số, hay chỉ là tái phân bố dân cư và hoạt động kinh tế?</li>
-<li>Tác động có khác nhau giữa quy mô rất địa phương và quy mô
-vùng/historical long run hay không?</li>
-</ol>
-<h3 id="động-lực-học-thuật-và-thực-tiễn">Động lực học thuật và thực
-tiễn</h3>
-<p>Văn liệu về transport infrastructure luôn vướng một vấn đề lớn:
-<strong>placement is endogenous</strong>. Đường, cầu, cảng, và cao tốc
-thường được đặt ở nơi:</p>
-<ul>
-<li>đã giàu sẵn hoặc đang tăng trưởng nhanh</li>
-<li>có sức ép chính trị mạnh</li>
-<li>rẻ về chi phí giải tỏa</li>
-<li>hoặc ngược lại là ở các khu yếu thế vì chi phí chính trị thấp
-hơn</li>
-</ul>
-<p>Vì vậy, correlation giữa hạ tầng và phát triển rất khó đọc như causal
-effect. Với các nước đang phát triển, đây lại là câu hỏi chính sách cực
-kỳ quan trọng vì đầu tư hạ tầng chiếm quy mô lớn và thường được biện
-minh bằng tăng trưởng dài hạn.</p>
-<h3 id="khoảng-trống-mà-paper-lấp-vào">Khoảng trống mà paper lấp
-vào</h3>
-<p>Bài này lấp ba khoảng trống cùng lúc:</p>
-<ol type="1">
-<li>Thiếu dữ liệu lịch sử dài hạn và đủ chi tiết về một thành phần hạ
-tầng quan trọng.</li>
-<li>Thiếu chiến lược nhận dạng có thể dùng ngoài một vài natural
-experiment rất đặc thù.</li>
-<li>Thiếu một khung nhìn thống nhất giữa <strong>within-city/local
-effects</strong> và <strong>broader regional growth
-effects</strong>.</li>
-</ol>
-<h2 id="main-contribution">4. Main contribution</h2>
-<h3 id="đóng-góp-1-dữ-liệu-hạ-tầng-lịch-sử-rất-công-phu">Đóng góp 1: Dữ
-liệu hạ tầng lịch sử rất công phu</h3>
-<p>Tompsett dựng một bộ dữ liệu gồm <strong>mọi cầu đường sắt hoặc đường
-bộ từng được xây qua Mississippi và Ohio</strong>, bắt đầu từ cầu
-Wheeling Suspension Bridge. Chỉ riêng việc “zoom in” vào một mắt xích hạ
-tầng then chốt đã cho phép tác giả tạo ra panel rất dài và khá sạch về
-connectedness.</p>
-<h3 id="đóng-góp-2-hai-chiến-lược-nhận-dạng-bổ-sung-nhau">Đóng góp 2:
-Hai chiến lược nhận dạng bổ sung nhau</h3>
-<p>Paper không dựa vào một design duy nhất mà dùng hai design:</p>
-<ol type="1">
-<li><strong>Where bridges are built:</strong> so sánh upstream và
-downstream quanh tributary confluences để lấy tác động dài hạn ở quy mô
-rất nhỏ.</li>
-<li><strong>When bridges are built:</strong> dùng thời điểm mở cầu như
-một shock về connectedness trong panel county hơn 150 năm để truy ra
-động học trung hạn và dài hạn.</li>
-</ol>
-<p>Điểm hay là hai design này nhìn cùng một câu hỏi nhưng ở hai scale
-khác nhau. Đây không phải “robustness check” đơn thuần, mà là một chiến
-lược nghiên cứu giúp phát hiện rằng tác động của hạ tầng không có một
-dấu duy nhất.</p>
-<h3
-id="đóng-góp-3-một-bài-học-khái-niệm-rất-mạnh-về-spatial-equilibrium">Đóng
-góp 3: Một bài học khái niệm rất mạnh về spatial equilibrium</h3>
-<p>Paper cho thấy cùng một cải thiện hạ tầng có thể:</p>
-<ul>
-<li>làm <strong>tổng hoạt động kinh tế tăng</strong></li>
-<li>nhưng làm <strong>thu nhập bình quân ở một số vị trí rất gần trục
-giao thông giảm</strong></li>
-</ul>
-<p>Nếu chỉ đọc outcome theo một thang đo, ta có thể kết luận sai. Đây là
-đóng góp rất quan trọng cho micro applied, urban, và development vì nó
-buộc người nghiên cứu nghĩ đồng thời về <strong>selection, relocation,
-equilibrium sorting, và time horizon</strong>.</p>
-<h2 id="identification-or-methodology">5. Identification or
-methodology</h2>
-<h2
-id="chiến-lược-1-upstream-vs-downstream-quanh-tributary-confluences">Chiến
-lược 1: Upstream vs downstream quanh tributary confluences</h2>
-<h3 id="intuition">Intuition</h3>
-<p>Khi một phụ lưu đổ vào sông lớn, lưu lượng nước phía downstream tăng
-mạnh, làm việc bắc cầu tốn kém hơn phía downstream so với upstream. Kết
-quả là cầu thường được xây <strong>ở phía upstream</strong> của
-confluence hơn là downstream.</p>
-<p>Điều này tạo ra chênh lệch khá “địa lý” về tiếp cận cầu, và vì khoảng
-cách tới cầu dự báo mạnh khoảng cách tới major land transport routes,
-upstream-downstream trở thành nguồn variation cho connectedness.</p>
-<h3 id="cách-làm-cụ-thể">Cách làm cụ thể</h3>
-<ul>
-<li>So sánh các census tract nằm upstream với các tract downstream quanh
-cùng một tributary confluence.</li>
-<li>Mẫu gồm các tract năm 2010 mà một phần nằm trong vòng 10 km của
-Mississippi hoặc Ohio, và centroid nằm trong 31.4 km từ tributary
-confluence.</li>
-<li>Hồi quy kiểm soát:
-<ul>
-<li>nearest-tributary fixed effects</li>
-<li>river-distance từ tract tới confluence</li>
-<li>tương tác giữa river-distance và downstream indicator</li>
-</ul></li>
-<li>Quan sát được weighted bằng triangular kernel theo
-river-distance.</li>
-<li>Sai số chuẩn được cluster-bootstrap theo tributary confluence.</li>
-</ul>
-<h3 id="giả-định-cốt-lõi">Giả định cốt lõi</h3>
-<p>So sánh upstream với downstream là hợp lệ nếu hai phía chỉ khác nhau
-có hệ thống ở tiếp cận cầu/land transport, còn các lợi thế tự nhiên gắn
-với chính confluence thì đối xứng hai phía. Tác giả cũng kiểm tra
-placebo trong dữ liệu lịch sử trước thời kỳ xây cầu và không thấy bằng
-chứng về khác biệt phát triển bất đối xứng từ trước.</p>
-<h3 id="kết-quả-then-chốt-của-design-1">Kết quả then chốt của design
-1</h3>
-<p>Trong Table 2:</p>
-<ul>
-<li>tract downstream ở xa cầu hơn rõ rệt</li>
-<li>downstream cũng xa land transport hơn</li>
-<li>downstream có <strong>thu nhập bình quân đầu người cao hơn</strong>
-và <strong>mật độ dân cư thấp hơn</strong></li>
-</ul>
-<p>Đổi dấu lại theo cách đọc upstream là khu tốt-connected hơn:</p>
-<ul>
-<li>upstream có <strong>khoảng cách tới transport thấp hơn</strong></li>
-<li><strong>mật độ dân số cao hơn khoảng 63%</strong></li>
-<li>nhưng <strong>thu nhập bình quân thấp hơn khoảng 13%</strong></li>
-</ul>
-<p>Đây là kết quả phản trực giác nếu ta nghĩ “gần hạ tầng hơn thì giàu
-hơn”. Nhưng nó lại rất hợp với logic urban sorting: gần lõi giao thông
-lịch sử thì đông hơn, hoạt động hơn, nhưng không nhất thiết giàu hơn
-trên đầu người.</p>
-<h2
-id="chiến-lược-2-timing-of-bridge-construction-trong-panel-county-dài-hạn">Chiến
-lược 2: Timing of bridge construction trong panel county dài hạn</h2>
-<h3 id="intuition-1">Intuition</h3>
-<p>Việc một cây cầu lớn cuối cùng mở cửa ở năm nào phụ thuộc vào rất
-nhiều chậm trễ về công nghệ, tài chính, thiết kế, pháp lý, thời tiết, và
-phối hợp liên chính quyền. Tác giả lập luận rằng trong một cửa sổ vài
-thập kỷ, <strong>timing chính xác của opening</strong> có thể được xem
-là khá exogenous đối với deviation ngắn hạn khỏi long-run local growth
-trend.</p>
-<h3 id="cách-làm-cụ-thể-1">Cách làm cụ thể</h3>
-<ul>
-<li>Dữ liệu county-level hơn 150 năm.</li>
-<li>Biến treatment là thay đổi trong <strong>log distance to a
-bridge</strong>.</li>
-<li>Outcome chính:
-<ul>
-<li>log value of agricultural land, dùng như proxy cho total economic
-activity</li>
-<li>log population</li>
-</ul></li>
-<li>Hồi quy có:
-<ul>
-<li>year fixed effects</li>
-<li>county fixed effects</li>
-<li>county-specific quadratic trends</li>
-<li>lead và lag của thay đổi khoảng cách tới cầu để đọc dynamic
-path</li>
-</ul></li>
-</ul>
-<h3 id="tại-sao-dùng-agricultural-land-values">Tại sao dùng agricultural
-land values?</h3>
-<p>Trong dữ liệu lịch sử dài hạn, đây là proxy nhất quán nhất cho tổng
-hoạt động kinh tế ở cấp county. Tác giả cũng giải thích rõ rằng land
-values có thể còn <strong>understate</strong> tác động thực vì:</p>
-<ul>
-<li>có measurement error</li>
-<li>land value nông nghiệp thấp hơn giá trị đất đô thị bình quân</li>
-<li>việc kiểm soát trend dài hạn có thể hấp thụ bớt tác động thật</li>
-</ul>
-<h3 id="giả-định-cốt-lõi-1">Giả định cốt lõi</h3>
-<p>Timing mở cầu không được đồng thời phản ánh một shock tăng trưởng
-ngắn hạn không quan sát được. Tác giả kiểm tra điều này bằng:</p>
-<ul>
-<li>lead coefficients gần 0</li>
-<li>historical narratives về delays rất dài và idiosyncratic</li>
-<li>robustness chỉ dùng counties không trực tiếp xây cầu mà chỉ bị ảnh
-hưởng bởi cầu xây nơi khác</li>
-</ul>
-<h3 id="kết-quả-then-chốt-của-design-2">Kết quả then chốt của design
-2</h3>
-<p>Table 4 cho thấy sau một <strong>50% reduction in distance to a
-bridge</strong>:</p>
-<ul>
-<li><strong>giá trị đất nông nghiệp tăng tích lũy khoảng 9% sau 30-40
-năm</strong></li>
-<li><strong>dân số tăng khoảng 5% sau 30-40 năm</strong></li>
-</ul>
-<p>Tức là better connected counties tăng cả quy mô hoạt động kinh tế lẫn
-quy mô dân số. Vì land values tăng mạnh hơn population, tác giả suy ra
-per capita economic activity cũng tăng, nhưng tăng ít hơn total
-activity.</p>
-<h2 id="điểm-mạnh-và-điểm-dễ-bị-nghi-ngờ">Điểm mạnh và điểm dễ bị nghi
-ngờ</h2>
-<h3 id="điểm-mạnh">Điểm mạnh</h3>
-<ul>
-<li>Design 1 rất sáng vì khai thác địa lý confluence thay vì chỉ
-distance-to-road kiểu correlational.</li>
-<li>Design 2 đọc được động học nhiều thập kỷ, điều mà nhiều paper hạ
-tầng không làm được.</li>
-<li>Hai design giúp giải thích vì sao kết quả khác nhau theo scale, thay
-vì coi khác nhau là mâu thuẫn.</li>
-<li>Placebo lịch sử, permutation tests, và lead tests đều khá thuyết
-phục.</li>
-</ul>
-<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
-<ul>
-<li>Design 2 vẫn không phải “as good as random” hoàn hảo; timing cầu có
-thể đồng thời đi cùng các chương trình phát triển vùng khác.</li>
-<li>Land values là proxy tốt nhưng không phải perfect measure của
-output.</li>
-<li>Kết quả local quanh Mississippi/Ohio và đô thị hóa kiểu Mỹ có thể
-không ngoại suy nguyên xi sang bối cảnh developing countries.</li>
-</ul>
-<h2 id="results-and-interpretation">6. Results and interpretation</h2>
-<h2 id="kết-quả-thực-nghiệm-chính">Kết quả thực nghiệm chính</h2>
-<h3
-id="ở-quy-mô-địa-phương-rất-nhỏ-gần-hạ-tầng-hơn-không-đồng-nghĩa-với-giàu-hơn">1.
-Ở quy mô địa phương rất nhỏ, gần hạ tầng hơn không đồng nghĩa với giàu
-hơn</h3>
-<p>Các tract upstream, gần cầu và gần transport hơn, có:</p>
-<ul>
-<li>mật độ dân số cao hơn mạnh</li>
-<li>thu nhập bình quân thấp hơn</li>
-</ul>
-<p>Đây là điểm làm paper đáng nhớ. Nó phá cách đọc ngây thơ rằng
-gradient thu nhập gần hạ tầng phải luôn dốc lên.</p>
-<h3
-id="ở-quy-mô-county-và-chân-trời-nhiều-thập-kỷ-kết-nối-tốt-hơn-làm-tổng-hoạt-động-kinh-tế-tăng">2.
-Ở quy mô county và chân trời nhiều thập kỷ, kết nối tốt hơn làm tổng
-hoạt động kinh tế tăng</h3>
-<p>Khi bridge access cải thiện đáng kể:</p>
-<ul>
-<li>land values tăng</li>
-<li>population tăng</li>
-<li>per capita economic activity có vẻ cũng tăng, nhưng yếu hơn tổng
-hoạt động</li>
-</ul>
-<p>Điều này cho thấy hạ tầng vẫn tạo ra lợi thế kinh tế thật, không chỉ
-đơn thuần tái phân phối dân cư.</p>
-<h3 id="tác-động-của-hạ-tầng-là-động-và-cân-bằng-tổng-quát">3. Tác động
-của hạ tầng là động và cân bằng tổng quát</h3>
-<p>Bridge opening không chỉ giảm travel costs một lần. Nó:</p>
-<ul>
-<li>hỗ trợ urbanization</li>
-<li>kéo lao động khỏi nông nghiệp sang retail, wholesale, manufacturing,
-services</li>
-<li>kích hoạt mở rộng vùng built-up</li>
-<li>rồi tạo ra sorting giữa core và suburb</li>
-</ul>
-<p>Vì vậy tác động quan sát được sau nhiều thập kỷ là tổ hợp của
-productivity effect và relocation effect.</p>
-<h2 id="diễn-giải-kinh-tế">Diễn giải kinh tế</h2>
-<p>Điểm mấu chốt là phải tách hai câu hỏi:</p>
-<ol type="1">
-<li>Hạ tầng có làm “cái bánh” lớn hơn không?</li>
-<li>Hạ tầng có làm “ai ở đâu trên bản đồ” thay đổi không?</li>
-</ol>
-<p>Paper trả lời là <strong>có cho cả hai</strong>. Nếu chỉ nhìn thu
-nhập bình quân ở khu rất gần trục giao thông, người nghiên cứu có thể
-kết luận sai rằng hạ tầng làm nơi đó “xấu đi”. Nhưng thực ra đó có thể
-là kết quả cuối cùng của một quá trình phát triển thành công: trung tâm
-lịch sử đông lên, rồi hộ khá giả dạt ra suburb, để lại central areas với
-thu nhập bình quân thấp hơn.</p>
-<h2 id="kết-quả-nào-thật-sự-nổi-bật">Kết quả nào thật sự nổi bật</h2>
-<p>Ba con số nên nhớ:</p>
-<ol type="1">
-<li>Upstream tracts có <strong>thu nhập bình quân thấp hơn khoảng
-13%</strong>.</li>
-<li>Upstream tracts có <strong>mật độ dân số cao hơn khoảng
-63%</strong>.</li>
-<li>Một <strong>50% giảm khoảng cách tới cầu</strong> gắn với <strong>9%
-tăng land values</strong> và <strong>5% tăng dân số</strong> sau 30-40
-năm.</li>
-</ol>
-<p>Sự cùng tồn tại của ba con số này chính là “twist” trung tâm của
-bài.</p>
-<h2 id="ý-nghĩa-đối-với-lý-thuyết-và-chính-sách">Ý nghĩa đối với lý
-thuyết và chính sách</h2>
-<ul>
-<li>Với theory/economic geography: cần mô hình hóa cả between-city
-growth lẫn within-city sorting.</li>
-<li>Với policy: đánh giá hạ tầng không thể chỉ nhìn vào nearby incomes
-sau cùng; phải đo cả relocation, land values, density, và long-run urban
-form.</li>
-<li>Với development policy: xây hạ tầng mới có thể kéo theo informal
-settlement hoặc unplanned urbanization quanh hành lang giao thông nếu
-không chuẩn bị hạ tầng dịch vụ đi kèm.</li>
-</ul>
-<h2 id="what-is-special-or-elegant-about-the-paper">7. What is special
-or elegant about the paper</h2>
-<p>Điểm đẹp nhất của paper là <strong>nó biến một “mâu thuẫn kết quả”
-thành chính nội dung khoa học của bài</strong>.</p>
-<p>Một paper yếu hơn có thể sẽ cố “giải thích away” việc gần hạ tầng mà
-thu nhập thấp hơn. Tompsett làm điều ngược lại: giữ nguyên kết quả đó,
-rồi dùng design thứ hai và các outcome bổ sung để nói rằng đây không
-phải lỗi, mà là cửa sổ nhìn vào một equilibrium spatial dynamic phong
-phú hơn.</p>
-<p>Ngoài ra, paper rất đẹp ở ba chỗ:</p>
-<ol type="1">
-<li><strong>Narrowly targeted infrastructure object:</strong> tập trung
-vào bridges thay vì cả network giúp measurement rõ và lịch sử xây dựng
-dễ truy hơn.</li>
-<li><strong>Geography as identification:</strong> tributary confluence
-là một ý tưởng thực sự thanh lịch.</li>
-<li><strong>Scale as substance:</strong> spatial scale không phải
-footnote, mà là đối tượng khoa học trung tâm.</li>
-</ol>
-<p>Một bài học nghiên cứu lớn ở đây là: khi một kết quả thực nghiệm
-trông “lạ”, đôi khi thay vì vội loại bỏ nó, ta nên hỏi liệu mình đang
-nhìn sai thang đo hay sai equilibrium hay không.</p>
-<h2 id="required-background-knowledge">8. Required background
-knowledge</h2>
-<h2 id="economic-geography-và-spatial-equilibrium">Economic geography và
-spatial equilibrium</h2>
-<p>Người đọc nên quen với trực giác cơ bản rằng households và firms
-<strong>di chuyển để phản ứng với amenities, access, wages,
-rents</strong>, nên observed outcomes là equilibrium chứ không phải
-causal effect cơ học. Một nơi kết nối tốt hơn có thể hút dân vào, đẩy
-giá đất lên, thay composition dân cư, và cuối cùng làm average income
-tại chỗ di chuyển theo hướng khó đoán.</p>
-<h2 id="selection-bias-trong-hạ-tầng">Selection bias trong hạ tầng</h2>
-<p>Với hạ tầng, placement almost never random. Cần hiểu vì sao
-correlation giữa roads/bridges và growth dễ bị bias, và vì sao paper
-phải tìm quasi-experimental variation.</p>
-<h2
-id="regression-discontinuity-ish-local-comparison-và-geography-based-design">Regression
-discontinuity-ish local comparison và geography-based design</h2>
-<p>Design upstream/downstream không phải RD textbook, nhưng có tinh thần
-local comparison rất mạnh: so sánh những nơi sát nhau quanh cùng một
-natural feature, với controls cho vị trí tương đối so với
-confluence.</p>
-<h2 id="distributed-lag-event-study-logic">Distributed-lag / event-study
-logic</h2>
-<p>Ở design thứ hai, tác giả dùng lead-lag structure để:</p>
-<ul>
-<li>xem pre-trends có đáng lo không</li>
-<li>đọc dynamic response qua thời gian</li>
-<li>phân biệt tác động tức thì và tác động tích lũy</li>
-</ul>
-<h2 id="land-values-như-proxy-cho-economic-activity">Land values như
-proxy cho economic activity</h2>
-<p>Điều này cần một chút intuition đô thị: nếu đất là yếu tố khan hiếm
-và rents capitalize lợi ích từ hoạt động sản xuất/tiếp cận, thì land
-values phản ánh economic surplus của địa điểm. Không hoàn hảo, nhưng
-trong historical panel dài hạn đây là proxy rất hữu ích.</p>
-<h2 id="relocation-effects-vs-aggregate-effects">Relocation effects vs
-aggregate effects</h2>
-<p>Một nơi tăng hoạt động kinh tế vì hút activity từ nơi khác không
-giống với việc toàn bộ khu vực/đất nước tăng sản lượng. Paper này rất
-tốt trong việc nhắc người đọc đừng lẫn hai khái niệm đó.</p>
-<h2 id="limitations-and-open-questions">9. Limitations and open
-questions</h2>
-<h3
-id="hạn-chế-1-khó-tách-sạch-pure-productivity-effect-khỏi-relocation-effect">Hạn
-chế 1: Khó tách sạch pure productivity effect khỏi relocation
-effect</h3>
-<p>Paper chứng minh được rằng bridge access thay đổi hoạt động kinh tế
-và spatial distribution, nhưng chưa fully decompose:</p>
-<ul>
-<li>phần nào là tăng sản lượng ròng</li>
-<li>phần nào là dịch chuyển activity từ nơi khác đến</li>
-</ul>
-<p>Chính tác giả cũng nói để trả lời câu aggregate welfare/growth thật
-đầy đủ thì cần một structural model.</p>
-<h3 id="hạn-chế-2-timing-exogeneity-vẫn-là-giả-định-mềm">Hạn chế 2:
-Timing exogeneity vẫn là giả định mềm</h3>
-<p>Dù historical narrative và lead tests khá mạnh, vẫn có thể lo rằng
-cầu đi cùng các thay đổi chính sách vùng hoặc kỳ vọng tăng trưởng. Tác
-giả có robustness cho chuyện này, nhưng đây vẫn là điểm mà người đọc cẩn
-trọng nên giữ trong đầu.</p>
-<h3 id="hạn-chế-3-bối-cảnh-mỹ-và-suburbanization-kiểu-mỹ">Hạn chế 3: Bối
-cảnh Mỹ và suburbanization kiểu Mỹ</h3>
-<p>Kết quả “gần transport nhưng thu nhập thấp hơn” có thể gắn mạnh
-với:</p>
-<ul>
-<li>cấu trúc đô thị Mỹ</li>
-<li>suburbanization thế kỷ 20</li>
-<li>ô tô hóa</li>
-<li>phân biệt chủng tộc và zoning</li>
-</ul>
-<p>Ở các nước thu nhập trung bình hoặc thấp, equilibrium có thể khác khá
-xa.</p>
-<h3 id="hạn-chế-4-cơ-chế-vi-mô-chưa-bóc-tách-hết">Hạn chế 4: Cơ chế vi
-mô chưa bóc tách hết</h3>
-<p>Paper chưa nói chắc được channel nào quan trọng nhất:</p>
-<ul>
-<li>giảm chi phí commuting</li>
-<li>tăng market access đầu vào/đầu ra</li>
-<li>lower import costs</li>
-<li>hay các amenity/disamenity đi kèm</li>
-</ul>
-<h3 id="câu-hỏi-mở">Câu hỏi mở</h3>
-<ol type="1">
-<li>Nếu áp dụng cùng logic cho developing-country bridges, gradient
-income quanh infrastructure có đảo dấu như ở Mỹ không?</li>
-<li>Tác động welfare tổng thể là bao nhiêu sau khi tính cả displacement
-và congestion?</li>
-<li>Vai trò của land use regulation và service provision trong việc biến
-transport gains thành inclusive growth là gì?</li>
-</ol>
-<h2 id="takeaways-for-a-researcher">10. Takeaways for a researcher</h2>
-<ol type="1">
-<li><strong>Đừng đọc tác động hạ tầng ở một spatial scale duy
-nhất.</strong> Kết quả có thể đổi dấu giữa very local và broader
-regional scales.</li>
-<li><strong>Một infrastructure paper mạnh nên nghĩ đến relocation ngay
-từ đầu.</strong> Không chỉ hỏi “grow more or less”, mà hỏi “who moves
-where”.</li>
-<li><strong>Chọn một object cụ thể có thể thắng hơn chọn cả
-network.</strong> Ở đây, chỉ tập trung vào bridges tạo ra dữ liệu và
-identification tốt hơn nhiều.</li>
-<li><strong>Historical detail có giá trị nhận dạng thật sự.</strong>
-Việc hiểu delays, financing, và engineering history không phải kể chuyện
-phụ; nó là phần cốt lõi để bảo vệ exogeneity.</li>
-<li><strong>Placebo đúng thời kỳ lịch sử là cực quan trọng.</strong>
-Null results trước thời kỳ treatment làm design đáng tin hơn nhiều.</li>
-<li><strong>Khi một result phản trực giác xuất hiện, hãy thử nghĩ theo
-equilibrium.</strong> Đôi khi đó là tín hiệu khoa học mạnh nhất của
-bài.</li>
-<li><strong>Bài hạ tầng tốt không chỉ nói về productivity; nó nên nói về
-urban form, density, land values, và sorting.</strong></li>
-</ol>
-<h2 id="vietnam-relevance-and-extension">11. Vietnam relevance and
-extension</h2>
-<h2 id="ý-tưởng-của-paper-có-liên-quan-tới-việt-nam-không">Ý tưởng của
-paper có liên quan tới Việt Nam không?</h2>
-<p>Có, và khá mạnh. Việt Nam là bối cảnh rất hợp để nghĩ về paper này
-vì:</p>
-<ul>
-<li>mạng lưới sông ngòi dày</li>
-<li>đầu tư cầu, đường và vành đai tăng nhanh</li>
-<li>đô thị hóa mạnh</li>
-<li>chênh lệch lớn giữa lõi đô thị, khu ven, và các hành lang giao thông
-mới</li>
-</ul>
-<p>Các dự án cầu lớn qua sông Hồng, sông Sài Gòn, sông Đồng Nai, các
-trục vành đai, cao tốc, hay cầu nối vùng ĐBSCL đều gợi đúng câu hỏi của
-paper: hạ tầng làm tăng phát triển ròng hay chủ yếu tái tổ chức không
-gian phát triển?</p>
-<h2 id="có-triển-khai-nghiên-cứu-kiểu-này-ở-việt-nam-được-không">Có
-triển khai nghiên cứu kiểu này ở Việt Nam được không?</h2>
-<p>Có thể, nhưng cần dữ liệu tốt và thiết kế khéo. Những điều kiện cần
-có gồm:</p>
-<ul>
-<li>geocoded data về thời điểm mở cầu/đường và đặc tính kỹ thuật</li>
-<li>dữ liệu giá đất, mật độ dân cư, hoạt động kinh tế, hoặc doanh nghiệp
-theo không gian nhỏ</li>
-<li>dữ liệu ảnh vệ tinh hoặc built-up area qua thời gian</li>
-<li>dữ liệu hành chính về cấp phép xây dựng, quy hoạch, hạ tầng dịch
-vụ</li>
-</ul>
-<h2 id="trở-ngại-chính-ở-việt-nam">Trở ngại chính ở Việt Nam</h2>
-<ol type="1">
-<li>Dữ liệu lịch sử không đồng nhất và khó nối series dài.</li>
-<li>Quy hoạch và thay đổi hành chính có thể đồng thời đi cùng hạ tầng,
-làm khó tách causal effect.</li>
-<li>Giá đất ở Việt Nam phản ánh cả yếu tố thể chế, kỳ vọng quy hoạch, và
-speculative activity, nên dùng như proxy cần rất cẩn trọng.</li>
-<li>Tác động phân bố có thể chịu ảnh hưởng mạnh của giải tỏa, tái định
-cư, zoning, và informal construction.</li>
-</ol>
-<h2 id="điều-paper-gợi-mở-rất-hay-cho-việt-nam">Điều paper gợi mở rất
-hay cho Việt Nam</h2>
-<p>Paper nhấn mạnh rằng hạ tầng mới có thể đi cùng:</p>
-<ul>
-<li>tăng kết nối</li>
-<li>tăng giá trị đất</li>
-<li>hút dân</li>
-<li>nhưng không tự động làm khu sát hạ tầng “giàu” hơn</li>
-</ul>
-<p>Trong bối cảnh Việt Nam, điều này rất hợp với trực giác rằng các hộ
-thu nhập thấp có thể bám theo hành lang giao thông mới vì lợi thế tiếp
-cận việc làm, còn hộ giàu hơn dạt sang các khu ở chất lượng cao hơn, tạo
-ra một spatial sorting rất khác với cách đọc “gần hạ tầng là
-premium”.</p>
-<h2 id="đến-3-research-design-research-question-cho-việt-nam">1 đến 3
-research design / research question cho Việt Nam</h2>
-<h3 id="cầu-mới-và-tái-cấu-trúc-không-gian-đô-thị">1. Cầu mới và tái cấu
-trúc không gian đô thị</h3>
-<p>Một thiết kế khả thi là nghiên cứu mở cầu mới nối lõi đô thị với bờ
-còn lại của sông, đo tác động lên:</p>
-<ul>
-<li>giá đất</li>
-<li>mật độ xây dựng</li>
-<li>composition doanh nghiệp</li>
-<li>thời gian commute</li>
-<li>thành phần hộ cư trú</li>
-</ul>
-<p>So sánh very local effects gần đầu cầu với broader district/city
-effects sẽ rất đúng tinh thần paper.</p>
-<h3
-id="cao-tốc-hoặc-vành-đai-mới-và-sự-hình-thành-các-cụm-dân-cư-thu-nhập-thấp">2.
-Cao tốc hoặc vành đai mới và sự hình thành các cụm dân cư thu nhập
-thấp</h3>
-<p>Kết hợp ảnh vệ tinh, dữ liệu quy hoạch, và dữ liệu hộ tịch để xem
-liệu các hành lang giao thông mới có kéo theo informal settlement hoặc
-khu nhà trọ lao động không, và hệ quả welfare ra sao nếu service
-infrastructure đến chậm.</p>
-<h3 id="cầu-ở-đbscl-và-market-access-cho-nông-nghiệp">3. Cầu ở ĐBSCL và
-market access cho nông nghiệp</h3>
-<p>Ở bối cảnh phát triển hơn là đô thị, có thể hỏi liệu các cầu lớn nối
-mạng lưới sông có:</p>
-<ul>
-<li>tăng specialization hay diversification</li>
-<li>tăng land values và enterprise entry</li>
-<li>làm dịch chuyển lao động khỏi nông nghiệp không</li>
-</ul>
-<p>Ở đây kết hợp logic của paper này với literatures về market access và
-structural change sẽ rất mạnh.</p>
-<h2 id="kết-luận-ngắn">Kết luận ngắn</h2>
-<p><code>Bridges</code> là một paper applied micro/urban cực đáng học vì
-nó buộc người đọc bỏ cách nghĩ tuyến tính về hạ tầng. Hạ tầng giao thông
-có thể làm tăng hoạt động kinh tế thật, nhưng đồng thời tái sắp xếp dân
-cư và việc làm trong không gian theo cách khiến một số chỉ số địa phương
-nhìn bề ngoài như “xấu đi”. Chính vì vậy, paper này đặc biệt hữu ích cho
-bất kỳ ai làm nghiên cứu về transport, urbanization, development, hoặc
-policy evaluation ở những nơi đang đầu tư hạ tầng nhanh như Việt
-Nam.</p>
+  <main>
+    <article class="sheet">
+      <h1>Bridges</h1>
+      <p class="muted">Anna Tompsett · The Review of Economic Studies · Lượt chạy ngày 2026-05-01</p>
+
+      <section class="meta">
+        <p><strong>Nguồn bài báo chính:</strong> <a href="https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf104/8402958">Oxford Academic article page</a></p>
+        <p><strong>Nguồn PDF tốt nhất đã xác minh:</strong> PDF chính thức từ Oxford Academic qua DOI <a href="https://doi.org/10.1093/restud/rdaf104">10.1093/restud/rdaf104</a></p>
+        <p><strong>Trạng thái GitHub:</strong> <code>analysis.md</code> và <code>analysis.html</code> đã được cập nhật trong repo <code>huylvu/00_reading</code>; <code>analysis.pdf</code> chưa tạo; PDF gốc mới dừng ở mức xác minh nguồn chính thức và chưa tải/upload được file nhị phân vào repo.</p>
+        <p><strong>Trạng thái Google Drive:</strong> bỏ qua trong lượt này để tránh lưu nửa vời.</p>
+      </section>
+
+      <h2>1. Metadata</h2>
+      <ul>
+        <li><strong>Tiêu đề:</strong> Bridges</li>
+        <li><strong>Tác giả:</strong> Anna Tompsett</li>
+        <li><strong>Journal:</strong> The Review of Economic Studies</li>
+        <li><strong>Xuất bản:</strong> 23 December 2025; corrected and typeset 13 January 2026</li>
+        <li><strong>DOI:</strong> <a href="https://doi.org/10.1093/restud/rdaf104">https://doi.org/10.1093/restud/rdaf104</a></li>
+        <li><strong>Replication package:</strong> <a href="https://doi.org/10.5281/zenodo.17085642">Zenodo</a></li>
+      </ul>
+
+      <h2>2. Executive Summary</h2>
+      <p>Paper hỏi một câu rất cơ bản nhưng thường bị trả lời quá nhanh trong kinh tế hạ tầng: giao thông đường bộ có thực sự làm tăng hoạt động kinh tế, hay ta chỉ đang nhìn thấy giao thông được đặt ở nơi vốn dĩ đã phát triển hơn? Tompsett tách câu hỏi này thành hai lớp. Ở quy mô rất cục bộ, tác giả hỏi việc ở gần một nút hạ tầng giao thông hơn có làm khu vực đó giàu hơn theo đầu người hay không. Ở quy mô dài hạn hơn, tác giả hỏi khi kết nối giao thông được cải thiện mạnh nhờ cầu mới, kinh tế địa phương thay đổi ra sao trong nhiều thập kỷ sau đó.</p>
+      <p>Điểm mạnh của bài là không dựa vào một thiết kế duy nhất. Thiết kế thứ nhất tận dụng quy luật địa lý tại các điểm hợp lưu phụ lưu để giải thích vì sao cầu thường nằm ở phía thượng lưu hơn là hạ lưu, từ đó tạo khác biệt cục bộ trong mức độ kết nối. Thiết kế thứ hai dùng thời điểm khai thông cầu lớn trên sông Mississippi và Ohio như những cú sốc làm thay đổi khoảng cách tới cầu ở cấp quận trong giai đoạn 1860-2010.</p>
+      <p>Kết quả chính vừa thú vị vừa dễ gây nhầm nếu chỉ nhìn dữ liệu cắt ngang. Gần hạ tầng giao thông hơn có thể làm <strong>thu nhập bình quân đầu người ở quy mô rất nhỏ thấp hơn</strong>, nhưng đồng thời làm <strong>mật độ dân cư và tổng hoạt động kinh tế ở quy mô lớn cao hơn</strong>. Sau khi một quận trải qua giảm 50% khoảng cách tới cầu, giá trị đất nông nghiệp tăng tích lũy khoảng 9% và dân số tăng khoảng 5% sau 30-40 năm. Cách dung hòa hai kết quả này là: hạ tầng tạo lợi thế năng suất, thúc đẩy hình thành đô thị và chuyển dịch cơ cấu; sau đó suburbanization và sorting trong nội đô làm khu vực sát tuyến giao thông trở thành khu đông đúc hơn nhưng không nhất thiết giàu hơn theo đầu người.</p>
+
+      <h2>3. Research Question And Motivation</h2>
+      <h3>Câu hỏi trung tâm</h3>
+      <ol>
+        <li>Gần hạ tầng giao thông hơn có làm một nơi giàu hơn không?</li>
+        <li>Tác động đó khác nhau thế nào giữa quy mô cục bộ và quy mô vùng?</li>
+        <li>Qua thời gian, hạ tầng làm tăng tổng hoạt động kinh tế hay chủ yếu tái phân bố hoạt động kinh tế giữa các nơi?</li>
+      </ol>
+      <h3>Động lực học thuật</h3>
+      <p>Văn liệu transport infrastructure luôn gặp vấn đề endogeneity: cầu đường thường được xây ở nơi đã có tiềm năng tăng trưởng. Nếu không có variation tốt, rất khó phân biệt causal effect với selection. Paper này quan trọng vì nó buộc người đọc nghĩ đồng thời về productivity effects và relocation effects, thay vì gộp cả hai vào một correlation chung.</p>
+      <h3>Động lực thực tiễn</h3>
+      <p>Hạ tầng giao thông là trung tâm của chính sách phát triển. Nhưng policy question thực ra không chỉ là có nên đầu tư hay không, mà còn là đầu tư ở đâu, tác động phân bố sẽ ra sao, và cần chuẩn bị gì cho quá trình đô thị hóa mà hạ tầng tạo ra.</p>
+
+      <h2>4. Main Contribution</h2>
+      <ol>
+        <li><strong>Dữ liệu lịch sử rất hiếm và rất có giá trị.</strong> Tác giả tự xây dataset bao phủ mọi cầu đường sắt hoặc đường bộ từng được xây qua Mississippi và Ohio.</li>
+        <li><strong>Hai chiến lược nhận dạng mới, bổ sung cho nhau.</strong> Một design khai thác nơi cầu được xây; design còn lại khai thác thời điểm cầu mở.</li>
+        <li><strong>Một cách đọc tinh tế về hạ tầng và economic geography.</strong> Cùng một hạ tầng có thể làm tăng activity ở quy mô lớn nhưng giảm income per capita ở quy mô rất nhỏ gần tuyến.</li>
+        <li><strong>Mở rộng toolbox cho applied micro và development.</strong> Bridge placement quanh tributary confluences là một ý tưởng nhận dạng có thể dùng lại trong nhiều bối cảnh có rào cản sông lớn.</li>
+      </ol>
+
+      <h2>5. Identification Or Methodology</h2>
+      <h3>Design 1: Where bridges are built</h3>
+      <p>Chi phí xây cầu tăng theo lưu lượng nước. Ở nơi một phụ lưu đổ vào dòng chính, lưu lượng nước tăng đột ngột phía hạ lưu, khiến việc xây cầu phía downstream đắt hơn phía upstream. Hệ quả là cầu có xu hướng nằm ở phía thượng lưu các hợp lưu. Tác giả so sánh các census tract upstream và downstream của hợp lưu gần nhất, dùng nearest-tributary fixed effects, kiểm soát khoảng cách dọc sông tới hợp lưu, trọng số kernel tam giác, và loại tract quá xa hợp lưu.</p>
+      <p>Giả định cốt lõi là nếu upstream và downstream quanh cùng một hợp lưu chỉ khác nhau có hệ thống ở khả năng tiếp cận cầu/hạ tầng đất liền, thì chênh lệch kết quả giữa hai phía có thể đọc như tác động nhân quả của access.</p>
+      <h3>Design 2: When bridges are built</h3>
+      <p>Paper xây panel county-level 1860-2010 cho 181 quận thuộc 14 bang dọc Mississippi và Ohio, remap toàn bộ về biên giới quận năm 1860. Biến treatment là thay đổi trong <code>log distance to a bridge</code>. Outcome chính là log giá trị đất nông nghiệp và log dân số. Hồi quy có year fixed effects, county fixed effects, county-specific quadratic trends, cùng lead/lags của thay đổi khoảng cách tới cầu.</p>
+      <p>Giả định cốt lõi là exact timing của thay đổi distance to a bridge ngoại sinh với short-run deviations khỏi local long-run trends. Paper bảo vệ điểm này bằng lead coefficients gần zero, historical narrative về delays rất dài, robustness với spillover-only counties, và simulation theo Borusyak and Hull.</p>
+      <h3>Điểm mạnh và điểm yếu</h3>
+      <p>Điểm mạnh là design rất giàu trực giác địa lý, dữ liệu cực dài, và hai chiến lược nhận dạng nói chuyện được với nhau. Điểm cần cẩn trọng là distance to bridge vẫn chỉ là proxy cho connectedness thật, land values là proxy cho activity, và việc mô hình hóa trend dài hạn luôn có tradeoff giữa bias và attenuation.</p>
+
+      <h2>6. Results And Interpretation</h2>
+      <h3>Kết quả cục bộ dài hạn</h3>
+      <p>Trong design upstream/downstream quanh hợp lưu, upstream tracts gần cầu hơn khoảng 60% và gần tuyến giao thông lớn hơn khoảng 27%. Nhưng đến năm 2010, các upstream tracts kết nối tốt hơn lại có <strong>thu nhập bình quân đầu người thấp hơn khoảng 13%</strong>. Đồng thời chúng có mật độ dân cư cao hơn rõ rệt.</p>
+      <h3>Kết quả động theo thời gian</h3>
+      <p>Trong county panel, khi khoảng cách tới cầu giảm mạnh, <strong>giá trị đất nông nghiệp tăng tích lũy khoảng 9%</strong> và <strong>dân số tăng khoảng 5%</strong> sau 30-40 năm. Giá trị đất tăng mạnh hơn dân số cho thấy total activity tăng nhanh hơn population, nên per capita activity nhiều khả năng cũng tăng nhưng tăng ít hơn total activity.</p>
+      <h3>Cơ chế</h3>
+      <ol>
+        <li><strong>Cities form around transport routes.</strong> Sau cú sốc giảm distance to bridge, tăng dân số tập trung ở town/city; lao động rời nông nghiệp sang retail/wholesale, một phần sang manufacturing và services; construction employment tăng.</li>
+        <li><strong>Cities expand outward.</strong> Các tract gần hạ tầng hơn có housing stock cũ hơn; downstream có nhà mới hơn, gắn với suburbanization.</li>
+        <li><strong>Sorting within cities đảo dấu gradient income.</strong> Khu upstream đông hơn, ở nhà nhỏ hơn, dùng public transport nhiều hơn; downstream giống suburb hơn, nhà lớn hơn và commute bằng ô tô nhiều hơn.</li>
+      </ol>
+      <p>Khi ghép ba bước này lại, kết quả “gần hạ tầng hơn nhưng thu nhập bình quân thấp hơn ở cự ly ngắn” trở nên hợp lý: hạ tầng ban đầu tạo lợi thế sản xuất và đô thị hóa; nhưng về sau người giàu sort ra xa lõi giao thông hơn.</p>
+
+      <h2>7. What Is Special Or Elegant About The Paper</h2>
+      <ol>
+        <li><strong>Chọn “bridge” làm object nghiên cứu</strong> là một ý tưởng cực đẹp: hẹp nhưng sắc.</li>
+        <li><strong>Hai design nói chuyện với nhau</strong>: một design cho local long-run spatial comparison, design kia cho dynamic response over decades.</li>
+        <li><strong>Không né kết quả trái trực giác</strong>: bài giữ nguyên tension giữa local per-capita effects âm và broader activity effects dương, rồi giải thích nó bằng equilibrium spatial dynamics.</li>
+        <li><strong>Paper không overclaim</strong>: tác giả nói rõ rằng muốn đọc aggregate welfare effect thì cần structural model.</li>
+      </ol>
+
+      <h2>8. Required Background Knowledge</h2>
+      <ul>
+        <li><strong>Transport infrastructure và market access:</strong> hạ tầng làm giảm trade costs và commuting costs, nhưng lợi ích không nhất thiết hiện ra ngay ở income per capita của chính nơi gần tuyến.</li>
+        <li><strong>Economic geography và relocation effects:</strong> households và firms di chuyển để phản ứng với access, wages, rents, amenities, nên observed outcomes là equilibrium chứ không phải causal effect cơ học.</li>
+        <li><strong>Reduced-form identification:</strong> local comparison quanh quasi-discontinuity, fixed effects, distributed lag, pre-trend, robustness.</li>
+        <li><strong>Land values như proxy cho activity:</strong> hữu ích trong dữ liệu lịch sử dài hạn nhưng không hoàn hảo.</li>
+      </ul>
+
+      <h2>9. Limitations And Open Questions</h2>
+      <ol>
+        <li><strong>Aggregate effect chưa được point identify.</strong> Một nơi tăng có thể partly là do hút activity từ nơi khác.</li>
+        <li><strong>Proxy outcome chưa hoàn hảo.</strong> Land values hợp lý nhưng vẫn là proxy.</li>
+        <li><strong>Trend specification là điểm nhạy cảm.</strong> County-specific quadratic trends vừa là sức mạnh vừa là tradeoff.</li>
+        <li><strong>Mechanism chưa tách riêng hoàn toàn.</strong> Paper chưa nói chắc commuting, input market access, consumer access, pollution, hay policy distortions là kênh nào trội nhất.</li>
+      </ol>
+
+      <h2>10. Takeaways For A Researcher</h2>
+      <ol>
+        <li>Đừng để outcome chính quyết định luôn đơn vị không gian.</li>
+        <li>Một design không đủ để kể hết câu chuyện nếu equilibrium spatial dynamics là quan trọng.</li>
+        <li>Relocation effects là first-order concern trong applied spatial work.</li>
+        <li>Historical data construction có thể là đóng góp lớn ngang identification.</li>
+        <li>Kết quả trái dấu không phải tín hiệu paper yếu; nhiều khi đó là tín hiệu cơ chế kinh tế thật.</li>
+      </ol>
+
+      <h2>11. Vietnam Relevance And Extension</h2>
+      <p>Paper này rất gợi mở cho Việt Nam vì nước mình đang đầu tư mạnh vào cao tốc, vành đai, cầu vượt sông, cảng, và logistics trong bối cảnh mạng lưới sông ngòi dày và đô thị hóa nhanh. Câu hỏi đúng tinh thần bài không chỉ là “đường mới có làm huyện đó tăng trưởng không”, mà là activity tăng ở đâu và giảm ở đâu, đất đai và dân cư dịch chuyển ra sao, ai hưởng lợi, ai bị đẩy ra xa, informal housing hay phân tầng không gian có tăng không.</p>
+      <p>Những hướng mở rộng hợp với Việt Nam gồm: nghiên cứu cầu mới ở Đồng bằng sông Cửu Long và market access nông sản; nghiên cứu cao tốc hoặc vành đai mới và peri-urban sorting quanh Hà Nội, TP.HCM; và nghiên cứu liệu hành lang giao thông mới có kéo theo informal settlement hoặc khu nhà trọ lao động không.</p>
+
+      <h2>12. Đánh Giá Cuối</h2>
+      <p>Đây là một bài rất đáng đọc cho người làm applied micro liên quan tới hạ tầng, spatial economics, urban-development interface, hay long-run development. Giá trị lớn nhất của paper không nằm ở một con số tác động duy nhất mà ở cách nó buộc người đọc phải nghĩ lại về nghĩa của “tác động của hạ tầng”.</p>
+      <p><strong>Nếu phải gói gọn bài trong một câu:</strong> hạ tầng giao thông có thể làm kinh tế phát triển hơn bằng cách tái tổ chức không gian kinh tế, và chính quá trình tái tổ chức ấy có thể khiến nơi sát hạ tầng không phải là nơi giàu nhất theo đầu người.</p>
+    </article>
+  </main>
 </body>
 </html>
