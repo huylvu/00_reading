@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-05-02
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag018/8537769
 - **Nguồn PDF dùng để phân tích:** NBER Working Paper 33358 tại https://www.nber.org/system/files/working_papers/w33358/w33358.pdf
-- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` dự kiến lưu trong repo `huylvu/00_reading` tại thư mục `Technology Sophistication Across Establishments - Cirera Comin Cruz/`; `analysis.pdf` chưa được tạo trong lượt này; PDF gốc của paper mới xác minh được nguồn công khai nhưng chưa tải và chưa upload được file nhị phân.
+- **Trạng thái lưu trên GitHub:** `analysis.md`, `analysis.html`, và `analysis-style.css` đã được lưu trong repo `huylvu/00_reading` tại thư mục `Technology Sophistication Across Establishments - Cirera Comin Cruz/`; `analysis.pdf` chưa được tạo trong lượt này; PDF gốc của paper mới xác minh được nguồn công khai nhưng chưa tải và chưa upload được file nhị phân.
 - **Trạng thái Google Drive:** bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách chắc chắn.
 
 ## 1. Metadata
