@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag027/8653240
 - **Nguồn PDF dùng để phân tích sâu:** NBER Working Paper 31331, June 2023, Revised May 2025: https://www.nber.org/system/files/working_papers/w31331/w31331.pdf
 - **Ghi chú về phiên bản:** Bài đã xuất hiện trên *The Review of Economic Studies* ngày 13-04-2026 dưới dạng accepted manuscript. Phân tích dưới đây bám chủ yếu vào bản NBER revised May 2025 vì đây là bản PDF toàn văn công khai và gần với bản xuất bản nhất mà lượt chạy này xác minh được.
-- **Trạng thái lưu GitHub:** Trong lượt chạy này đã lưu được `analysis.md`; `analysis.html` sẽ được lưu nếu bước tạo file văn bản HTML thành công; `analysis.pdf` chưa được tính là thành công cho tới khi thực sự upload được file PDF hợp lệ; PDF gốc của paper mới xác minh được nguồn công khai, chưa được lưu raw binary vào repo nếu không có bước tải và upload thực sự thành công.
+- **Trạng thái lưu GitHub:** Trong lượt chạy này đã lưu thành công `analysis.md` và `analysis.html` lên repo. `analysis.pdf` chưa được lưu vì chưa có bước upload PDF nhị phân thành công. PDF gốc của paper mới xác minh được nguồn công khai, chưa được lưu raw binary vào repo.
 - **Trạng thái Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách nhất quán.
 
 ## Executive Summary
