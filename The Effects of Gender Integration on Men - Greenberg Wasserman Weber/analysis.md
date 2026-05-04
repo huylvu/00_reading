@@ -6,8 +6,8 @@
 - **Ngày agent chạy:** 2026-05-04
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag016/8551347
 - **Nguồn PDF dùng để phân tích:** NBER Working Paper 33235, bản `December 2024, Revised January 2026` tại https://www.nber.org/system/files/working_papers/w33235/w33235.pdf
-- **Trạng thái lưu trên GitHub:** Bản nháp địa phương đã hoàn tất; trạng thái cuối của `analysis.md`, `analysis.html`, `analysis.pdf`, và PDF gốc sẽ được cập nhật sau bước lưu GitHub trong chính lượt chạy này.
-- **Trạng thái lưu trên Google Drive:** Chưa thực hiện; sẽ chỉ ghi là thành công nếu thật sự tạo được Google Doc đúng cách trong lượt chạy này.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công vào repo `huylvu/00_reading` trong thư mục `The Effects of Gender Integration on Men - Greenberg Wasserman Weber/`; `analysis.pdf` chưa được tạo và chưa được lưu; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa tải và chưa upload được file nhị phân vào repo trong lượt chạy này.
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách nhất quán.
 
 ## Executive summary
 
@@ -436,8 +436,8 @@ Nếu phải giữ lại một câu, mình sẽ giữ câu này: **sự hiện d
 
 ## 12. Storage notes for this run
 
-- `analysis.md`: đã tạo xong ở bản địa phương; sẽ cập nhật trạng thái cuối sau bước lưu GitHub.
-- `analysis.html`: dự kiến tạo từ cùng nội dung để có bản dễ đọc hơn; trạng thái cuối sẽ cập nhật sau bước lưu GitHub.
-- `analysis.pdf`: chưa tạo ở thời điểm soạn bản nháp này; chỉ được coi là thành công nếu thật sự tạo được file PDF hợp lệ và lưu được ở bước sau.
-- **PDF gốc của paper:** đã xác minh chắc nguồn PDF NBER công khai, nhưng chưa thể coi là đã lưu vào GitHub cho đến khi có file nhị phân thực sự được upload thành công.
-- **Google Drive:** mặc định bỏ qua nếu không tạo được Google Doc và tracker đúng cách trong lượt chạy này.
+- `analysis.md`: đã lưu thành công lên GitHub.
+- `analysis.html`: đã lưu thành công lên GitHub dưới dạng bản dễ đọc.
+- `analysis.pdf`: chưa tạo và chưa lưu trong lượt chạy này.
+- **PDF gốc của paper:** đã xác minh chắc nguồn PDF NBER công khai, nhưng chưa tải và chưa lưu được file nhị phân vào GitHub do giới hạn môi trường ở bước truy xuất và upload binary.
+- **Google Drive:** đã bỏ qua trong lượt chạy này.
