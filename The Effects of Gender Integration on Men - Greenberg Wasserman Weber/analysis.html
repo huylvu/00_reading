@@ -1,253 +1,135 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Effects of Gender Integration on Men: Evidence from the U.S. Military</title>
   <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f6f1e8; color: #1f2328; font-family: Georgia, "Times New Roman", serif; }
+    main { max-width: 960px; margin: 0 auto; padding: 40px 24px 64px; }
+    h1 { font-size: 2.3rem; margin: 0 0 0.5rem; line-height: 1.2; }
+    p.lead { font-size: 1.05rem; color: #4b5563; margin: 0 0 2rem; }
+    .card { background: #fffdf8; border: 1px solid #d8cfbe; border-radius: 14px; padding: 24px; box-shadow: 0 10px 30px rgba(40, 30, 10, 0.06); }
+    pre { white-space: pre-wrap; word-break: break-word; font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.92rem; line-height: 1.55; margin: 0; }
+    @media (max-width: 640px) { h1 { font-size: 1.8rem; } main { padding: 24px 16px 48px; } .card { padding: 16px; } }
   </style>
 </head>
 <body>
-<h1 id="the-effects-of-gender-integration-on-men-evidence-from-the-u.s.-military">The Effects of Gender Integration on Men: Evidence from the U.S. Military</h1>
-<ul>
-<li><strong>Tác giả:</strong> Kyle Greenberg, Melanie Wasserman, E. Anna Weber</li>
-<li><strong>Journal:</strong> The Quarterly Journal of Economics</li>
-<li><strong>Năm:</strong> 2026</li>
-<li><strong>Ngày agent chạy:</strong> 2026-05-04</li>
-<li><strong>Nguồn bài báo chính:</strong> https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag016/8551347</li>
-<li><strong>Nguồn PDF dùng để phân tích:</strong> NBER Working Paper 33235, bản <code>December 2024, Revised January 2026</code> tại https://www.nber.org/system/files/working_papers/w33235/w33235.pdf</li>
-<li><strong>Trạng thái lưu trên GitHub:</strong> Bản nháp địa phương đã hoàn tất; trạng thái cuối của <code>analysis.md</code>, <code>analysis.html</code>, <code>analysis.pdf</code>, và PDF gốc sẽ được cập nhật sau bước lưu GitHub trong chính lượt chạy này.</li>
-<li><strong>Trạng thái lưu trên Google Drive:</strong> Chưa thực hiện; sẽ chỉ ghi là thành công nếu thật sự tạo được Google Doc đúng cách trong lượt chạy này.</li>
-</ul>
-<h2 id="executive-summary">Executive summary</h2>
-<p>Paper hỏi một câu rất trực diện nhưng lâu nay khó trả lời thật sự bằng dữ liệu tốt: khi phụ nữ lần đầu bước vào một nghề trước đó gần như hoàn toàn là của nam giới, nam giới có phản ứng tiêu cực về năng suất, hành vi, hay khả năng làm việc hay không? Bối cảnh là quyết định năm 2016 của quân đội Mỹ mở toàn bộ vị trí chiến đấu mặt đất cho phụ nữ, trong đó infantry và armor là hai occupational tracks vốn trước đó bị đóng với phụ nữ.</p>
-<p>Điểm mạnh của bài là nó tận dụng việc tích hợp phụ nữ vào các combat companies diễn ra dần dần theo thời gian và khác nhau giữa các đơn vị, từ đó chạy difference-in-differences và event study trên dữ liệu hành chính cấp cá nhân rất giàu: retention, promotion, demotion, misconduct, criminal investigation, medical profile, physical fitness, cộng thêm survey ẩn danh về workplace climate. Kết quả trung tâm là: không có bằng chứng rằng việc đưa phụ nữ vào các đơn vị trước đó toàn nam làm xấu đi performance hay conduct của nam giới theo các chỉ số mà Army dùng để đánh giá readiness. Thậm chí, separations vì misconduct còn giảm. Tuy nhiên, perceptions của nam giới về workplace quality lại xấu đi nhẹ, và sự xấu đi này chủ yếu tập trung ở những đơn vị được tích hợp kèm ít nhất một nữ officer.</p>
-<p>Bài đáng đọc vì nó tách bạch rất rõ giữa “objective outcomes” và “subjective reactions”. Nhiều tranh luận về diversity bị mắc kẹt ở chỗ trộn hai thứ này vào nhau. Paper cho thấy thái độ tiêu cực của nam giới không nhất thiết kéo theo suy giảm hiệu suất thực tế. Đây là một kết quả rất quan trọng cho labor economics, personnel economics, economics of gender, và cả policy design trong những môi trường nam trị.</p>
-<h2 id="1.-metadata">1. Metadata</h2>
-<ul>
-<li><strong>Tiêu đề paper:</strong> The Effects of Gender Integration on Men: Evidence from the U.S. Military</li>
-<li><strong>Tác giả:</strong> Kyle Greenberg, Melanie Wasserman, E. Anna Weber</li>
-<li><strong>Journal:</strong> The Quarterly Journal of Economics</li>
-<li><strong>Năm:</strong> 2026</li>
-<li><strong>DOI / trang nguồn chính:</strong> https://doi.org/10.1093/qje/qjag016</li>
-<li><strong>Trang Oxford Academic đã xác minh:</strong> https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag016/8551347</li>
-<li><strong>PDF đã dùng để phân tích:</strong> https://www.nber.org/system/files/working_papers/w33235/w33235.pdf</li>
-<li><strong>Ghi chú về PDF:</strong> PDF journal chính thức trên Oxford Academic tồn tại nhưng môi trường hiện tại không truy xuất trực tiếp file PDF đó một cách ổn định; bản NBER Working Paper 33235 revised January 2026 là bản công khai tốt nhất mình dùng để đọc sâu và nó bám rất sát phiên bản QJE.</li>
-</ul>
-<h2 id="2.-research-question-and-motivation">2. Research question and motivation</h2>
-<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
-<p>Khi phụ nữ lần đầu bước vào một occupation trước đó hoàn toàn là nam giới, nam giới có phản ứng theo hướng làm giảm chất lượng hoạt động của workplace hay không? Cụ thể hơn, họ có:</p>
-<ul>
-<li>làm việc kém hơn,</li>
-<li>cư xử tệ hơn,</li>
-<li>rời bỏ nghề nhiều hơn,</li>
-<li>hoặc chỉ phản ứng tiêu cực trong nhận thức và thái độ?</li>
-</ul>
-<h3 id="vì-sao-câu-hỏi-này-quan-trọng">Vì sao câu hỏi này quan trọng</h3>
-<p>Trong nhiều bối cảnh, occupational segregation theo giới vẫn còn rất mạnh. Lý do thường được nêu ra không chỉ là supply side, như sở thích hay self-selection của phụ nữ, mà còn là demand side: employers hoặc incumbent male workers có thể tin rằng sự hiện diện của phụ nữ sẽ làm giảm cohesion, morale, hoặc productivity. Đây là một lập luận policy rất mạnh, vì nó thường được dùng để biện minh cho việc duy trì các “male preserves”.</p>
-<p>Vấn đề là rất khó kiểm định nhân quả. Ở đa số setting dân sự:</p>
-<ul>
-<li>phụ nữ vào nghề cùng lúc với nhiều thay đổi xã hội khác,</li>
-<li>dữ liệu objective về worker performance thường không công khai,</li>
-<li>rất khó tách effect của việc “phụ nữ hiện diện” khỏi effect của broader institutional change.</li>
-</ul>
-<p>Quân đội Mỹ tạo ra một setting gần như lý tưởng để học câu hỏi này: policy shock rõ ràng, lộ trình tích hợp theo thời gian, dữ liệu hành chính giàu và outcome quan trọng.</p>
-<h3 id="khoảng-trống-văn-liệu-mà-bài-lấp-vào">Khoảng trống văn liệu mà bài lấp vào</h3>
-<p>Literature trước đây có nhiều bài về gender diversity trong những môi trường đã tích hợp từ lâu, hoặc về exposure to women trong training/school settings. Nhưng bài này tập trung vào “extensive-margin integration”: lần đầu phụ nữ bước vào một môi trường trước đó all-male. Đây là điểm rất khác. Câu hỏi không còn là “nhiều phụ nữ hơn trong môi trường mixed có tác động gì”, mà là “việc phá vỡ độc quyền nam giới ban đầu có tạo backlash làm hỏng performance không”.</p>
-<h2 id="3.-main-contribution">3. Main contribution</h2>
-<p>Mình thấy bài có bốn đóng góp lớn.</p>
-<h3 id="đóng-góp-1-một-test-rất-trực-diện-cho-lập-luận-backlash-based-exclusion">Đóng góp 1: Một test rất trực diện cho lập luận backlash-based exclusion</h3>
-<p>Paper kiểm định thẳng lập luận phổ biến rằng employers hoặc organizations có thể ngại tuyển phụ nữ vào male-dominated jobs vì lo nam giới sẽ phản ứng tiêu cực và làm performance đi xuống. Kết quả của bài nhìn chung đi ngược nỗi lo đó.</p>
-<h3 id="đóng-góp-2-dữ-liệu-hiếm-về-objective-outcomes">Đóng góp 2: Dữ liệu hiếm về objective outcomes</h3>
-<p>Nhiều paper về diversity dừng ở attitudes hoặc self-reports. Bài này có hàng loạt chỉ số administrative: retention, separation for misconduct, demotion, criminal investigations, medical readiness, promotion, physical fitness. Đây là một lợi thế lớn, vì nó cho phép so sánh cảm nhận với kết quả thực tế.</p>
-<h3 id="đóng-góp-3-tách-female-peers-khỏi-female-leaders">Đóng góp 3: Tách female peers khỏi female leaders</h3>
-<p>Một nét rất đẹp của bài là không chỉ hỏi “có phụ nữ” hay không. Bài còn khai thác variation về rank của phụ nữ lúc tích hợp:</p>
-<ul>
-<li>đơn vị tích hợp có ít nhất một nữ officer,</li>
-<li>đơn vị tích hợp chỉ với enlisted women.</li>
-</ul>
-<p>Kết quả cho thấy phản ứng tiêu cực về perceptions của nam giới hầu như chỉ xuất hiện khi có nữ officer. Đây là một đóng góp sắc vì nó gợi ra rằng vấn đề không đơn thuần là “working with women”, mà có thể là “working under / alongside women in authority”.</p>
-<h3 id="đóng-góp-4-phân-biệt-performance-với-perception">Đóng góp 4: Phân biệt performance với perception</h3>
-<p>Đây có lẽ là insight đáng nhớ nhất: subjective backlash không đồng nghĩa với objective productivity loss. Bài chỉ ra một wedge rõ ràng giữa hai lớp outcome. Đây là đóng góp có giá trị vượt xa bối cảnh quân đội.</p>
-<h2 id="4.-identification-or-methodology">4. Identification or methodology</h2>
-<h3 id="setting-thể-chế">Setting thể chế</h3>
-<p>Năm 2016, U.S. military chấm dứt Ground Combat Exclusion Policy và mở các vị trí chiến đấu mặt đất cho phụ nữ. Nhưng việc tích hợp không diễn ra đồng loạt. Army triển khai dần từng combat company theo thời gian. Theo paper, sample chính gồm <strong>391 infantry, armor, và cavalry reconnaissance companies</strong> trong Brigade Combat Teams giai đoạn 2012-2020.</p>
-<p>Quá trình tích hợp có vài đặc điểm quan trọng:</p>
-<ul>
-<li>trước integration, các combat companies này gần như all-male,</li>
-<li>sau integration, một công ty khi đã nhận cohort phụ nữ đầu tiên thì tiếp tục là integrated,</li>
-<li>lộ trình tích hợp diễn ra dần theo năm,</li>
-<li>đến đầu fiscal year 2023, vẫn còn khoảng 35% các companies trong sample chưa được tích hợp.</li>
-</ul>
-<p>Ngoài ra Army có policy gọi là <strong>“Leaders First”</strong>: lý tưởng là assign một female officer vào company trước, rồi mới đến female enlisted soldiers. Nhưng compliance không hoàn hảo. Khoảng 17% companies tích hợp giai đoạn 2017-2020 không có female officer trong vòng một tháng đầu sau khi nhận female enlisted soldiers. Chính variation này giúp paper tách female leaders khỏi female peers.</p>
-<h3 id="dữ-liệu">Dữ liệu</h3>
-<p>Paper dùng hai nhóm dữ liệu lớn.</p>
-<h3 id="4.1-administrative-personnel-records">4.1 Administrative personnel records</h3>
-<p>Cho phép quan sát:</p>
-<ul>
-<li>rank, assignment, career path,</li>
-<li>retention / exit khỏi Army,</li>
-<li>reason for separation, gồm misconduct,</li>
-<li>demotion,</li>
-<li>criminal investigations,
+  <main>
+    <h1>The Effects of Gender Integration on Men: Evidence from the U.S. Military</h1>
+    <p class="lead">Bản HTML dễ đọc phản ánh trung thực nội dung của analysis.md trong lượt chạy ngày 2026-05-04.</p>
+    <section class="card">
+      <pre># The Effects of Gender Integration on Men: Evidence from the U.S. Military
+
+- **Tác giả:** Kyle Greenberg, Melanie Wasserman, E. Anna Weber
+- **Journal:** The Quarterly Journal of Economics
+- **Năm:** 2026
+- **Ngày agent chạy:** 2026-05-04
+- **Nguồn bài báo chính:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag016/8551347
+- **Nguồn PDF dùng để phân tích:** NBER Working Paper 33235, bản `December 2024, Revised January 2026` tại https://www.nber.org/system/files/working_papers/w33235/w33235.pdf
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công vào repo `huylvu/00_reading` trong thư mục `The Effects of Gender Integration on Men - Greenberg Wasserman Weber/`; `analysis.pdf` chưa được tạo và chưa được lưu; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa tải và chưa upload được file nhị phân vào repo trong lượt chạy này.
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách nhất quán.
+
+## Executive summary
+
+Paper hỏi một câu rất trực diện nhưng lâu nay khó trả lời thật sự bằng dữ liệu tốt: khi phụ nữ lần đầu bước vào một nghề trước đó gần như hoàn toàn là của nam giới, nam giới có phản ứng tiêu cực về năng suất, hành vi, hay khả năng làm việc hay không? Bối cảnh là quyết định năm 2016 của quân đội Mỹ mở toàn bộ vị trí chiến đấu mặt đất cho phụ nữ, trong đó infantry và armor là hai occupational tracks vốn trước đó bị đóng với phụ nữ.
+
+Điểm mạnh của bài là nó tận dụng việc tích hợp phụ nữ vào các combat companies diễn ra dần dần theo thời gian và khác nhau giữa các đơn vị, từ đó chạy difference-in-differences và event study trên dữ liệu hành chính cấp cá nhân rất giàu: retention, promotion, demotion, misconduct, criminal investigation, medical profile, physical fitness, cộng thêm survey ẩn danh về workplace climate. Kết quả trung tâm là: không có bằng chứng rằng việc đưa phụ nữ vào các đơn vị trước đó toàn nam làm xấu đi performance hay conduct của nam giới theo các chỉ số mà Army dùng để đánh giá readiness. Thậm chí, separations vì misconduct còn giảm. Tuy nhiên, perceptions của nam giới về workplace quality lại xấu đi nhẹ, và sự xấu đi này chủ yếu tập trung ở những đơn vị được tích hợp kèm ít nhất một nữ officer.
+
+Bài đáng đọc vì nó tách bạch rất rõ giữa “objective outcomes” và “subjective reactions”. Nhiều tranh luận về diversity bị mắc kẹt ở chỗ trộn hai thứ này vào nhau. Paper cho thấy thái độ tiêu cực của nam giới không nhất thiết kéo theo suy giảm hiệu suất thực tế. Đây là một kết quả rất quan trọng cho labor economics, personnel economics, economics of gender, và cả policy design trong những môi trường nam trị.
+
+## 1. Metadata
+
+- **Tiêu đề paper:** The Effects of Gender Integration on Men: Evidence from the U.S. Military
+- **Tác giả:** Kyle Greenberg, Melanie Wasserman, E. Anna Weber
+- **Journal:** The Quarterly Journal of Economics
+- **Năm:** 2026
+- **DOI / trang nguồn chính:** https://doi.org/10.1093/qje/qjag016
+- **Trang Oxford Academic đã xác minh:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag016/8551347
+- **PDF đã dùng để phân tích:** https://www.nber.org/system/files/working_papers/w33235/w33235.pdf
+- **Ghi chú về PDF:** PDF journal chính thức trên Oxford Academic tồn tại nhưng môi trường hiện tại không truy xuất trực tiếp file PDF đó một cách ổn định; bản NBER Working Paper 33235 revised January 2026 là bản công khai tốt nhất mình dùng để đọc sâu và nó bám rất sát phiên bản QJE.
+
+## 2. Research question and motivation
+
+### Câu hỏi nghiên cứu trung tâm
+
+Khi phụ nữ lần đầu bước vào một occupation trước đó hoàn toàn là nam giới, nam giới có phản ứng theo hướng làm giảm chất lượng hoạt động của workplace hay không? Cụ thể hơn, họ có:
+
+- làm việc kém hơn,
+- cư xử tệ hơn,
+- rời bỏ nghề nhiều hơn,
+- hoặc chỉ phản ứng tiêu cực trong nhận thức và thái độ?
+
+### Vì sao câu hỏi này quan trọng
+
+Trong nhiều bối cảnh, occupational segregation theo giới vẫn còn rất mạnh. Lý do thường được nêu ra không chỉ là supply side, như sở thích hay self-selection của phụ nữ, mà còn là demand side: employers hoặc incumbent male workers có thể tin rằng sự hiện diện của phụ nữ sẽ làm giảm cohesion, morale, hoặc productivity. Đây là một lập luận policy rất mạnh, vì nó thường được dùng để biện minh cho việc duy trì các “male preserves”.
+
+Vấn đề là rất khó kiểm định nhân quả. Ở đa số setting dân sự:
+
+- phụ nữ vào nghề cùng lúc với nhiều thay đổi xã hội khác,
+- dữ liệu objective về worker performance thường không công khai,
+- rất khó tách effect của việc “phụ nữ hiện diện” khỏi effect của broader institutional change.
+
+Quân đội Mỹ tạo ra một setting gần như lý tưởng để học câu hỏi này: policy shock rõ ràng, lộ trình tích hợp theo thời gian, dữ liệu hành chính giàu và outcome quan trọng.
+
+### Khoảng trống văn liệu mà bài lấp vào
+
+Literature trước đây có nhiều bài về gender diversity trong những môi trường đã tích hợp từ lâu, hoặc về exposure to women trong training/school settings. Nhưng bài này tập trung vào “extensive-margin integration”: lần đầu phụ nữ bước vào một môi trường trước đó all-male. Đây là điểm rất khác. Câu hỏi không còn là “nhiều phụ nữ hơn trong môi trường mixed có tác động gì”, mà là “việc phá vỡ độc quyền nam giới ban đầu có tạo backlash làm hỏng performance không”.
+
+## 3. Main contribution
+
+Mình thấy bài có bốn đóng góp lớn.
+
+### Đóng góp 1: Một test rất trực diện cho lập luận backlash-based exclusion
+
+Paper kiểm định thẳng lập luận phổ biến rằng employers hoặc organizations có thể ngại tuyển phụ nữ vào male-dominated jobs vì lo nam giới sẽ phản ứng tiêu cực và làm performance đi xuống. Kết quả của bài nhìn chung đi ngược nỗi lo đó.
+
+### Đóng góp 2: Dữ liệu hiếm về objective outcomes
+
+Nhiều paper về diversity dừng ở attitudes hoặc self-reports. Bài này có hàng loạt chỉ số administrative: retention, separation for misconduct, demotion, criminal investigations, medical readiness, promotion, physical fitness. Đây là một lợi thế lớn, vì nó cho phép so sánh cảm nhận với kết quả thực tế.
+
+### Đóng góp 3: Tách female peers khỏi female leaders
+
+Một nét rất đẹp của bài là không chỉ hỏi “có phụ nữ” hay không. Bài còn khai thác variation về rank của phụ nữ lúc tích hợp:
+
+- đơn vị tích hợp có ít nhất một nữ officer,
+- đơn vị tích hợp chỉ với enlisted women.
+
+Kết quả cho thấy phản ứng tiêu cực về perceptions của nam giới hầu như chỉ xuất hiện khi có nữ officer. Đây là một đóng góp sắc vì nó gợi ra rằng vấn đề không đơn thuần là “working with women”, mà có thể là “working under / alongside women in authority”.
+
+### Đóng góp 4: Phân biệt performance với perception
+
+Đây có lẽ là insight đáng nhớ nhất: subjective backlash không đồng nghĩa với objective productivity loss. Bài chỉ ra một wedge rõ ràng giữa hai lớp outcome. Đây là đóng góp có giá trị vượt xa bối cảnh quân đội.
+
+## 4. Identification or methodology
+
+### Setting thể chế
+
+Năm 2016, U.S. military chấm dứt Ground Combat Exclusion Policy và mở các vị trí chiến đấu mặt đất cho phụ nữ. Nhưng việc tích hợp không diễn ra đồng loạt. Army triển khai dần từng combat company theo thời gian. Theo paper, sample chính gồm **391 infantry, armor, và cavalry reconnaissance companies** trong Brigade Combat Teams giai đoạn 2012-2020.
+
+Quá trình tích hợp có vài đặc điểm quan trọng:
+
+- trước integration, các combat companies này gần như all-male,
+- sau integration, một công ty khi đã nhận cohort phụ nữ đầu tiên thì tiếp tục là integrated,
+- lộ trình tích hợp diễn ra dần theo năm,
+- đến đầu fiscal year 2023, vẫn còn khoảng 35% các companies trong sample chưa được tích hợp.
+
+Ngoài ra Army có policy gọi là **“Leaders First”**: lý tưởng là assign một female officer vào company trước, rồi mới đến female enlisted soldiers. Nhưng compliance không hoàn hảo. Khoảng 17% companies tích hợp giai đoạn 2017-2020 không có female officer trong vòng một tháng đầu sau khi nhận female enlisted soldiers. Chính variation này giúp paper tách female leaders khỏi female peers.
+
+### Dữ liệu
+
+Paper dùng hai nhóm dữ liệu lớn.
+
+### 4.1 Administrative personnel records
+
+Cho phép quan sát:
+
+- rank, assignment, career path,
+- retention / exit khỏi Army,
+- reason for separation, gồm misconduct,
+- demotion,
+- criminal investigations,
 - medical profiles,
 - promotion to Sergeant,
 - Army Physical Fitness Test scores cho enlisted soldiers.
@@ -272,11 +154,14 @@ Tác giả dựng các workplace quality indices theo nhóm câu hỏi và một
 
 Paper có ba lớp sample:
 
-1. **Individual-level sample of newly assigned male soldiers**<br />Đây là sample ưa thích cho administrative outcomes. Ý tưởng là đo outcome của nam giới trong vòng hai năm sau khi họ được assign vào company, và lợi dụng việc họ đến trước hay sau integration.
+1. **Individual-level sample of newly assigned male soldiers**  
+Đây là sample ưa thích cho administrative outcomes. Ý tưởng là đo outcome của nam giới trong vòng hai năm sau khi họ được assign vào company, và lợi dụng việc họ đến trước hay sau integration.
 
-2. **Company-level sample**<br />Dùng để xem company-wide outcomes, gồm cả khi lấy trung bình cho mọi nam giới hoặc cho tất cả soldiers.
+2. **Company-level sample**  
+Dùng để xem company-wide outcomes, gồm cả khi lấy trung bình cho mọi nam giới hoặc cho tất cả soldiers.
 
-3. **Climate survey sample**<br />Vì survey ẩn danh nên không biết soldier vào unit từ khi nào; tác giả gán treatment theo integration status của company tại thời điểm trả lời survey.
+3. **Climate survey sample**  
+Vì survey ẩn danh nên không biết soldier vào unit từ khi nào; tác giả gán treatment theo integration status của company tại thời điểm trả lời survey.
 
 ### Chiến lược nhận dạng
 
@@ -573,9 +458,13 @@ Nếu phải giữ lại một câu, mình sẽ giữ câu này: **sự hiện d
 
 ## 12. Storage notes for this run
 
-- `analysis.md`: đã tạo xong ở bản địa phương; sẽ cập nhật trạng thái cuối sau bước lưu GitHub.
-- `analysis.html`: dự kiến tạo từ cùng nội dung để có bản dễ đọc hơn; trạng thái cuối sẽ cập nhật sau bước lưu GitHub.
-- `analysis.pdf`: chưa tạo ở thời điểm soạn bản nháp này; chỉ được coi là thành công nếu thật sự tạo được file PDF hợp lệ và lưu được ở bước sau.
-- **PDF gốc của paper:** đã xác minh chắc nguồn PDF NBER công khai, nhưng chưa thể coi là đã lưu vào GitHub cho đến khi có file nhị phân thực sự được upload thành công.
-- **Google Drive:** mặc định bỏ qua nếu không tạo được Google Doc và tracker đúng cách trong lượt chạy này.
-</body></html>
+- `analysis.md`: đã lưu thành công lên GitHub.
+- `analysis.html`: đã lưu thành công lên GitHub dưới dạng bản dễ đọc.
+- `analysis.pdf`: chưa tạo và chưa lưu trong lượt chạy này.
+- **PDF gốc của paper:** đã xác minh chắc nguồn PDF NBER công khai, nhưng chưa tải và chưa lưu được file nhị phân vào GitHub do giới hạn môi trường ở bước truy xuất và upload binary.
+- **Google Drive:** đã bỏ qua trong lượt chạy này.
+</pre>
+    </section>
+  </main>
+</body>
+</html>
