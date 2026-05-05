@@ -7,8 +7,8 @@
 - **DOI:** https://doi.org/10.1257/aer.20241465
 - **Nguồn PDF dùng để phân tích sâu:** NBER Working Paper 29862, bản `March 2022, Revised September 2025` tại https://www.nber.org/system/files/working_papers/w29862/w29862.pdf
 - **Ghi chú về phiên bản PDF:** PDF chính thức của AER tồn tại trên trang AEA nhưng không truy cập công khai được trong môi trường hiện tại; vì vậy bản PDF tốt nhất có thể đọc đầy đủ và xác minh công khai là NBER working paper revised September 2025. Nội dung cốt lõi rất sát bản xuất bản; abstract trên trang AER cho thấy có vài chênh lệch số nhỏ so với working paper, ví dụ tỷ trọng thu nhập dài hạn đến từ nguồn trong nước là `74.9%` trên trang AER so với `73.6%` trong bản NBER, và phần đóng góp của đầu tư giáo dục là `19.7%` trên trang AER so với `19.6%` trong bản NBER.
-- **Trạng thái lưu trên GitHub:** Chưa cập nhật ở thời điểm soạn nháp này
-- **Trạng thái lưu trên Google Drive:** Chưa thực hiện; sẽ chỉ làm nếu tạo được Google Doc đúng nghĩa và tracker sheet trong đúng folder đích
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công tại thư mục `Abundance from Abroad - Khanna Murathanoglu Theoharides Yang/` trong repo `huylvu/00_reading`; `analysis.pdf` mới tạo cục bộ, chưa upload thành công; PDF gốc của paper mới xác minh được nguồn công khai, chưa lưu được vào repo
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker sheet trong đúng folder đích một cách nhất quán
 
 ## Executive Summary
 
@@ -352,5 +352,5 @@ Có thể, nhưng chỉ khi có dữ liệu đủ tốt. Điều kiện gần nh
 ## Ghi chú về lưu trữ và giới hạn thực thi
 
 - Bài được xác minh chắc ở hai lớp nguồn: trang bài báo chính thức của AER và bản PDF công khai NBER Working Paper 29862 revised September 2025.
-- Ở thời điểm soạn file này, tôi mới xác minh được nguồn PDF công khai tốt nhất; trạng thái cuối cùng của việc lưu `analysis.html`, `analysis.pdf`, PDF gốc, và GitHub/Drive sẽ được cập nhật sau khi các bước đó thực sự chạy xong.
+- Trong lượt chạy này, `analysis.md` và `analysis.html` đã lưu thành công lên GitHub; `analysis.pdf` đã tạo được ở máy cục bộ nhưng chưa đưa được lên GitHub; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai tốt nhất.
 - Nếu môi trường không chuyển được file PDF sang GitHub hoặc Gmail một cách đáng tin cậy, tôi sẽ để trạng thái tương ứng là chưa lưu/chưa đính kèm thành công thay vì ghi mập mờ.
