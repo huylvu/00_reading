@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Do The Effects of Nudges Persist? Theory and Evidence from 38 Natural Field Experiments</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f7f3;
+      --paper: #fffdf8;
+      --ink: #1f2933;
+      --muted: #52606d;
+      --line: #d9d3c7;
+      --accent: #7c5a2c;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 980px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    article {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 30px rgba(31, 41, 51, 0.06);
+    }
+    header {
+      padding: 36px 40px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 8px;
+      line-height: 1.2;
+      font-size: 2rem;
+    }
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .body {
+      padding: 28px 40px 40px;
+    }
+    .note {
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    a { color: var(--accent); }
+    @media (max-width: 720px) {
+      header, .body { padding: 22px 18px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Do The Effects of Nudges Persist? Theory and Evidence from 38 Natural Field Experiments</h1>
+        <p class="meta">Bản HTML dễ đọc đi kèm <code>analysis.md</code> cho briefing ngày 2026-05-06.</p>
+      </header>
+      <div class="body">
+        <p class="note">Tệp này giữ nguyên nội dung phân tích chính ở dạng hiển thị trực tiếp để đọc nhanh trên GitHub. Nguồn bài báo chính: <a href="https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag012/8492956">Oxford Academic</a>. Nguồn PDF công khai dùng để đọc sâu: <a href="https://www.restud.com/wp-content/uploads/2026/01/movers_no_online_appendix.pdf">ReStud public PDF</a>.</p>
+<pre># Do The Effects of Nudges Persist? Theory and Evidence from 38 Natural Field Experiments
+
+- **Tác giả:** Alec Brandon, Paul J. Ferraro, John A. List, Robert D. Metcalfe, Michael K. Price, Florian Rundhammer
+- **Journal:** The Review of Economic Studies
+- **Năm:** 2026
+- **Ngày agent chạy:** 2026-05-06
+- **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag012/8492956
+- **Nguồn PDF dùng để phân tích:** bản public PDF rất sát bản journal tại ReStud, dated `January 14, 2026`: https://www.restud.com/wp-content/uploads/2026/01/movers_no_online_appendix.pdf
+- **Nguồn PDF đối chiếu thêm:** NBER Working Paper 23277, bản `April 2022`: https://www.nber.org/system/files/working_papers/w23277/w23277.pdf
+- **Ghi chú về PDF:** PDF chính thức của Oxford Academic có metadata xuất bản chuẩn nhất; bản public ReStud PDF là nguồn tốt nhất để đọc sâu toàn văn trong lượt chạy này.
+- **Trạng thái lưu trên GitHub:** `analysis.md` đã lưu; `analysis.html` đã lưu; `analysis.pdf` chưa tạo/chưa lưu; PDF gốc của paper mới xác minh được nguồn công khai, chưa upload nhị phân lên repo trong lượt này.
+- **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích một cách đủ chắc chắn để báo cáo là hoàn tất.
+
+## Executive summary
+
+Paper hỏi một câu rất hay trong behavioral/applied micro: khi một nudge tạo ra tác động kéo dài, điều gì thực sự đang “persist” - thói quen của con người hay công nghệ gắn với căn nhà. Bối cảnh là Home Energy Report (HER), một social-comparison nudge rất nổi tiếng: hộ gia đình nhận thư so sánh mức tiêu thụ điện của mình với hàng xóm để khuyến khích tiết kiệm điện.
+
+Đóng góp lớn nhất của bài là formalize một research design để tách hai kênh tạo persistence. Nếu người cư dân ban đầu chuyển đi thì nudge dừng ngay, nhưng ngôi nhà vẫn còn được theo dõi hóa đơn điện. Nếu hiệu ứng vẫn còn trong ngôi nhà sau khi người cũ rời đi, phần đó hợp lý nhất được gán cho technology adoption trong căn nhà; phần mất đi cùng người cũ hợp lý hơn được gán cho habit formation.
+
+Kết quả chính rất sắc: hiệu ứng dài hạn của HER lên các homes có mover sample là giảm tiêu thụ điện khoảng 2.1%, trong đó khoảng 52% persistence còn lại trong ngôi nhà sau khi cư dân đầu tiên chuyển đi. Tác giả diễn giải rằng khoảng một nửa hiệu quả dài hạn đến từ technology adoption, chứ không chỉ từ thói quen. Phần heterogeneity còn đẹp hơn: ở nhà có electric heating, persistence chủ yếu do công nghệ; ở rental homes, persistence chủ yếu do habit formation.
+
+Bài đáng đọc vì nó vừa trả lời một câu substantive quan trọng về nudges, vừa đưa ra một design rất gọn để học cách tách cơ chế mà không cần đo trực tiếp mọi khoản đầu tư hay mọi thói quen.
+
+## Research question and motivation
+
+### Câu hỏi nghiên cứu trung tâm
+
+Hiệu ứng dài hạn của một nudge hoạt động qua kênh nào: thay đổi con người hay thay đổi vật chất/công nghệ trong môi trường nơi hành vi diễn ra?
+
+### Bối cảnh học thuật và thực tiễn
+
+Một lượng lớn văn liệu đã cho thấy nudges có thể rất cost-effective trong ngắn hạn, nhưng điểm yếu quen thuộc là fade-out. Với các bài toán như năng lượng, y tế, giáo dục hay tuân thủ chính sách, điều quan trọng không phải chỉ là có hiệu ứng tuần đầu hay tháng đầu, mà là hiệu ứng có bền hay không. Nếu persistence chủ yếu do habit formation, ta sẽ nghĩ khác về thiết kế và welfare của nudges so với trường hợp persistence đến từ durable technology adoption.
+
+Trong trường hợp HER, literatures trước biết rằng hiệu ứng tiết kiệm điện kéo dài hơn nhiều social-comparison nudges khác. Nhưng câu hỏi cơ chế vẫn khá mù mờ. Một số nghiên cứu gợi ý habit formation, một số gợi ý technology adoption, nhưng chưa có một design rõ ràng và minh bạch để tách hai thứ này.
+
+### Khoảng trống mà bài muốn lấp vào
+
+Paper lấp ba khoảng trống:
+
+- thiếu một identification strategy rõ ràng để decomposition long-run effect thành habit và technology
+- thiếu bằng chứng quy mô lớn, nhiều field experiments, để tránh chuyện kết luận dựa trên vài sample movers nhỏ
+- thiếu hiểu biết về heterogeneity của persistence: ở loại nhà nào thì nudge bền nhờ công nghệ, ở loại nhà nào nhờ thói quen
+
+## Main contribution
+
+### 1. Formalize một decomposition design rất gọn
+
+Đây là contribution đẹp nhất. Nếu nudge dừng khi người cũ chuyển đi nhưng căn nhà vẫn được quan sát, thì post-move treatment effect có thể nhận diện phần hiệu ứng đến từ technology in the home, với điều kiện các giả định phù hợp. Đây là một idea vừa đơn giản vừa mạnh.
+
+### 2. Cung cấp bằng chứng quy mô lớn
+
+Paper dùng gần 140,000 movers quan sát từ 38 natural field experiments về HER trên khắp Hoa Kỳ. Đây là scale rất lớn so với nhiều bàn luận trước đó về persistence của nudges.
+
+### 3. Chỉ ra rằng persistence của nudge không nhất thiết là “con người đổi hẳn”
+
+Kết quả khoảng một nửa persistence đến từ technology adoption là một correction quan trọng đối với cách đọc quá “behavioralist”. Nudge có thể bền vì nó kích hoạt đầu tư vật chất nhỏ nhưng lâu bền như bóng đèn hiệu quả hơn, weather stripping, door sweeps, chứ không chỉ vì người dân internalize thói quen.
+
+### 4. Đưa ra policy lesson rất thực tế
+
+Nếu nhà thiết kế muốn nudges bền hơn, hãy nhắm vào các hành vi có thể đi cùng enabling technology. Nếu muốn tác động tạm thời, cần cẩn thận vì một số nudges có thể tạo persistence thông qua capital embedded in the environment.
+
+### Vì sao đóng góp này quan trọng trong micro applied
+
+Bài này là một ví dụ rất hay của applied micro hiện đại: một causal design được xây đúng từ institutional detail của intervention, trả lời trực tiếp một câu hỏi về mechanism thay vì chỉ average treatment effect.
+
+## Identification or methodology
+
+## Bối cảnh can thiệp
+
+HER là thư gửi tới hộ gia đình, cho họ biết mức tiêu thụ điện của mình so với hàng xóm. Trong các experiments này, treatment là nhận HER đều đặn. Quan trọng nhất: nếu cư dân ban đầu chuyển đi, việc gửi HER cho căn nhà đó chấm dứt ngay, nhưng dữ liệu tiêu thụ điện của căn nhà vẫn tiếp tục được ghi nhận.
+
+## Ý tưởng nhận dạng cốt lõi
+
+Paper định nghĩa:
+
+- **ATE dài hạn:** hiệu ứng của HER lên home khi cư dân ban đầu vẫn ở đó sau thời gian đủ dài
+- **ATK:** phần hiệu ứng do technology adoption trong căn nhà
+- **ATH:** phần hiệu ứng do habits/skills của cư dân
+
+Post-move effect là chìa khóa. Nếu treatment effect vẫn còn sau khi người cũ đã rời đi, phần đó nhiều khả năng phải đến từ thứ còn nằm lại trong căn nhà, tức công nghệ hay physical capital. Khi đó:
+
+- post-move effect nhận diện phần technology
+- phần còn lại của pre-move long-run effect được gán cho habits
+
+## Ba giả định nhận dạng chính
+
+Paper nêu rất rõ ba assumptions:
+
+1. Treatment assignment không ảnh hưởng quyết định chuyển nhà của cư dân ban đầu.
+2. Treatment assignment không ảnh hưởng loại cư dân mới chuyển vào nhà.
+3. Công nghệ được adopt do HER vẫn ở lại trong nhà sau khi cư dân cũ rời đi.
+
+Tác giả tranh luận đây là các giả định hợp lý cho một “light touch” nudge như HER. Đồng thời họ dùng dữ liệu và heterogeneity patterns để kiểm tra xem các giả định này có broadly plausible hay không.
+
+## Dữ liệu và mẫu
+
+Paper dùng dữ liệu billing từ 38 HER experiments, tập trung vào mover sample gần 140,000 homes nơi cư dân ban đầu đã chuyển đi. Estimation dựa trên panel regressions với fixed effects khá dày theo home, time period và year-by-season-by-wave.
+
+## Heterogeneity design
+
+Paper tương tác pre-move và post-move treatment indicators với:
+
+- electric heating
+- rental status
+- whether the first HER showed the home was already below neighborhood average
+
+Logic ở đây vừa substantive vừa là indirect validation của design.
+
+## Điểm mạnh của phương pháp
+
+- dùng institutional detail của rollout và discontinuation rule để nhận diện mechanism
+- decomposition rất minh bạch, không cần đo trực tiếp từng durable investment
+- có heterogeneity analysis rất giàu ý nghĩa
+- robustness được làm khá kỹ quanh control specifications, timing of moves và sample construction
+
+## Điểm dễ bị nghi ngờ
+
+- sorting của cư dân mới vào treatment homes luôn là mối lo tự nhiên
+- giả định technology stability có thể bị vi phạm nếu công nghệ biến mất, hỏng, hoặc theo người cũ đi mất
+- habit và technology không phải lúc nào cũng phân tách gọn trong đời thực; có thể có complementarities
+
+## Results and interpretation
+
+## Kết quả chính
+
+Paper cho thấy trong mover sample:
+
+- long-run effect của HER là giảm tiêu thụ điện khoảng **2.1%**
+- post-move effect là khoảng **1.1%**
+- suy ra khoảng **51.9%** long-run effectiveness đến từ technology adoption và **48.1%** đến từ habits
+
+Đây là kết quả rất gọn và rất mạnh: “fully half” persistence của HER nằm ở chính căn nhà, không chỉ ở người từng sống trong đó.
+
+## Heterogeneity nổi bật
+
+### Electric heating
+
+Ở homes có electric heating, pre-move effect lớn hơn và phần lớn persistence sau move vẫn còn. Paper diễn giải rằng ở đây nudge dễ kích hoạt adoption của các technologies tiết kiệm điện có hiệu lực lâu bền, nên công nghệ là kênh chi phối.
+
+### Rental homes
+
+Ở rental homes, post-move effect gần như bằng 0. Paper đọc điều này như bằng chứng rằng persistence chủ yếu đến từ habit formation chứ không phải technology adoption, vì renters khó đầu tư hay khó giữ lợi ích đủ lâu để bõ chi phí đầu tư.
+
+### Homes initially comparing favorably to neighbors
+
+Với homes vốn đã tiêu thụ thấp hơn hàng xóm ngay từ HER đầu tiên, hiệu ứng HER nhỏ hơn và sự suy giảm này chủ yếu đến từ phần habit chứ không phải technology. Điều này hợp với trực giác rằng những homes này đã ít “slack” hơn để thay đổi hành vi.
+
+## Diễn giải kinh tế
+
+Kết quả giúp ta đọc lại whole literature về persistence của nudges. Nếu một social-comparison nudge tạo hiệu ứng lâu dài trong một số domains mà không phải domain khác, một giải thích tự nhiên là availability of enabling technologies. Trong energy và water conservation, có nhiều small durable investments để biến nudge thành persistence. Trong charitable giving hay voter turnout, technology margin yếu hơn nên effects dễ fade hơn.
+
+## Hàm ý policy
+
+- Muốn nudges bền, nên nhắm vào hành vi có thể đi kèm durable technologies hoặc default-setting technologies.
+- Muốn temporary demand reduction, phải nhận ra rằng nudge có thể “over-persist” ngoài ý định nếu nó kích hoạt adoption.
+- Khi làm cost-benefit analysis, không nên chỉ nhìn hiệu ứng hành vi thuần túy; cần tính cả indirect technology costs và persistence benefits.
+
+## What is special or elegant about the paper
+
+Điểm đẹp nhất của paper là nó khai thác một chi tiết vận hành rất nhỏ của intervention - HER dừng khi người cũ chuyển đi - để tạo ra một mechanism design gần như tự nhiên. Đây là kiểu applied work rất đáng học: contribution không nằm ở một estimator quá cầu kỳ, mà ở cách nhận ra “thể chế của dữ liệu” đã chứa sẵn một experiment về cơ chế.
+
+Ngoài ra, bài còn đặc biệt ở chỗ nó tránh một lỗi phổ biến trong behavioral economics: thấy hiệu ứng bền thì mặc định gán cho habit formation. Ở đây tác giả cho thấy một nửa câu chuyện nằm ở physical capital. Điều này làm paper đáng nhớ vì nó kéo behavioral economics gần hơn với household production và technology adoption.
+
+## Required background knowledge
+
+## 1. Nudge và social comparison
+
+Nudge là can thiệp thay đổi hành vi mà không cấm lựa chọn hay thay đổi mạnh incentives tiền tệ. HER là một descriptive social norm nudge: “nhà bạn dùng điện nhiều hay ít so với hàng xóm”.
+
+## 2. Habit formation versus technology adoption
+
+- **Habit formation:** người dân học hoặc hình thành nếp tiêu dùng tiết kiệm hơn.
+- **Technology adoption:** người dân mua hay lắp thứ gì đó làm mức tiêu thụ thấp hơn ngay cả khi cư dân cũ đã đi.
+
+Paper này chủ yếu là bài học về phân biệt hai kênh đó.
+
+## 3. Potential outcomes logic
+
+Paper được viết khá rõ theo potential outcomes. ATE, ATK, ATH là các object nhân quả có định nghĩa rõ, không chỉ là labels diễn giải sau hồi quy.
+
+## 4. Movers design
+
+Đây là một thiết kế thường gặp trong applied micro: dùng việc con người rời khỏi unit nhưng unit vẫn được quan sát để tách “effect on person” khỏi “effect on environment”. Nó có họ hàng logic với landlord-tenant, teacher-school hay manager-firm questions.
+
+## Limitations and open questions
+
+### 1. Sorting của cư dân mới vẫn là concern khó loại bỏ hoàn toàn
+
+Nếu treatment homes sau này hút một kiểu cư dân mới có habits khác, post-move effect có thể overstate technology channel. Tác giả thảo luận điều này khá kỹ, nhưng dữ liệu không cho phép quan sát trực tiếp habits của incoming residents.
+
+### 2. Technology adoption được suy ra gián tiếp
+
+Paper không quan sát đầy đủ từng home đã lắp đúng công nghệ gì. Đây là strength của design, nhưng cũng là limitation vì decomposition dựa trên assumptions và indirect evidence.
+
+### 3. External validity
+
+HER là một can thiệp khá đặc thù trong residential energy consumption ở Mỹ. Ý tưởng chung có thể mở rộng, nhưng magnitudes và available technology margins sẽ rất khác trong các domain khác.
+
+### 4. Persistence beyond measured horizon
+
+Ngay cả khi post-move effect còn tồn tại, câu hỏi tiếp theo là nó bền bao lâu nữa, depreciation ra sao, và có spillovers tới future residents hay neighborhood norms hay không.
+
+## Takeaways for a researcher
+
+1. Một detail vận hành nhỏ của intervention có thể trở thành identification strategy lớn nếu đọc đúng institutional context.
+2. Đừng mặc định persistence là habit formation; trong nhiều settings, environment và technology mới là phần bền.
+3. Mechanism papers mạnh nhất khi biến intuition thành formal causal objects có thể ước lượng được.
+4. Heterogeneity không chỉ để “trang trí”; ở đây nó vừa giải thích kết quả vừa giúp kiểm tra plausibility của assumptions.
+5. Khi outcome là hành vi hộ gia đình, hãy nghĩ xem unit nào tồn tại lâu hơn con người: home, school, firm, neighborhood. Nhiều design hay nằm ở đó.
+6. Applied micro tốt không nhất thiết phải dùng estimator mới; nhiều khi contribution nằm ở research design logic và data structure.
+
+## Vietnam relevance and extension
+
+## Liên hệ với Việt Nam
+
+Về bề mặt, HER là bối cảnh Mỹ. Nhưng idea của paper lại rất hữu ích cho Việt Nam, nhất là trong các bài toán energy conservation, water use, giáo dục, y tế, tiết kiệm và digital nudges. Câu hỏi quan trọng là: nếu một can thiệp hành vi có tác động kéo dài, nó kéo dài vì người dân đổi hành vi thật, hay vì họ đã thay đổi môi trường vật chất xung quanh mình?
+
+Ví dụ ở Việt Nam:
+
+- nhắc nhở tiết kiệm điện có thể làm hộ gia đình thay bóng, thay thiết bị, bọc cửa sổ, hay chỉnh set-up điều hòa
+- nudges về tiết kiệm nước có thể dẫn tới lắp vòi sen, bồn cầu, hoặc thiết bị tiết kiệm mới
+- nudges về học tập có thể khiến gia đình mua bàn học, app học tập, hay thuê gia sư, tức tạo capital chứ không chỉ habit
+
+## Điều kiện để triển khai ở Việt Nam
+
+- cần dữ liệu panel ở cấp household/home hoặc school/student đủ dài
+- cần biết intervention dừng khi nào và unit vật lý còn được quan sát ra sao
+- cần một event giống “move” hoặc “teacher exits/class remains” để tách người khỏi môi trường
+
+## Một số research question mới cho Việt Nam
+
+1. Các nudges tiết kiệm điện của EVN hay utility địa phương, nếu triển khai thử nghiệm, có tạo persistence chủ yếu qua technology adoption hay habit formation?
+2. Các nhắc nhở học tập gửi cho phụ huynh có bền nhờ thay đổi routine của gia đình hay nhờ đầu tư vật chất cho việc học?
+3. Trong water conservation hoặc waste sorting, hiệu ứng dài hạn của social-comparison messages ở đô thị Việt Nam có phụ thuộc vào khả năng mua/lắp thiết bị hỗ trợ hay không?
+
+## Trở ngại chính
+
+- dữ liệu household panel dài ở Việt Nam thường thiếu ổn định
+- việc quan sát “move” và theo dõi cùng một căn nhà hoặc cùng một lớp học sau khi tác nhân ban đầu rời đi khá khó
+- nhiều can thiệp hành vi tại Việt Nam không được randomize hoặc không có stop-rule rõ ràng như HER
+
+## Vì sao paper này đáng đọc cho người làm nghiên cứu ở Việt Nam
+
+Nó cho một lesson rất mạnh: khi đánh giá behavioral intervention, đừng chỉ hỏi “có hiệu quả không” hay “hiệu quả có bền không”, mà phải hỏi thêm “nó bền nhờ cái gì”. Câu hỏi cơ chế đó quyết định cả policy design, cost-benefit, và khả năng scale.
+
+## Ghi chú chọn paper
+
+Mình chọn paper này cho lượt chạy tối nay vì:
+
+- nó là top 5 journal rất mới, ReStud corrected proof ngày **20 February 2026**
+- nó thuộc applied micro rõ ràng, với design rất đáng học
+- có public PDF rất tốt để đọc sâu và đối chiếu thêm với NBER
+- nó chưa xuất hiện trong các paper gần đây đã lưu
+
+## Nguồn xác minh chính
+
+- Oxford Academic article page: https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag012/8492956
+- ReStud public PDF: https://www.restud.com/wp-content/uploads/2026/01/movers_no_online_appendix.pdf
+- NBER working paper page: https://www.nber.org/papers/w23277
+- NBER PDF: https://www.nber.org/system/files/working_papers/w23277/w23277.pdf
+</pre>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
