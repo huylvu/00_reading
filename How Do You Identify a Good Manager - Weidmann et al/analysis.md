@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-05-07
 - **Nguồn chính:** https://academic.oup.com/qje/article/141/2/1581/8435315
 - **Nguồn PDF tốt nhất đã xác minh:** PDF chính thức của QJE tại `https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag004/66511317/qjag004.pdf`
-- **Trạng thái lưu trên GitHub:** lượt chạy này dự kiến lưu `analysis.md` và `analysis.html`; không coi PDF gốc là đã lưu nếu chưa tải được file nhị phân thật sự
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công trong thư mục `How Do You Identify a Good Manager - Weidmann et al/`; chưa lưu PDF gốc và chưa tạo/lưu `analysis.pdf`
 - **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker sheet đúng folder đích với mức độ chắc chắn đủ cao
 
 ## 1. Metadata
