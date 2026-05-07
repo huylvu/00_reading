@@ -6,9 +6,9 @@
 - **Ngày agent chạy:** 2026-05-07
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf072/8270662
 - **Nguồn PDF dùng để phân tích:** manuscript công khai trên ReStud: https://www.restud.com/wp-content/uploads/2025/08/frakes_wasserman_final_manuscript.pdf
-- **Trạng thái lưu trên GitHub:** sẽ cập nhật ở cuối lượt chạy sau khi hoàn tất bước lưu trữ; dự kiến bắt buộc lưu `analysis.md`, ưu tiên lưu thêm `analysis.html`, không lưu `analysis.pdf` hay PDF gốc nếu không có đường binary đủ chắc
-- **Trạng thái lưu trên Google Drive:** tạm thời dự kiến bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker sheet đúng folder đích với mức độ chắc chắn đủ cao
-- **Trạng thái email:** sẽ cập nhật ở cuối lượt chạy; nếu không có file đính kèm tương thích thì email sẽ là email văn bản không đính kèm và sẽ dẫn tới nơi lưu trên GitHub
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công vào repo `huylvu/00_reading` trong thư mục `The Effect of Provider Diversity on Racial Health Disparities - Frakes Gruber/`; `analysis.pdf` chưa tạo; PDF gốc của paper mới xác minh được nguồn công khai, chưa lưu lên GitHub trong lượt này
+- **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker sheet đúng folder đích với mức độ chắc chắn đủ cao
+- **Trạng thái email:** email briefing đã gửi thành công tới `huymaeco@gmail.com` dưới dạng email văn bản không đính kèm; email đã nêu rõ link GitHub và trạng thái không có attachment
 
 ## 1. Metadata
 
