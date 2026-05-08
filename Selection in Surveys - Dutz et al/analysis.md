@@ -6,8 +6,8 @@
 - **Ngày agent chạy:** 2026-05-08
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article-abstract/doi/10.1093/restud/rdag003/8494738
 - **Nguồn PDF dùng để phân tích:** NBER Working Paper 29549, bản `December 2021, Revised July 2025` tại https://www.nber.org/system/files/working_papers/w29549/w29549.pdf
-- **Trạng thái lưu trên GitHub:** sẽ cập nhật ở cuối lượt chạy sau khi upload thực tế
-- **Trạng thái lưu trên Google Drive:** chưa thử trong thời điểm soạn bản cục bộ này
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công tại thư mục `Selection in Surveys - Dutz et al/` trong repo `huylvu/00_reading`; `analysis.pdf` đã render cục bộ hợp lệ nhưng chưa lưu được lên GitHub trong lượt này; PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa lưu được file nhị phân vào repo
+- **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker sheet vào đúng folder đích với mức độ chắc chắn đủ cao
 
 ## Executive summary
 
@@ -238,4 +238,6 @@ Một hướng khác là đặt bài toán trong evaluation settings. Ở Việt
 - Paper được chọn vì đây là bài **top 5 journal** rất mới trong ReStud 2026, nằm chắc trong applied micro/econometrics ứng dụng cho survey data, có public PDF gần bản xuất bản, và chưa xuất hiện trong danh sách paper gần đây của agent.
 - Bản PDF công khai tốt nhất mà agent xác minh được là **NBER Working Paper 29549, Revised July 2025**. Đây không phải PDF chính thức của ReStud, nhưng là working paper công khai gần bản xuất bản nhất mà agent truy cập được ổn định qua web trong lượt chạy này.
 - Môi trường hiện tại cho phép agent **đọc và xác minh nội dung PDF qua web**, nhưng việc tải raw binary PDF từ nguồn ngoài về shell tiếp tục bị chặn `403`. Vì vậy, trừ khi có thay đổi ở bước sau, trạng thái trung thực mặc định là **đã xác minh nguồn PDF công khai nhưng chưa lưu được file PDF gốc vào GitHub**.
-- Google Drive chưa được dùng trong bản cục bộ này; nếu bỏ qua ở cuối lượt chạy thì điều đó sẽ được ghi rõ thay vì mô tả mập mờ như thể đã lưu thành công.
+- `analysis.md` và `analysis.html` đã được lưu thành công lên GitHub ở thư mục `Selection in Surveys - Dutz et al/` trong repo `huylvu/00_reading`.
+- `analysis.pdf` đã được render cục bộ hợp lệ trong lượt chạy này, nhưng agent chưa có một đường upload binary đủ chắc qua GitHub connector hiện có; vì vậy trạng thái cuối cần hiểu là **chưa lưu `analysis.pdf` lên GitHub**.
+- Google Drive được **bỏ qua chủ động** trong lượt này vì chưa có tuyến tạo Google Doc và tracker sheet đúng folder đích với mức độ chắc chắn đủ cao.
