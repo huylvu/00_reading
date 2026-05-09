@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MAking The Invisible Hand Visible: Managers and The Allocation of Workers to Jobs</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">MAking The Invisible Hand Visible: Managers and The Allocation of Workers to Jobs</h1>
+</header>
+<h1 id="making-the-invisible-hand-visible-managers-and-the-allocation-of-workers-to-jobs">MAking The Invisible Hand Visible: Managers and The Allocation of Workers to Jobs</h1>
+<ul>
+<li>Tác giả: Virginia Minni</li>
+<li>Journal: The Quarterly Journal of Economics</li>
+<li>Năm: 2026</li>
+<li>Ngày agent chạy: 2026-05-10 (Asia/Saigon)</li>
+<li>Nguồn bài báo chính: https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag017/8537773</li>
+<li>DOI: https://doi.org/10.1093/qje/qjag017</li>
+<li>Nguồn PDF công khai dùng để phân tích: https://virginiaminni.github.io/assets/files/Minni_JMP.pdf</li>
+<li>Nguồn PDF công khai đối chiếu thêm: https://docs.iza.org/dp18137.pdf</li>
+<li>Ghi chú phiên bản: abstract trên trang QJE ghi dữ liệu bao phủ 11 năm, trong khi public PDF trên trang tác giả và bản IZA dùng để đọc sâu ghi 10 năm. Phần phân tích dưới đây bám theo public PDF và coi khác biệt này là khác biệt giữa các phiên bản manuscript.</li>
+<li>Trạng thái lưu trên GitHub: Đang chuẩn bị cập nhật trong repo <code>huylvu/00_reading</code>; mục tiêu lưu <code>analysis.md</code> và <code>analysis.html</code>. <code>analysis.pdf</code> không được tạo trong lượt này. PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa lưu lại vào GitHub dưới dạng file nhị phân.</li>
+<li>Trạng thái lưu trên Google Drive: Bỏ qua trong lượt này do chưa có tuyến tạo Google Doc và tracker sheet trong đúng folder đích với mức độ chắc chắn đủ cao.</li>
+</ul>
+<h2 id="executive-summary">Executive summary</h2>
+<p>Paper hỏi một câu rất “firm-side micro” nhưng cực cơ bản: vì sao managers lại quan trọng cho năng suất doanh nghiệp, và vai trò đó có đi qua kênh phân bổ lao động nội bộ hay không. Thay vì nhìn managers như người giám sát effort hay người đặt incentive, Virginia Minni xem managers như người “matchmaker” bên trong doanh nghiệp: họ quan sát kỹ năng của nhân viên, rồi đẩy nhân viên sang đúng job hơn.</p>
+<p>Để trả lời, paper dùng dữ liệu personnel records cực hiếm của một multinational consumer-goods firm, bao phủ hơn 200.000 white-collar workers và 30.000 managers tại hơn 100 nước trong khoảng một thập niên. Tác giả đo “manager giỏi” bằng tốc độ được thăng chức lên vai trò quản lý, rồi khai thác các đợt luân chuyển managers giữa teams để tạo event-study gần với assignment ngoại sinh ở cấp worker-manager match đầu tiên.</p>
+<p>Kết quả chính rất mạnh. Khi worker chuyển từ low-flyer sang high-flyer manager, khả năng lateral move trong nội bộ công ty tăng khoảng 40% sau bảy năm; lương dài hạn cao hơn khoảng 13%; với nhóm sales có dữ liệu outcome trực tiếp, performance tăng 0,347 độ lệch chuẩn sau ba năm. Đặc biệt, hiệu ứng gần như bất đối xứng: được gặp manager giỏi một lần để lại lợi ích bền, còn sau đó đổi sang manager kém hơn thì lợi ích không biến mất tương xứng. Đây là một paper đáng đọc vì nó mở “black box” bên trong firm bằng một cơ chế rất đẹp: năng suất tăng không nhất thiết phải đến từ tuyển mới hay sa thải, mà có thể đến từ tái phân bổ con người đang có sang đúng việc hơn.</p>
+<h2 id="research-question-and-motivation">Research question and motivation</h2>
+<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
+<p>Managers tạo ra giá trị cho firms bằng cách nào. Cụ thể hơn, liệu một phần quan trọng của managerial value-added có đến từ việc phân bổ workers sang jobs phù hợp hơn trong internal labor market hay không.</p>
+<h3 id="động-lực-học-thuật">Động lực học thuật</h3>
+<p>Literature về labor economics lâu nay tập trung mạnh vào matching giữa worker và firm trên thị trường lao động bên ngoài, còn bên trong doanh nghiệp thường vẫn là “hộp đen”. Trong khi đó, ở firms lớn, phần lớn career progression, wage growth, và occupational change lại diễn ra thông qua internal labor markets chứ không phải chỉ qua job hopping giữa firms.</p>
+<p>Paper đứng tại giao điểm của ba mạch văn liệu:</p>
+<ol type="1">
+<li>Văn liệu về internal labor markets và career dynamics trong doanh nghiệp.</li>
+<li>Văn liệu về managerial quality và manager fixed effects.</li>
+<li>Văn liệu về misallocation và match quality, nhưng chuyển trọng tâm từ worker-firm match sang worker-job match bên trong cùng một firm.</li>
+</ol>
+<h3 id="khoảng-trống-mà-paper-muốn-lấp">Khoảng trống mà paper muốn lấp</h3>
+<p>Các paper trước thường cho thấy managers quan trọng, nhưng khó nói chính xác họ quan trọng vì:</p>
+<ol type="1">
+<li>họ tăng effort hay monitoring,</li>
+<li>họ thiên vị hoặc dùng network,</li>
+<li>hay họ thật sự reallocates talent sang jobs phù hợp hơn.</li>
+</ol>
+<p>Paper này cố tách riêng kênh allocation đó và đo tác động dài hạn của nó lên wages, promotions, và productivity.</p>
+<h2 id="main-contribution">Main contribution</h2>
+<h3 id="chỉ-ra-một-cơ-chế-rất-cụ-thể-của-managerial-value-added">1. Chỉ ra một cơ chế rất cụ thể của managerial value-added</h3>
+<p>Đóng góp nổi bật nhất là chuyển câu chuyện từ “manager giỏi làm nhân viên chăm hơn” sang “manager giỏi phân người vào việc tốt hơn”. Đây là một đổi góc nhìn quan trọng trong applied micro về firms và labor.</p>
+<h3 id="mang-dữ-liệu-administrative-cực-giàu-vào-câu-hỏi-về-internal-allocation">2. Mang dữ liệu administrative cực giàu vào câu hỏi về internal allocation</h3>
+<p>Tác giả có dữ liệu universe-level cho white-collar workers và managers, kèm lịch sử teams, job moves, promotions, payroll, time-use của managers, internal mobility platform, employee surveys, và một sample sales productivity trực tiếp. Độ sâu này hiếm đến mức cho phép nhìn được cả lateral moves lẫn vertical moves chứ không chỉ promotions.</p>
+<h3 id="đưa-ra-một-measure-manager-quality-có-tính-ex-ante">3. Đưa ra một measure manager quality có tính ex ante</h3>
+<p>Thay vì đo manager quality bằng outcomes của subordinates rồi rơi vào vòng lặp nội sinh, tác giả dùng tốc độ promotion của chính managers như một “revealed preference” của firm. Điểm hay là measure này được xác lập trước khi manager bắt đầu giám sát worker đang được phân tích.</p>
+<h3 id="nối-managerial-allocation-với-productivity-và-persistence">4. Nối managerial allocation với productivity và persistence</h3>
+<p>Paper không dừng ở career outcomes mà nối sang sales productivity, rồi chỉ ra rằng tác động còn bền sau khi spell với manager giỏi đã kết thúc. Điều này làm paper mạnh hơn nhiều so với các kết quả supervisor effects ngắn hạn.</p>
+<h3 id="ý-nghĩa-rộng-cho-misallocation-và-theory-of-the-firm">5. Ý nghĩa rộng cho misallocation và theory of the firm</h3>
+<p>Nếu managers giúp uncover hidden talent và sửa worker-job mismatch ngay trong firm, thì một phần misallocation quan trọng nằm ở bên trong tổ chức, không chỉ ở thị trường bên ngoài. Đây là insight có giá trị cho cả organizational economics lẫn development/productivity research.</p>
+<h2 id="identification-or-methodology">Identification or methodology</h2>
+<h3 id="dữ-liệu-và-setting">Dữ liệu và setting</h3>
+<p>Paper dùng dữ liệu personnel records của một multinational consumer-goods firm hoạt động ở hơn 100 nước. Sample chính gồm hơn 224.000 regular full-time white-collar workers từ 2011 đến 2021, với hơn 10 triệu worker-month observations. Teams nhỏ, trung bình khoảng 5 workers trên mỗi supervisor, giúp tracking manager-worker links khá sạch.</p>
+<h3 id="đo-lường-manager-quality">Đo lường manager quality</h3>
+<p>Manager “giỏi” được định nghĩa là <code>high-flyer</code>, tức manager được promote từ worker lên manager ở độ tuổi thấp hơn, phản ánh loại manager mà chính firm đánh giá là có tiềm năng cao. Khoảng 26,2% managers rơi vào nhóm này. Tác giả cho thấy measure này dự báo ex post managerial performance, nhưng quan trọng hơn là nó tồn tại trước các outcomes của subordinate trong thiết kế chính.</p>
+<h3 id="chiến-lược-nhận-dạng-cốt-lõi">Chiến lược nhận dạng cốt lõi</h3>
+<p>Thiết kế chính là event study quanh <code>first manager rotation</code> của worker. So sánh trọng tâm không phải giữa “có đổi manager” và “không đổi manager”, mà giữa các loại đổi manager:</p>
+<ol type="1">
+<li>low-to-high,</li>
+<li>low-to-low,</li>
+<li>high-to-low,</li>
+<li>high-to-high.</li>
+</ol>
+<p>Nói cách khác, paper dùng các team đều trải qua manager transition, rồi tận dụng việc loại manager mới tốt hay không tốt để nhận dạng hiệu ứng. Cách này loại bớt bản thân “shock do transition” vốn có thể ảnh hưởng outcomes.</p>
+<h3 id="vì-sao-thiết-kế-này-có-sức-thuyết-phục">Vì sao thiết kế này có sức thuyết phục</h3>
+<ol type="1">
+<li>Rotations là một phần của career progression của managers, không do worker quyết định.</li>
+<li>Tác giả đưa bằng chứng mô tả và kiểm định rằng rotations orthogonal với worker characteristics.</li>
+<li>Manager quality được đo ex ante nên tránh việc worker outcomes tự tạo ra manager ranking.</li>
+<li>Event-study cho phép nhìn pre-trends và động học rất dài, đặc biệt phù hợp vì returns của worker-job match có thể bộc lộ chậm.</li>
+</ol>
+<h3 id="cơ-chế-và-kiểm-định-bổ-sung">Cơ chế và kiểm định bổ sung</h3>
+<p>Paper không chỉ chạy reduced form. Nó còn:</p>
+<ol type="1">
+<li>dùng O*NET để đo task distance của occupational moves,</li>
+<li>chạy mediation analysis để lượng hóa phần salary gains đi qua lateral reallocation,</li>
+<li>dùng sales productivity để tách pay effect khỏi real performance effect,</li>
+<li>dùng time-use data và skill profiles của managers để hiểu high-flyers làm gì khác,</li>
+<li>dùng internal mobility platform và interviews để soi rõ kênh allocation.</li>
+</ol>
+<h3 id="điểm-mạnh-của-phương-pháp">Điểm mạnh của phương pháp</h3>
+<ol type="1">
+<li>Dữ liệu cực sâu cho phép kiểm tra cơ chế thay vì chỉ kể câu chuyện.</li>
+<li>Thiết kế xoay quanh manager rotations là khá tự nhiên cho môi trường internal labor market.</li>
+<li>So sánh giữa các loại transitions tinh tế hơn một diff-in-diff thô.</li>
+<li>Kết hợp worker outcomes, task reallocation, productivity, surveys, manager time use, và heterogeneity tạo thành một lập luận nhiều lớp.</li>
+</ol>
+<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
+<ol type="1">
+<li>Đây vẫn là một firm duy nhất, nên external validity về magnitude luôn có giới hạn.</li>
+<li>Promotion speed có thể phản ánh nhiều phẩm chất khác ngoài allocative skill.</li>
+<li>Rotations có thể “gần ngoại sinh” chứ không hoàn toàn ngẫu nhiên; paper giảm lo ngại này nhưng không thể xóa bỏ hoàn toàn.</li>
+<li>Mediation qua lateral moves có thể còn bỏ sót phần allocation diễn ra qua vertical sorting hoặc job redesign tinh vi hơn.</li>
+</ol>
+<h2 id="results-and-interpretation">Results and interpretation</h2>
+<h3 id="good-managers-làm-tăng-lateral-reallocation-rất-mạnh">1. Good managers làm tăng lateral reallocation rất mạnh</h3>
+<p>Khi worker được chuyển từ low-flyer sang high-flyer manager, lateral moves tăng khoảng 40% sau bảy năm. Quan trọng hơn, đây không phải các moves “na ná” nhau, mà là moves có thay đổi task content đáng kể. Điều này rất hợp với câu chuyện matching lại kỹ năng sang job phù hợp hơn.</p>
+<h3 id="career-progression-cải-thiện-bền-và-lớn">2. Career progression cải thiện bền và lớn</h3>
+<p>Sau bảy năm, worker từng được high-flyer quản lý có lương cao hơn khoảng 13%. Đây là con số lớn nếu nhớ rằng treatment thực ra chỉ là chất lượng manager ở một transition episode chứ không phải một chương trình training quy mô lớn.</p>
+<h3 id="performance-thực-sự-tăng-không-chỉ-pay-tăng">3. Performance thực sự tăng, không chỉ pay tăng</h3>
+<p>Ở sample sales workers thuộc 15 nước, good managers làm sales productivity tăng 0,347 standard deviations sau ba năm. Điều này khóa chặt một điểm quan trọng: manager giỏi không chỉ “nâng đỡ” lương hay đánh giá chủ quan, mà còn làm output đo trực tiếp tăng lên.</p>
+<h3 id="hiệu-ứng-bất-đối-xứng-và-có-persistence">4. Hiệu ứng bất đối xứng và có persistence</h3>
+<p>Được gặp manager giỏi có lợi lớn; nhưng mất manager giỏi không tạo ra cú giảm đối xứng tương tự. Diễn giải kinh tế tự nhiên là good managers để lại những worker-job matches tốt hơn, và các matches này tiếp tục phát huy kể cả khi manager tốt đã rời đi. Đây là một trong những kết quả đẹp nhất của paper.</p>
+<h3 id="mediation-qua-allocation-channel-là-lớn">5. Mediation qua allocation channel là lớn</h3>
+<p>Khoảng 64% phần tăng lương được giải thích bởi lateral job changes. Đây chưa phải toàn bộ allocation effect vì chưa tính vertical transfers và những trường hợp worker ở yên vì đã ở đúng job rồi. Vậy nên con số 64% có lẽ là lower bound hơn là full share.</p>
+<h3 id="manager-behavior-cũng-khác">6. Manager behavior cũng khác</h3>
+<p>High-flyer managers dành nhiều thời gian hơn cho one-on-ones, giao tiếp, và multitasking; skill profiles của họ cũng nghiêng về strategy và talent management hơn project management thuần túy. Điều này khớp với hình ảnh manager như người chẩn đoán năng lực và điều phối talent.</p>
+<h3 id="cost-benefit-rất-ấn-tượng">7. Cost-benefit rất ấn tượng</h3>
+<p>Tác giả ước tính firm bỏ ra khoảng 0,21 USD lương manager cao hơn để đổi lấy 1 USD lợi ích từ worker productivity cao hơn. Nếu phép tính xấp xỉ này đáng tin, managerial talent ở đây có ROI rất lớn.</p>
+<h3 id="diễn-giải-kinh-tế-tổng-quát">Diễn giải kinh tế tổng quát</h3>
+<p>Paper cho thấy trong organizations lớn, nhiều productivity gains có thể đến từ tái phối trí talent đang có thay vì thêm input mới. Ý tưởng này quan trọng vì nó biến people allocation thành một margin điều chỉnh năng suất có chi phí thấp hơn nhiều so với hire-fire-train truyền thống.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">What is special or elegant about the paper</h2>
+<h3 id="ý-tưởng-manager-như-market-maker-bên-trong-firm">1. Ý tưởng “manager như market maker bên trong firm”</h3>
+<p>Paper lấy trực giác Coase-Chandler rất cổ điển về firm rồi operationalize nó thành một design thực nghiệm hiện đại. Đây là sự kết hợp giữa theory of the firm và applied micro mà không bị nặng mô hình.</p>
+<h3 id="logic-nhận-dạng-rất-gọn">2. Logic nhận dạng rất gọn</h3>
+<p>So sánh low-to-high với low-to-low, high-to-low với high-to-high nghe đơn giản nhưng rất sắc. Nó giữ shock chuyển manager gần như cố định, rồi chỉ thay đổi quality type.</p>
+<h3 id="một-kết-quả-persistence-rất-đẹp">3. Một kết quả persistence rất đẹp</h3>
+<p>Nhiều paper manager effects đo contemporaneous effects. Paper này cho thấy manager giỏi có thể để lại dấu ấn lâu dài qua việc “đặt” worker vào đúng path. Điều đó vừa giàu intuition vừa giàu policy relevance cho firms.</p>
+<h3 id="cơ-chế-được-kiểm-tra-bằng-nhiều-lớp-bằng-chứng">4. Cơ chế được kiểm tra bằng nhiều lớp bằng chứng</h3>
+<p>Task-distance changes, productivity, mediation, time-use, mobility platform, interviews, heterogeneity, và placebo against favoritism cùng kể một câu chuyện khá nhất quán. Paper không ép người đọc tin chỉ vì một regression chính.</p>
+<h3 id="bài-học-nghiên-cứu">5. Bài học nghiên cứu</h3>
+<p>Nếu muốn thuyết phục về mechanism, chỉ một reduced-form đẹp chưa đủ. Paper này cho thấy một cách làm rất đáng học: lấy design chính làm cột sống, rồi bồi thêm các nguồn dữ liệu vi mô khác nhau để khóa chặt cách diễn giải.</p>
+<h2 id="required-background-knowledge">Required background knowledge</h2>
+<h3 id="internal-labor-markets">1. Internal labor markets</h3>
+<p>Đây là khái niệm chỉ các quá trình phân bổ, thăng tiến, điều chuyển, và trả lương diễn ra bên trong một doanh nghiệp. Thay vì nghĩ worker chỉ “match” với firm, cần nghĩ họ còn match với một vị trí cụ thể trong firm.</p>
+<h3 id="worker-job-match-versus-worker-firm-match">2. Worker-job match versus worker-firm match</h3>
+<p>Worker-firm match là một người hợp hay không hợp với doanh nghiệp nói chung. Worker-job match hẹp hơn: cùng trong một firm, một worker có thể hợp với role A nhưng không hợp với role B. Paper này nói phần lớn lợi ích đến từ vế thứ hai.</p>
+<h3 id="event-study-trong-treatment-timing">3. Event-study trong treatment timing</h3>
+<p>Event-study ở đây theo dõi outcomes trước và sau một mốc transition. Điểm cần hiểu là tác giả quan tâm đến động học dài hạn, nên horizon nhiều năm là then chốt. Người đọc nên để ý pre-trends để đánh giá design có đáng tin không.</p>
+<h3 id="mediation-analysis">4. Mediation analysis</h3>
+<p>Mediation analysis cố phân rã total effect thành phần đi qua một kênh trung gian, ở đây là lateral reallocation. Không nên xem con số 64% như chân lý cơ học, nhưng nó cho biết allocation channel có vai trò định lượng lớn.</p>
+<h3 id="task-based-view-of-labor">5. Task-based view of labor</h3>
+<p>Không phải jobs chỉ khác tên; chúng khác về nội dung nhiệm vụ. Việc map occupations sang O*NET để đo task distance là một cách biến các lateral moves thành đại lượng có ý nghĩa kinh tế.</p>
+<h3 id="misallocation">6. Misallocation</h3>
+<p>Misallocation là phân bổ nguồn lực chưa tối ưu. Trong development và productivity research, người ta hay nghĩ về misallocation giữa firms. Paper này gợi ý còn có misallocation trong nội bộ firm, ở tầng worker-job assignment.</p>
+<h3 id="managerial-quality-measurement">7. Managerial quality measurement</h3>
+<p>Đo manager quality rất khó vì outcome của team vừa là kết quả vừa là đầu vào đánh giá manager. Paper dùng promotion speed như một proxy ex ante; muốn hiểu paper, người đọc cần nắm vì sao proxy này vừa hữu ích vừa có giới hạn.</p>
+<h2 id="limitations-and-open-questions">Limitations and open questions</h2>
+<h3 id="external-validity">1. External validity</h3>
+<p>Một multinational lớn, nhiều white-collar jobs, teams nhỏ, internal mobility phong phú là môi trường rất thuận lợi cho allocation channel bộc lộ. Ở firms nhỏ hơn, tổ chức phẳng hơn, hay jobs ít đa dạng hơn, độ lớn hiệu ứng có thể nhỏ đi nhiều.</p>
+<h3 id="manager-quality-proxy-chưa-hoàn-toàn-tinh-khiết">2. Manager quality proxy chưa hoàn toàn tinh khiết</h3>
+<p>Fast promotion có thể phản ánh allocative talent, nhưng cũng có thể phản ánh ambition, politics, communication, hay các thuộc tính khác. Paper xử lý điểm này tốt hơn nhiều nghiên cứu trước, nhưng không thể chứng minh proxy đo đúng duy nhất một chiều kỹ năng.</p>
+<h3 id="rotation-chưa-phải-random-assignment-thật-sự">3. Rotation chưa phải random assignment thật sự</h3>
+<p>Tác giả trình bày rotations như tương đối orthogonal với worker characteristics, nhưng với dữ liệu tổ chức thực tế luôn còn khả năng rằng firm điều rotation theo nhu cầu ngầm nào đó mà researcher không quan sát hết.</p>
+<h3 id="chưa-nhìn-thấy-đầy-đủ-skill-của-manager">4. Chưa nhìn thấy đầy đủ skill của manager</h3>
+<p>Chính tác giả cũng thừa nhận dữ liệu không cho biết chính xác những kỹ năng nào giúp managers phát hiện aptitudes của workers, và các kỹ năng này có thể train được hay là innate.</p>
+<h3 id="chưa-biết-ai-có-thay-thế-được-vai-trò-này-không">5. Chưa biết AI có thay thế được vai trò này không</h3>
+<p>Một câu hỏi mở rất hay của paper là liệu các hệ thống dự báo và recommendation dựa trên AI có thể bổ sung hay thay thế human allocative skill trong việc match người với việc hay không.</p>
+<h3 id="còn-thiếu-welfare-accounting-rộng-hơn">6. Còn thiếu welfare accounting rộng hơn</h3>
+<p>Paper thuyết phục về firm productivity và worker pay, nhưng welfare đầy đủ vẫn có thể cần thêm dữ liệu về stress, satisfaction, địa lý, work-life balance, hay redistribution giữa workers.</p>
+<h2 id="takeaways-for-a-researcher">Takeaways for a researcher</h2>
+<ol type="1">
+<li>Nếu hỏi về productivity, đừng chỉ tìm treatment tác động lên effort; hãy nghĩ đến allocation margins bên trong tổ chức.</li>
+<li>Trong dữ liệu tổ chức, event đơn giản như manager rotation có thể trở thành natural design rất mạnh nếu so sánh đúng counterfactual.</li>
+<li>Ex ante proxies cho quality thường không hoàn hảo, nhưng đôi khi đáng giá hơn ex post measures bị nội sinh nặng.</li>
+<li>Mechanism thuyết phục nhất khi được “khóa” bằng nhiều dữ liệu khác nhau: admin records, behavioral traces, productivity outcomes, và qualitative interviews.</li>
+<li>Persistence là nơi nhiều insight thật sự nằm. Nếu chỉ nhìn outcome ngắn hạn, paper này đã bỏ lỡ phần hay nhất.</li>
+<li>Một single-firm paper vẫn có thể có đóng góp lớn nếu câu hỏi đủ nền tảng và evidence đủ sâu.</li>
+</ol>
+<h2 id="vietnam-relevance-and-extension">Vietnam relevance and extension</h2>
+<h3 id="liên-quan-gì-tới-việt-nam">Liên quan gì tới Việt Nam</h3>
+<p>Ý tưởng của paper rất hợp với Việt Nam ở ba bối cảnh:</p>
+<ol type="1">
+<li>các tập đoàn sản xuất lớn và các MNC có nhiều tầng nấc quản lý,</li>
+<li>các ngân hàng, bán lẻ, logistics, FMCG, và công nghệ có internal mobility đủ phong phú,</li>
+<li>bối cảnh chuyển đổi số khiến nhu cầu tái phân bổ lao động hiện hữu tăng rất mạnh.</li>
+</ol>
+<p>Ở Việt Nam, tranh luận về năng suất thường xoay quanh kỹ năng, công nghệ, hay tuyển dụng. Paper này nhắc rằng một phần lớn năng suất có thể đến từ việc dùng đúng người vào đúng vai trò trong nội bộ doanh nghiệp.</p>
+<h3 id="có-triển-khai-được-ở-việt-nam-không">Có triển khai được ở Việt Nam không</h3>
+<p>Có thể, nhưng chỉ trong các tổ chức đủ lớn và có dữ liệu nhân sự đủ chi tiết. Những điều kiện gần như bắt buộc gồm:</p>
+<ol type="1">
+<li>dữ liệu panel worker-manager theo thời gian,</li>
+<li>lịch sử điều chuyển ngang, thăng chức, thay đổi team,</li>
+<li>payroll hoặc ít nhất salary bands,</li>
+<li>một số outcome hiệu suất khá trực tiếp,</li>
+<li>hiểu biết thể chế đủ tốt về quy tắc rotation hay promotion.</li>
+</ol>
+<h3 id="trở-ngại-chính">Trở ngại chính</h3>
+<ol type="1">
+<li>Dữ liệu HR ở Việt Nam thường phân mảnh giữa payroll, performance, và org charts.</li>
+<li>Nhiều firms chưa có internal mobility đủ chính thức để đo lateral moves sạch.</li>
+<li>Văn hóa tổ chức và discretion của HR có thể khiến manager rotations bớt “as-if exogenous”.</li>
+<li>Vấn đề tiếp cận dữ liệu và bảo mật sẽ là rào cản lớn hơn cả econometrics.</li>
+</ol>
+<h3 id="hướng-mở-rộng-phù-hợp-với-việt-nam">Hướng mở rộng phù hợp với Việt Nam</h3>
+<ol type="1">
+<li>Nghiên cứu vai trò của line managers trong tái phân bổ lao động sau digitalization ở ngân hàng hoặc bán lẻ hiện đại.</li>
+<li>Đo xem managers giỏi có giúp workers từ các tỉnh, trường, hoặc nhóm xuất thân khác nhau tìm được đúng role hơn không; đây là góc vừa productivity vừa inequality.</li>
+<li>Khảo sát liệu allocative role của managers mạnh hơn ở các firms FDI so với firms nội địa, do cấu trúc tổ chức và hệ thống HR khác nhau.</li>
+</ol>
+<h3 id="một-vài-research-questions-cụ-thể-cho-việt-nam">Một vài research questions cụ thể cho Việt Nam</h3>
+<ol type="1">
+<li>Sau khi doanh nghiệp áp dụng ERP, CRM, hay AI tools, managers nào giúp workers chuyển sang task mix mới hiệu quả nhất?</li>
+<li>Trong các tập đoàn bán lẻ hoặc FMCG tại Việt Nam, exposure với manager chất lượng cao có để lại wage gains và promotion gains bền giống paper này không?</li>
+<li>Ở các khu công nghiệp lớn, liệu firms có thể tăng năng suất bằng internal redeployment thay vì tuyển mới khi cầu sản phẩm thay đổi mạnh?</li>
+</ol>
+<h2 id="ghi-chú-về-trạng-thái-lưu-trữ-cho-lượt-chạy-này">Ghi chú về trạng thái lưu trữ cho lượt chạy này</h2>
+<ul>
+<li>Mục tiêu lưu trữ chính là repo GitHub <code>huylvu/00_reading</code>.</li>
+<li>Trong lượt này, ưu tiên lưu <code>analysis.md</code> và <code>analysis.html</code>.</li>
+<li><code>analysis.pdf</code> không được tạo vì chưa có tuyến PDF-to-GitHub đủ chắc để báo cáo là hoàn tất.</li>
+<li>PDF gốc của paper mới được xác minh chắc ở nguồn công khai đáng tin cậy; chưa nói là đã lưu vào GitHub nếu chưa upload được file nhị phân thật sự.</li>
+</ul>
+</body>
+</html>
