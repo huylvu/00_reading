@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://www.aeaweb.org/articles?id=10.1257/aer.20200108
 - **Nguồn PDF dùng để phân tích sâu:** https://www.census.gov/content/dam/Census/programs-surveys/center-for-economic-studies/opportunity_atlas_paper.pdf
 - **Ghi chú về phiên bản PDF:** PDF công khai là bản CES working paper tháng 9/2018. Metadata xuất bản chính thức được xác minh từ trang AER 2026. Phân tích dưới đây bám chủ yếu vào bản PDF công khai và đối chiếu với abstract/citation của AER.
-- **Trạng thái lưu trên GitHub:** Sẽ cập nhật ở cuối lượt chạy.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã lưu thành công vào repo `huylvu/00_reading` trong thư mục `The Opportunity Atlas - Chetty Friedman Hendren Jones Porter/`. `analysis.pdf` chưa được tạo. PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa lưu file nhị phân lên repo.
 - **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt này vì chưa có workflow tạo Google Doc và tracker trong đúng folder đích với mức độ chắc chắn đủ cao.
 
 ## Executive summary
@@ -330,7 +330,7 @@ Các chương trình nhà ở xã hội, ký túc xá công nhân, hay chính s�
 
 ## Trạng thái hoàn tất của lượt chạy
 
-- `analysis.md`: đang được soạn cục bộ, sẽ cập nhật lại trạng thái sau khi lưu GitHub
-- `analysis.html`: dự kiến tạo từ Markdown nếu render thành công
+- `analysis.md`: đã lưu thành công lên GitHub
+- `analysis.html`: đã render và lưu thành công lên GitHub
 - `analysis.pdf`: chưa tạo; không coi là hoàn tất trong lượt này
-- `PDF gốc của paper`: đã xác minh nguồn PDF công khai, nhưng chưa coi là đã lưu lên GitHub trừ khi file nhị phân thật sự được upload thành công
+- `PDF gốc của paper`: đã xác minh nguồn PDF công khai, nhưng chưa lưu được file nhị phân gốc lên GitHub trong lượt này
