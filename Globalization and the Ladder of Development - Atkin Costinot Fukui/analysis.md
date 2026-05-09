@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483
 - **Nguồn PDF dùng để phân tích:** bản public manuscript trên MIT Economics `mutvc LATEST.pdf` tại https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf
 - **Ghi chú về PDF:** Bản PDF phân tích là working/manuscript version ghi `November 2021`, nhưng nội dung khung bài, câu hỏi, mô hình, chiến lược thực nghiệm, và kết luận lớn khớp rõ với bản ReStud corrected proof năm 2025 từ trang Oxford Academic.
-- **Trạng thái lưu trên GitHub:** Đang cập nhật ở cuối lượt chạy này; tối thiểu mục tiêu là `analysis.md` và `analysis.html`.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu lên repo `huylvu/00_reading` tại thư mục `Globalization and the Ladder of Development - Atkin Costinot Fukui/`.
 - **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker trong đúng folder đích với độ chắc chắn đủ cao.
 
 ## 1. Metadata
@@ -348,7 +348,7 @@ Thứ ba, paper có **giá trị đặc biệt cho người làm nghiên cứu �
 
 ## 13. Ghi chú trung thực về lưu trữ và giới hạn
 
-- Trong lượt chạy này, mục tiêu lưu trữ chính là đưa `analysis.md` và nếu làm được thì `analysis.html` lên repo GitHub `huylvu/00_reading`.
+- Trong lượt chạy này, `analysis.md` và `analysis.html` đã được lưu lên repo GitHub `huylvu/00_reading` tại thư mục `Globalization and the Ladder of Development - Atkin Costinot Fukui/`.
 - Mình **chưa coi** PDF gốc của paper là đã lưu trên GitHub chỉ vì đã xác minh được link PDF công khai. Trạng thái đúng là: **đã xác minh nguồn PDF công khai đáng tin cậy, chưa chắc đã lưu được raw PDF binary lên GitHub trong lượt này**.
 - `analysis.pdf` không được coi là bắt buộc. Nếu không có tuyến tạo và chuyển file nhị phân đủ chắc, trạng thái cuối phải là **chưa tạo/chưa lưu**.
 - Google Drive được **bỏ qua có chủ đích** vì chưa có workflow đủ chắc để tạo Google Doc và tracker trong đúng folder đích mà vẫn giữ báo cáo trung thực.
