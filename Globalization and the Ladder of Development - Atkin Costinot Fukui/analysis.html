@@ -152,8 +152,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -163,48 +166,596 @@
 <style>body{font-family:Georgia,serif;max-width:900px;margin:40px auto;padding:0 24px;line-height:1.65;color:#1f2933;background:#fcfcf8}h1,h2,h3{color:#102a43;line-height:1.25}h1{font-size:2.1rem;border-bottom:3px solid #d9e2ec;padding-bottom:.4rem}h2{margin-top:2.2rem;font-size:1.45rem}h3{margin-top:1.4rem;font-size:1.1rem}ul{padding-left:1.3rem}li{margin:.35rem 0}p,li{font-size:1rem}code{background:#eef2f7;padding:.1rem .25rem;border-radius:4px}blockquote{border-left:4px solid #bcccdc;padding-left:1rem;color:#486581;margin-left:0}strong{color:#243b53}</style>
 </head>
 <body>
-<h1 id="globalization-and-the-ladder-of-development-pushed-to-the-top-or-held-at-the-bottom">Globalization and the Ladder of Development: Pushed to the Top or Held at the Bottom?</h1>
+<header id="title-block-header">
+<h1 class="title">Globalization and the Ladder of Development</h1>
+</header>
+<h1
+id="globalization-and-the-ladder-of-development-pushed-to-the-top-or-held-at-the-bottom">Globalization
+and the Ladder of Development: Pushed to the Top or Held at the
+Bottom?</h1>
 <ul>
 <li><strong>Tác giả:</strong> David Atkin, Arnaud Costinot, Masao Fukui</li>
 <li><strong>Journal:</strong> The Review of Economic Studies</li>
 <li><strong>Năm:</strong> 2025</li>
 <li><strong>Ngày agent chạy:</strong> 2026-05-09</li>
-<li><strong>Nguồn bài báo chính:</strong> https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483</li>
-<li><strong>Nguồn PDF dùng để phân tích:</strong> bản public manuscript trên MIT Economics <code>mutvc LATEST.pdf</code> tại https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf</li>
-<li><strong>Ghi chú về PDF:</strong> Bản PDF phân tích là working/manuscript version ghi <code>November 2021</code>, nhưng nội dung khung bài, câu hỏi, mô hình, chiến lược thực nghiệm, và kết luận lớn khớp rõ với bản ReStud corrected proof năm 2025 từ trang Oxford Academic.</li>
-<li><strong>Trạng thái lưu trên GitHub:</strong> Đang cập nhật ở cuối lượt chạy này; tối thiểu mục tiêu là <code>analysis.md</code> và <code>analysis.html</code>.</li>
-<li><strong>Trạng thái lưu trên Google Drive:</strong> Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker trong đúng folder đích với độ chắc chắn đủ cao.</li>
+<li><strong>Nguồn bài báo chính:</strong> <a
+href="https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483">https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483</a></li>
+<li><strong>Nguồn PDF dùng để phân tích:</strong> bản public manuscript
+trên MIT Economics <code>mutvc LATEST.pdf</code> tại <a
+href="https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf">https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf</a></li>
+<li><strong>Ghi chú về PDF:</strong> Bản PDF phân tích là
+working/manuscript version ghi <code>November 2021</code>, nhưng nội
+dung khung bài, câu hỏi, mô hình, chiến lược thực nghiệm, và kết luận
+lớn khớp rõ với bản ReStud corrected proof năm 2025 từ trang Oxford
+Academic.</li>
+<li><strong>Trạng thái lưu trên GitHub:</strong> Đang cập nhật ở cuối
+lượt chạy này; tối thiểu mục tiêu là <code>analysis.md</code> và
+<code>analysis.html</code>.</li>
+<li><strong>Trạng thái lưu trên Google Drive:</strong> Bỏ qua trong lượt
+chạy này vì chưa có tuyến tạo Google Doc và tracker trong đúng folder
+đích với độ chắc chắn đủ cao.</li>
 </ul>
-<h2 id="metadata">1. Metadata</h2>
+<h2 id="1-metadata">1. Metadata</h2>
 <ul>
-<li><strong>Tiêu đề paper:</strong> Globalization and the Ladder of Development: Pushed to the Top or Held at the Bottom?</li>
-<li><strong>Tác giả:</strong> David Atkin, Arnaud Costinot, Masao Fukui</li>
+<li><strong>Tiêu đề paper:</strong> Globalization and the Ladder of
+Development: Pushed to the Top or Held at the Bottom?</li>
+<li><strong>Tác giả:</strong> David Atkin, Arnaud Costinot, Masao
+Fukui</li>
 <li><strong>Journal:</strong> The Review of Economic Studies</li>
-<li><strong>Tình trạng xuất bản:</strong> Corrected proof trên Oxford Academic</li>
-<li><strong>Ngày published trên nguồn journal:</strong> 30 August 2025; corrected and typeset 26 September 2025</li>
+<li><strong>Tình trạng xuất bản:</strong> Corrected proof trên Oxford
+Academic</li>
+<li><strong>Ngày published trên nguồn journal:</strong> 30 August 2025;
+corrected and typeset 26 September 2025</li>
 <li><strong>DOI:</strong> 10.1093/restud/rdaf077</li>
-<li><strong>Link bài báo:</strong> https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483</li>
-<li><strong>Link PDF đã dùng để đọc:</strong> https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf</li>
-<li><strong>Phân loại lĩnh vực:</strong> Development economics giao với international trade và quantitative applied work</li>
-<li><strong>Top 5 status:</strong> Có. ReStud là top 5 journal kinh tế.</li>
+<li><strong>Link bài báo:</strong> <a
+href="https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483">https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf077/8244483</a></li>
+<li><strong>Link PDF đã dùng để đọc:</strong> <a
+href="https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf">https://economics.mit.edu/sites/default/files/publications/mutvc%20LATEST.pdf</a></li>
+<li><strong>Phân loại lĩnh vực:</strong> Development economics giao với
+international trade và quantitative applied work</li>
+<li><strong>Top 5 status:</strong> Có. ReStud là top 5 journal kinh
+tế.</li>
 </ul>
-<h2 id="executive-summary">2. Executive summary</h2>
-<p>Paper hỏi một câu rất nền tảng nhưng thường bị nói bằng ẩn dụ hơn là bằng mô hình: thương mại quốc tế có thật sự giúp các nước “leo thang phát triển” hay không. Cụ thể hơn, nếu một nước dịch chuyển sang các ngành phức tạp hơn thì liệu điều đó có làm tăng tích lũy năng lực sản xuất, và khi thế giới mở cửa thương mại thì lực cạnh tranh quốc tế có đẩy các nước về phía những ngành “tốt” đó hay ngược lại.</p>
-<p>Các tác giả trả lời bằng cách kết hợp một mô hình thương mại động kiểu Ricardian với một chiến lược thực nghiệm đo <code>complexity</code> của hàng hóa, <code>capability</code> của quốc gia, rồi ước lượng xem thay đổi ngoại sinh trong cơ cấu chuyên môn hóa có làm tăng capability growth hay không. Nút nhận dạng chính là dùng thời điểm các nước khác gia nhập WTO như một cú sốc ngoại sinh làm thay đổi competition và từ đó làm thay đổi average complexity của cơ cấu ngành ở từng nước.</p>
-<p>Kết quả trung tâm có hai nửa, và chính sự căng giữa hai nửa này làm paper hay. Một mặt, dữ liệu ủng hộ ý rằng dịch chuyển lao động sang các ngành phức tạp hơn làm tăng tăng trưởng capability, tức là quả thật có những “ngành tốt” theo nghĩa động. Nhưng mặt khác, các ngành phức tạp hơn trong dữ liệu lại không phải là những ngành có cạnh tranh quốc tế mềm hơn; ngược lại, chúng thường bị nhiều nước sản xuất và xuất khẩu hơn. Vì vậy, cơ chế “trade pushes everyone toward better sectors” của ẩn dụ chiếc thang không được dữ liệu ủng hộ.</p>
-<p>Diễn giải cuối cùng của paper khá sắc: thương mại vẫn có static gains quen thuộc, nhưng nếu nhìn qua lăng kính tích lũy capability thì dynamic effects không nhất thiết tích cực và thậm chí có thể là tổn thất lan rộng. Trong các phản thực nghiệm của paper, median dynamic loss là khoảng 2.5%, còn một số nước đang phát triển, đặc biệt ở châu Phi, chịu thiệt động đáng kể hơn.</p>
-<p>Đây là bài rất đáng đọc vì nó làm ba việc cùng lúc: formalize một ẩn dụ phát triển rất phổ biến, đo lường nó bằng dữ liệu quốc tế dài hạn, và buộc người đọc phải nghĩ nghiêm túc hơn về industrial policy, complexity, và trade không chỉ ở biên tĩnh mà còn ở biên động.</p>
-<h2 id="research-question-and-motivation">3. Research question and motivation</h2>
+<h2 id="2-executive-summary">2. Executive summary</h2>
+<p>Paper hỏi một câu rất nền tảng nhưng thường bị nói bằng ẩn dụ hơn là
+bằng mô hình: thương mại quốc tế có thật sự giúp các nước "leo thang
+phát triển" hay không. Cụ thể hơn, nếu một nước dịch chuyển sang các
+ngành phức tạp hơn thì liệu điều đó có làm tăng tích lũy năng lực sản
+xuất, và khi thế giới mở cửa thương mại thì lực cạnh tranh quốc tế có
+đẩy các nước về phía những ngành "tốt" đó hay ngược lại.</p>
+<p>Các tác giả trả lời bằng cách kết hợp một mô hình thương mại động
+kiểu Ricardian với một chiến lược thực nghiệm đo <code>complexity</code>
+của hàng hóa, <code>capability</code> của quốc gia, rồi ước lượng xem
+thay đổi ngoại sinh trong cơ cấu chuyên môn hóa có làm tăng capability
+growth hay không. Nút nhận dạng chính là dùng thời điểm các nước khác
+gia nhập WTO như một cú sốc ngoại sinh làm thay đổi competition và từ đó
+làm thay đổi average complexity của cơ cấu ngành ở từng nước.</p>
+<p>Kết quả trung tâm có hai nửa, và chính sự căng giữa hai nửa này làm
+paper hay. Một mặt, dữ liệu ủng hộ ý rằng dịch chuyển lao động sang các
+ngành phức tạp hơn làm tăng tăng trưởng capability, tức là quả thật có
+những "ngành tốt" theo nghĩa động. Nhưng mặt khác, các ngành phức tạp
+hơn trong dữ liệu lại không phải là những ngành có cạnh tranh quốc tế
+mềm hơn; ngược lại, chúng thường bị nhiều nước sản xuất và xuất khẩu
+hơn. Vì vậy, cơ chế "trade pushes everyone toward better sectors" của ẩn
+dụ chiếc thang không được dữ liệu ủng hộ.</p>
+<p>Diễn giải cuối cùng của paper khá sắc: thương mại vẫn có static gains
+quen thuộc, nhưng nếu nhìn qua lăng kính tích lũy capability thì dynamic
+effects không nhất thiết tích cực và thậm chí có thể là tổn thất lan
+rộng. Trong các phản thực nghiệm của paper, median dynamic loss là
+khoảng 2.5%, còn một số nước đang phát triển, đặc biệt ở châu Phi, chịu
+thiệt động đáng kể hơn.</p>
+<p>Đây là bài rất đáng đọc vì nó làm ba việc cùng lúc: formalize một ẩn
+dụ phát triển rất phổ biến, đo lường nó bằng dữ liệu quốc tế dài hạn, và
+buộc người đọc phải nghĩ nghiêm túc hơn về industrial policy,
+complexity, và trade không chỉ ở biên tĩnh mà còn ở biên động.</p>
+<h2 id="3-research-question-and-motivation">3. Research question and
+motivation</h2>
 <h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
-<p>Câu hỏi lõi là: <strong>thương mại quốc tế có đẩy các quốc gia lên những bậc cao hơn của “development ladder” hay giữ họ ở những nấc thấp hơn?</strong> Nói theo ngôn ngữ formal hơn, khi một nước chuyên môn hóa vào các ngành phức tạp hơn, liệu nước đó có tích lũy năng lực sản xuất nhanh hơn không; và nếu có, liệu mở cửa thương mại có khiến hầu hết các nước dịch chuyển theo đúng hướng đó không.</p>
-<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực tiễn</h3>
-<p>Paper đi vào một tranh luận rất cũ nhưng vẫn còn nóng trong development và trade:</p>
+<p>Câu hỏi lõi là: <strong>thương mại quốc tế có đẩy các quốc gia lên
+những bậc cao hơn của "development ladder" hay giữ họ ở những nấc thấp
+hơn?</strong> Nói theo ngôn ngữ formal hơn, khi một nước chuyên môn hóa
+vào các ngành phức tạp hơn, liệu nước đó có tích lũy năng lực sản xuất
+nhanh hơn không; và nếu có, liệu mở cửa thương mại có khiến hầu hết các
+nước dịch chuyển theo đúng hướng đó không.</p>
+<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực
+tiễn</h3>
+<p>Paper đi vào một tranh luận rất cũ nhưng vẫn còn nóng trong
+development và trade:</p>
 <ul>
-<li>Truyền thống Ricardian nói rằng trade patterns phản ánh comparative advantage đã có sẵn; phát triển đi trước, cơ cấu xuất khẩu đi sau.</li>
-<li>Truyền thống industrial policy và learning-by-doing nhấn mạnh chiều ngược lại: chuyên môn hóa vào những ngành “đúng” có thể tự nó tạo ra phát triển về sau.</li>
-<li>Văn liệu về economic complexity, product space, và export sophistication nhiều năm qua gợi ý rằng “what you produce matters”, nhưng thường chưa gắn chặt phần trực giác đó vào một mô hình trade động đủ rõ.</li>
+<li>Truyền thống Ricardian nói rằng trade patterns phản ánh comparative
+advantage đã có sẵn; phát triển đi trước, cơ cấu xuất khẩu đi sau.</li>
+<li>Truyền thống industrial policy và learning-by-doing nhấn mạnh chiều
+ngược lại: chuyên môn hóa vào những ngành "đúng" có thể tự nó tạo ra
+phát triển về sau.</li>
+<li>Văn liệu về economic complexity, product space, và export
+sophistication nhiều năm qua gợi ý rằng "what you produce matters",
+nhưng thường chưa gắn chặt phần trực giác đó vào một mô hình trade động
+đủ rõ.</li>
 </ul>
-<p>Về mặt thực tiễn, câu hỏi này liên quan trực tiếp tới chuyện các nước đang phát triển có nên chỉ “theo comparative advantage hiện tại” hay chủ động đẩy nguồn lực sang các ngành phức tạp hơn. Nó cũng liên quan tới cách hiểu tác động của các cú sốc lớn như WTO accession hay sự trỗi dậy của Trung Quốc.</p>
-<p>...</p>
+<p>Về mặt thực tiễn, câu hỏi này liên quan trực tiếp tới chuyện các nước
+đang phát triển có nên chỉ "theo comparative advantage hiện tại" hay chủ
+động đẩy nguồn lực sang các ngành phức tạp hơn. Nó cũng liên quan tới
+cách hiểu tác động của các cú sốc lớn như WTO accession hay sự trỗi dậy
+của Trung Quốc.</p>
+<h3 id="khoảng-trống-mà-bài-muốn-lấp-vào">Khoảng trống mà bài muốn lấp
+vào</h3>
+<p>Khoảng trống chính là thiếu một framework thống nhất nối ba thứ:</p>
+<ul>
+<li>cấu trúc thương mại quốc tế</li>
+<li>khác biệt về độ phức tạp của hàng hóa và capability của quốc
+gia</li>
+<li>tăng trưởng động thông qua spillovers từ specialization</li>
+</ul>
+<p>Paper không chỉ muốn nói "complex sectors may matter" mà muốn hỏi kỹ
+hơn: <strong>trong equilibrium thương mại thật, các nước có bị đẩy vào
+các ngành đó hay không?</strong> Chính câu hỏi equilibrium này là điểm
+paper vượt lên so với nhiều tranh luận policy vốn dừng ở trực giác.</p>
+<h2 id="4-main-contribution">4. Main contribution</h2>
+<h3 id="đóng-góp-chính-so-với-văn-liệu-trước">Đóng góp chính so với văn
+liệu trước</h3>
+<p>Đóng góp lớn nhất là paper formalize ẩn dụ "development ladder" thành
+một mô hình trade động có thể kiểm định, rồi đem nó ra dữ liệu theo cách
+đủ tham vọng để kết luận về welfare động chứ không chỉ về
+correlation.</p>
+<p>So với văn liệu trước, bài có ba đóng góp rõ:</p>
+<ol type="1">
+<li><strong>Đóng góp khái niệm:</strong> Biến ẩn dụ "nước ở nấc cao sản
+xuất hàng phức tạp" thành một cấu trúc với <code>capability</code>,
+<code>complexity</code>, competition, và dynamic spillovers.</li>
+<li><strong>Đóng góp đo lường:</strong> Xây được thước đo capability của
+nước và complexity của hàng hóa từ dữ liệu thương mại rất rộng, rồi dùng
+chúng để tính average complexity của industry mix.</li>
+<li><strong>Đóng góp định lượng và policy:</strong> Chuyển kết quả
+reduced-form thành đánh giá dynamic gains/losses from trade, thay vì chỉ
+dừng ở ước lượng dấu của spillover.</li>
+</ol>
+<h3 id="điểm-mới-về-dữ-liệu-mô-hình-và-cách-đặt-câu-hỏi">Điểm mới về dữ
+liệu, mô hình, và cách đặt câu hỏi</h3>
+<ul>
+<li>Dữ liệu thương mại quốc tế rất dài, phủ 146 nước từ 1962 đến
+2014.</li>
+<li>Mô hình cho phép capability của quốc gia tiến hóa theo cơ cấu ngành
+mà nước đó sản xuất, tức là có growth feedback từ specialization.</li>
+<li>IV tận dụng WTO entry timing của các nước khác như một shift-share
+style shifter cho average complexity của một nước.</li>
+<li>Phần định lượng không chỉ mô phỏng autarky-trade tĩnh mà còn mô
+phỏng đường đi capability dưới trade và autarky để tách static với
+dynamic gains.</li>
+</ul>
+<h3 id="vì-sao-đóng-góp-này-quan-trọng-trong-development-economics">Vì
+sao đóng góp này quan trọng trong development economics</h3>
+<p>Development economics quan tâm sâu tới structural transformation,
+learning, và long-run productivity growth. Paper này quan trọng vì nó
+đưa một trực giác rất "development" vào môi trường trade equilibrium
+nghiêm ngặt. Nó cũng rất hữu ích cho người học nghiên cứu vì cho thấy
+cách đi từ metaphor -&gt; model -&gt; measurement -&gt; identification
+-&gt; welfare.</p>
+<h2 id="5-identification-or-methodology">5. Identification or
+methodology</h2>
+<h2 id="51-xương-sống-lý-thuyết">5.1. Xương sống lý thuyết</h2>
+<p>Paper xây một mô hình Ricardian động nhiều nước, nhiều ngành:</p>
+<ul>
+<li>Mỗi nước có một mức <strong>capability</strong>.</li>
+<li>Mỗi hàng hóa/ngành có một mức <strong>complexity</strong>.</li>
+<li>Capability và complexity cùng quyết định phân bố productivity theo
+nước-ngành.</li>
+<li>Capability ở kỳ sau phụ thuộc một phần vào <strong>average
+complexity của output mix hiện tại</strong>, tức là chuyên môn hóa vào
+ngành phức tạp hơn có thể tạo ra learning spillovers và nâng
+capability.</li>
+</ul>
+<p>Trong phiên bản benchmark gọi là <strong>pure ladder
+economy</strong>, các hàng hóa phức tạp hơn được sản xuất bởi ít nước
+hơn, tức chủ yếu bởi các nước capability cao hơn. Khi đó, mở cửa thương
+mại làm competition mạnh hơn ở các ngành thấp trên thang, khiến mọi nước
+bị đẩy sang các ngành tương đối phức tạp hơn mà họ vẫn làm được; nếu các
+ngành này có spillover dương thì tất cả cùng hưởng dynamic gains.</p>
+<p>Đây là một insight lý thuyết đẹp: dynamic gains from trade không nhất
+thiết zero-sum. Chúng có thể cùng chiều cho tất cả nếu cấu trúc
+competition đúng kiểu "ladder".</p>
+<h2 id="52-đo-lường-capability-và-complexity">5.2. Đo lường capability
+và complexity</h2>
+<p>Phần thực nghiệm sau đó cố đưa chiếc thang này xuống dữ liệu.
+Intuition là:</p>
+<ul>
+<li>Nếu một nước capability cao thì xác suất nó xuất khẩu được hàng phức
+tạp sẽ cao hơn.</li>
+<li>Nếu một hàng hóa phức tạp thì các nước capability cao sẽ xuất khẩu
+nó với xác suất lớn hơn.</li>
+</ul>
+<p>Capability của nước và complexity của hàng hóa được ước lượng như một
+fixed point nhất quán với hai loại quan sát trên trong dữ liệu thương
+mại. Từ đó tác giả xây biến <strong>average complexity của industry
+mix</strong> cho từng nước-năm.</p>
+<p>Điểm hay là complexity ở đây không chỉ là nhãn cảm tính kiểu "máy móc
+cao hơn dệt may", mà là một object suy ra từ pattern thương mại toàn
+cầu. Điều này giúp paper giữ được kết nối giữa theory và
+measurement.</p>
+<h2 id="53-phương-trình-động-và-ý-nghĩa-của-tham-số-chính">5.3. Phương
+trình động và ý nghĩa của tham số chính</h2>
+<p>Phần reduced-form động của paper hồi quy tăng trưởng capability vào
+average complexity của cơ cấu ngành. Tham số quan trọng nhất là hệ số đo
+xem một cú dịch chuyển sang các ngành phức tạp hơn có làm capability
+tăng nhanh hơn hay không.</p>
+<p>Nếu hệ số này dương:</p>
+<ul>
+<li>trade-induced shifts toward more complex sectors có thể tạo ra gains
+động</li>
+<li>industrial composition không chỉ phản ánh phát triển, mà còn góp
+phần tạo ra phát triển</li>
+</ul>
+<p>Nếu hệ số này âm hoặc bằng 0:</p>
+<ul>
+<li>toàn bộ trực giác "good sectors" sẽ yếu đi đáng kể</li>
+</ul>
+<h2 id="54-chiến-lược-nhận-dạng">5.4. Chiến lược nhận dạng</h2>
+<p>Đây là phần applied rất đáng học. Vấn đề nội sinh là các cú sốc trong
+nước như policy tốt, cải cách giáo dục, hoặc rent-seeking có thể vừa làm
+economy dịch chuyển sang ngành phức tạp hơn vừa ảnh hưởng capability
+growth, nên không thể đọc hệ số OLS như causal.</p>
+<p>Paper xử lý bằng cách dùng <strong>việc các nước khác gia nhập
+WTO</strong> làm cú sốc ngoại sinh cho competition và từ đó cho cơ cấu
+ngành của nước đang xét. Logic là:</p>
+<ul>
+<li>Khi nước <code>c</code> gia nhập WTO, nước đó được hưởng lower
+tariffs từ các thành viên hiện hữu.</li>
+<li>Việc này thay đổi demand for labor across sectors ở các nước còn
+lại.</li>
+<li>Mức thay đổi của average complexity ở nước <code>i</code> phụ thuộc
+vào việc các ngành phức tạp của <code>i</code> trùng nhiều hay ít với
+export mix của <code>c</code>, cả theo goods lẫn destination.</li>
+</ul>
+<p>Từ đó tác giả xây hai instrument dựa trên thay đổi complexity dự báo
+bởi:</p>
+<ul>
+<li>sector-level price effects</li>
+<li>aggregate-level price effects</li>
+</ul>
+<p>Assumption cốt lõi là <strong>timing WTO accession của các nước khác
+là orthogonal với capability shocks của nước <code>i</code></strong>.
+Đây không phải assumption nhẹ, nhưng nó có vẻ hợp lý hơn nhiều so với
+việc tin rằng thay đổi cơ cấu ngành của từng nước là tự nhiên ngoại
+sinh.</p>
+<h2 id="55-điểm-mạnh-của-phương-pháp">5.5. Điểm mạnh của phương
+pháp</h2>
+<ul>
+<li>Kết nối cực chặt giữa theory và IV design; instrument không phải thứ
+gắn thêm cho có.</li>
+<li>Cú sốc WTO entry là economically meaningful và cross-country đủ rộng
+để tạo variation.</li>
+<li>Paper không dừng ở reduced form mà còn dùng estimates để làm welfare
+decomposition.</li>
+<li>Có sensitivity analysis đi ngược quy trình baseline để kiểm tra xem
+kết quả có phụ thuộc mạnh vào cách định nghĩa complexity hay không.</li>
+</ul>
+<h2 id="56-điểm-dễ-bị-nghi-ngờ-hoặc-cần-thận-trọng">5.6. Điểm dễ bị nghi
+ngờ hoặc cần thận trọng</h2>
+<ul>
+<li>WTO accession không hoàn toàn ngẫu nhiên theo nghĩa lịch sử chính
+trị; paper dựa vào việc accession của <strong>các nước khác</strong> là
+orthogonal với shock capability của nước đang xét, nhưng vẫn cần tin
+exclusion restriction khá mạnh.</li>
+<li>Capability là latent object được suy ra từ trade data; bất kỳ
+measurement error hay model dependence nào ở bước này đều có thể lan
+sang phần định lượng sau.</li>
+<li>Mapping từ reduced-form spillovers sang long-run welfare là
+ambitious; kết quả policy nên đọc như "disciplined quantitative
+interpretation" hơn là đo lường chính xác tuyệt đối.</li>
+</ul>
+<h2 id="6-results-and-interpretation">6. Results and interpretation</h2>
+<h3 id="61-có-bằng-chứng-rằng-ngành-phức-tạp-hơn-là-ngành-tốt">6.1. Có
+bằng chứng rằng ngành phức tạp hơn là "ngành tốt"</h3>
+<p>Kết quả IV baseline cho thấy khi một cú sốc ngoại sinh làm employment
+shift về phía các ngành có average complexity cao hơn, capability growth
+tăng lên. Paper cũng nhấn mạnh rằng các dịch chuyển như vậy đi kèm với
+tăng real GDP per capita có ý nghĩa thống kê.</p>
+<p>Ý nghĩa kinh tế ở đây rất quan trọng: ít nhất một phần của
+development ladder metaphor là đúng. Chuyên môn hóa không chỉ là kết quả
+của phát triển; nó còn có thể là một đầu vào của phát triển thông qua
+learning và spillovers.</p>
+<h3
+id="62-nhưng-các-ngành-tốt-đó-lại-không-phải-nơi-cạnh-tranh-quốc-tế-mềm-hơn">6.2.
+Nhưng các ngành "tốt" đó lại không phải nơi cạnh tranh quốc tế mềm
+hơn</h3>
+<p>Đây là cú bẻ lái lớn của paper. Khi nhìn vào dữ liệu thương mại thế
+giới, các tác giả thấy các hàng hóa phức tạp hơn thường:</p>
+<ul>
+<li>được sản xuất bởi <strong>nhiều</strong> nước hơn, không phải ít
+hơn</li>
+<li>khi đã được xuất khẩu thì còn được bán tới <strong>nhiều destination
+hơn</strong></li>
+</ul>
+<p>Nói gọn: complex sectors là sectors có foreign competition mạnh hơn,
+không phải nhẹ hơn. Điều này đối nghịch trực diện với cấu trúc cần có để
+trade tự động đẩy mọi nước về phía "better sectors".</p>
+<h3 id="63-hệ-quả-welfare-động">6.3. Hệ quả welfare động</h3>
+<p>Khi nhúng các kết quả thực nghiệm này trở lại mô hình, paper kết luận
+rằng:</p>
+<ul>
+<li><strong>static gains from trade</strong> vẫn dương như lý thuyết
+chuẩn</li>
+<li>nhưng <strong>dynamic gains</strong> không còn lan rộng theo nghĩa
+tích cực</li>
+<li>trong baseline, dynamic effects trở thành <strong>dynamic welfare
+losses mang tính pervasive</strong>, dù median country chỉ chịu mất mát
+tương đối nhỏ</li>
+</ul>
+<p>Con số paper nhấn mạnh là <strong>median dynamic loss khoảng
+2.5%</strong>; với input-output linkages, average và median dynamic loss
+lần lượt khoảng <strong>13.2%</strong> và <strong>2.5%</strong>. Một số
+nước đang phát triển, đặc biệt ở châu Phi, chịu tổn thất động lớn hơn
+nhiều.</p>
+<h3 id="64-vai-trò-của-trung-quốc">6.4. Vai trò của Trung Quốc</h3>
+<p>Paper còn dùng cùng framework để hỏi riêng về sự trỗi dậy của Trung
+Quốc. Kết luận định tính là sự xuất hiện của một nước lớn như Trung Quốc
+có thể kéo một số nước khác ra khỏi các ngành phức tạp nhất của họ, đặc
+biệt khi Trung Quốc cạnh tranh mạnh ở đúng các ngành ấy, và đẩy họ về
+các ngành đơn giản hơn. Với một số nước châu Phi, điều này đồng nghĩa
+với capability growth bị kìm lại.</p>
+<h3 id="65-cách-nên-diễn-giải-kết-quả">6.5. Cách nên diễn giải kết
+quả</h3>
+<p>Paper không nói rằng trade "xấu" theo nghĩa tổng quát hay rằng
+autarky tốt hơn. Điều paper nói tinh tế hơn:</p>
+<ul>
+<li>gains tĩnh là có thật</li>
+<li>gains động không thể suy ra chỉ từ ẩn dụ ladder</li>
+<li>muốn trade thúc đẩy long-run development, cần nhìn xem cấu trúc
+competition thực tế có đang đẩy nguồn lực vào các ngành có spillover
+dương hay không</li>
+</ul>
+<p>Đây là một thông điệp rất hữu ích cho debate về industrial policy:
+câu hỏi không phải chỉ là "ngành phức tạp có tốt không", mà còn là
+"equilibrium trade có tự đưa nước vào các ngành đó không".</p>
+<h2 id="7-what-is-special-or-elegant-about-the-paper">7. What is special
+or elegant about the paper</h2>
+<p>Điểm đẹp nhất của paper là nó bắt đầu từ một ẩn dụ mà rất nhiều nhà
+policy và development hay dùng, rồi không để ẩn dụ đứng yên ở mức
+rhetoric. Tác giả hỏi rất nghiêm: nếu ta tin vào ẩn dụ đó, nó đòi hỏi
+những điều gì về competition, specialization, và growth? Và khi kiểm tra
+những điều kiện ấy trong dữ liệu, ta học được gì?</p>
+<p>Một số điểm đặc biệt đáng nhớ:</p>
+<ul>
+<li><strong>Formalization cực gọn mà giàu ý nghĩa.</strong> "Ladder"
+nghe mơ hồ, nhưng vào paper này thì nó trở thành một set điều kiện kiểm
+định được.</li>
+<li><strong>Half-right result.</strong> Kết quả không phải "ẩn dụ sai
+hoàn toàn" mà là "một nửa đúng, một nửa sai". Đây thường là dấu hiệu của
+paper tốt: nó không chỉ đảo chiều một niềm tin, mà cho ta hiểu niềm tin
+đó đúng ở đoạn nào và hỏng ở đâu.</li>
+<li><strong>Theory và empirics nói chuyện thật với nhau.</strong>
+Instrument, measurement, counterfactual welfare, và policy
+interpretation đều mọc ra từ cùng một logic.</li>
+<li><strong>Bài học về câu hỏi nghiên cứu.</strong> Thay vì hỏi thẳng
+"trade tốt hay xấu", paper hỏi "trade có dịch chuyển nguồn lực vào các
+ngành tạo capability growth hay không". Câu hỏi này sắc hơn nhiều.</li>
+</ul>
+<h2 id="8-required-background-knowledge">8. Required background
+knowledge</h2>
+<p>Để đọc paper này trọn vẹn, người đọc nên có vài mảng nền sau.</p>
+<h3 id="81-ricardian-trade-models">8.1. Ricardian trade models</h3>
+<p>Cần nắm intuition cơ bản của mô hình Ricardian:</p>
+<ul>
+<li>các nước khác nhau về productivity tương đối</li>
+<li>thương mại khiến họ chuyên môn hóa theo comparative advantage</li>
+<li>gains from trade chuẩn thường là gains tĩnh: tiêu dùng được bundle
+tốt hơn với cùng nguồn lực</li>
+</ul>
+<p>Paper này mở rộng truyền thống đó bằng cách cho comparative advantage
+hôm nay ảnh hưởng capability ngày mai.</p>
+<h3 id="82-learning-by-doing-và-dynamic-externalities">8.2.
+Learning-by-doing và dynamic externalities</h3>
+<p>Đây là ý rằng sản xuất trong một số ngành có thể tạo:</p>
+<ul>
+<li>tích lũy know-how</li>
+<li>spillovers công nghệ</li>
+<li>năng lực tổ chức hay managerial capability</li>
+</ul>
+<p>Nếu firm cá thể không internalize lợi ích này, equilibrium thị trường
+có thể under-invest vào những ngành đó. Đây là nền tảng lý thuyết cho
+industrial policy trong nhiều mô hình development.</p>
+<h3 id="83-economic-complexity-và-product-space">8.3. Economic
+complexity và product space</h3>
+<p>Người đọc nên biết sơ bộ văn liệu kiểu Hausmann-Hidalgo:</p>
+<ul>
+<li>nước phát triển hơn thường xuất khẩu rổ hàng hóa "khó" hơn</li>
+<li>cơ cấu hàng xuất khẩu có thể mang thông tin về productive
+capabilities tiềm ẩn</li>
+</ul>
+<p>Paper này không bê nguyên product space vào, nhưng dùng đúng tinh
+thần đó để đo capability và complexity.</p>
+<h3 id="84-shift-share-iv-và-exclusion-restriction">8.4. Shift-share IV
+và exclusion restriction</h3>
+<p>Chiến lược thực nghiệm của paper gần với logic shift-share:</p>
+<ul>
+<li>shares ban đầu xác định ai phơi nhiễm với shock nào</li>
+<li>shocks ở đây đến từ WTO accession timing của các nước khác</li>
+</ul>
+<p>Người đọc nên thoải mái với câu hỏi nhận dạng kiểu:</p>
+<ul>
+<li>shock có thật sự ngoại sinh không</li>
+<li>shares có đang phản ánh lựa chọn nội sinh sâu hơn không</li>
+<li>instrument đang thay đổi biến nội sinh qua kênh nào</li>
+</ul>
+<h3 id="85-welfare-decomposition-trong-quantitative-trade">8.5. Welfare
+decomposition trong quantitative trade</h3>
+<p>Paper còn đi thêm bước định lượng welfare. Không cần nắm mọi chi tiết
+tính toán, nhưng nên hiểu:</p>
+<ul>
+<li>static gain = lợi ích trade với capability giữ nguyên</li>
+<li>dynamic gain/loss = phần chênh thêm do đường đi capability khác nhau
+dưới trade so với autarky</li>
+</ul>
+<p>Chính decomposition này giúp paper nối reduced form với policy
+interpretation.</p>
+<h2 id="9-limitations-and-open-questions">9. Limitations and open
+questions</h2>
+<h3 id="hạn-chế-chính">Hạn chế chính</h3>
+<ol type="1">
+<li><strong>Capability là latent variable.</strong> Nó được suy ra từ
+pattern thương mại, nên độ tin cậy phụ thuộc vào cấu trúc model và chất
+lượng đo lường trade data.</li>
+<li><strong>Exclusion restriction không nhẹ.</strong> Dù dùng WTO
+accession của nước khác là khá thông minh, vẫn có thể lo rằng các đợt
+accession lớn đi cùng những thay đổi địa chính trị hoặc demand shifts
+rộng hơn.</li>
+<li><strong>Khái niệm complexity vẫn là reduced-form object.</strong> Nó
+hữu ích nhưng không nói rõ spillover đến từ công nghệ, managerial
+learning, standards, hay network effects.</li>
+<li><strong>Counterfactual autarky hơi xa hiện thực.</strong> Nó là
+benchmark chuẩn để tách static và dynamic effects, nhưng policy
+inference thực tế thường là về marginal reforms chứ không phải autarky
+hoàn toàn.</li>
+</ol>
+<h3 id="những-câu-hỏi-mở">Những câu hỏi mở</h3>
+<ul>
+<li>Tại sao trong dữ liệu, các ngành phức tạp lại bị nhiều nước cạnh
+tranh hơn? Đây là kết quả của diffusion công nghệ, industrial policy
+lịch sử, hay measurement của complexity?</li>
+<li>Có những institutional conditions nào khiến một nước vẫn leo lên
+được trong môi trường complex sectors cạnh tranh khốc liệt?</li>
+<li>Nếu thêm firm heterogeneity, global value chains, hoặc task-level
+specialization, kết quả dynamic losses còn mạnh như vậy không?</li>
+<li>Kết quả có thay đổi khi capability được đo bằng dữ liệu sản xuất,
+patent, hay occupational structure thay vì trade flows không?</li>
+</ul>
+<h2 id="10-takeaways-for-a-researcher">10. Takeaways for a
+researcher</h2>
+<ol type="1">
+<li><strong>Một ẩn dụ phổ biến có thể trở thành paper rất mạnh nếu bạn
+formalize nó đủ nghiêm.</strong> Nhiều ý hay trong development nằm ở các
+câu nói tưởng như quá quen.</li>
+<li><strong>Đừng chỉ hỏi một cơ chế có tồn tại hay không; hãy hỏi
+equilibrium có đẩy nền kinh tế theo cơ chế đó không.</strong> Đây là
+nâng cấp rất lớn trong cách đặt câu hỏi.</li>
+<li><strong>Khi theory mạnh, instrument tốt nhất thường là instrument
+mọc ra từ chính theory.</strong> WTO-entry IV của paper là ví dụ
+đẹp.</li>
+<li><strong>Đo lường latent object không phải điểm yếu nếu nó là phần
+trung tâm của research design và được dùng nhất quán từ đầu đến
+cuối.</strong></li>
+<li><strong>Reduced-form result và welfare implication không nên bị tách
+rời.</strong> Nếu có thể nối chúng bằng một quantitative framework có kỷ
+luật, giá trị của paper tăng mạnh.</li>
+<li><strong>Một kết quả "half-right" thường giàu insight hơn một kết quả
+hoàn toàn xác nhận hay hoàn toàn bác bỏ trực giác ban đầu.</strong></li>
+</ol>
+<h2 id="11-vietnam-relevance-and-extension">11. Vietnam relevance and
+extension</h2>
+<h3 id="vì-sao-paper-này-có-relevance-cho-việt-nam">Vì sao paper này có
+relevance cho Việt Nam</h3>
+<p>Việt Nam là case gần như tự nhiên cho câu hỏi của paper:</p>
+<ul>
+<li>tăng trưởng mạnh gắn với hội nhập thương mại sâu</li>
+<li>cơ cấu xuất khẩu đã chuyển lên các ngành phức tạp hơn ở một số giai
+đoạn</li>
+<li>nhưng mức độ nội địa hóa, capability nội sinh, và learning
+spillovers vẫn là câu hỏi mở</li>
+</ul>
+<p>Nói cách khác, Việt Nam rất phù hợp để hỏi: <strong>xuất khẩu công
+nghệ cao hơn có thực sự đi kèm capability growth nội địa không, hay chỉ
+phản ánh assembly trong chuỗi giá trị toàn cầu?</strong></p>
+<h3 id="liệu-ý-tưởng-paper-có-triển-khai-được-ở-việt-nam-không">Liệu ý
+tưởng paper có triển khai được ở Việt Nam không</h3>
+<p>Có, nhưng sẽ cần dữ liệu và framing thực tế hơn ở cấp vi mô hoặc
+meso.</p>
+<p>Những thứ cần có:</p>
+<ul>
+<li>dữ liệu hải quan firm-level hoặc product-level đủ dài</li>
+<li>dữ liệu doanh nghiệp về năng suất, việc làm, wages, ownership, input
+sourcing</li>
+<li>thông tin về các cú sốc hội nhập hoặc policy shocks đủ ngoại
+sinh</li>
+<li>nếu muốn đi theo hướng capability, cần proxy tốt hơn cho learning
+như product switching, supplier upgrading, occupational mix, hoặc
+domestic value added</li>
+</ul>
+<h3 id="các-trở-ngại-chính-nếu-áp-dụng-ở-việt-nam">Các trở ngại chính
+nếu áp dụng ở Việt Nam</h3>
+<ol type="1">
+<li><strong>Đo capability khó hơn nhiều ở cấp quốc gia nhỏ.</strong> Nền
+kinh tế Việt Nam vừa hội nhập vừa chịu vai trò lớn của FDI, nên
+complexity của hàng xuất khẩu có thể không map thẳng vào capability nội
+địa.</li>
+<li><strong>Cú sốc policy ngoại sinh không nhiều và không sạch bằng WTO
+cross-country setting.</strong> Các FTA, thay đổi tariff, hay các cú sốc
+China competition cần xử lý cẩn thận.</li>
+<li><strong>Vai trò của GVC rất lớn.</strong> Một ngành "phức tạp" ở dữ
+liệu thương mại chưa chắc là nơi spillover nội địa mạnh nếu khâu giá trị
+cao nằm ngoài Việt Nam.</li>
+</ol>
+<h3 id="hướng-cập-nhật-để-hợp-hơn-với-việt-nam">Hướng cập nhật để hợp
+hơn với Việt Nam</h3>
+<ul>
+<li>Chuyển trọng tâm từ country-level capability sang <strong>firm
+capability</strong> hoặc <strong>province-industry
+capability</strong>.</li>
+<li>Kết hợp trade data với enterprise surveys để phân biệt giữa:
+<ul>
+<li>complexity do FDI enclave tạo ra</li>
+<li>complexity có đi kèm domestic upgrading thật</li>
+</ul></li>
+<li>Đo "good sectors" không chỉ bằng export complexity mà còn bằng mức
+lan tỏa sang suppliers nội địa, occupational upgrading, hoặc adoption of
+standards.</li>
+</ul>
+<h3
+id="1-đến-3-research-design-có-thể-phát-triển-từ-paper-này-trong-bối-cảnh-việt-nam">1
+đến 3 research design có thể phát triển từ paper này trong bối cảnh Việt
+Nam</h3>
+<ol type="1">
+<li><p><strong>China shock và capability upgrading của doanh nghiệp Việt
+Nam</strong></p>
+<ul>
+<li>Hỏi xem cạnh tranh từ Trung Quốc đẩy doanh nghiệp Việt Nam ra khỏi
+các dòng sản phẩm phức tạp hơn hay buộc họ nâng cấp.</li>
+<li>Có thể dùng variation theo pre-period product overlap với Trung
+Quốc.</li>
+</ul></li>
+<li><p><strong>FTA accession và sectoral complexity shifts</strong></p>
+<ul>
+<li>Dùng các hiệp định như CPTPP hoặc EVFTA để xem sectors nào được đẩy
+lên, rồi nối sang firm productivity, supplier upgrading, hay wage
+structure.</li>
+<li>Đây là phiên bản Việt Nam của logic trade-cost shock -&gt; sector
+mix -&gt; capability growth.</li>
+</ul></li>
+<li><p><strong>FDI-led exports có tạo dynamic spillovers cho firms nội
+địa không</strong></p>
+<ul>
+<li>Hỏi xem các địa phương/ngành được kéo vào exports phức tạp hơn nhờ
+FDI có thật sự tích lũy capability nội địa hay không.</li>
+<li>Kết hợp customs, firm census, và supplier linkages sẽ rất mạnh.</li>
+</ul></li>
+</ol>
+<h2 id="12-vì-sao-mình-chọn-paper-này-trong-lượt-chạy">12. Vì sao mình
+chọn paper này trong lượt chạy</h2>
+<p>Mình chọn paper này vì ba lý do.</p>
+<p>Thứ nhất, đây là <strong>top 5 journal</strong> và đúng giao điểm
+giữa development economics với international trade, một vùng rất quan
+trọng cho applied work dài hạn.</p>
+<p>Thứ hai, paper có một <strong>research design đáng học thật
+sự</strong>: bắt đầu từ một hình ảnh phát triển rất quen, formalize
+thành mô hình, xây object đo lường, rồi dùng WTO-entry instruments để
+đọc ra implication nhân quả.</p>
+<p>Thứ ba, paper có <strong>giá trị đặc biệt cho người làm nghiên cứu ở
+Việt Nam</strong> vì nó buộc ta phân biệt giữa "xuất khẩu trông có vẻ
+phức tạp hơn" và "năng lực nội sinh thật sự đang tăng lên".</p>
+<h2 id="13-ghi-chú-trung-thực-về-lưu-trữ-và-giới-hạn">13. Ghi chú trung
+thực về lưu trữ và giới hạn</h2>
+<ul>
+<li>Trong lượt chạy này, mục tiêu lưu trữ chính là đưa
+<code>analysis.md</code> và nếu làm được thì <code>analysis.html</code>
+lên repo GitHub <code>huylvu/00_reading</code>.</li>
+<li>Mình <strong>chưa coi</strong> PDF gốc của paper là đã lưu trên
+GitHub chỉ vì đã xác minh được link PDF công khai. Trạng thái đúng là:
+<strong>đã xác minh nguồn PDF công khai đáng tin cậy, chưa chắc đã lưu
+được raw PDF binary lên GitHub trong lượt này</strong>.</li>
+<li><code>analysis.pdf</code> không được coi là bắt buộc. Nếu không có
+tuyến tạo và chuyển file nhị phân đủ chắc, trạng thái cuối phải là
+<strong>chưa tạo/chưa lưu</strong>.</li>
+<li>Google Drive được <strong>bỏ qua có chủ đích</strong> vì chưa có
+workflow đủ chắc để tạo Google Doc và tracker trong đúng folder đích mà
+vẫn giữ báo cáo trung thực.</li>
+</ul>
 </body>
 </html>
