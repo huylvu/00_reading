@@ -9,7 +9,7 @@
 - Nguồn PDF công khai dùng để phân tích: https://virginiaminni.github.io/assets/files/Minni_JMP.pdf
 - Nguồn PDF công khai đối chiếu thêm: https://docs.iza.org/dp18137.pdf
 - Ghi chú phiên bản: abstract trên trang QJE ghi dữ liệu bao phủ 11 năm, trong khi public PDF trên trang tác giả và bản IZA dùng để đọc sâu ghi 10 năm. Phần phân tích dưới đây bám theo public PDF và coi khác biệt này là khác biệt giữa các phiên bản manuscript.
-- Trạng thái lưu trên GitHub: Đang chuẩn bị cập nhật trong repo `huylvu/00_reading`; mục tiêu lưu `analysis.md` và `analysis.html`. `analysis.pdf` không được tạo trong lượt này. PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa lưu lại vào GitHub dưới dạng file nhị phân.
+- Trạng thái lưu trên GitHub: `analysis.md` và `analysis.html` đã được lưu thành công trong repo `huylvu/00_reading` tại thư mục `Making the Invisible Hand Visible - Minni/`. `analysis.pdf` không được tạo trong lượt này. PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa lưu lại vào GitHub dưới dạng file nhị phân.
 - Trạng thái lưu trên Google Drive: Bỏ qua trong lượt này do chưa có tuyến tạo Google Doc và tracker sheet trong đúng folder đích với mức độ chắc chắn đủ cao.
 
 ## Executive summary
