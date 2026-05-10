@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Value of Information in a Congested Fishery</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #fbfaf6;
+      --panel: #fffdf8;
+      --text: #1f1e1a;
+      --muted: #6b655a;
+      --line: #e6dece;
+      --accent: #6f8f6b;
+      --accent-soft: #edf4eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 28px 28px 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    h1, h2, h3 { line-height: 1.2; color: #171611; }
+    h1 { margin: 0 0 14px; font-size: 2.2rem; }
+    h2 { margin: 34px 0 12px; font-size: 1.45rem; }
+    h3 { margin: 24px 0 10px; font-size: 1.08rem; }
+    p { margin: 12px 0; }
+    ul, ol { margin: 10px 0 10px 22px; }
+    li { margin: 6px 0; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px 18px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 0.98rem;
+    }
+    .meta strong { display: block; color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .note {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin: 18px 0;
+      color: #243022;
+    }
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-top: 20px;
+    }
+    a { color: #31563c; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: #f3efe4;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 20px 14px 40px; }
+      .hero, .section { padding: 18px; border-radius: 12px; }
+      h1 { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>The Value of Information in a Congested Fishery</h1>
+      <p>Gabriel Englander, Larry Karp, Leo Simon</p>
+      <div class="meta">
+        <div><strong>Journal</strong>The Review of Economic Studies</div>
+        <div><strong>Năm</strong>2025</div>
+        <div><strong>Ngày chạy</strong>2026-05-11 (Asia/Saigon)</div>
+        <div><strong>DOI</strong><a href="https://doi.org/10.1093/restud/rdaf069">10.1093/restud/rdaf069</a></div>
+        <div><strong>Trang bài báo</strong><a href="https://academic.oup.com/restud/advance-article-abstract/doi/10.1093/restud/rdaf069/8262989">Oxford Academic</a></div>
+        <div><strong>PDF tốt nhất đã xác minh</strong><a href="https://academic.oup.com/restud/advance-article-pdf/doi/10.1093/restud/rdaf069/64373925/rdaf069.pdf">Corrected proof PDF</a></div>
+      </div>
+      <div class="note">
+        Trong lượt chạy này, phần đọc sâu bám vào manuscript công khai trên ReStud tại <a href="https://www.restud.com/wp-content/uploads/2025/08/MS33001manuscript.pdf">đây</a>, vì môi trường chạy không tải được raw PDF bytes từ nguồn ngoài về cục bộ do lỗi <code>403</code>.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Executive Summary</h2>
+      <p>Paper này hỏi một câu rất thực tế: nhiều thông tin hơn có luôn làm cho việc khai thác tài nguyên hiệu quả hơn không? Trong một fishery có congestion, câu trả lời là không hề tự động.</p>
+      <p>Tác giả xây một structural model trong đó firms nhận cả public signal lẫn private signal về vị trí đàn cá dày nhất. Thông tin chính xác hơn giúp firms đánh bắt gần chỗ tối ưu hơn, nhưng cũng có thể làm mọi người dồn vào cùng một nơi, khiến congestion tăng và lợi nhuận ngành giảm. Mô hình được đưa xuống dữ liệu thật của nghề cá anchoveta Peru, fishery lớn nhất thế giới theo sản lượng.</p>
+      <p>Kết quả chính là private information chính xác hơn làm welfare tăng mạnh, còn public information chính xác hơn lại gần như không làm welfare tăng đáng kể. Ngoài ra, information clubs có thể tăng phúc lợi, trong khi global information sharing có tác động phi tuyến: ở quy mô ngành nhỏ, chia sẻ ít có thể làm welfare giảm; ở quy mô lớn hơn, ngay cả chia sẻ ít cũng có thể làm welfare tăng.</p>
+    </section>
+
+    <section class="section">
+      <h2>Research Question and Motivation</h2>
+      <p>Câu hỏi trung tâm của paper là: giá trị phúc lợi của thông tin thay đổi như thế nào khi nhiều firms cùng tranh chấp một common-pool resource và gây congestion cho nhau?</p>
+      <p>Văn liệu lý thuyết đã chỉ ra từ lâu rằng thông tin chính xác hơn không nhất thiết làm welfare tăng trong các game có strategic interaction. Nhưng phần empirical literature về value of information thường ngầm giả định nếu thông tin không hữu ích thì người ra quyết định có thể bỏ qua nó, nên thông tin có ít nhất weakly positive value. Paper này nối hai mảng đó bằng một setting nơi thông tin vừa quan trọng, vừa có thể gây crowding.</p>
+    </section>
+
+    <section class="section">
+      <h2>Main Contribution</h2>
+      <ol>
+        <li>Paper tách bạch ba loại thay đổi về thông tin: tăng precision của public signal, tăng precision của private signal, và tái phân bổ thông tin qua information sharing.</li>
+        <li>Paper đưa khung Angeletos-Pavan vào một congested fishery và rút ra analytic characterization khá đầy đủ về welfare effects.</li>
+        <li>Paper estimate trực tiếp các primitive quan trọng của model bằng dữ liệu độ phân giải cao từ anchoveta fishery Peru.</li>
+        <li>Paper rút ra bài học thiết kế chính sách thông tin rất cụ thể cho các sectors có congestion externality.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Identification or Methodology</h2>
+      <h3>Institutional Context</h3>
+      <p>Anchoveta fishery ở Peru là setting đặc biệt phù hợp: firms chọn location đánh bắt, lợi ích tăng khi gần nơi fish stock dày nhất, nhưng congestion tăng khi quá nhiều tàu hội tụ cùng chỗ.</p>
+      <h3>Structural Model</h3>
+      <p>Mỗi firm nhận một public signal và một private signal về <code>theta</code>, tức vị trí của ideal fishing ground. Payoff phụ thuộc vào lợi ích của việc ở gần <code>theta</code> và chi phí từ việc ở quá gần location của firms khác. Hai primitive cốt lõi là <code>r</code>, độ chính xác tương đối của private signal, và <code>tau</code>, tầm quan trọng của congestion so với proximity.</p>
+      <h3>Data and Estimation</h3>
+      <p>Đơn vị quan sát là một set do một vessel thuộc một firm thực hiện ở một zone vào một ngày. Tác giả xây best local zone trong bán kính 126 km và đo squared distance từ set thực tế tới zone tốt nhất đó. Public signal precision được ước lượng bằng lasso trên tập predictors lớn; manuscript cho biết mô hình giữ lại 24 biến với out-of-sample <code>R^2 ≈ 0.167</code>. Từ đó paper suy ra <code>r ≈ 0.923</code> và <code>tau ≈ 0.448</code>.</p>
+      <h3>Strengths and Fragilities</h3>
+      <p>Điểm mạnh là mô hình rất minh bạch và estimation strategy bám sát objects của model. Điểm dễ bị nghi ngờ là mapping từ empirical objects sang structural primitives vẫn phụ thuộc specification, và predictive power của public signals không quá cao trong một môi trường đầy noise.</p>
+    </section>
+
+    <section class="section">
+      <h2>Results and Interpretation</h2>
+      <h3>Private Information Has Much Higher Welfare Value</h3>
+      <p>Với point estimates <code>(r, tau) = (0.923, 0.448)</code>, elasticity của welfare theo precision của public information là <code>alpha = 0.02</code>, còn elasticity theo precision của private information là <code>beta = 1.98</code>. Tức là private signals chính xác hơn có giá trị phúc lợi lớn hơn rất nhiều.</p>
+      <h3>Public Information Has Only a Tiny Welfare Effect</h3>
+      <p>Paper không nói public information chắc chắn có hại. Nó nói rằng trong setting Peru, hiệu ứng welfare là dương nhưng gần như bằng không, vì lợi ích proximity bị bù bởi congestion tăng lên khi firms phản ứng giống nhau hơn.</p>
+      <h3>Information Clubs Help</h3>
+      <p>Normalized payoff tăng khá mạnh khi club size tăng từ rất nhỏ lên khoảng 15% population, rồi gần như phẳng sau đó. Điều này gợi ý club formation quy mô vừa phải có thể giữ được lợi ích của private information mà không gây crowding quá mạnh.</p>
+      <h3>Global Information Sharing Is Non-Monotonic</h3>
+      <p>Với <code>n &gt; 58</code>, welfare tăng đơn điệu theo lượng chia sẻ thông tin toàn cục. Nhưng ở <code>n = 38</code>, information sharing chỉ tăng welfare nếu nó đủ lớn để giảm variance của public signal ít nhất khoảng 11.9%, tức <code>varpi &gt; 0.119</code>. Đây là kết quả rất hay vì nó cho thấy sharing nhỏ có thể gây hại ở quy mô ngành nhỏ.</p>
+    </section>
+
+    <section class="section">
+      <h2>What Is Special About the Paper</h2>
+      <p>Điểm đẹp nhất là sự sạch sẽ trong logic. Paper bắt đầu từ tension cơ bản giữa “đến đúng chỗ hơn” và “dồn vào cùng chỗ hơn”, rồi theo tension đó xuyên suốt từ theory tới estimation và policy.</p>
+      <p>Paper cũng rất đáng nhớ ở chỗ không gộp mọi dạng “nhiều thông tin hơn” thành một treatment duy nhất. Distinction giữa public information, private information, information clubs và global sharing chính là linh hồn của bài.</p>
+    </section>
+
+    <section class="section">
+      <h2>Required Background Knowledge</h2>
+      <ul>
+        <li><strong>Congestion externality:</strong> quyết định của mỗi firm làm giảm payoff của firm khác vì cùng chen vào một location.</li>
+        <li><strong>Public vs private information:</strong> public signals làm responses đồng bộ hơn, private signals giữ dispersion nhiều hơn.</li>
+        <li><strong>Structural estimation:</strong> paper estimate trực tiếp primitives của model rồi dùng chúng cho counterfactual welfare analysis.</li>
+        <li><strong>Lasso:</strong> công cụ chọn predictors hữu ích cho signal extraction trong môi trường nhiều noise.</li>
+        <li><strong>Welfare elasticities:</strong> cách gọn để so sánh loại thông tin nào thực sự đáng giá hơn.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Limitations and Open Questions</h2>
+      <ul>
+        <li>Mô hình còn trừu tượng hóa nhiều khỏi dynamic learning, endogenous information investment, và regulatory responses phức tạp.</li>
+        <li>Kết quả bám mạnh vào một fishery rất đặc thù, nên external validity không tự động.</li>
+        <li>Out-of-sample predictive power của public signal chỉ ở mức vừa phải, nên parameter estimates có thể nhạy với signal-measurement pipeline.</li>
+        <li>Paper chủ yếu làm comparative statics quanh estimated environment, chưa đi sâu vào endogenous club formation hay strategic misreporting.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Takeaways for a Researcher</h2>
+      <ol>
+        <li>Đừng gộp mọi dạng “nhiều thông tin hơn” thành một policy object duy nhất.</li>
+        <li>Trong strategic environments, thông tin có thể làm welfare tăng hoặc giảm tùy cách nó thay đổi equilibrium behavior.</li>
+        <li>Structural work mạnh nhất khi primitives có interpretation rõ và nối trực tiếp với data objects.</li>
+        <li>Kết quả “gần bằng 0” vẫn rất có giá trị nếu nó bác bỏ một trực giác chính sách phổ biến.</li>
+        <li>Non-monotonicity không phải nuisance; nhiều khi nó chính là insight chính sách thật sự.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Vietnam Relevance and Extension</h2>
+      <p>Logic của paper rất hợp để nghĩ cho Việt Nam, nhất là trong thủy sản và các thị trường có congestion:</p>
+      <ul>
+        <li>ngư trường ven bờ hoặc xa bờ, nơi public forecast có thể làm tàu cá chụm lại</li>
+        <li>bản đồ giao thông thời gian thực</li>
+        <li>dữ liệu giá nông sản công khai ở các chợ đầu mối</li>
+        <li>các platform location-based nơi public signal có thể tạo queueing hoặc crowding</li>
+      </ul>
+      <p>Ba hướng research question đáng thử ở Việt Nam là: public fishery forecasts có làm sản lượng tăng hay chỉ làm congestion tăng; các nhóm ngư dân có information clubs nội bộ có hiệu quả hơn public broadcasting không; và platform information trong nông nghiệp hoặc logistics có tạo phản ứng đồng bộ quá mức không.</p>
+    </section>
+
+    <section class="section">
+      <h2>Storage Status</h2>
+      <ul>
+        <li><strong>GitHub:</strong> chỉ coi là thành công khi file này và <code>analysis.md</code> thật sự được tạo trong repo.</li>
+        <li><strong>Google Drive:</strong> bỏ qua trong lượt này vì chưa có tuyến tạo Google Doc và tracker sheet đúng folder đích với độ chắc chắn cao.</li>
+        <li><strong>Raw paper PDF:</strong> đã xác minh được nguồn PDF tốt nhất, nhưng chưa tải và lưu được raw binary PDF lên GitHub.</li>
+        <li><strong>analysis.pdf:</strong> chưa tạo và chưa lưu trong lượt này.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
