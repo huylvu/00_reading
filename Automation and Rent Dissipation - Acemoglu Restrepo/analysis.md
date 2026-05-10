@@ -7,8 +7,8 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/article-abstract/141/2/1521/8445541
 - **Nguồn PDF tốt nhất đã xác minh:** accepted manuscript / article PDF của QJE tại https://academic.oup.com/qje/article-pdf/141/2/1521/66641800/qjag006.pdf
 - **Nguồn PDF thực tế dùng để đọc sâu trong lượt chạy:** NBER Working Paper No. 32536, revised October 2025, https://www.nber.org/system/files/working_papers/w32536/w32536.pdf
-- **Trạng thái lưu trên GitHub:** Đang cập nhật trong lượt chạy này; bản cuối sẽ phản ánh trung thực sau khi hoàn tất bước lưu trữ
-- **Trạng thái lưu trên Google Drive:** Chủ động bỏ qua trong lượt chạy này nếu không tạo được Google Doc và tracker đúng cách
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu thành công trong thư mục `Automation and Rent Dissipation - Acemoglu Restrepo/` của repo `huylvu/00_reading`; `analysis.pdf` đã tạo cục bộ thành file PDF hợp lệ nhưng chưa được lưu lên GitHub trong lượt chạy này; raw PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa tải và chưa lưu được file nhị phân vào repo
+- **Trạng thái lưu trên Google Drive:** Chủ động bỏ qua trong lượt chạy này vì chưa có workflow đủ chắc để tạo Google Doc và tracker đúng folder đích mà không báo cáo quá mức
 
 ## 1. Metadata
 
@@ -274,5 +274,5 @@ Paper này phù hợp rất sát tiêu chí của lượt chạy:
 ## Ghi chú trung thực về nguồn và giới hạn thực thi
 
 - Trong lượt chạy này, mình xác minh được article page của QJE và public working-paper PDF rất gần bản journal.
-- Môi trường shell hiện tại vẫn trả lỗi `403` khi cố tải raw PDF bytes trực tiếp từ nguồn ngoài, nên nếu không lưu được raw PDF gốc vào GitHub thì trạng thái cuối sẽ nói rõ là mới xác minh được nguồn PDF công khai.
-- `analysis.pdf` chỉ nên được coi là thành công nếu file PDF hợp lệ thực sự được tạo và bước lưu GitHub hoặc attachment email dùng được file đó.
+- Môi trường shell hiện tại vẫn trả lỗi `403` khi cố tải raw PDF bytes trực tiếp từ nguồn ngoài, nên trạng thái cuối của raw PDF gốc là mới xác minh được nguồn PDF công khai, chưa tải và chưa lưu được vào GitHub.
+- `analysis.pdf` đã được render cục bộ thành công trong lượt chạy này, nhưng chưa có tuyến lưu file nhị phân lên GitHub đủ chắc bằng bộ công cụ hiện có, nên trạng thái cuối là chưa lưu trên GitHub.
