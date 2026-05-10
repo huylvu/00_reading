@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag022
 - **Nguồn PDF dùng để phân tích sâu:** bản public manuscript trên Sciences Po, đề ngày 20/07/2023, tại https://www.sciencespo.fr/department-economics/sites/sciencespo.fr.department-economics/files/Departmental_2023_2024_D_Thesmar_paper_the_effects_of_mandatory_profit_sharing_on_workers_and_firms_evidence_from_france.pdf
 - **Nguồn PDF đối chiếu thêm:** NBER Working Paper 31804 tại https://www.nber.org/papers/w31804.pdf
-- **Trạng thái lưu trên GitHub:** Đang cập nhật trong lượt chạy này; bản cuối sẽ phản ánh trung thực sau khi hoàn tất bước lưu trữ.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu thành công trong thư mục `Mandatory Profit-Sharing in France - Nimier-David Sraer Thesmar/` của repo `huylvu/00_reading`; `analysis.pdf` chưa được tạo và chưa được lưu; raw PDF gốc của paper mới dừng ở mức xác minh nguồn công khai, chưa được lưu vào repo trong lượt chạy này.
 - **Trạng thái lưu trên Google Drive:** Chủ động bỏ qua trong lượt chạy này vì chưa có workflow đủ chắc để tạo Google Doc và tracker đúng folder đích mà không báo cáo quá mức.
 
 ## Executive summary
@@ -250,4 +250,4 @@ Paper này được chọn vì thỏa ba tiêu chí cùng lúc:
 
 - Lượt chạy này xác minh chắc bài báo chính thức trên QJE và xác minh được public manuscript dùng để đọc sâu.
 - Phân tích hiện bám chủ yếu vào public manuscript đề ngày 20/07/2023 trên Sciences Po; đây là lựa chọn tốt nhất công khai mà mình xác minh được trong lượt chạy.
-- Nếu bước lưu trữ GitHub chỉ hoàn tất cho `analysis.md` và `analysis.html`, trạng thái cuối sẽ được cập nhật đúng như vậy; không mặc định coi `analysis.pdf` hay raw PDF gốc là đã lưu.
+- Trạng thái cuối của lượt chạy này là đã lưu `analysis.md` và `analysis.html` lên GitHub; chưa có `analysis.pdf`; chưa lưu raw PDF gốc của paper vào repo.
