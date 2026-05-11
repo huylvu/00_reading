@@ -6,7 +6,7 @@
 - **Nguon bai bao chinh:** https://academic.oup.com/qje/article/141/2/1705/8499649
 - **Nguon PDF chinh thuc da xac minh:** https://academic.oup.com/qje/article-pdf/141/2/1705/67136383/qjag013.pdf
 - **Nguon PDF cong khai dung de doc sau trong luot nay:** https://extranet.sioe.org/uploads/sioe2019/nguyen.pdf
-- **Trang thai luu tren GitHub:** muc tieu cua luot nay la luu `analysis.md` va `analysis.html` vao repo `huylvu/00_reading`; `analysis.pdf` chua tao; PDF goc cua paper moi dung o muc xac minh nguon, chua luu binary len repo trong luot nay
+- **Trang thai luu tren GitHub:** `analysis.md` va `analysis.html` da duoc luu thanh cong vao repo `huylvu/00_reading`; `analysis.pdf` chua tao; PDF goc cua paper moi dung o muc xac minh nguon, chua luu binary len repo trong luot nay
 - **Trang thai Google Drive:** bo qua co chu dich trong luot nay vi chua co quy trinh tao Google Doc va tracker trong dung folder dich voi muc do chac chan du cao
 
 ## 1. Metadata
