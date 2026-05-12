@@ -1,0 +1,269 @@
+# Bargaining and Inequality in the Labor Market
+
+**Tác giả:** Sydnee Caldwell, Ingrid Haegele, Jörg Heining  
+**Journal:** The Quarterly Journal of Economics  
+**Năm:** 2026  
+**Ngày agent chạy:** 2026-05-13 (Asia/Saigon)  
+**Nguồn bài báo chính:** https://academic.oup.com/qje/article-abstract/141/1/315/8306878  
+**Nguồn PDF tốt nhất đã xác minh:** author PDF công khai: https://sydneec.github.io/Website/CHH_Bargain.pdf  
+**Nguồn PDF đối chiếu thêm:** accepted-manuscript PDF trên Oxford: https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjaf049/65042123/qjaf049.pdf  
+**Trạng thái lưu trên GitHub:** mục tiêu lưu vào repo `huylvu/00_reading`, thư mục `Bargaining and Inequality in the Labor Market - Caldwell Haegele Heining/`; trạng thái cuối của từng file được ghi rõ ở cuối tài liệu  
+**Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này vì khả năng hiện có chưa đủ chắc để vừa tạo đúng Google Doc vừa cập nhật tracker trong đúng folder đích mà không báo cáo quá mức  
+
+## 1. Metadata
+
+- **Tiêu đề paper:** Bargaining and Inequality in the Labor Market
+- **Tác giả:** Sydnee Caldwell, Ingrid Haegele, Jörg Heining
+- **Journal:** The Quarterly Journal of Economics
+- **Volume / issue / pages:** Volume 141, Issue 1, pp. 315-371
+- **DOI:** 10.1093/qje/qjaf049
+- **Published online:** 2025-11-05
+- **Official issue date:** February 2026
+- **Top 5 status:** Có, vì QJE là top 5 economics
+- **Field fit:** applied micro, labor economics, personnel economics, wage setting, inequality
+- **Nguồn PDF tốt nhất:** bản author PDF công khai trên website của Sydnee Caldwell
+- **Trạng thái PDF gốc:** đã xác minh được nguồn PDF công khai tốt và nguồn journal chính thức, nhưng chỉ được coi là đã lưu khi có file binary tải xuống và upload thành công
+
+## 2. Executive summary
+
+Paper hỏi một câu cơ bản nhưng lâu nay surprisingly khó trả lời bằng dữ liệu tốt: **trong thị trường lao động hiện đại, mức lương thực tế được quyết định nhiều đến đâu bởi thương lượng cá nhân giữa worker và firm, và cơ chế đó đóng góp thế nào vào bất bình đẳng tiền lương?**
+
+Nhóm tác giả xây dựng một dữ liệu rất mạnh cho Đức bằng cách nối ba lớp thông tin với nhau: survey mới về chiến lược trả lương của **772 firms**, survey worker chi tiết với gần **10.000 lao động toàn thời gian**, và hồ sơ employer-employee hành chính dài hạn. Điểm then chốt là họ không đo bargaining một cách gián tiếp qua job ads hay self-reported negotiation đơn lẻ, mà hỏi trực tiếp firms xem họ có chủ động phân biệt pay giữa những worker họ xem là năng suất tương đương hay không, rồi kiểm định xem câu hỏi survey đó có thực sự bắt được wage-setting strategy thật hay không.
+
+Kết quả chính rất đáng chú ý. Phần lớn firms sẵn sàng engage in individual bargaining; khoảng **78%** số worker trong sample làm ở những vị trí mà bargaining là khả thi. Các firms bargain nhiều hơn với managers và với các bottleneck jobs, còn labor-market factors dự báo bargaining strategy tốt hơn firm characteristics. Về phía workers, đa số interactions bắt đầu bằng việc worker nêu salary expectations trước khi nhận offer; nhiều outside offers bị từ chối và worker ở lại firm cũ sau khi renegotiate. Những khác biệt trong outside options và hành vi bargain tạo ra bất bình đẳng lương trong cùng firm, và firms dùng individual bargaining có **gender wage gap cao hơn khoảng 3 điểm phần trăm**.
+
+Đây là paper đáng đọc vì nó chuyển chủ đề “bargaining” từ một khái niệm lý thuyết khó quan sát thành một đối tượng đo lường trực tiếp, rồi nối nó sang một câu hỏi cực lớn về inequality. Nó cũng là một ví dụ rất đẹp về applied micro dùng survey design thông minh để mở khóa một thứ mà administrative data một mình không nhìn thấy.
+
+## 3. Research question and motivation
+
+Câu hỏi trung tâm của paper là: **individual wage bargaining phổ biến đến đâu, diễn ra như thế nào, và nó góp phần ra sao vào within-firm wage inequality cũng như gender wage gap?**
+
+Khoảng trống mà bài muốn lấp đến từ hai phía. Một phía là labor economics: ta biết labor market power và bargaining quan trọng, nhưng rất khó đo trực tiếp “firm có bargain hay không” và bargain theo chiến lược nào. Phía còn lại là inequality: ta có nhiều bằng chứng về giữa-firm inequality, AKM firm effects, và sorting, nhưng ít bằng chứng trực tiếp về việc thương lượng cá nhân ngay tại khâu offer-setting và renegotiation tạo ra chênh lệch thu nhập trong cùng workplace thế nào.
+
+Động lực thực tiễn cũng rất mạnh. Nếu firms thật sự đặt lương qua individual bargaining, thì lương không chỉ phản ánh productivity hay posted wage schedules. Nó còn phản ánh outside options, risk tolerance, kỳ vọng lương, willingness to ask, và cách firms dùng thông tin đó để price discriminate trong lao động. Khi đó, bất bình đẳng không chỉ là chuyện “khác firm” mà còn là chuyện khác khả năng mặc cả trong cùng firm.
+
+## 4. Main contribution
+
+Đóng góp quan trọng nhất của paper là **xây và kiểm định một measure trực tiếp của firm bargaining strategy**, thay vì suy ra bargaining từ proxies rất xa như có đăng lương trong vacancy hay worker có báo là “đã negotiate” hay không.
+
+Paper đóng góp ở ít nhất bốn lớp:
+
+1. **Measurement contribution:** phát triển câu hỏi survey đơn giản nhưng hiệu quả để xác định firm có phân biệt pay giữa những worker mà firm tự xem là có năng suất tương đương hay không.
+2. **Validation contribution:** chứng minh rằng measure survey này không phải cheap talk; nó dự báo được nhiều pattern trong dữ liệu worker và wage structure.
+3. **Substantive labor-market contribution:** cho thấy bargaining rất phổ biến và có cấu trúc rõ theo worker group, outside offers, và bottleneck occupations.
+4. **Inequality contribution:** liên kết bargaining với within-firm inequality, person effects, và gender wage gap.
+
+Điểm mới của paper không phải một estimator econometric lạ, mà là việc hỏi đúng đối tượng, đúng câu hỏi, rồi nối các câu trả lời đó vào matched employer-employee data đủ sâu để biến survey thành nghiên cứu applied micro nghiêm túc.
+
+## 5. Identification or methodology
+
+### 5.1 Firm survey design
+
+Tác giả thiết kế survey dựa trên trao đổi với hơn 100 HR professionals. Một firm được xem là có **individual bargaining strategy** nếu firm phân biệt pay giữa những worker cùng vị trí mà firm nhận thức là có productivity tương tự. Định nghĩa này rộng hơn “back-and-forth negotiation” thuần túy: nó bao gồm cả việc firms dùng salary expectations để điều chỉnh initial offer trước cả khi có quá trình mặc cả nhiều vòng.
+
+Survey không hỏi chung chung cho toàn firm, mà tách theo bốn nhóm worker:
+
+- new labor-market entrants
+- experienced non-managers
+- managers
+- bottleneck occupations
+
+Và tách riêng cho hai tình huống:
+
+- external hires
+- incumbent workers nhận outside offer
+
+Điểm mạnh của cách hỏi này là nó chạm đúng reality của wage setting: nhiều firms không dùng một rule duy nhất cho mọi lao động.
+
+### 5.2 Linked data strategy
+
+Firm survey được nối với:
+
+- Orbis balance-sheet data
+- German Social Security administrative data
+- worker survey của gần 10.000 full-time workers do IAB field
+
+Nhờ vậy paper quan sát được cả firm side lẫn worker side của bargaining. Đây là một lợi thế rất lớn vì hầu hết nghiên cứu trước hoặc chỉ thấy worker reports, hoặc chỉ thấy firm outcomes.
+
+### 5.3 Validation logic
+
+Paper không chỉ tin survey by default. Tác giả kiểm tra xem measure bargaining strategy có ăn khớp với:
+
+- việc firms thường yêu cầu salary expectations đến mức nào
+- mức độ firms sẵn sàng điều chỉnh pay cho từng worker group
+- worker reports về offer, counteroffer, rejected offers, và renegotiation
+- patterns của within-firm wage inequality
+
+Tức là identification ở đây không phải “random treatment” mà là **measurement validation kết hợp matched-data discipline**.
+
+### 5.4 Empirical approach to inequality
+
+Để nói về inequality, paper dùng occupation-establishment comparisons và AKM-style intuition. Cùng occupation và cùng establishment, workers khác nhau ở outside options, willingness to ask, risk tolerance, giới tính, và prior firm effects. Những khác biệt đó được nối với xác suất ask for more, receive more, stay or move, và wage outcomes.
+
+Điều rất hay là paper không chỉ hỏi “women negotiate less?” mà còn hỏi:
+
+- women có outside options kém hơn không
+- ngoài options ra, gender gap trong bargaining còn lại bao nhiêu
+- workers với individual wage premia cao có negotiate nhiều hơn không
+- prior-firm effect có còn đi theo worker khi sang bargaining firms không
+
+### 5.5 Strengths and vulnerable points
+
+**Điểm mạnh**
+
+- đo đúng object mà paper quan tâm, thay vì proxy quá xa
+- nối cả firm-side và worker-side của bargaining
+- dùng admin data lớn nên mô tả rất giàu sức nặng
+- framing rất rõ giữa bargaining, wage setting, và inequality
+
+**Điểm dễ bị nghi ngờ**
+
+- survey responses vẫn có nguy cơ misreport hoặc framing effects
+- setting là Đức, nơi institutions và collective bargaining đặc thù
+- nhiều kết quả về inequality là highly informative nhưng không phải causal effect từ một randomized policy
+- bargaining definition khá rộng; một số người có thể tranh luận rằng nó pha giữa negotiation và strategic price discrimination
+
+## 6. Results and interpretation
+
+### 6.1 Bargaining is common
+
+Paper cho thấy bargaining không phải fringe phenomenon. Khoảng **78%** worker trong sample làm ở các vị trí nơi individual bargaining là khả thi. Tần suất này rất khác nhau theo worker group:
+
+- managers: khoảng **95%**
+- experienced non-managers: khoảng **85%**
+- labor-market entrants: khoảng **55%**
+
+Firms cũng có mức điều chỉnh pay khác nhau theo nhóm. Mức điển hình là khoảng **3%** cho entrants, **7%** cho experienced non-managers, và **13%** cho managers.
+
+Diễn giải kinh tế ở đây rất mạnh: wage-setting không phải một posted-price system đơn giản. Firms actively price workers differently, nhất là ở những chỗ labor market tight hơn hoặc vacancy hard to fill hơn.
+
+### 6.2 Labor-market factors matter more than firm characteristics
+
+Một kết quả quan trọng là bargaining strategy không được dự báo tốt bởi productivity proxies như age, size, hay assets per employee. Ngược lại, labor-market conditions và employee-group characteristics giải thích variation tốt hơn. Điều này đi ngược các mô hình trong đó productive firms sẽ systemically bargain hơn vì họ có nhiều rents hơn để chia.
+
+Nói gọn: bài này đẩy người đọc ra khỏi intuition “firm tốt thì bargain nhiều”. Bargaining dường như được dẫn dắt nhiều hơn bởi market tightness, recruitment difficulty, và worker group specifics.
+
+### 6.3 Worker-firm interactions begin with salary expectations
+
+Worker survey cho thấy phần lớn interactions bắt đầu từ việc worker nêu salary expectations. Gần như mọi firm hỏi thông tin này; khoảng một phần ba firms bắt worker phải cung cấp. Nhiều firms cũng nói rằng variation in initial offers quan trọng ngang hoặc hơn hẳn back-and-forth negotiation trong việc quyết định final offer.
+
+Điểm này rất đáng nhớ vì nó đổi cách ta nghĩ về bargaining. Không phải bargain chỉ xảy ra khi ứng viên “xin thêm”. Bargaining có thể đã bắt đầu ngay từ khâu firm dùng expectations để tailor initial offer.
+
+### 6.4 Outside offers often end in staying, not moving
+
+Một kết quả rất hay là nhiều outside offers bị từ chối, và worker ở lại firm cũ sau khi renegotiate. Điều này phù hợp với models có imperfect information về outside options và cho thấy on-the-job renegotiation là một phần trung tâm của wage dynamics, chứ không chỉ job-to-job mobility.
+
+### 6.5 Bargaining contributes to inequality
+
+Paper đưa ra ba lớp bằng chứng rằng bargaining tạo ra inequality:
+
+1. Với workers không thuộc bargaining regime, gender wage gap gần như biến mất sau khi kiểm soát occupation-establishment fixed effects.
+2. Với workers thuộc bargaining regime, vẫn còn **gender wage gap khoảng 4-5 điểm phần trăm** ở worker-level survey subsample.
+3. Ở firm-level, firms dùng individual bargaining có **gender wage gap cao hơn khoảng 3 điểm phần trăm**.
+
+Ngoài ra, workers có better outside options hoặc individual wage premia cao hơn cũng có xác suất ask for more và receive more cao hơn. Điều này gợi ý person effects trong wage data có thể một phần phản ánh bargaining behavior chứ không chỉ productivity không quan sát được.
+
+## 7. What is special or elegant about the paper
+
+Điều đẹp nhất ở paper là nó **đặt đúng câu hỏi cho đúng người**.
+
+Nhiều paper trước cố suy ra bargaining từ dữ liệu mà bản thân dữ liệu không được sinh ra để đo bargaining. Bài này thì khác: tác giả dành công sức để hiểu HR practice thực sự vận hành ra sao, rồi thiết kế câu hỏi survey đủ sát với object cần đo. Đó là một bài học nghiên cứu rất lớn.
+
+Có ba điểm làm paper đáng nhớ:
+
+1. **Measurement is the contribution.** Đây là kiểu paper mà đóng góp lớn nhất nằm ở cách nhìn thấy thứ trước đó không thấy được.
+2. **Two-sided evidence.** Có cả firms lẫn workers, nên câu chuyện không bị lệch về một phía.
+3. **Inequality bridge.** Paper nối micro wage-setting behavior rất cụ thể sang một câu hỏi lớn về gender gap và within-firm inequality.
+
+## 8. Required background knowledge
+
+### 8.1 Labor market power và bargaining
+
+Người đọc nên quen với ý tưởng rằng wages không nhất thiết bằng marginal product; search frictions, outside options, và market power tạo ra rents để bargain.
+
+### 8.2 Posted wages vs bargained wages
+
+Một labor market có thể có posted wages cứng, hoặc wages được điều chỉnh theo từng worker. Paper này quan trọng vì nó đo trực tiếp mức độ nghiêng về vế sau.
+
+### 8.3 AKM intuition
+
+AKM-style decomposition giúp hiểu firm effects và person effects trong wage data. Paper không chỉ dùng AKM như một đích đến, mà còn dùng nó như ngôn ngữ để hỏi bargaining góp phần ra sao vào các component đó.
+
+### 8.4 Outside options và on-the-job search
+
+Nếu worker có outside option tốt, họ có bargaining power cao hơn. Nhưng paper cũng cho thấy outside options không phải toàn bộ câu chuyện; behavior và willingness to ask cũng quan trọng.
+
+### 8.5 Gender and negotiation
+
+Có một literature lớn về việc women ask less, receive less, hoặc face different returns to negotiation. Paper này đặt câu hỏi đó vào đúng bối cảnh wage-setting thực tế của firms.
+
+## 9. Limitations and open questions
+
+Hạn chế đầu tiên là bối cảnh Đức có institutions rất đặc thù: collective bargaining coverage, worker protections, và administrative data quality đều cao. Vì vậy magnitude khó bê nguyên sang Mỹ hay các nền kinh tế đang phát triển.
+
+Thứ hai, survey-based measurement dù rất tốt vẫn có thể chịu ảnh hưởng bởi cách respondents hiểu câu hỏi hoặc muốn tự mô tả firm của mình ra sao. Validation giúp giảm lo ngại này, nhưng không xóa hoàn toàn.
+
+Thứ ba, nhiều kết quả về inequality là descriptive-plus-structural in spirit hơn là causal treatment effects. Paper cho thấy bargaining đi cùng inequality, nhưng không hoàn toàn randomize bargaining regime.
+
+Các câu hỏi mở rất hay gồm:
+
+- bargaining strategy thay đổi thế nào theo business cycle
+- AI screening và algorithmic wage setting sẽ làm bargaining yếu đi hay chỉ ẩn đi
+- bargaining có tạo inequality mạnh hơn trong low-transparency labor markets không
+- policy nào giảm gender gap hiệu quả hơn: pay transparency, standardized offers, hay limits on salary-history/expectation elicitation
+
+## 10. Takeaways for a researcher
+
+1. Khi một object quan trọng nhưng invisible trong admin data, đôi khi cách tiến lên là thiết kế survey mới thay vì cố squeeze thêm từ proxy cũ.
+2. Hỏi firms trực tiếp có thể rất mạnh nếu câu hỏi được xây từ institutional detail và được validation kỹ.
+3. One-sided data thường tạo blind spot lớn; paper này cho thấy giá trị rất cao của matched firm-worker evidence.
+4. Một paper inequality tốt thường thuyết phục hơn nhiều khi nối được micro behavior cụ thể với distributional outcome.
+5. Cần phân biệt thật rõ giữa bargaining behavior của worker và bargaining strategy của firm; paper này làm điều đó rất tốt.
+6. Nếu muốn paper có policy bite, hãy viết sao cho kết quả nói được về công cụ cụ thể như pay transparency, offer standardization, hay outside-offer rules.
+
+## 11. Vietnam relevance and extension
+
+Paper rất liên quan với Việt Nam vì nhiều thị trường lao động ở Việt Nam đang chuyển dần từ wage schedules khá cứng sang trả lương linh hoạt, nhất là ở khu vực tư nhân, dịch vụ hiện đại, công nghệ, bán lẻ, logistics, ngân hàng, và các doanh nghiệp FDI.
+
+### 11.1 Ý tưởng nào áp dụng được ở Việt Nam?
+
+Rất nhiều firm ở Việt Nam đã bargain trên thực tế nhưng ít khi gọi tên nó như vậy. Salary expectations, counteroffers để giữ người, và chênh lệch offer cho cùng vị trí là chuyện rất phổ biến. Paper gợi ý rằng nếu không đo những chiến lược đó trực tiếp, ta sẽ bỏ sót một nguồn quan trọng của within-firm inequality.
+
+### 11.2 Cần điều kiện gì để triển khai ở Việt Nam?
+
+- survey với HR hoặc hiring managers về cách set initial offers và respond to outside offers
+- worker survey về salary expectations, ask behavior, counteroffers, accepted/rejected offers
+- dữ liệu payroll hoặc matched employer-employee ở mức đủ chi tiết để nhìn within-firm pay dispersion
+- thông tin về occupation, tenure, and mobility để tách bargaining khỏi compositional differences
+
+### 11.3 Trở ngại chính
+
+- payroll data thường khó tiếp cận và không chuẩn hóa
+- firms có thể ngại thừa nhận mức độ linh hoạt trong offer-setting
+- khu vực informal và quasi-formal lớn làm measurement khó hơn Đức rất nhiều
+- gender norms và hierarchy có thể ảnh hưởng mạnh đến willingness to ask, khiến interpretation cần tinh tế hơn
+
+### 11.4 Hướng mở rộng cho Việt Nam
+
+1. **Bargaining trong FDI manufacturing và logistics:** Liệu các vị trí bottleneck có bị price discriminate mạnh hơn, và điều đó làm tăng within-firm inequality tới mức nào?
+2. **Counteroffers và giữ người trong white-collar labor markets:** Ở ngân hàng, tech, và consulting tại Việt Nam, outside offers có thường kết thúc bằng stay-and-renegotiate như trong paper không?
+3. **Gender gap trong negotiated pay:** Pay transparency hoặc standardized offer bands có làm giảm gender gap ở các bargaining firms không?
+
+### 11.5 Một số research questions mới cho bối cảnh Việt Nam
+
+- Firms Việt Nam bargain nhiều hơn ở nhóm worker nào: managers, sales, engineers, hay hard-to-fill blue-collar jobs?
+- Outside options hay risk tolerance giải thích nhiều hơn cho chênh lệch ask behavior giữa workers Việt Nam?
+- Nếu cấm hỏi salary expectations trong tuyển dụng, within-firm wage inequality và gender gap thay đổi thế nào?
+
+## 12. Final assessment
+
+Đây là một paper rất mạnh của QJE vì nó cho ta một thứ mà labor economics thiếu khá lâu: đo trực tiếp bargaining strategy của firms trong dữ liệu lớn và đáng tin. Bài này không dựa vào một twist econometric hào nhoáng; nó thắng bằng câu hỏi đúng, dữ liệu đúng, và validation rất cẩn thận. Nếu phải tóm trong một câu, paper cho thấy **bất bình đẳng lương trong cùng firm không chỉ là câu chuyện về năng suất hay sorting, mà còn là câu chuyện về cách firms và workers thương lượng ngay từ lúc offer được hình thành**.
+
+## 13. Ghi chú trạng thái thực thi của lượt chạy này
+
+- **GitHub folder đích:** `Bargaining and Inequality in the Labor Market - Caldwell Haegele Heining/`
+- `analysis.md`: đã tạo cục bộ và sẵn sàng cho bước lưu GitHub
+- `analysis.html`: dự kiến render từ `analysis.md`; chỉ được coi là đã lưu nếu thao tác tạo file text trong repo thành công
+- `analysis.pdf`: không được tạo trong lượt chạy này; trạng thái cuối cần hiểu là chưa tạo và chưa lưu
+- **PDF gốc của paper:** đã xác minh chắc nguồn author PDF và nguồn journal chính thức, nhưng chưa được coi là đã lưu nếu chưa tải được binary và upload thành công
+- **Google Drive:** bỏ qua có chủ đích trong lượt chạy này vì bộ công cụ hiện có chưa cho phép đảm bảo tạo đúng Google Doc và tracker trong đúng folder đích với mức chắc chắn đủ cao
