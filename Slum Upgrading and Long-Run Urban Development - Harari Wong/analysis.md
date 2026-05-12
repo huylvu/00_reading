@@ -1,229 +1,217 @@
 # Slum Upgrading and Long-Run Urban Development: Evidence from Indonesia
 
-- Tác giả: Mariaflavia Harari, Maisy Wong
-- Journal: The Review of Economic Studies
-- Năm: 2025
-- Ngày agent chạy: 2026-05-07 (Asia/Saigon)
-- Trang bài báo chính: https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf090/8287039
-- Nguồn PDF tốt nhất đã xác minh để phân tích: manuscript công khai của tác giả, bản `September 2024`, https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/HarariWong_SlumUpgrading_Sept2024.pdf
-- Ghi chú về PDF chính thức: Oxford Academic có corrected proof xuất bản ngày 15 October 2025 và corrected/typeset ngày 11 November 2025, nhưng môi trường chạy này không tải trực tiếp file PDF chính thức về cục bộ được
-- Trạng thái lưu trên GitHub trong lượt chạy này: đã lưu `analysis.md` và `analysis.html` vào repo `huylvu/00_reading` trong thư mục `Slum Upgrading and Long-Run Urban Development - Harari Wong/`; chưa lưu `analysis.pdf`; chưa lưu raw PDF gốc của paper
-- Trạng thái lưu trên Google Drive trong lượt chạy này: bỏ qua, vì bộ công cụ hiện có không cho phép mình tạo Google Doc và Google Sheet tracker trong đúng folder Drive đích một cách đáng tin cậy trong cùng lượt chạy
+- **Tác giả:** Mariaflavia Harari, Maisy Wong
+- **Journal:** The Review of Economic Studies
+- **Năm:** 2025
+- **Ngày agent chạy:** 2026-05-12
+- **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf090/8287039
+- **Nguồn PDF dùng để phân tích:** bản public manuscript tháng 6/2025 trên ReStud: https://www.restud.com/wp-content/uploads/2025/10/HarariWong_KIP_ReStud_MS_only.pdf
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được cập nhật trong repo `huylvu/00_reading` tại thư mục `Slum Upgrading and Long-Run Urban Development - Harari Wong/`.
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì chưa có tuyến tạo Google Doc và tracker đúng folder đích với độ chắc chắn đủ cao.
+- **Ghi chú về PDF gốc và analysis.pdf:** Lượt chạy này không tạo `analysis.pdf`. PDF gốc của paper đã xác minh được nguồn công khai tốt nhất nhưng chưa tải và lưu lại vào GitHub được do môi trường trả lỗi 403 khi truy xuất file nhị phân từ nguồn ngoài.
 
-## Executive summary
+## 1. Metadata
 
-Paper hỏi một câu rất quan trọng trong urban/development economics: nâng cấp khu ổ chuột tại chỗ có giúp thành phố phát triển tốt hơn về dài hạn, hay lại vô tình giữ đất ở trạng thái phi chính thức quá lâu và làm chậm tái phát triển ở những vị trí đất rất đắt?
+- **Tiêu đề:** Slum Upgrading and Long-Run Urban Development: Evidence from Indonesia
+- **Tác giả:** Mariaflavia Harari, Maisy Wong
+- **Journal:** The Review of Economic Studies
+- **Năm / tình trạng xuất bản:** bài journal trên ReStud, published online ngày 15/10/2025; bản PDF công khai dùng để đọc sâu là public manuscript tháng 6/2025.
+- **Link nguồn chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdaf090/8287039
+- **Link PDF:** https://www.restud.com/wp-content/uploads/2025/10/HarariWong_KIP_ReStud_MS_only.pdf
+- **Field:** development economics, urban economics, applied micro
+- **Top 5 status:** Có. ReStud là top 5 economics journal.
 
-Harari và Wong trả lời câu hỏi đó bằng cách nghiên cứu Kampung Improvement Program (KIP) ở Jakarta, một chương trình khổng lồ giai đoạn 1969-1984 đã nâng cấp hạ tầng cơ bản cho khoảng 5 triệu người, phủ tới 25% diện tích đất thành phố. Họ kết hợp bản đồ chính sách chi tiết, dữ liệu giá đất, chiều cao công trình, cadastral maps, ảnh Google Street View và ảnh điều tra thực địa để so sánh các khu được nâng cấp với các kampung lịch sử không được nâng cấp nhưng tương đồng về không gian.
+## 2. Executive summary
 
-Kết quả cốt lõi là khá phản trực giác nếu chỉ nhìn bằng lăng kính phúc lợi ngắn hạn. Về dài hạn, các khu KIP ngày nay có giá đất thấp hơn, nhà thấp tầng hơn, mức độ phi chính thức cao hơn, đất bị chia nhỏ hơn và mật độ hộ cao hơn. Hiệu ứng âm mạnh nhất tập trung gần trung tâm thành phố, nơi chi phí cơ hội của việc duy trì đất phi chính thức là lớn nhất. Trong mô hình cân bằng không gian, nếu “gỡ” cú sốc KIP hiện tại trên toàn thành phố, phúc lợi toàn thành phố tăng khoảng 3.3%; khoảng 78% phần tăng này đến từ khu trung tâm. Nhưng lợi ích đó không trung tính phân phối: nhóm kỹ năng cao được lợi, còn nhóm kỹ năng thấp chịu thiệt do bị đẩy khỏi các vị trí hấp dẫn hơn.
+Paper hỏi một câu rất quan trọng với các nước đang đô thị hóa nhanh: nâng cấp khu ổ chuột có giúp thành phố phát triển tốt hơn về dài hạn, hay vô tình làm trì hoãn quá trình tái phát triển đất đai ở các vị trí đắc địa? Harari và Wong trả lời câu hỏi đó bằng cách nghiên cứu chương trình Kampung Improvement Program (KIP) của Jakarta giai đoạn 1969-1984, một trong những chương trình slum upgrading lớn nhất thế giới.
 
-Vì sao bài này đáng đọc? Vì nó làm rất tốt ba việc cùng lúc: đưa ra bằng chứng nhân quả dài hạn cho một chính sách phát triển đô thị kinh điển; chỉ ra một trade-off hiệu quả-phân phối rất thật thay vì nói chung chung; và gắn reduced-form evidence với một spatial equilibrium model đủ chặt để nói về “nên formalize chỗ nào trước” chứ không chỉ “có hiệu ứng hay không”.
+Về empirics, bài ghép bản đồ ranh giới KIP độ phân giải cao với outcome năm 2015 như giá đất định giá hành chính, chiều cao công trình, mật độ thửa đất, tỷ lệ giấy tờ đất chưa đăng ký, và một chỉ số informal settlement dựa trên ảnh. Để xử lý selection bias, tác giả dùng ba lớp thiết kế bổ sung nhau: so sánh trong cùng hamlet, so sánh giữa các historical kampungs trong cùng locality, và boundary discontinuity dọc theo ranh giới KIP.
 
-## Research question and motivation
+Kết quả chính khá ngược trực giác nếu chỉ nhìn vào lợi ích ngắn hạn của upgrading: trung bình, khu KIP ngày nay có giá đất thấp hơn, nhà thấp tầng hơn, và informal hơn so với khu đối chứng; tác động âm mạnh nhất nằm trong bán kính 5 km quanh CBD. Phần structural của bài cho thấy nếu "gỡ" shock KIP trên toàn thành phố thì welfare toàn thành phố tăng 2.9%, nhưng lợi ích chủ yếu đến từ khu trung tâm, trong khi người thu nhập thấp có thể thua thiệt nếu formalization làm họ bị đẩy ra xa. Đây là bài rất đáng đọc vì nó buộc người làm development phải nhìn slum upgrading như một bài toán động về phân bổ đất, chứ không chỉ như một can thiệp hạ tầng cơ bản.
 
-Câu hỏi trung tâm là: slum upgrading tại chỗ có tạo ra lợi ích bền vững cho thành phố, hay có thể làm chậm formalization và tái phát triển ở những nơi mà đất lẽ ra nên chuyển sang sử dụng hiệu quả hơn?
+## 3. Research question and motivation
 
-Bối cảnh học thuật và thực tiễn rất mạnh. Nhiều thành phố ở các nước đang phát triển đang phải hấp thụ tăng trưởng dân số đô thị cực lớn trong điều kiện quyền tài sản yếu, thị trường đất bị phân mảnh, và chính trị của giải tỏa cưỡng bức rất nhạy cảm. Chính sách nâng cấp khu ổ chuột có sức hút vì nó giúp cải thiện điều kiện sống mà không cần di dời hàng loạt. Nhưng đúng chỗ mạnh đó cũng có thể là điểm yếu dài hạn: một khi khu ổ chuột được nâng cấp và người dân tin rằng họ sẽ không bị đuổi đi, khu vực đó có thể “ổn định” ở trạng thái phi chính thức lâu hơn, khiến chi phí gom đất, hợp thức hóa và xây dựng lại tăng lên sau này.
+Câu hỏi trung tâm của paper là: slum upgrading ảnh hưởng như thế nào đến cấu trúc phát triển đô thị trong dài hạn, đặc biệt là về formalization, tái phát triển đất, và phúc lợi phân bổ giữa nhóm dân cư khác nhau?
 
-Khoảng trống mà paper muốn lấp là thiếu bằng chứng định lượng dài hạn, ở độ phân giải không gian rất cao, về việc một chương trình nâng cấp khu ổ chuột quy mô lớn ảnh hưởng thế nào đến quỹ đạo phát triển đô thị hàng chục năm sau. Văn liệu trước có nhiều thảo luận chuẩn tắc và case study, nhưng ít nghiên cứu có thể nói vừa nhân quả vừa dài hạn.
+Động lực học thuật của bài đến từ hai khoảng trống. Thứ nhất, rất nhiều chương trình slum upgrading được ca ngợi vì cải thiện điều kiện sống mà không phải cưỡng bức di dời, nhưng bằng chứng causal dài hạn lại rất hiếm vì dữ liệu kém và selection vào khu ổ chuột rất nặng. Thứ hai, urban development literature ngày càng nhấn mạnh rằng đất ở khu trung tâm là nguồn lực khan hiếm; nếu chính sách làm cho đất tiếp tục ở trạng thái informal trong thời gian dài thì chi phí cơ hội có thể rất lớn.
 
-## Main contribution
+Về mặt thực tiễn, câu hỏi này cực kỳ quan trọng cho các thành phố ở châu Á, châu Phi, và Mỹ Latin. Nhiều chính phủ đứng giữa hai cực: một bên là nâng cấp để cải thiện phúc lợi tức thời và tránh displacement, một bên là tái phát triển để sử dụng đất hiệu quả hơn. Paper này giúp dịch tranh luận đó sang ngôn ngữ định lượng và welfare.
 
-Đóng góp thứ nhất là bằng chứng nhân quả dài hạn về KIP khi Jakarta đang “mọc ra khỏi” trạng thái phi chính thức. Đây không chỉ là đo tác động ngắn hạn của hạ tầng cơ bản, mà là xem 30-40 năm sau các khu được nâng cấp đã trở thành gì trong cấu trúc đô thị.
+## 4. Main contribution
 
-Đóng góp thứ hai là dữ liệu. Bài ghép được bản đồ ranh giới chương trình chi tiết, giá đất hành chính, chiều cao nhà, dữ liệu đăng ký thửa đất, và một photographic informality index được xây từ ảnh Google Street View cộng với ảnh điều tra thực địa. Phần đo lường informality này rất đáng chú ý vì nó lấp khoảng trống khi dữ liệu hành chính thường không phản ánh tốt “độ chính thức” thực tế của khu dân cư.
+Đóng góp đầu tiên là cung cấp bằng chứng causal dài hạn về một chương trình slum upgrading ở quy mô rất lớn. KIP phủ khoảng 25% diện tích Jakarta và 5 triệu người hưởng lợi, nên bài không chỉ nói về một dự án nhỏ mà về một policy regime đủ lớn để tác động đến cả spatial equilibrium của thành phố.
 
-Đóng góp thứ ba là khung phân tích. Paper không dừng ở reduced-form estimates mà nhúng kết quả vào một spatial equilibrium model với hai nhóm hộ và hai phân khúc nhà ở formal/informal. Nhờ vậy, tác giả mới trả lời được câu hỏi chính sách sâu hơn: nếu formalize thì lợi ích ở đâu lớn nhất, ai được lợi, ai chịu chi phí, và có thể thiết kế bundle policy nào để giảm displacement của người nghèo.
+Đóng góp thứ hai là về dữ liệu. Bài kết hợp policy maps lịch sử, dữ liệu định giá đất, dữ liệu chiều cao công trình, bản đồ địa chính, và một photographic survey để tạo ra chỉ số informal settlement. Đây là kiểu data assembly rất đẹp: outcome không chỉ là giá đất mà còn là hình thái đô thị và mức độ informal.
 
-Trong micro applied và development economics, đây là một đóng góp quan trọng vì nó nối identification, đo lường, và counterfactual policy design trong một setting có relevance rất cao cho các đô thị đang phát triển.
+Đóng góp thứ ba là về thiết kế nghiên cứu. Thay vì chỉ chạy một design, tác giả ghép ba design với mức độ local comparability ngày càng cao. Điều này làm câu chuyện nhận dạng mạnh hơn nhiều so với các paper chỉ dựa vào một source of variation.
 
-## Identification or methodology
+Đóng góp thứ tư là đưa reduced-form estimates vào một spatial equilibrium model để lượng hóa trade-off equity-efficiency. Bài không dừng ở kết luận "KIP làm giá đất thấp hơn", mà đi tiếp tới câu hỏi policy quan trọng hơn: nên formalize ở đâu, ai được lợi, ai chịu thiệt, và có thể bundle formalization với chính sách nào để bớt displacement.
 
-### Thiết kế thực nghiệm reduced-form
+## 5. Identification or methodology
 
-Paper dùng ba lớp so sánh chính.
+### Thiết kế reduced-form
 
-Thứ nhất, trong toàn mẫu thành phố, tác giả so sánh các location được KIP và không được KIP trong cùng một hamlet. Ý tưởng là trong cùng một đơn vị vi mô, nhiều yếu tố nền tảng khó quan sát đã gần nhau hơn.
+Bài dùng ba chiến lược nhận dạng chính.
 
-Thứ hai, tác giả thu hẹp mẫu vào các historical kampungs có trước KIP, rồi so sánh kampung được xử lý với kampung không được xử lý trong cùng locality. Bước này xử lý mạnh hơn lo ngại rằng KIP vốn nhắm vào các khu slum tệ hơn từ đầu.
+1. **Full-sample within-hamlet comparison.** Tác giả so sánh khu KIP và non-KIP trong cùng hamlet, kèm bộ control khá dày cho hạ tầng lịch sử, địa hình, landmarks, và vị trí. Ý tưởng là trong cùng đơn vị địa lý rất nhỏ, khác biệt không quan sát được sẽ ít hơn nhiều.
+2. **Historical kampung sample within-locality comparison.** Tác giả giới hạn mẫu vào các kampung lịch sử đã tồn tại trước KIP và so sánh kampung được nhận KIP với kampung không được nhận KIP trong cùng locality. Thiết kế này đánh thẳng vào nỗi lo rằng KIP vốn nhắm vào những nơi "xấu" hơn ngay từ đầu.
+3. **Boundary discontinuity design (BDD).** Tác giả nhìn các quan sát nằm trong 200m quanh ranh giới KIP. Ở rất gần biên, giả định là chất lượng không quan sát được phải tương đối giống nhau, nên discontinuity ở outcome có thể gán cho treatment.
 
-Thứ ba, bài dùng boundary discontinuity design trong phạm vi 200 mét quanh ranh giới KIP. Giả định nhận dạng cốt lõi là chất lượng không quan sát được thay đổi trơn qua ranh giới này sau khi đã kiểm soát các yếu tố địa lý và fixed effects liên quan.
+### Logic nhận dạng
 
-Điểm mạnh của bộ design là không lệ thuộc vào một chiến lược duy nhất. Khi cùng một pattern xuất hiện trong full sample, historical-kampung sample và boundary design, độ tin cậy của diễn giải tăng lên đáng kể.
+Logic nền tảng là: nếu sau khi kiểm soát cố định địa lý rất hẹp và các biến lịch sử định trước mà KIP vẫn dự báo giá đất thấp hơn, nhà thấp hơn, informal hơn, thì ta có bằng chứng rằng KIP gắn với delayed formalization chứ không đơn thuần phản ánh việc khu đó vốn xấu hơn.
 
-### Biến kết quả và đo lường
+Bài còn làm một bài test rất thuyết phục về selection bias bằng cách khai thác ba wave của KIP. Theo scoring rule lịch sử, khu xuống cấp hơn được ưu tiên vào wave sớm hơn. Quả thật khi chỉ dùng district fixed effects, wave I có tác động âm lớn hơn wave II và III. Nhưng pattern monotonic này phần lớn biến mất khi thêm hamlet fixed effects hoặc locality fixed effects. Đây là một kiểm tra rất đẹp: tác giả không phủ nhận selection, mà chỉ ra rằng design chính xử lý phần selection quan trọng đó khá hiệu quả.
 
-Các outcome chính gồm:
+### Outcome và cơ chế
 
-- log giá đất định giá hành chính
-- xác suất có nhà cao trên 3 tầng và log số tầng
-- chỉ số informality dựa trên xếp hạng ảnh
-- tỷ trọng thửa đất chưa đăng ký
-- mật độ thửa đất và mật độ hộ
+Outcome chính gồm:
 
-Phần đo lường hình ảnh là điểm rất hay. Tác giả dùng ảnh Google Street View cho khoảng 90% mẫu ảnh, và cử điều tra viên đi chụp thực địa cho các điểm mà Street View không vào được. Cách làm này đặc biệt phù hợp với slums vì nhiều khía cạnh “phi chính thức” hiện ra rõ hơn ở góc nhìn mặt đất so với dữ liệu vệ tinh hay hồ sơ hành chính.
+- log land values
+- indicator nhà cao hơn 3 tầng và log building heights
+- rank-based informality index từ ảnh
+- share thửa đất chưa đăng ký
+- parcel density và household density
 
-### Logic cơ chế
+Cơ chế mà paper nhấn mạnh là KIP có thể cải thiện informal amenities và tenure security cảm nhận được, làm cư dân bám lại, thửa đất bị chia nhỏ hơn, chi phí land assembly tăng lên, từ đó formal redevelopment khó diễn ra hơn. Vì vậy, nhà nghiên cứu không nên đọc land-value effect như thể KIP "thất bại" thuần túy; đây là kết quả cân bằng giữa lợi ích bảo tồn chỗ ở cho người nghèo và chi phí cơ hội của formalization.
 
-Paper đặt ra vài kênh then chốt:
+### Thành phần structural
 
-- nâng cấp làm khu slum hấp dẫn hơn để ở
-- bảo đảm không cưỡng chế di dời làm cư dân tin hơn vào quyền chiếm hữu
-- cư dân ở lại lâu hơn, đất bị chia nhỏ hơn, mật độ tăng
-- chi phí gom đất và formalization tăng
-- vì vậy khu KIP bị chậm tái phát triển so với khu tương tự không nhận KIP
+Ở phần model, thành phố có hai nhóm cư dân (high-skilled và low-skilled) và hai phân khúc nhà ở (formal và informal). Việc chuyển đất informal sang formal bị cản bởi một "formalization tax", tức một reduced-form friction đại diện cho chi phí chuyển đổi, land assembly, và các rào cản thể chế. Tác giả dùng reduced-form wedges giữa KIP và non-KIP theo khoảng cách tới CBD để calibrate model, rồi chạy counterfactuals về việc lift KIP ở toàn thành phố hay theo vùng.
 
-Tác giả cũng kiểm tra xem có phải chênh lệch ngày nay chỉ do cường độ hạ tầng KIP ban đầu khác nhau hay không. Họ không tìm thấy bằng chứng mạnh rằng loại hay cường độ đầu tư ban đầu giải thích chênh lệch land values hiện nay; điều này phù hợp với việc bản thân các nâng cấp cơ bản có tuổi thọ hữu ích tương đối ngắn, trong khi cái bền hơn là cấu trúc tenure và land assembly.
+### Điểm mạnh của phương pháp
 
-### Mô hình cấu trúc
+- Một policy history rất phù hợp cho causal work: chương trình lớn, có ranh giới không gian rõ, có variation theo wave.
+- Outcome đo được cả market side lẫn physical urban form.
+- Ba design chồng lên nhau làm câu chuyện nhận dạng vững hơn.
+- Structural phần sau không "thay" reduced form mà dùng reduced form để trả lời câu hỏi welfare.
 
-Spatial equilibrium model có hai loại cư dân:
+### Điểm dễ bị nghi ngờ
 
-- nhóm kỹ năng cao sống trong phân khúc formal
-- nhóm kỹ năng thấp sống trong phân khúc informal
+- Dù fixed effects rất hẹp, ta vẫn phải tin rằng trong phạm vi hamlet, locality, hoặc sát ranh giới KIP, phần không quan sát được còn lại không đồng biến mạnh với treatment.
+- Một số biến cơ chế như crowding, in-migration, hay tenure security chỉ đo gián tiếp, nên câu chuyện mechanism vẫn là một tổ hợp suy luận cộng với bằng chứng phụ trợ.
+- Land values là định giá hành chính, không phải transaction prices, dù ở quy mô thành phố và đi cùng các outcome khác thì đây vẫn là tín hiệu có giá trị.
 
-Cư dân chọn nơi ở, nơi làm việc và lượng nhà ở; thu nhập bị chiết khấu bởi commuting costs; tiện ích phụ thuộc vào amenities, rents và housing consumption. Phía cung gồm đất formal và informal, với một “formalization tax” đại diện cho frictions khi chuyển đất từ informal sang formal. Các wedge giữa khu KIP và non-KIP trong land values và building heights được diễn giải là khác biệt về amenities và chi phí formalization.
-
-Điểm mạnh lớn của mô hình là nó đủ tối giản để minh bạch intuition nhưng vẫn đủ giàu để nói về displacement, spillovers và aggregate welfare. Điểm dễ bị nghi ngờ là như mọi mô hình cân bằng không gian, kết quả welfare phụ thuộc vào calibration và cách ánh xạ reduced-form wedges sang primitives của model.
-
-## Results and interpretation
+## 6. Results and interpretation
 
 ### Kết quả reduced-form chính
 
-Trong manuscript September 2024, tác giả tóm tắt baseline estimates như sau:
+Baseline estimates cho thấy khu KIP có:
 
-- KIP areas có giá đất thấp hơn khoảng 10%
-- xác suất có tòa nhà trên 3 tầng thấp hơn 7 điểm phần trăm
-- số tầng của công trình thấp hơn khoảng 9%
+- land values thấp hơn khoảng 10%
+- xác suất có nhà cao hơn 3 tầng thấp hơn 7 điểm phần trăm
+- số tầng thấp hơn khoảng 9%
 
-Những hiệu ứng này khá lớn: ít nhất cỡ 40% của control-group means theo phần giới thiệu của paper. Diễn giải kinh tế là KIP không chỉ “để lại” chênh lệch hình thức bề ngoài; nó liên quan tới việc các khu này chuyển đổi chậm hơn sang các dạng sử dụng đất có mật độ và giá trị cao hơn.
+Đây là kết quả mạnh vì nó lặp lại qua full sample, historical kampung sample, và BDD. Thông điệp kinh tế là: ở Jakarta hiện đại, nơi từng được nâng cấp để giữ dân nghèo ở lại lại chính là nơi formal redevelopment diễn ra chậm hơn.
 
 ### Informality và fragmentation
 
-KIP areas “phi chính thức” hơn theo nhiều thước đo. Chỉ số informality dựa trên ảnh cao hơn khoảng 0.27 đến 0.32 điểm tùy specification, trong khi control-group mean xấp xỉ 1-1.1. Tỷ trọng thửa đất chưa đăng ký cao hơn khoảng 2 đến 3 điểm phần trăm trong full và historical samples. Parcel density cao hơn khoảng 9 đến 13 parcels mỗi pixel; household density cũng cao hơn rõ rệt, với ước lượng full-sample ngụ ý khoảng 14 hộ nhiều hơn mỗi pixel so với đối chứng.
+Khu KIP informal hơn theo nhiều thước đo. Rank-based informality index cao hơn khoảng 0.27-0.31 điểm; share đất chưa đăng ký cũng cao hơn trong full và historical samples. Parcel density cao hơn khoảng 9-13 thửa mỗi pixel; household density cũng cao hơn. Bộ kết quả này rất nhất quán với cơ chế land assembly khó hơn và quyền ở lại được củng cố hơn.
 
-Điều này rất quan trọng cho diễn giải cơ chế. Nếu KIP chỉ làm tăng phúc lợi cư trú mà không ảnh hưởng đến trajectory của khu đất, ta không nhất thiết phải thấy fragmentation và density tăng mạnh như vậy về dài hạn. Pattern quan sát được phù hợp hơn với câu chuyện “residents stay, land subdivides, assembly gets harder”.
+### Heterogeneity theo khoảng cách tới CBD
 
-### Heterogeneity theo vị trí trong thành phố
+Đây là chỗ bài thật sự sáng lên. Tác động âm mạnh nhất nằm ở khu trung tâm, yếu dần ở middle và periphery. Điều này rất hợp lý về mặt urban economics: giá trị tái phát triển chính là lớn nhất ở vùng gần CBD, nên việc giữ đất ở trạng thái informal tại đây tạo ra misallocation nghiêm trọng hơn nhiều so với ngoại vi.
 
-Paper cho thấy average effect che lấp heterogeneity rất lớn. Hiệu ứng âm mạnh nhất nằm gần CBD. Với land values, hệ số KIP x Center là khoảng -0.14; KIP x Middle khoảng -0.10; KIP x Periphery khoảng -0.09. Với log building heights, các hệ số tương ứng khoảng -0.13, -0.06, và -0.04.
+### Không phải vì "upgrades vật lý" còn bền mãi
 
-Đây là chỗ paper thực sự hay: nó không nói “slum upgrading luôn xấu về dài hạn”, mà nói chi phí cơ hội của việc duy trì informality phụ thuộc rất mạnh vào vị trí. Ở khu trung tâm, nơi chênh lệch lợi nhuận giữa dùng đất formal và informal là lớn nhất, cùng một chính sách có thể tạo ra misallocation đáng kể hơn nhiều.
+Tác giả kiểm tra dị biệt theo loại đầu tư ban đầu của KIP như đường xe, đường đi bộ, sanitation, public buildings, nhưng không thấy loại đầu tư nào giải thích khác biệt land values hiện nay. Diễn giải hợp lý là các hạ tầng cơ bản đó đã depreciate khá nhiều sau vài thập kỷ, còn cái tồn tại dai dẳng hơn là cấu trúc cư trú informal, fragmentation, và redevelopment friction.
 
-### Amenities không phải lời giải thích chính
+### Welfare từ model
 
-Tác giả không tìm thấy bằng chứng rằng khác biệt hiện nay đến từ việc khu KIP được đầu tư vật chất “kém hơn” hay “tốt hơn” theo từng hạng mục hạ tầng ban đầu. Ngoài ra, đến nay access tới school, hospital, police station, bus stop khá tương đồng giữa KIP và non-KIP; thứ khác biệt hơn là formal amenities như retail density và office density thấp hơn ở KIP areas.
+Counterfactual benchmark cho thấy nếu lift KIP trên toàn thành phố thì welfare toàn thành phố tăng 2.9%. Nhưng phân bổ lợi ích rất không đều: high-skilled gain 4.4%, low-skilled lose 1.4%. Đặc biệt, 79% welfare gains của việc bỏ KIP đến từ khu gần CBD. Nghĩa là chi phí cơ hội của upgrading không nằm rải đều, mà tập trung nặng ở đất trung tâm.
 
-Điều đó làm cho lập luận paper sắc hơn: vấn đề không phải “KIP xây hạ tầng tệ nên khu đó kém phát triển”, mà là KIP có thể làm thay đổi incentive và frictions của quá trình formalization về dài hạn.
+Bài cũng rất hay ở chỗ không dừng ở kết luận "nên formalize". Tác giả cho thấy nếu bundle formalization với nới height restrictions hoặc với transfer một phần land rents, có thể giảm hoặc đảo ngược tổn thất của nhóm low-skilled. Đây là một kết quả policy rất thực dụng.
 
-### Kết quả welfare từ mô hình
+## 7. What is special or elegant about the paper
 
-Trong counterfactual benchmark “lift KIP everywhere”, nhóm H gain khoảng 5.2%, nhóm L lose khoảng 2.1%, và phúc lợi toàn thành phố tăng khoảng 3.3%; dân số thành phố tăng ròng khoảng 2.5%. Đây là một kết quả rất giàu ý nghĩa chính sách: formalization tạo aggregate gains, nhưng không Pareto-improving.
+Điểm đẹp nhất của paper là nó không rơi vào bẫy đạo đức hóa chính sách. Slum upgrading không được mô tả như "tốt" hay "xấu" tuyệt đối. Thay vào đó, bài cho thấy một can thiệp có thể vừa bảo vệ người nghèo trong ngắn hạn, vừa làm xuất hiện một distortion động trong phân bổ đất về dài hạn.
 
-Quan trọng hơn, khoảng 78% city-wide gains đến từ việc lift KIP ở khu trung tâm. Nếu lift KIP chỉ ở center, phúc lợi toàn thành phố tăng khoảng 2.6%; middle chỉ khoảng 0.4%; periphery khoảng 0.1%. Tức là misallocation chủ yếu nằm ở những nơi KIP lại hiện diện nhiều nhất trong đô thị lõi.
+Điểm đẹp thứ hai là cách nối reduced form với spatial equilibrium. Nhiều paper đo được land-value wedges nhưng dừng lại ở đó. Harari và Wong dùng wedges này để hỏi câu tiếp theo mà policy maker thực sự quan tâm: nếu tái phát triển thì tổng welfare ra sao, nhóm nào được lợi, và có cách nào giữ efficiency gains mà giảm displacement không?
 
-Paper còn chỉ ra vài cách giảm trade-off hiệu quả-phân phối. Một package kết hợp bỏ KIP ở trung tâm và nới hạn chế chiều cao có thể giữ lợi ích cho nhóm formal mà giảm displacement cho nhóm informal. Ngoài ra, phân phối lại khoảng 5% formal land surplus cho nhóm kỹ năng thấp có thể khiến cả hai nhóm cùng được lợi trong counterfactual của model.
+Điểm đẹp thứ ba là data design. Chỉ số informality từ ảnh là một chi tiết rất có "taste" nghiên cứu: nó biến một thứ vốn khó đo thành một outcome có thể xếp hạng được, lại ăn khớp với land values, building heights, parcel registration, và density.
 
-## What is special or elegant about the paper
+Bài học nghiên cứu ở đây là: khi một câu hỏi lớn liên quan đến allocation, hãy cố đo outcome ở nhiều lớp cùng lúc: giá, quantity, form, legality, và welfare. Chính sự đồng quy của các outcome làm kết luận đáng tin hơn nhiều.
 
-Điểm đẹp nhất của paper là tác giả không chọn một framing đạo đức quá dễ. Slum upgrading thường được nhìn như chính sách “pro-poor” và formal redevelopment thường bị xem là lực đẩy người nghèo ra ngoài. Paper không phủ nhận điều đó, nhưng buộc người đọc thấy rằng một chính sách nhân văn ở horizon ngắn có thể tạo ra inefficiency lớn ở horizon dài, nhất là trên đất trung tâm cực kỳ khan hiếm.
+## 8. Required background knowledge
 
-Điểm đẹp thứ hai là cách nối từ urban morphology sang welfare economics. Từ lower land values, shorter buildings, fragmented parcels và informality, paper đi tới một welfare question có cấu trúc: khi nào “preserving shelter” biến thành “preserving misallocation”?
+### Urban economics cơ bản
 
-Điểm đẹp thứ ba là chiến lược đo informality. Việc dùng ảnh mặt đất để xây rank-based index nghe có vẻ thủ công, nhưng thực ra rất thông minh trong bối cảnh mà administrative records và remote sensing đều thiếu hụt cho câu hỏi này.
+Người đọc nên quen với ý tưởng rằng đất ở gần trung tâm có shadow value cao hơn vì tiếp cận việc làm, amenity, và agglomeration. Khi formal redevelopment bị cản, thành phố có thể dùng đất kém hiệu quả hơn mức tối ưu.
 
-Một bài học nghiên cứu rất đáng học là cách tác giả không chỉ chạy robustness checks cho có. Họ dùng staggered rollout, placebo borders, persistence logic, spatial decay, và phân rã heterogeneity để xử lý từng mối nghi ngờ đúng bản chất của setting.
+### Informality và property rights
 
-## Required background knowledge
+Trong nhiều đô thị đang phát triển, informal settlement không chỉ là "nhà tạm" mà còn là một trạng thái pháp lý mơ hồ: quyền ở có thể được công nhận trên thực tế nhưng không hoàn chỉnh trên giấy tờ. Điều này làm cho land market, redevelopment, và bargaining với developer trở nên phức tạp.
 
-### 1. Slum upgrading và formalization
+### Selection bias trong policy evaluation
 
-Người đọc cần biết slum upgrading khác với slum clearance hay relocation. Upgrading là cải thiện hạ tầng và điều kiện sống tại chỗ, thường kèm một mức độ bảo đảm cư trú nào đó. Formalization là quá trình chuyển khu đất và nhà ở sang trạng thái có quyền tài sản và quy hoạch chính thức rõ ràng hơn.
+KIP không được phân ngẫu nhiên. Những nơi được nâng cấp thường là những nơi xuống cấp hơn. Vì vậy, nếu không hiểu selection bias thì rất dễ nhầm giữa "treatment effect âm" và "treated places vốn đã tệ hơn". Paper này là ví dụ hay về cách dùng fixed effects địa lý hẹp, restriction về historical sample, và boundary design để xử lý vấn đề đó.
 
-### 2. Spatial misallocation
+### Boundary discontinuity
 
-Đây là ý tưởng rằng đất hoặc các yếu tố sản xuất không được dùng ở nơi mang lại giá trị kinh tế cao nhất, do frictions như quyền tài sản yếu, holdout, quy hoạch, hay chi phí giao dịch. Trong paper này, misallocation xuất hiện khi đất trung tâm vẫn bị “kẹt” trong trạng thái informal thấp tầng.
+BDD gần giống regression discontinuity trong không gian. Ý tưởng là so sánh hai phía của ranh giới treatment nơi các đặc điểm nền tảng thay đổi mượt mà, còn treatment nhảy bậc. Đây là một thiết kế đặc biệt hữu ích khi policy có ranh giới không gian tương đối rõ.
 
-### 3. Boundary discontinuity design
+### Spatial equilibrium
 
-BDD so sánh các điểm ở rất gần hai phía của một ranh giới chính sách. Intuition là nếu ta đứng đủ gần biên, hai bên giống nhau ở nhiều mặt khó quan sát; khác biệt outcome có thể gán nhiều hơn cho treatment. Nhưng thiết kế này luôn nhạy với spillovers qua biên và chuyện ranh giới có bám theo features vật lý hay không.
+Phần model dựa trên trực giác rằng cư dân và doanh nghiệp phản ứng với giá đất, giá nhà, commuting costs, amenities, và composition của dân cư. Khi formalization xảy ra ở một nơi, nó không chỉ ảnh hưởng riêng nơi đó mà còn kéo theo di chuyển dân cư, thay đổi rent, và spillover amenity ở nơi khác.
 
-### 4. Spatial equilibrium model
+## 9. Limitations and open questions
 
-Đây là mô hình trong đó households và firms/developers phản ứng với rents, wages, commuting costs và amenities, khiến tác động ở một khu lan ra toàn thành phố. Nếu chỉ nhìn reduced-form local effects, ta bỏ lỡ displacement, price adjustments và resorting across space. Paper dùng mô hình để chuyển từ “local treatment effect” sang “city-wide welfare and distribution”.
+Hạn chế lớn nhất là external validity. Jakarta là một megacity với lịch sử đất đai, thể chế, và central-city pressure rất riêng. Không nên nhảy ngay từ kết quả này sang kết luận rằng mọi slum upgrading ở mọi thành phố đều gây delayed formalization nặng như vậy.
 
-### 5. Holdout và land assembly
+Hạn chế thứ hai là phần cơ chế chưa quan sát trực tiếp toàn bộ. Bài có bằng chứng khá mạnh về fragmentation, informality, và registration, nhưng không có panel vi mô dài hạn về migration, bargaining, hay transaction-level redevelopment để tách riêng từng kênh cơ chế.
 
-Khi tái phát triển một khu dày đặc với rất nhiều claimants, mỗi người nắm một mảnh quyền lợi nhỏ có thể trì hoãn thương lượng để đòi phần cao hơn. Điều này làm chi phí gom đất tăng lên mạnh, đặc biệt trong các khu informal mà hồ sơ pháp lý vốn đã không rõ.
+Hạn chế thứ ba là welfare counterfactual phụ thuộc vào cấu trúc model. Kết quả 2.9% hay 79% không phải là "statistics" thuần dữ liệu, mà là output của một mô hình với các giả định về segmented housing markets, formalization frictions, và spillovers. Dùng chúng như quantitative guidance thì rất hữu ích; dùng như chân lý chính xác đến từng chữ số thì không nên.
 
-## Limitations and open questions
+Câu hỏi mở quan trọng là: nếu nâng cấp slums đi kèm land titling chuẩn, land readjustment, hoặc cơ chế assembly chủ động hơn, liệu có giữ được lợi ích ngắn hạn mà giảm bớt chi phí dài hạn không? Một câu hỏi khác là hiệu ứng lên human capital, health, và social networks của cư dân gốc so với hiệu ứng allocation trên đất đai cuối cùng bên nào lớn hơn trong welfare toàn cục.
 
-Hạn chế thứ nhất là reduced-form outcomes được đo ở một lát cắt dài hạn hiện đại, nên paper mạnh về long-run endpoint nhưng yếu hơn về động học giữa đường. Ta không quan sát rõ khi nào reversal xảy ra: sau 5 năm, 15 năm hay 30 năm.
+## 10. Takeaways for a researcher
 
-Hạn chế thứ hai là welfare exercise dựa trên một mô hình tĩnh. Chính tác giả cũng nói rõ rằng họ không thể từ đây suy ra phúc lợi tích lũy toàn bộ của KIP kể từ lúc chương trình bắt đầu. Để trả lời câu hỏi “ex ante KIP có đáng làm không”, cần cộng cả benefits ngắn hạn nhiều thập niên với costs dài hạn, và cần dữ liệu lịch sử tốt hơn về displaced residents lẫn quality-of-life gains ban đầu.
+1. Một policy có vẻ "nhân văn" ở hiện tại vẫn có thể tạo distortion động rất lớn; framing nghiên cứu nên đủ dài hạn để nhìn thấy điều đó.
+2. Khi nghiên cứu đô thị, đừng chỉ đo một outcome như giá đất. Hãy ghép market outcomes, physical form, legality, và density để câu chuyện cơ chế kín hơn.
+3. Nếu có lo ngại selection mạnh, đừng đặt cược vào một design duy nhất. Paper này rất đáng học ở cách xếp full-sample FE, restricted historical sample, và boundary design thành một chuỗi kiểm tra lẫn nhau.
+4. Việc khai thác roll-out waves như một "selection diagnostic" là một mẹo nghiên cứu rất hay, ngay cả khi waves không đủ sạch để dùng làm treatment variation chính.
+5. Structural model hữu ích nhất khi nó được neo chặt vào reduced-form moments rõ ràng. Đây là một ví dụ tốt của structural discipline thay vì "model for model's sake".
+6. Policy relevance mạnh lên rất nhiều khi tác giả đi tiếp tới design implications: ở đâu nên formalize trước, và cần bundle với công cụ gì để giảm thiệt cho nhóm yếu thế.
 
-Hạn chế thứ ba là ánh xạ từ reduced-form wedges sang amenities và formalization costs là hợp lý nhưng không duy nhất. Một số cơ chế khác, như politics địa phương, developer expectations, hay regulatory complementarities, có thể cùng vận hành.
+## 11. Vietnam relevance and extension
 
-Hạn chế thứ tư là tính ngoại suy. Jakarta là megacity rất đặc thù: trung tâm đắt, tăng trưởng mạnh, property market năng động, và KIP phủ diện rất lớn. Kết quả rằng center mới là chỗ misallocation lớn nhất có thể không map một-một sang các thành phố nhỏ hơn hoặc ở giai đoạn đô thị hóa sớm hơn.
+Paper này có relevance rất cao cho Việt Nam, đặc biệt trong bối cảnh tái thiết đô thị, chỉnh trang khu dân cư cũ, nhà ở ven kênh rạch, và các khu ở tự phát tại Hà Nội, TP.HCM, Bình Dương, Đồng Nai, hay các thành phố ven biển đang đô thị hóa nhanh.
 
-Các câu hỏi mở rất hay gồm:
+### Ý tưởng nào chuyển sang Việt Nam được?
 
-- intergenerational effects của việc ở lại kampung được nâng cấp là gì?
-- nếu có compensation scheme tốt hơn, trade-off efficiency-equity thay đổi ra sao?
-- khi climate risk làm trung tâm Jakarta mất giá trị tương đối, kết luận dynamic efficiency có đảo chiều không?
-- trong những thành phố mới đô thị hóa, threshold nào đánh dấu lúc upgrading nên nhường chỗ cho redevelopment?
+Rất nhiều. Câu hỏi lõi không phải "slum" theo đúng định nghĩa Jakarta, mà là: khi nhà nước nâng cấp hạ tầng cơ bản và mặc nhiên cho phép cư dân tiếp tục ở lại, điều đó ảnh hưởng thế nào đến quá trình hợp thức hóa, gom đất, tăng tầng, và tái phát triển về dài hạn? Đây là câu hỏi rất Việt Nam.
 
-## Takeaways for a researcher
+### Điều kiện cần để làm ở Việt Nam
 
-1. Đừng chỉ hỏi một chính sách có cải thiện outcome hiện tại không; hãy hỏi nó thay đổi quỹ đạo tái phân bổ nguồn lực về dài hạn thế nào.
-2. Heterogeneity theo không gian có thể là toàn bộ câu chuyện. Average treatment effect ở đây hữu ích, nhưng insight chính sách thật sự nằm ở trung tâm so với ngoại vi.
-3. Đo lường tốt có thể là đóng góp nhận dạng quan trọng không kém design. Photographic informality index ở đây tạo ra một outcome mà dữ liệu chuẩn thường không có.
-4. Khi policy can create shelter and lock-in at the same time, hãy tách kênh amenity khỏi kênh formalization/assembly costs.
-5. Reduced-form và structural không nhất thiết là hai thế giới tách biệt. Nếu reduced-form moments được dùng có kỷ luật, structural layer có thể trả lời những câu local regressions không trả lời được.
-6. Với place-based policy, phải nghĩ nghiêm túc về distributional incidence. Aggregate gains có thể đi cùng displacement đủ lớn để làm policy rất khó chấp nhận nếu thiếu compensation.
+- Bản đồ ranh giới can thiệp lịch sử đủ chính xác
+- Dữ liệu đất và nhà đủ hạt mịn: giá đất bảng, giao dịch, giấy chứng nhận, mật độ thửa, footprint công trình, số tầng
+- Ảnh vệ tinh, street-level photos, hoặc ảnh khảo sát để xây chỉ số informal/formal urban form
+- Hiểu biết thể chế rất sâu về quy hoạch, đất đai, tái định cư, và lịch sử từng chương trình chỉnh trang
 
-## Vietnam relevance and extension
+### Trở ngại chính
 
-Bài này có relevance rất cao với Việt Nam, đặc biệt ở các đô thị như Hà Nội, TP.HCM, Hải Phòng hay Đà Nẵng, nơi cùng lúc tồn tại:
+- Dữ liệu lịch sử về ranh giới can thiệp và hồ sơ địa chính thường phân tán, không sạch, và khó ghép qua thời gian.
+- Ở Việt Nam, thay đổi quy hoạch, chuyển mục đích sử dụng đất, và can thiệp hành chính diễn ra chồng lớp; identification sẽ khó hơn nếu không có boundary thật rõ.
+- Giá đất hành chính và giá giao dịch chênh nhau đáng kể, nên cần xử lý cẩn thận nếu dùng bảng giá đất làm outcome.
 
-- nhu cầu tái phát triển các khu dân cư cũ, ngõ hẹp, đất phân mảnh
-- căng thẳng giữa chỉnh trang tại chỗ và tái thiết quy mô lớn
-- quyền sử dụng đất tương đối phức tạp
-- chi phí thương lượng, giải phóng mặt bằng và tái định cư rất lớn
+### Hướng cập nhật để hợp bối cảnh Việt Nam hơn
 
-Ý tưởng paper hoàn toàn có thể triển khai ở Việt Nam nếu có ba điều kiện.
+Một mở rộng hay là đặt trọng tâm vào trade-off giữa nâng cấp tại chỗ và land readjustment có tái định cư gần chỗ cũ. Việt Nam có thể không lặp lại đúng KIP, nhưng lại rất phù hợp để hỏi khi nào "giữ dân tại chỗ" là tối ưu và khi nào "tái cấu trúc có bồi thường, tăng tầng, chia sẻ địa tô" mới là hướng hiệu quả hơn.
 
-Thứ nhất, cần dữ liệu không gian lịch sử đủ tốt về ranh giới khu được nâng cấp hoặc chỉnh trang, cộng với bản đồ nền qua thời gian.
+### Gợi ý research questions cho Việt Nam
 
-Thứ hai, cần outcome hiện đại ở độ phân giải cao: giá đất, chiều cao công trình, mật độ thửa, tình trạng pháp lý của đất hoặc proxy tốt cho mức độ chính thức/phi chính thức.
+1. Các chương trình nâng cấp hẻm, cấp nước, thoát nước, và chỉnh trang khu dân cư tại TP.HCM có làm tăng persistence của cấu trúc thửa đất nhỏ và làm chậm redevelopment ở các khu gần trung tâm hay không?
+2. Ở các khu ven kênh rạch đã được chỉnh trang từng phần, tác động dài hạn lên giá đất, số tầng, và đăng ký quyền sử dụng đất khác gì giữa khu được nâng cấp tại chỗ và khu được tái định cư?
+3. Có thể thiết kế một gói policy kết hợp nâng cấp cơ bản với land assembly facilitation, height bonus, hoặc sharing of redevelopment gains để vừa giảm displacement vừa tránh delayed formalization hay không?
 
-Thứ ba, cần hiểu rõ institutional setting của land assembly và compensation, vì đó là phần biến mechanism từ câu chuyện “hạ tầng tốt hơn” sang câu chuyện “formalization khó hơn”.
+## 12. Tại sao mình chọn paper này hôm nay
 
-Các trở ngại chính ở Việt Nam là:
+Mình chọn paper này vì bốn lý do. Thứ nhất, nó nằm rất chắc trong development economics và applied micro theo nghĩa tốt nhất: một câu hỏi policy lớn, dữ liệu giàu, design nghiêm, và kết quả có sức nặng. Thứ hai, paper nằm trên ReStud, tức đúng tiêu chí ưu tiên top 5 journal economics. Thứ ba, mình chưa thấy paper này xuất hiện trong danh sách các bài gần đây đã làm, nên nó giúp tránh lặp lại. Thứ tư, public manuscript rất tốt và đủ gần bản journal để đọc sâu một cách đáng tin cậy.
 
-- dữ liệu lịch sử thường phân tán, không sạch, và khó ghép
-- legal status của đất có thể vừa nhiều tầng vừa thay đổi theo thời kỳ
-- outcome về “informality” khó đo nếu chỉ dựa vào dữ liệu hành chính
-- political economy của giải tỏa và tái định cư rất mạnh, dễ làm confound interpretation
+## 13. Trạng thái lưu trữ và giới hạn của lượt chạy này
 
-Ba hướng research design khả dĩ cho Việt Nam:
-
-1. Nghiên cứu tác động dài hạn của các chương trình nâng cấp hẻm, cấp thoát nước, hoặc chỉnh trang khu dân cư cũ ở TP.HCM/Hà Nội lên giá đất, mật độ xây dựng, và tái phát triển formal.
-2. So sánh các khu ven kênh rạch hoặc khu tập thể cũ được nâng cấp tại chỗ với các khu tương tự được tái định cư/giải tỏa, dùng historical maps cộng với boundary design.
-3. Xây một informality index bằng ảnh đường phố, ảnh drone hoặc ảnh thực địa để đo mức độ chuyển đổi hình thái đô thị ở các khu dân cư cũ, rồi nối với dữ liệu pháp lý thửa đất.
-
-Điểm quan trọng nhất cho Việt Nam là bài này gợi ý không nên tranh luận kiểu nhị phân “nâng cấp tại chỗ tốt” hay “tái phát triển mới tốt”. Câu hỏi đúng hơn là: ở vị trí nào trong thành phố, ở giai đoạn phát triển nào, với gói compensation nào, thì mỗi chiến lược mới hợp lý.
-
-## Notes on evidence and versioning
-
-- Phân tích này dựa chủ yếu trên manuscript công khai của tác giả, bản `September 2024`, vì đó là PDF toàn văn tốt nhất mà lượt chạy này truy cập được.
-- Metadata xuất bản được đối chiếu với trang corrected proof trên Oxford Academic của bài đăng ReStud, xuất bản ngày 15 October 2025 và corrected/typeset ngày 11 November 2025.
-- Một vài con số định lượng có thể khác rất nhỏ so với corrected proof cuối cùng nếu journal version đã tinh chỉnh trình bày hoặc rounding; trong lượt chạy này mình chỉ khẳng định những điểm đã xác minh được từ nguồn công khai truy cập được.
-
-## Trạng thái lưu trữ của lượt chạy này
-
-- GitHub: đã lưu thành công `analysis.md` và `analysis.html` trong repo `huylvu/00_reading` tại thư mục `Slum Upgrading and Long-Run Urban Development - Harari Wong/`.
-- Google Drive: đã bỏ qua trong lượt chạy này vì không có tuyến tạo đúng Google Doc và tracker sheet trong folder Drive đích với mức độ chắc chắn đủ cao.
-- Tệp PDF gốc của paper: đã xác minh được nguồn PDF công khai tốt nhất, nhưng môi trường chạy này không tải raw PDF bytes từ nguồn ngoài về cục bộ theo cách ổn định, nên chưa lưu file PDF gốc lên GitHub.
-- `analysis.pdf`: chưa tạo và chưa lưu; mình chủ động để trạng thái này là chưa hoàn tất thay vì báo cáo quá mức.
+- `analysis.md`: đã cập nhật thành công trên GitHub.
+- `analysis.html`: đã cập nhật thành công trên GitHub.
+- `analysis.pdf`: hiện chưa tạo trong lượt này. Mình không coi đây là hoàn tất nếu chưa có file PDF hợp lệ và đường upload tương thích.
+- **PDF gốc của paper:** đã xác minh được nguồn PDF công khai rất tốt trên ReStud, nhưng môi trường hiện tại trả lỗi 403 khi thử tải raw binary từ nguồn ngoài; vì vậy chỉ có thể ghi trung thực là đã xác minh nguồn PDF, chưa lưu PDF gốc lên GitHub trong lượt này.
+- **Google Drive:** bỏ qua vì chưa thể đảm bảo tạo đúng Google Doc và tracker trong folder `1uNTnzxL4y8_8VQiNa2FPPRMCe6LTHEWm`.
