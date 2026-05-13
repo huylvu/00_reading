@@ -152,15 +152,20 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Insuring Peace - analysis</h1>
+</header>
 <h1 id="insuring-peace-index-based-livestock-insurance-droughts-and-conflict">Insuring Peace: Index-Based Livestock Insurance, Droughts, and Conflict</h1>
 <ul>
 <li><strong>Tac gia:</strong> Kai Gehring, Paul Schaudt</li>
@@ -185,12 +190,159 @@
 <li><strong>Trang thai PDF goc tren GitHub:</strong> Chua luu raw binary PDF trong luot nay. Trang thai trung thuc la da xac minh duoc nguon PDF cong khai tot nhat, nhung chua tai va upload file nhi phan goc vao repo</li>
 </ul>
 <h2 id="executive-summary">2. Executive summary</h2>
-<p>Paper dat cau hoi rat hay va rat "development": mot cong cu bao hiem thi truong, duoc thiet ke de giam rui ro han han cho nguoi chan tha du muc, co the giam xung dot bao luc hay khong? Tac gia nghien cuu chuong trinh Index-Based Livestock Insurance (IBLI) tai Kenya, noi han han thuong day nguoi chan tha ra khoi dia ban truyen thong de tim dong co va nguon nuoc, tu do lam tang va cham voi nong dan, khu bao ton, va cac nhom su dung dat khac.</p>
+<p>Paper dat cau hoi rat hay va rat “development”: mot cong cu bao hiem thi truong, duoc thiet ke de giam rui ro han han cho nguoi chan tha du muc, co the giam xung dot bao luc hay khong? Tac gia nghien cuu chuong trinh Index-Based Livestock Insurance (IBLI) tai Kenya, noi han han thuong day nguoi chan tha ra khoi dia ban truyen thong de tim dong co va nguon nuoc, tu do lam tang va cham voi nong dan, khu bao ton, va cac nhom su dung dat khac.</p>
 <p>Dong gop trung tam cua bai la bien mot intervention thuong duoc danh gia tu goc welfare hoac insurance thanh mot bai ve conflict mitigation. Thay vi hoi IBLI co giup ho giau hon hay on dinh hon khong, paper hoi mot cau dai hon: khi giam cu soc thu nhap va ap luc giu dan bo nhu mot hinh thuc tiet kiem phong than, lieu co giam duoc drought-conflict elasticity khong. Trong du lieu grid-cell theo thoi gian cua Kenya giai doan 2000-2020, tac gia ket hop bien thien ngoai sinh cua rain deficit voi rollout lech pha cua IBLI va cho thay bao phu IBLI cao hon lam giam dang ke phan conflict tang them do han han, voi kich thuoc tac dong baseline khoang 25%.</p>
-<p>Bai nay dang doc vi no noi ba literatures thuong tach roi nhau: climate-conflict, index insurance, va state capacity / conflict mitigation. Ve mat thiet ke, bai rat dep o cho tac gia khong chi dua vao specification baseline ma con dung case study khong gian, neighborhood treatment, placebo pre-trend, control cho cac intervention khac, mau mo rong Dong Phi, va mot alternative design trong vung contested land use co rollout-cluster-by-period fixed effects. Ve mat co che, bai khong dung lai o "co ket qua" ma di tiep vao herd size, gia suc, thu nhap, gia gia suc va migratory pressure.</p>
+<p>Bai nay dang doc vi no noi ba literatures thuong tach roi nhau: climate-conflict, index insurance, va state capacity / conflict mitigation. Ve mat thiet ke, bai rat dep o cho tac gia khong chi dua vao specification baseline ma con dung case study khong gian, neighborhood treatment, placebo pre-trend, control cho cac intervention khac, mau mo rong Dong Phi, va mot alternative design trong vung contested land use co rollout-cluster-by-period fixed effects. Ve mat co che, bai khong dung lai o “co ket qua” ma di tiep vao herd size, gia suc, thu nhap, gia gia suc va migratory pressure.</p>
 <h2 id="research-question-and-motivation">3. Research question and motivation</h2>
 <h3 id="cau-hoi-nghien-cuu-trung-tam">Cau hoi nghien cuu trung tam</h3>
 <p>Lieu index-based livestock insurance co the giam xung dot do han han gay ra hay khong, va neu co thi bang co che kinh te nao?</p>
 <h3 id="dong-luc-hoc-thuat-va-thuc-tien">Dong luc hoc thuat va thuc tien</h3>
-<p>Trong nhieu boi canh thu nhap thap, han han khong chi la cu soc nang suat hay thu nhap ma con la cu soc chinh tri-xa hoi. Khi co va dong co khan hiem, nguoi chan tha du muc phai dich chuyen xa hon, lam tang kha nang gap go gay xung dot voi nguoi su dung dat khac. Literature climate-conflict chi ra moi lien he giua cu soc thoi tiet va bao luc, nhung policy menu thuong nghieng ve institutional reforms, peace settlements, hay security responses. Paper nay muon biet mot intervention co ve "kinh te hoc vi mo" hon - bao hiem duoc trigger bang remote sensing - co the dong vai tro nhu mot cong cu conflict mitigation khong.</p>
-<p>[truncated for storage brevity not allowed]
+<p>Trong nhieu boi canh thu nhap thap, han han khong chi la cu soc nang suat hay thu nhap ma con la cu soc chinh tri-xa hoi. Khi co va dong co khan hiem, nguoi chan tha du muc phai dich chuyen xa hon, lam tang kha nang gap go gay xung dot voi nguoi su dung dat khac. Literature climate-conflict chi ra moi lien he giua cu soc thoi tiet va bao luc, nhung policy menu thuong nghieng ve institutional reforms, peace settlements, hay security responses. Paper nay muon biet mot intervention co ve “kinh te hoc vi mo” hon - bao hiem duoc trigger bang remote sensing - co the dong vai tro nhu mot cong cu conflict mitigation khong.</p>
+<h3 id="khoang-trong-bai-muon-lap">Khoang trong bai muon lap</h3>
+<p>Index insurance da co mot literature lon ve poverty traps, risk coping, asset sales, va adoption. Nhung truoc bai nay, hau nhu chua co bang chung quasi-experimental rang mot cong cu bao hiem kieu nay co the giam xung dot. Khoang trong ma paper lap la noi welfare economics cua insurance voi political economy cua conflict.</p>
+<h2 id="main-contribution">4. Main contribution</h2>
+<h3 id="dong-gop-chinh-so-voi-van-lieu-truoc">Dong gop chinh so voi van lieu truoc</h3>
+<p>Dong gop lon nhat la chi ra rang market-based social protection co the co externality an ninh va hoa binh, khong chi la welfare effect tren nguoi tham gia. Day la mot thay doi framing quan trong: tu “bao hiem giam rui ro thu nhap” sang “bao hiem giam elasticity cua xung dot doi voi cu soc khi hau”.</p>
+<h3 id="diem-moi-ve-du-lieu-va-thiet-ke">Diem moi ve du lieu va thiet ke</h3>
+<ul>
+<li>Ket hop du lieu xung dot ACLED o muc grid 0.1 x 0.1 degree voi du lieu han han, rollout IBLI, du lieu gia gia suc, survey Afrobarometer, du lieu dan bo cua Bo Nong nghiep Kenya, va du lieu khong gian ve ethnic homelands va land-use contestation.</li>
+<li>Dung neighborhood treatment thay vi cell treatment don gian. Logic la han han xay ra o khu vuc lan can co the day nguoi chan tha di vao outcome cell; vi vay treatment can do ca cu soc lan kha nang “dem” cua bao hiem xung quanh.</li>
+<li>Khong chi dua vao rollout lech pha cua IBLI ma con xay them mot alternative identification trong contested land-use cells, them fixed effects muc rollout-cluster x thoi ky de hut ra cac omitted factors lien quan den rollout.</li>
+</ul>
+<h3 id="vi-sao-dong-gop-nay-quan-trong-trong-micro-applied-development">Vi sao dong gop nay quan trong trong micro applied / development</h3>
+<p>Day la mot bai applied micro rat dep vi no biet cach bien mot tinh huong development “lon” thanh nhung margin vi mo ro rang: quyet dinh giu dan bo nhu precautionary savings, distress sales khi han han, asset-price stabilization, va chi phi co hoi cua xung dot. Paper dong thoi noi duoc tu household behavior den externality cap vung va y nghia policy quy mo lon.</p>
+<h2 id="identification-or-methodology">5. Identification or methodology</h2>
+<h3 id="setting-va-intervention">Setting va intervention</h3>
+<p>IBLI la bao hiem vat nuoi duoc pilot tai Marsabit (Bac Kenya) nam 2010, sau do rollout qua nam buoc sang cac khu vuc chan tha du muc du dieu kien. Khac voi bao hiem truyen thong, IBLI dung chi so han han dua tren remote sensing de tu dong kich hoat chi tra, nham giam van de giam dinh ton that, cham tre, moral hazard va adverse selection.</p>
+<h3 id="don-vi-du-lieu-va-outcome-chinh">Don vi du lieu va outcome chinh</h3>
+<ul>
+<li>Don vi phan tich baseline: grid cell 0.1 x 0.1 degree, xap xi 11 km x 11 km</li>
+<li>Thoi gian: 2000-2020</li>
+<li>Outcome chinh: xac suat co su kien xung dot trong cell, dua tren ACLED</li>
+</ul>
+<h3 id="chien-luoc-nhan-dang-cot-loi">Chien luoc nhan dang cot loi</h3>
+<p>Regression cot loi khai thac tuong tac giua:</p>
+<ol type="1">
+<li><strong>Rain deficit o neighborhood</strong>: muc do han han ngoai sinh trong khu vuc xung quanh</li>
+<li><strong>IBLI coverage o neighborhood</strong>: muc bao phu bao hiem o khu vuc xung quanh</li>
+<li><strong>Tuong tac giua hai bien tren</strong>: cho biet IBLI co lam giam drought-conflict elasticity hay khong</li>
+</ol>
+<p>Intuition quan trong la conflict trong mot cell khong nhat thiet do han han ngay trong chinh cell do, ma do ap luc di cu chan tha tu cac cell lan can. Vi vay tac gia gan trong so theo khoang cach cho ca rain deficit va IBLI coverage.</p>
+<h3 id="gia-dinh-cot-loi">Gia dinh cot loi</h3>
+<ul>
+<li>Bien dong rain deficit la ngoai sinh doi voi xung dot ngan han</li>
+<li>Rollout timing cua IBLI, du co the endogenous, khong dong bo theo mot omitted process cung luc dieu khien do nhay conflict-doi-voi-han han</li>
+<li>Neighborhood structure phan anh dung hon don vi tiep xuc conflict thuc te so voi chi noi tren cell</li>
+</ul>
+<h3 id="cac-de-doa-nhan-dang-va-cach-paper-xu-ly">Cac de doa nhan dang va cach paper xu ly</h3>
+<ol type="1">
+<li><p><strong>Endogenous rollout</strong> Tac gia thua nhan rollout IBLI co the khong ngau nhien. Ho chi ra tai lieu van hanh cho thay yeu to ky thuat nhu song dien thoai va tiep can ha tang la nhung yeu to anh huong manh den rollout timing. Sau do paper kiem tra rang pre-treatment drought-conflict elasticity khong du doan eligibility hay rollout timing.</p></li>
+<li><p><strong>Interventions khac dong thoi</strong> HSNP cash transfers va cac aid project nong nghiep co the cung giam conflict. Paper them control cho cac intervention nay o muc cell va neighborhood, va ket qua khong bi lat chieu.</p></li>
+<li><p><strong>Placebo va randomization inference</strong> Tac gia chay placebo voi eventual eligibility / future coverage trong giai doan pre-treatment va khong thay “fake treatment effect”. Ho cung dung randomization inference de cho thay observed effect kho giai thich bang gan rollout ngau nhien.</p></li>
+<li><p><strong>Alternative design</strong> Paper dung them triple interaction tai contested land-use cells, kem rollout-cluster x period fixed effects. Day la mot bai test rat manh vi no soi chinh noi co kha nang va cham giua nguoi chan tha va nhom su dung dat khac.</p></li>
+</ol>
+<h3 id="diem-manh-cua-phuong-phap">Diem manh cua phuong phap</h3>
+<ul>
+<li>Nhieu lop kiem tra nhan dang, khong dua vao mot regression duy nhat</li>
+<li>Neighborhood treatment rat hop ly voi mechanism di cu va xung dot</li>
+<li>Ket hop baseline effect voi evidence co che giup cau chuyen nhan qua chat hon</li>
+</ul>
+<h3 id="diem-de-bi-nghi-ngo">Diem de bi nghi ngo</h3>
+<ul>
+<li>Rollout van khong phai randomized; ket qua cuoi cung phai dua tren lap luan “as good as conditional exogenous” kem robustness</li>
+<li>Outcome conflict la event data, co the bi anh huong boi reporting intensity</li>
+<li>Do luong migration chi la gian tiep, qua khoang cach conflict den homeland, nen co che migratory pressure thuyet phuc nhung chua phai bang chung truc tiep nhat</li>
+</ul>
+<h2 id="results-and-interpretation">6. Results and interpretation</h2>
+<h3 id="ket-qua-baseline">Ket qua baseline</h3>
+<p>Ket qua trung tam la: khi do nghiem trong cua han han trong neighborhood tang them 1 do lech chuan, xac suat conflict tang len; nhung muc tang them nay bi giam khoang 25% khi neighborhood IBLI coverage tang them 1 do lech chuan. Cach doc kinh te cua con so nay la IBLI khong “xoa” han han, nhung no lam phang biet do truyen dan tu han han sang xung dot.</p>
+<h3 id="ket-qua-trong-thiet-ke-khat-khe-hon">Ket qua trong thiet ke khat khe hon</h3>
+<p>Khi tac gia zoom vao contested land-use cells va them rollout-cluster-by-period fixed effects, tac dong van ton tai va manh hon tai noi kha nang va cham giua cac nhom su dung dat cao hon. O specification ua thich cua ho, muc giam conflict trong non-contested cells chi khoang 6.84%, trong khi contested land-use cells la 18.75%. Dieu nay hop logic voi co che: bao hiem co gia tri conflict-mitigation lon nhat o noi su di cu do han han de gap “nguoi khac”.</p>
+<h3 id="evidence-cho-co-che-1-giam-herd-size-giam-rapacity-effect">Evidence cho co che 1: giam herd size / giam rapacity effect</h3>
+<p>Du lieu hanh chinh cap county cho thay noi co full IBLI coverage thi tong so dan bo giam khoang nua do lech chuan, xap xi 200,000 con, va tac dong nay gan nhu doan tap trung o beef cattle chu khong phai dairy cattle. Dien giai rat dep: neu ho gia dinh khong can giu qua nhieu bo nhu mot kho du tru phong than, ap luc tranh gianh dong co va nguon nuoc khi han han se giam.</p>
+<h3 id="evidence-cho-co-che-2-on-dinh-gia-tai-san-va-thu-nhap-tang-opportunity-cost-cua-conflict">Evidence cho co che 2: on dinh gia tai san va thu nhap / tang opportunity cost cua conflict</h3>
+<p>Tu du lieu 41 cho gia suc va Afrobarometer, paper cho thay IBLI giam muc sup gia gia suc va giam cu soc thu nhap, cu soc doi o trong nam han han. Day la manh ghep quan trong: conflict giam khong chi vi “it canh tranh tai nguyen hon” ma con vi gia dinh it bi day vao the phai ban thao, it mat gia tri tai san, va nhin chung co chi phi co hoi cua bao luc cao hon.</p>
+<h3 id="evidence-cho-co-che-3-giam-migratory-pressure">Evidence cho co che 3: giam migratory pressure</h3>
+<p>Tac gia ghep vi tri conflict voi ethnic homeland de hoi xem khi han han xay ra, conflict co xuat hien xa hon khoi homeland khong. Ket qua phu hop voi lap luan rang khi IBLI cao hon, drought-induced conflicts xay ra gan homeland hon, tuc la ap luc di chuyen xa va gap nhom su dung dat khac duoc giam bot. Day la bang chung gian tiep nhung kha thuyet phuc cho kenh migration.</p>
+<h3 id="y-nghia-chinh-sach">Y nghia chinh sach</h3>
+<p>Ket qua goi y rang o nhung noi state capacity yeu, policy “thi truong hoa” nhu index insurance co the la bo sung thuc dung cho institutional reforms. Paper khong noi bao hiem thay the hoa giai hay cai cach dat dai; no noi bao hiem co the lam giam mot co che kich hoa xung dot truoc khi conflict no bung ra.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">7. What is special or elegant about the paper</h2>
+<h3 id="framing-rat-dep">Framing rat dep</h3>
+<p>Diem dep nhat cua paper la doi cau hoi tu mot welfare intervention thanh mot peace intervention. Nhieu paper co data dep va method dep, nhung paper nay con co “cau hoi dep”: mot cong cu giam rui ro co the tao ngoai tac an ninh hay khong?</p>
+<h3 id="neighborhood-design-rat-hop-van-de">Neighborhood design rat hop van de</h3>
+<p>Day la mot bai hoc nghien cuu quan trong. Neu conflict do migration gay ra, treatment khong nen bi dong khung vao don vi hanh chinh hay cell outcome. Tac gia xay neighborhood exposure rat dong bo voi logic kinh te cua bai. Day la kieu mapping tu theory sang measurement rat dang hoc.</p>
+<h3 id="ket-hop-duoc-narrative-design-va-mechanism">Ket hop duoc narrative, design, va mechanism</h3>
+<p>Case study khong gian o dau bai giup nguoi doc “nhin thay” conflict xay ra o dau. Sau do baseline regression cho tac dong tong quat. Cuoi cung paper mo tung kenh: herd size, prices, incomes, migration. Day la mot cau truc bai rat gon, rat co y thuc va rat co suc thuyet phuc.</p>
+<h3 id="mot-bai-development-economics-nhung-co-chat-vi-mo-ro">Mot bai development economics nhung co chat vi mo ro</h3>
+<p>Paper khong noi chung chung rang “climate change gay conflict”. No chi ra nhung behavioral margins cu the: precautionary savings bang dan bo, distress sales, price stabilization, movement across space. Chinh nhung margin nay lam bai rat huu ich cho nguoi hoc micro applied.</p>
+<h2 id="required-background-knowledge">8. Required background knowledge</h2>
+<h3 id="index-based-insurance-la-gi">1. Index-based insurance la gi?</h3>
+<p>Khac voi indemnity insurance, index insurance chi tra dua tren mot chi so ngoai sinh nhu luong mua, NDVI, hay mot drought proxy tu remote sensing. Uu diem la nhanh, it monitoring cost, giam moral hazard. Nhuoc diem la <strong>basis risk</strong>: nguoi tham gia co the bi ton that that nhung chi so khong trigger payout, hoac nguoc lai.</p>
+<h3 id="climate-conflict-literature">2. Climate-conflict literature</h3>
+<p>Can biet logic tong quat: cu soc khi hau lam giam thu nhap, lam tang tranh chap tai nguyen, lam bien doi incentives tham gia bao luc, va trong boi canh institutions yeu thi de leo thang thanh conflict. Paper nay nam dung tren logic do, nhung dong gop o cho no dua vao mot intervention cu the.</p>
+<h3 id="rapacity-effect-va-opportunity-cost-effect">3. Rapacity effect va opportunity cost effect</h3>
+<ul>
+<li><strong>Rapacity effect:</strong> khi tai nguyen khan hiem va gia tri chiem doat tang, dong co dung bao luc de tranh gianh tang theo</li>
+<li><strong>Opportunity cost effect:</strong> khi thu nhap hop phap cao hon hoac duoc bao ve tot hon, chi phi co hoi cua xung dot tang len, nen xu huong bao luc giam</li>
+</ul>
+<p>Paper nay hay o cho no kich hoat ca hai kenh cung luc.</p>
+<h3 id="fixed-effects-panel-va-difference-in-slopes-intuition">4. Fixed effects panel va difference-in-slopes intuition</h3>
+<p>Du bai khong phai diff-in-diff sach giao khoa, logic thuc chat la hoi xem do doc cua moi quan he han han-xung dot co thay doi theo muc bao phu IBLI hay khong, sau khi da hut cac khac biet bat bien theo khong gian va cac cu soc chung theo thoi gian.</p>
+<h3 id="spatial-spillovers-va-measurement">5. Spatial spillovers va measurement</h3>
+<p>Neu outcome trong mot noi bi anh huong boi shock va treatment o noi lan can, minh khong the cu bo qua khong gian. Bai nay la vi du dep ve cach dua spillover vao measurement strategy ngay tu dau, thay vi de no thanh “loi robustness”.</p>
+<h2 id="limitations-and-open-questions">9. Limitations and open questions</h2>
+<h3 id="han-che-chinh">Han che chinh</h3>
+<ol type="1">
+<li><p><strong>Rollout khong ngau nhien</strong> Du paper xu ly rat ky, nguoi doc van nen nho day la quasi-experiment phuc tap, khong phai RCT.</p></li>
+<li><p><strong>Do luong migration la gian tiep</strong> Paper khong quan sat truc tiep hanh trinh di chuyen o quy mo lon; no suy ra tu vi tri conflict so voi homeland, nen co che nay la thuyet phuc nhung chua “dong nap hom” hoan toan.</p></li>
+<li><p><strong>Insurance coverage khac adoption</strong> Muc do IBLI availability / coverage o khu vuc khong hoan toan dong nghia voi uptake va duoc chi tra thuc te cap ho. Bai co the bat duoc tac dong equilibrium / area-level, nhung se kho tach ro hon ai huong loi va ai huong loi gian tiep.</p></li>
+<li><p><strong>Conflict data co the co reporting bias</strong> ACLED la du lieu rat huu ich, nhung xung dot o vung xa co the bi du bao thieu; neu reporting thay doi theo ha tang thong tin, do luong outcome co the chiu anh huong.</p></li>
+</ol>
+<h3 id="cau-hoi-mo">Cau hoi mo</h3>
+<ul>
+<li>Khi coverage da pho cap rong, margin tiep theo la tang uptake hay cai thien basis risk?</li>
+<li>Tac dong conflict giam co ben qua cac dot han han lien tiep khong, hay chi manh trong giai doan rollout ban dau?</li>
+<li>Bao hiem co the thay doi can bang gia suc, su dung dat, va quan he giua nhom chan tha - nong dan trong dai han ra sao?</li>
+<li>Tac dong nay co lap lai duoc o Ethiopia, Somalia, Sahel hay cac boi canh co institutions va conflict technologies khac khong?</li>
+</ul>
+<h2 id="takeaways-for-a-researcher">10. Takeaways for a researcher</h2>
+<ol type="1">
+<li>Mot paper manh thuong dat lai cau hoi, khong chi nang cap du lieu. O day, insurance duoc nhin nhu cong cu peacebuilding.</li>
+<li>Hay do treatment theo dung kenh kinh te. Neu shock lan truyen qua migration, dung neighborhood exposure hop ly hon cell-local treatment.</li>
+<li>Robustness manh nhat la robustness an khop voi co che. Contested land-use design cua paper thuyet phuc vi no tang treatment intensity dung noi ly thuyet du doan.</li>
+<li>Co che nen duoc do bang nhieu loai du lieu khac nhau. Herds, prices, incomes, va migration proxies ghep lai thanh mot cau chuyen nhan qua day dan.</li>
+<li>Trong development, mot intervention co the co tac dong lon qua ngoai muc tieu ban dau; day la noi de tim externalities co y nghia policy.</li>
+<li>Neu rollout khong ngau nhien, dung ne van de. Hay noi ro threat, chong tung threat bang test rieng, va cho thay ket qua song sot qua nhieu specification co logic.</li>
+</ol>
+<h2 id="vietnam-relevance-and-extension">11. Vietnam relevance and extension</h2>
+<h3 id="y-tuong-nay-co-lien-quan-den-viet-nam-khong">Y tuong nay co lien quan den Viet Nam khong?</h3>
+<p>Co, nhung khong theo cach “copy-paste”. Viet Nam khong co dung mo hinh pastoral conflict nhu Bac Kenya, nhung co nhieu boi canh ma cu soc khi hau lam tang canh tranh tai nguyen va co the dan den xung dot cap dia phuong: han han, xam nhap man, khan hiem nuoc tuoi, chuyen dich su dung dat, va va cham giua sinh ke nong nghiep - thuy san - bao ton.</p>
+<h3 id="co-the-trien-khai-o-viet-nam-neu-can-gi">Co the trien khai o Viet Nam neu can gi?</h3>
+<ul>
+<li>Du lieu vi tri va thoi gian ve cu soc khi hau co do phan giai tot</li>
+<li>Du lieu administrative hoac survey ve tiep can / tham gia cac chuong trinh bao hiem nong nghiep, ho tro thien tai, hoac cash transfer kich hoat theo chi so</li>
+<li>Outcome o cap dia phuong: tranh chap dat, xung dot tai nguyen, di chuyen theo mua vu, distress sales, thu nhap, gia tai san nong nghiep</li>
+<li>Doi tac thuc dia va policy partner de theo doi implementation</li>
+</ul>
+<h3 id="tro-ngai-chinh-o-viet-nam">Tro ngai chinh o Viet Nam</h3>
+<ul>
+<li>Xung dot tai nguyen o Viet Nam thuong it duoc do luong ro nhu ACLED</li>
+<li>Bao hiem chi so trong nong nghiep van chua pho bien va basis risk de gay tranh cai</li>
+<li>Nhieu policy duoc trien khai dong thoi, khien nhan dang tac dong rieng cua bao hiem / social protection kho hon</li>
+</ul>
+<h3 id="cach-mo-rong-y-tuong-cho-viet-nam">Cach mo rong y tuong cho Viet Nam</h3>
+<ol type="1">
+<li><p><strong>Bao hiem chi so va han han o Tay Nguyen / Nam Trung Bo</strong> Hoi xem mot cong cu giam rui ro co lam giam distress sales, giam khai thac qua muc nuoc ngam, hay giam tranh chap nguon nuoc giua cac nhom san xuat khong.</p></li>
+<li><p><strong>Shock climate va di cu tam thoi</strong> Trong boi canh cu soc khi hau day lao dong di cu theo mua vu, co the nghien cuu xem cash transfer hay insurance co giam “forced mobility” va cac va cham tai diem den hay khong.</p></li>
+<li><p><strong>Fisheries / aquaculture insurance</strong> Voi xam nhap man, dich benh, hay bien dong thoi tiet ven bien, mot intervention giam rui ro co the co ngoai tac len hanh vi khai thac, tranh chap ngu truong, hoac on dinh dau tu.</p></li>
+</ol>
+<h3 id="den-3-research-questions-co-the-phat-trien-o-viet-nam">1 den 3 research questions co the phat trien o Viet Nam</h3>
+<ol type="1">
+<li>Mot chuong trinh bao hiem chi so cho cay trong co lam giam distress sales va on dinh gia dat / gia tai san nong nghiep sau cu soc khi hau khong?</li>
+<li>Cash transfer kich hoat theo chi so thoi tiet co lam giam di cu bat dac di va tranh chap tai nguyen cap xa / huyen trong mua han hay khong?</li>
+<li>Trong cac vung co chuyen doi su dung dat nhanh, policy giam rui ro thu nhap co lam giam muc do leo thang cua tranh chap giua cac nhom sinh ke khac nhau khong?</li>
+</ol>
+<h2 id="ket-luan-ngan">Ket luan ngan</h2>
+<p><code>Insuring Peace</code> la mot paper QJE rat dang doc vi no cho thay mot can thiệp nghe co ve hep - bao hiem vat nuoi dua tren chi so - thuc ra co the lam thay doi mot bien ket qua rat lon: xung dot. Bai dep o framing, o cach do exposure theo khong gian, o viec xay chuoi co che ro rang, va o thong diep policy thuc dung: trong boi canh state capacity yeu, market-based social protection khong thay the cai cach the che, nhung co the giam dang ke muc do de han han chuyen thanh bao luc.</p>
+</body>
+</html>
