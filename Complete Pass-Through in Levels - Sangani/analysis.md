@@ -7,7 +7,7 @@
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/article/141/2/1077/8497409
 - **Nguồn PDF dùng để phân tích:** https://kunalsangani.com/files/complete_passthrough_live.pdf
 - **Ghi chú về PDF:** Bản PDF công khai dùng để đọc sâu là author PDF dài 107 trang trên website tác giả. Bài đã xuất bản chính thức trên QJE, nhưng trong lượt chạy này môi trường không tải được raw PDF bytes từ nguồn ngoài về cục bộ để lưu lại như file nhị phân.
-- **Trạng thái lưu trên GitHub:** Dự kiến lưu `analysis.md` và `analysis.html` trong thư mục `Complete Pass-Through in Levels - Sangani/` của repo `huylvu/00_reading`; `analysis.pdf` không được tạo trong lượt này; PDF gốc của paper đã xác minh được nguồn nhưng chưa tải và chưa lưu lại như file nhị phân.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu thành công trong thư mục `Complete Pass-Through in Levels - Sangani/` của repo `huylvu/00_reading`; `analysis.pdf` không được tạo trong lượt này; PDF gốc của paper đã xác minh được nguồn nhưng chưa tải và chưa lưu lại như file nhị phân.
 - **Trạng thái lưu trên Google Drive:** Bỏ qua có chủ đích trong lượt chạy này vì chưa có workflow đủ chắc để tạo Google Doc và tracker đúng folder đích mà không báo cáo quá mức.
 
 ## Executive summary
