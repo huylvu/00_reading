@@ -1,252 +1,206 @@
 # Investing in Influence: Investors, Portfolio Firms, and Political Giving
 
 - **Tác giả:** Marianne Bertrand, Matilde Bombardini, Raymond Fisman, Francesco Trebbi, Eyub Yegen
-- **Journal:** The Review of Economic Studies
+- **Journal:** *The Review of Economic Studies* (advance article)
 - **Năm:** 2026
 - **Ngày agent chạy:** 2026-05-13
-- **Nguồn bài báo chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag010/8440167
-- **Nguồn PDF dùng để phân tích:** https://www.nber.org/system/files/working_papers/w30876/w30876.pdf
-- **Nguồn PDF đối chiếu thêm:** https://academic.oup.com/restud/advance-article-pdf/doi/10.1093/restud/rdag010/65616323/rdag010.pdf
-- **Trạng thái lưu trên GitHub:** Trong lượt chạy này, mục tiêu là lưu `analysis.md` và `analysis.html` vào repo `huylvu/00_reading` trong thư mục `Investing in Influence - Bertrand Bombardini Fisman Trebbi Yegen/`; PDF gốc của paper chưa được coi là đã lưu nếu không upload được file nhị phân thật.
-- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt này vì chưa có workflow đủ chắc để tạo đúng Google Doc và tracker trong đúng folder đích mà không báo cáo quá mức.
+- **Nguồn chính:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag010/8440167
+- **Nguồn PDF dùng để phân tích:** Public manuscript trên Boston University, bản tháng 6/2024: https://www.bu.edu/econ/files/2024/07/investing-in-influence-investors-portfolio-firms.pdf
+- **Nguồn PDF đối chiếu thêm:** NBER Working Paper 30876, tháng 1/2023: https://www.nber.org/system/files/working_papers/w30876/w30876.pdf
+- **Lý do chọn:** Đây là một paper top 5 rất mới trong applied micro/political economy. Bài đặt ra một câu hỏi lớn nhưng đo bằng một empirical design rất gọn: institutional investors có khuếch đại political influence của chính họ thông qua portfolio firms hay không.
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu trong repo `huylvu/00_reading` tại thư mục `Investing in Influence - Bertrand Bombardini Fisman Trebbi Yegen/`. `analysis.pdf` chưa tạo. PDF gốc của paper chưa được lưu dưới dạng file nhị phân trong repo.
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt chạy này vì bộ công cụ hiện có không cho phép mình tạo Google Doc và tracker trong đúng folder đích một cách đủ chắc chắn.
 
-## 1. Metadata
+## Executive summary
 
-- **Tiêu đề paper:** Investing in Influence: Investors, Portfolio Firms, and Political Giving
-- **Tác giả:** Marianne Bertrand, Matilde Bombardini, Raymond Fisman, Francesco Trebbi, Eyub Yegen
-- **Journal:** The Review of Economic Studies
-- **Năm:** 2026
-- **DOI / trang journal:** https://doi.org/10.1093/restud/rdag010
-- **Link bài báo:** https://academic.oup.com/restud/advance-article/doi/10.1093/restud/rdag010/8440167
-- **Link PDF đã dùng:** https://www.nber.org/system/files/working_papers/w30876/w30876.pdf
-- **Ghi chú về phiên bản PDF:** Bản PDF công khai dùng để đọc sâu là NBER Working Paper `w30876` tháng 01/2023. Bản ReStud published online ngày 2026-01-24 là nguồn journal chính để xác minh tiêu đề, tác giả, DOI, abstract, và vị trí của bài trong top 5.
+Paper hỏi liệu khi một institutional investor mua một cổ phần đủ lớn trong một công ty niêm yết, corporate PAC của công ty đó có bắt đầu cho tiền theo mẫu chính trị giống investor hơn hay không. Thay vì nhìn governance qua voting, compensation, hay product market behavior, bài nhìn vào political giving như một cửa sổ để quan sát việc quyền lực sở hữu có được chuyển thành ảnh hưởng chính trị hay không.
 
-## 2. Executive summary
+Câu trả lời chính là có. Sau khi một investor mua stake lớn, PAC giving của firm trở nên giống PAC giving của investor hơn một cách có ý nghĩa kinh tế và thống kê. Trong specification ưa thích của tác giả, xác suất firm PAC cho tiền một chính trị gia mà investor PAC cũng ủng hộ tăng khoảng 31% sau acquisition. Kết quả này vẫn xuất hiện trong các acquisition do stock index inclusion tạo ra, tức là trong một setting gần exogenous hơn.
 
-Paper này hỏi một câu rất thời sự trong political economy of firms: khi institutional investors ngày càng nắm cổ phần lớn trong các công ty niêm yết, họ có thể dùng quyền lực sở hữu đó để kéo political giving của portfolio firms về gần với sở thích chính trị của chính họ hay không. Câu hỏi này quan trọng vì nếu câu trả lời là có, thì sức ảnh hưởng chính trị của các nhà quản lý tài sản lớn không chỉ nằm ở PAC của chính họ, mà còn được khuếch đại qua PAC của hàng loạt công ty trong danh mục.
+Điểm đáng đọc nhất là bài không dừng ở một correlation đẹp. Tác giả cố đi thêm ba bước: dùng index-inclusion acquisitions để xử lý selection, dùng cosine-similarity dynamics để lập luận rằng firm điều chỉnh về phía investor chứ không phải ngược lại, và khai thác heterogeneity để cho thấy influence này có vẻ gắn với political preferences riêng của investor managers hơn là tối đa hóa lợi nhuận cho firm.
 
-Tác giả trả lời bằng cách theo dõi sự thay đổi trong mức độ tương đồng giữa PAC giving của investor và PAC giving của firm trước và sau khi investor lần đầu mua một block lớn cổ phần. Thiết kế thực nghiệm xoay quanh các block acquisitions của 574 institutional investors thuộc nhóm 13-F, ghép với 2,456 firms trong giai đoạn 1980-2018. Kết quả chính là sau khi một investor thâu tóm một stake lớn, PAC giving của firm trở nên giống PAC giving của investor hơn rõ rệt; ở specification ưa thích, xác suất firm PAC cùng donate cho một politician mà investor PAC ủng hộ tăng khoảng 31%. Pattern này vẫn xuất hiện trong các acquisitions được thúc đẩy bởi index inclusions, nên khá khó giải thích bằng omitted trends hay selection story đơn giản.
+## Research question and motivation
 
-Paper đặc biệt đáng đọc vì nó biến một tranh luận rộng về corporate governance thành một empirical question rất sắc: quyền sở hữu tập trung có chuyển hóa thành political influence hay không. Bài vừa nói với corporate finance, vừa nói với political economy, vừa cung cấp một ví dụ rất hay về cách suy luận cơ chế khi direct evidence về influence rất khó quan sát.
+### Câu hỏi trung tâm
 
-## 3. Research question and motivation
-
-### Câu hỏi nghiên cứu trung tâm
-
-Paper hỏi ba câu hỏi gắn với nhau:
-
-1. Khi một institutional investor mua một stake lớn trong một firm, political giving của firm có trở nên giống political giving của investor hơn không.
-2. Nếu có, chiều nhân quả hợp lý hơn là investor ảnh hưởng firm hay firm ảnh hưởng investor.
-3. Cơ chế này có phản ánh profit-maximizing corporate political strategy hay phản ánh partisan tastes và private preferences của chính investor.
+Institutional investors có ảnh hưởng lên political strategy của portfolio firms hay không, và nếu có thì influence đó phản ánh tối đa hóa lợi nhuận cho firm hay phản ánh political preferences của chính các investor managers?
 
 ### Bối cảnh học thuật và thực tiễn
 
-Tỷ trọng sở hữu của institutional investors trong các công ty Mỹ đã tăng mạnh suốt nhiều thập niên, kéo theo một loạt tranh luận về common ownership, concentration of economic power, và corporate governance. Nhưng phần lớn văn liệu tập trung vào product markets, competition, hay firm policies. Ít paper đi thẳng vào political giving như một cửa sổ để nhìn xem investor có đang dùng quyền lực sở hữu vì lợi ích riêng của mình hay không.
+Văn liệu governance gần đây quan tâm rất mạnh tới sự trỗi dậy của institutional ownership. Một nhánh nhấn mạnh concentrated ownership có thể cải thiện monitoring. Nhánh khác lo ngại về common ownership, agency problems của asset managers, và việc một số ít fund managers kiểm soát lượng phiếu bầu rất lớn trong nền kinh tế.
 
-Political giving là một outcome đặc biệt hữu ích cho câu hỏi này. Nếu investor thực sự ảnh hưởng corporate strategy, PAC giving của firm là một nơi effect có thể hiện ra nhanh, khá trực tiếp, và có dữ liệu tốt. Đồng thời, đây cũng là setting rất nhạy về mặt chuẩn tắc: political strategy của firm lẽ ra phải phục vụ lợi ích của shareholders hoặc business needs của firm, chứ không phải sở thích chính trị riêng của asset manager.
+Paper này đẩy cuộc tranh luận sang political economy. Nếu asset managers có thể làm portfolio firms điều chỉnh political giving theo ý mình, thì quyền lực kinh tế không chỉ tập trung trong product markets hay shareholder voting, mà còn lan sang influence-seeking trong chính trị.
 
-### Khoảng trống mà paper muốn lấp vào
+### Khoảng trống mà paper lấp vào
 
-Khoảng trống lớn là từ ownership concentration sang political influence. Ta biết institutional investors nắm rất nhiều cổ phần, nhưng chưa rõ họ có chuyển quyền lực kinh tế đó thành ảnh hưởng chính trị gián tiếp qua portfolio firms hay không. Paper lấp khoảng trống này bằng cách xây một design bám sát timing của acquisition events và pattern convergence trong PAC giving.
+Phần lớn nghiên cứu trước đó nhìn political spending của firms như một công cụ theo đuổi lợi ích kinh doanh của chính firm. Paper này đặt lại giả định đó: political voice của firm có thể không hoàn toàn là “voice of the firm”, mà còn là voice của những người đang nắm quyền kiểm soát ownership phía sau firm.
 
-## 4. Main contribution
+## Main contribution
 
-### Đóng góp chính so với văn liệu trước
+1. Bài đưa ra một framing rất mạnh: rise of institutional ownership có thể dẫn tới concentration of political influence.
+2. Tác giả ghép ownership data của 13-F institutional investors với dữ liệu PAC giving của cả investors lẫn firms trong giai đoạn dài 1980-2018, rồi xây dựng investor-firm-politician panel để xem sau một block acquisition, pattern cho tiền có hội tụ không.
+3. Paper dùng acquisitions gắn với stock index inclusions như một nguồn variation gần exogenous hơn. Đây là nước đi rất đẹp, vì nếu một index fund buộc phải mua firm do firm được thêm vào index, thì acquisition đó ít bị driven bởi political alignment sẵn có hơn nhiều so với acquisitions thông thường.
+4. Bài không chỉ chứng minh “có effect” mà còn bóc tách motivation và channel. Kết quả nghiêng về cách hiểu rằng managers của firms cater to investors khi cần support trong proxy fights, còn investors thì có vẻ đẩy political alignment vì political tastes của họ, chứ không đơn thuần vì business strategy của firm.
 
-Đóng góp lớn nhất là chỉ ra rằng large investors dường như không chỉ ảnh hưởng các quyết định kinh doanh của portfolio firms mà còn ảnh hưởng cả political strategy của firms. Đây là một bước tiến lớn so với những paper chỉ bàn về voting, shareholder proposals, hay governance theo nghĩa hẹp.
+## Identification or methodology
 
-### Điểm mới về dữ liệu và cách đặt câu hỏi
+### Dữ liệu và đơn vị quan sát
 
-Paper kết nối dữ liệu ownership của toàn bộ 13-F investors với PAC giving của firms và PAC giving của chính investors. Đây là dữ liệu rất rộng về thời gian và phạm vi, cho phép quan sát hàng nghìn acquisition events trong một setting chính trị dài hạn.
+Mẫu chính gồm các institutional investors thuộc diện 13-F và các firms niêm yết trong danh mục của họ trong giai đoạn 1980-2018. Public manuscript cho biết authors quan sát các block purchases khi investor lần đầu nắm hơn 1% cổ phần của firm, rồi ghép với PAC giving theo politician và election cycle.
 
-Điểm hay trong framing là tác giả không cố chứng minh “investor nói gì với firm” bằng dữ liệu kín gần như không thể có. Thay vào đó, paper hỏi một câu quan sát được: liệu sau acquisition, political giving của firm có dịch về phía investor không. Đây là một cách đặt câu hỏi rất applied micro.
+Đơn vị quan sát cốt lõi trong main specification là investor-firm-congressional district-election cycle. Ý tưởng là rất trực diện: nếu investor cho tiền vào politician A, thì sau acquisition, firm có bắt đầu cho tiền vào politician A nhiều hơn trước không?
 
-### Vì sao đóng góp này quan trọng trong micro applied
+### Main empirical design
 
-Paper quan trọng vì nó cho thấy ai sở hữu firm không chỉ ảnh hưởng production, financing, hay compensation, mà còn ảnh hưởng political behavior. Đây là dạng insight rất đáng giá cho applied micro/political economy: ownership structure có thể tái phân bổ political influence chứ không chỉ cash-flow rights.
+Thiết kế cơ bản là staggered event-style diff-in-diff quanh thời điểm investor lần đầu mua large stake trong firm. Outcome là PAC giving của firm tới politician hoặc các measure về similarity giữa PAC giving của investor và firm. Tác giả dùng nhiều tầng fixed effects, và specification ưa thích là một bản rất “saturated”, nhằm hấp thụ tối đa heterogeneity cố định theo investor, firm, cycle, và district.
 
-## 5. Identification or methodology
+Trực giác của coefficient chính là: sau acquisition, slope giữa investor giving và firm giving có dốc hơn không. Nếu có, và nếu effect không chỉ phản ánh selection, ta có bằng chứng rằng ownership đi kèm influence lên political activity.
 
-### Dữ liệu chính
+### Chiến lược nhận dạng quan trọng nhất
 
-Paper dùng dữ liệu về 574 institutional investors thuộc diện 13-F, quản lý tới khoảng 30 nghìn tỷ USD public equity trong sample period, và ghép chúng với 2,456 firms có mặt trong portfolio của họ trong giai đoạn 1980-2018. Các acquisition event trọng tâm là lần đầu tiên một investor mua một large stake trong firm.
+Lo ngại lớn nhất là omitted variables: investor có thể chọn mua những firms vốn đã có political agenda giống mình; hoặc cả investor và firm cùng phản ứng với một shock chính trị chung. Bài xử lý điều này bằng cách:
 
-### Outcome chính
+1. Thu hẹp sang passive investors.
+2. Tập trung vào acquisitions do stock index inclusions tạo ra.
+3. So sánh dynamic pattern trước và sau acquisition.
+4. Kiểm tra divestment cho một đối xứng ngược chiều.
 
-Outcome cốt lõi là mức độ tương đồng giữa PAC giving của investor và PAC giving của firm. Tác giả đo điều này theo nhiều cách:
+Nếu effect xuất hiện cả ở index-induced acquisitions, lập luận “investor mua vì đã cùng màu chính trị từ trước” yếu đi đáng kể.
 
-- xác suất cả investor và firm cùng donate cho một politician cụ thể,
-- cosine similarity giữa profiles of giving,
-- persistence-style measures quanh election cycles để xem ai là bên thay đổi mạnh hơn quanh acquisition.
+### Investor influences firm, hay firm influences investor?
 
-### Thiết kế nhận dạng cốt lõi
+Đây là chỗ paper khéo. Correlation tăng lên sau acquisition chưa cho biết ai điều chỉnh theo ai. Tác giả xây dựng cosine similarity của mỗi tổ chức qua hai election cycles liên tiếp. Nếu investor influence firm, thì pattern giving của firm phải “gãy” hơn quanh acquisition, còn pattern của investor ổn định hơn. Kết quả đi đúng hướng đó: firm thay đổi nhiều hơn investor quanh acquisition.
 
-Thiết kế đầu tiên là event study / before-after quanh acquisition of a large stake. Nếu investor không có ảnh hưởng gì tới firm, mức độ giống nhau trong PAC giving không nên nhảy lên có hệ thống ngay sau acquisition.
+### Mechanisms
 
-Specification ưa thích cho thấy sau acquisition, xác suất firm PAC donate cho một politician mà investor PAC ủng hộ tăng khoảng 31%. Đây là finding reduced-form trung tâm.
+Paper chia mechanisms thành hai lớp:
 
-### Vì sao kết quả này chưa đủ và paper xử lý ra sao
+1. **Tại sao firm managers nghe theo investor?** Khi firm đối mặt với shareholder proposal votes hoặc ESG crises, managers cần sự ủng hộ của large investors hơn. Tác giả cho thấy post-acquisition co-movement mạnh hơn rõ trong các giai đoạn như vậy.
+2. **Tại sao investor muốn influence political giving?** Nếu vì firm profit maximization, ta kỳ vọng giving sẽ hướng nhiều hơn tới các politician có strategic relevance với firm. Nhưng bài lại tìm thấy bằng chứng nghiêng về hướng ngược lại: giving dịch ra xa các “business-relevant politicians”, effect mạnh hơn ở investors có partisan giving cao hơn, và firm PAC giving còn đồng chuyển mạnh với individual political donations của employees/managers bên investor.
 
-Một lo ngại tự nhiên là acquisitions có thể nội sinh: investor có thể mua vào đúng những firms vốn đã đang dịch political agenda về phía investor. Hoặc cả firm lẫn investor cùng phản ứng với một political shock chung.
+### Điểm mạnh và điểm dễ bị nghi ngờ
 
-Paper xử lý vấn đề này theo nhiều lớp:
+- Câu hỏi khó quan sát được biến thành một design khá đo trực tiếp.
+- Index inclusion là một nguồn variation nhận dạng rất hợp lý.
+- Có nhiều bài test cơ chế thay vì dừng ở main effect.
+- Đây vẫn là staggered adoption design, nên luôn có rủi ro từ bad comparisons trong two-way fixed effects.
+- Index inclusion không phải “random tuyệt đối”; vẫn có thể đi kèm thay đổi về visibility, investor base, hay scrutiny.
+- PAC giving chỉ là một lát cắt của political influence; nó quan trọng nhưng không bao trùm lobbying, access, agenda setting, hay informal pressure.
 
-1. **Index inclusion–driven acquisitions**  
-   Tác giả tách ra các acquisitions phát sinh từ việc firm mới được đưa vào các chỉ số như S&P 500 hay Russell 2000. Đây là một subsample có tính ngoại sinh cao hơn, đặc biệt với index investors vốn ít có động cơ ideological screening theo từng firm. Việc kết quả vẫn tồn tại ở subsample này làm tăng mạnh sức thuyết phục nhân quả.
-
-2. **Direction of adjustment**  
-   Nếu investor ảnh hưởng firm, ta kỳ vọng political giving profile của firm thay đổi nhiều hơn profile của investor quanh acquisition. Tác giả dùng cosine similarity qua các election cycles để xem bên nào “dịch chuyển” hơn. Kết quả nghiêng về phía investor drives firm hơn là ngược lại.
-
-3. **Business relevance versus partisan taste**  
-   Paper xem firm có dịch giving về business-relevant politicians hay lại dịch theo partisan leanings của investor. Kết quả sau acquisition cho thấy firm shifts away from business-relevant politicians, đồng thời alignment rất mạnh với individual campaign donations của chính employees của investor. Đây là bằng chứng quan trọng chống lại diễn giải “firm chỉ đang tối đa hóa lợi ích kinh doanh”.
-
-### Điểm mạnh của phương pháp
-
-- Design dựa trên acquisition timing rất trực quan.
-- Có quasi-exogenous subsample qua index inclusions.
-- Có nhiều outcome measures thay vì một metric đơn nhất.
-- Có mechanism tests để phân biệt profit motive với partisan-taste motive.
-
-### Điểm dễ bị nghi ngờ
-
-- Ngay cả index-driven acquisitions cũng không phải randomization hoàn hảo.
-- Political giving là một outcome cụ thể; nó là cửa sổ tốt cho influence nhưng không cho thấy toàn bộ universe of investor control.
-- Dữ liệu cho thấy convergence nhưng không quan sát trực tiếp những tương tác hậu trường giữa investor và firm.
-
-## 6. Results and interpretation
+## Results and interpretation
 
 ### Kết quả chính
 
-Sau khi investor mua một large stake, firm PAC giving trở nên giống investor PAC giving hơn rõ rệt. Ở preferred specification, xác suất firm PAC cùng donate cho một politician mà investor PAC ủng hộ tăng khoảng 31%.
+Kết quả headline là sau khi investor mua một large stake, PAC giving của firm đồng chuyển mạnh hơn với PAC giving của investor. Trong preferred specification, xác suất firm PAC donate tới một politician mà investor PAC cũng hỗ trợ tăng khoảng 31%.
 
-Đây là một effect đáng kể, vì political giving vốn là một hành vi có chủ đích, không phải biến outcome mềm. Nếu chỉ có noise hay broad trends, khó có chuyện similarity tăng đều và đúng lúc như vậy.
+Khi dùng cosine similarity ở cấp investor-firm pair, sự giống nhau trong pattern giving cũng tăng rõ sau acquisition. Trong event-study, similarity tăng từ acquisition period và còn tăng thêm trong các cycle sau đó.
 
-### Kết quả ở subsample mang tính ngoại sinh hơn
+### Kết quả nhận dạng mạnh hơn
 
-Pattern tương tự vẫn thấy ở các acquisitions do index inclusions thúc đẩy. Đây là phần rất quan trọng của bài. Nó làm yếu đáng kể câu chuyện rằng investor chỉ đơn giản mua vào các firms đã sẵn có political agenda giống mình, hoặc rằng comovement chỉ phản ánh matching theo ideology.
+Ở subsample acquisitions do stock index inclusions, effect vẫn còn. Đây là một piece of evidence rất quan trọng, vì nó nói rằng convergence không chỉ là do politically aligned investors chọn politically aligned firms.
 
-### Investor drives firm hay firm drives investor
+### Kết quả về chiều ảnh hưởng
 
-Thông qua việc so sánh độ ổn định của cosine similarity qua các election cycles, paper cho thấy political giving của investor ổn định hơn, còn firm là phía thay đổi nhiều hơn quanh acquisition. Diễn giải hợp lý hơn do đó là investor kéo firm về phía mình, chứ không phải investor đổi chiến lược để bắt chước firm.
+Firm dường như là phía điều chỉnh mạnh hơn. Bằng chứng từ changes in cosine similarity qua các cycle cho thấy giving của investor ổn định hơn, còn giving của firm “bẻ” theo acquisition hơn.
 
-### Cơ chế: partisan tastes hơn là business strategy
+### Kết quả về cơ chế
 
-Một điểm nổi bật là sau acquisition, firm political giving không chỉ giống investor hơn theo nghĩa chung; nó còn dịch **ra xa** business-relevant politicians và dịch **gần hơn** với individual campaign donations của employees của investor. Đồng thời effects lớn hơn với các investors có tính partisan mạnh hơn và với privately owned investors. Chuỗi kết quả này làm cho diễn giải “investor đang giúp firm tối đa hóa lợi ích chính trị cho business” trở nên kém thuyết phục hơn. Thay vào đó, bằng chứng nghiêng nhiều hơn về việc investors đang truyền sở thích chính trị riêng của họ sang portfolio firms.
+- Co-movement mạnh hơn nhiều khi firm có shareholder proposal vote.
+- Co-movement cũng mạnh hơn trong thời kỳ ESG-related pressure/crisis.
+- Effect lớn hơn ở investors mang tính partisan cao hơn.
+- Effect lớn hơn ở privately owned investors.
+- Khi investor có board seat tại firm, alignment còn mạnh hơn.
+- Firm PAC giving đồng chuyển mạnh với individual political donations của employees/managers bên investor, thậm chí mạnh hơn tương quan với investor PAC trong một số specification.
 
 ### Diễn giải kinh tế
 
-Về mặt kinh tế học chính trị, paper nói rằng ownership concentration có thể khuếch đại political influence theo cách không thấy ngay trên bề mặt. Một dollar influence của investor có thể được “nhân lên” qua các firms trong danh mục. Điều này làm thay đổi cách ta nên nghĩ về both corporate political power and investor governance.
+Diễn giải hợp lý nhất là large investors có thể dùng quyền lực sở hữu và quyền lực bỏ phiếu để làm managers chú ý tới political preferences của họ. Managers, nhất là khi đang cần investor support, có động cơ “cater”. Kết quả không giống một câu chuyện firm profit-maximizing political strategy thuần túy, mà giống một governance distortion trong đó resources của firm bị kéo sang political objectives của người kiểm soát ownership.
 
-### Ý nghĩa chính sách
+Điều nổi nhất là bài không chỉ nói firm “thêm” politicians mới theo ý investor, mà còn cho thấy composition của giving nghiêng ra xa các politicians có strategic relevance với business của firm. Đây là chi tiết làm lập luận “không phải chỉ vì shareholder value” mạnh lên rất nhiều.
 
-Nếu institutional investors có thể sử dụng portfolio firms để phát tín hiệu hoặc vận động chính trị theo partisan preferences riêng, thì corporate governance problem ở đây không còn là vấn đề classic principal-agent trong profits בלבד. Nó còn là vấn đề political agency: firm political activity có thể không phản ánh business interest hay shareholder median preference, mà phản ánh tastes của một lớp intermediaries tài chính.
+## What is special or elegant about the paper
 
-## 7. What is special or elegant about the paper
+1. Bài lấy một vấn đề rất lớn là institutional investors có quyền lực chính trị không rồi biến nó thành một object quan sát được: sự đồng chuyển trong PAC giving sau acquisition.
+2. Logic direction-of-influence rất khéo. Thay vì chỉ chứng minh similarity tăng lên, tác giả còn hỏi ai là bên dịch chuyển nhiều hơn quanh acquisition.
+3. Chuỗi bằng chứng rất nhất quán: main effect, index-inclusion subsample, divestment, direction-of-adjustment test, shareholder-vote heterogeneity, employee-giving correlation, board-seat channel.
+4. Paper không overclaim về welfare; authors chỉ ra vì sao tập bằng chứng này collectively khó hòa giải với story profit maximization.
 
-Paper đẹp ở chỗ lấy một vấn đề rất lớn, rất trừu tượng là “institutional investors có quyền lực chính trị không” rồi biến nó thành một object quan sát được: sự hội tụ trong PAC giving sau acquisition.
+## Required background knowledge
 
-Điểm hay thứ hai là logic direction-of-influence rất khéo. Thay vì chỉ chứng minh similarity tăng lên, tác giả còn hỏi: ai là bên dịch chuyển nhiều hơn quanh acquisition. Đó là một bước rất quan trọng để tránh việc người đọc mắc kẹt trong kiểu phản biện “correlation is not direction”.
+- **13-F filings:** báo cáo holdings của các institutional investment managers lớn tại Mỹ.
+- **Corporate PACs:** kênh hợp pháp để tổ chức huy động và phân bổ political contributions trong khuôn khổ luật Mỹ.
+- **Stock index inclusions:** khi một firm được thêm vào một index lớn như S&P 500 hoặc Russell 2000, các passive index funds theo index đó bị “cưỡng bức” phải nắm firm; đây là nguồn variation gần exogenous quen thuộc trong applied micro/finance.
+- **Staggered difference-in-differences:** treatment xảy ra ở nhiều thời điểm khác nhau cho các investor-firm pairs khác nhau; rất mạnh nhưng cần cẩn trọng với bias trong two-way fixed effects.
+- **Cosine similarity:** thước đo mức độ giống nhau giữa hai vector phân bổ, ở đây là pattern PAC giving.
+- **Managerial catering:** managers có thể chiều ý investors không nhất thiết vì investors ra lệnh công khai, mà vì managers biết mình cần votes và support từ những owners lớn.
 
-Điểm hay thứ ba là bài không dừng ở việc chỉ ra ảnh hưởng tồn tại. Nó tiếp tục hỏi ảnh hưởng đó phục vụ điều gì: business strategy hay partisan taste. Việc kéo thêm private ownership, investor partisanship, employee donations, và business-relevant politicians vào phân tích làm cho paper giàu cơ chế hơn hẳn.
+## Limitations and open questions
 
-### Bài học nghiên cứu từ cách tác giả làm bài
+1. PAC giving chỉ là một phần của political influence; còn lobbying, access, agenda setting, hay soft influence không được đo trực tiếp.
+2. Board seats và proxy-vote pressure là suggestive, nhưng paper không quan sát trực tiếp các conversations giữa investors và managers.
+3. Bối cảnh Mỹ có PAC system, disclosure rules, và institutional investor landscape rất đặc thù; mang nguyên xi kết quả sang nơi khác sẽ nguy hiểm.
+4. Ngay cả khi influence phản ánh personal preferences, vẫn còn câu hỏi mở là mức độ welfare loss cụ thể là bao nhiêu, ai chịu chi phí, và có những trường hợp nào investor influence lại có external benefits hay không.
+5. Các câu hỏi tiếp theo rất hay gồm: effect có lan sang lobbying hay không, governance nội bộ của asset managers có làm effect khác đi không, và pass-through voting hoặc disclosure reform có bó được channel này không.
 
-- Với những câu hỏi influence khó quan sát trực tiếp, hãy tìm behavioral footprints có dữ liệu sạch.
-- Sau finding chính, luôn nên hỏi thêm: chiều nhân quả hợp lý là gì, và motive khả dĩ là gì.
-- Subsample có tính ngoại sinh vừa phải như index inclusions có thể cực kỳ giá trị nếu dùng đúng chỗ.
+## Takeaways for a researcher
 
-## 8. Required background knowledge
+1. Một research question mạnh thường đến từ việc nối hai literatures vốn nói chuyện với nhau chưa đủ: ở đây là governance và political economy.
+2. Nếu outcome chính khó causal, hãy tìm một setting buộc actors phải hành động, như index inclusions.
+3. Một paper thuyết phục không chỉ cần main effect; nó cần cả “who moves”, “when it is stronger”, và “why this likely reflects mechanism X rather than Y”.
+4. Heterogeneity có giá trị nhất khi nó thực sự phân biệt competing explanations.
+5. Sau bài này, corporate political giving khó còn được xem đơn giản là lựa chọn của firm mà thôi.
 
-### Institutional investors và 13-F filings
+## Vietnam relevance and extension
 
-Đây là các tổ chức quản lý tài sản như mutual funds, asset managers, hedge funds, hay index funds. 13-F filings là nguồn dữ liệu công khai quan trọng về holdings của các tổ chức lớn ở Mỹ.
+### Mức độ liên quan
 
-### PAC giving
+Bối cảnh Việt Nam khác Mỹ rất xa ở campaign finance, PACs, và thị trường vốn. Nhưng intuition cốt lõi của paper vẫn rất liên quan: khi ownership hoặc quyền kiểm soát tập trung vào một số định chế lớn, preferences của họ có thể lan vào các quyết định “phi sản xuất” của doanh nghiệp.
 
-PACs là kênh đóng góp chính trị chính thức của firms và nhiều tổ chức. Nhìn vào PAC giving cho phép nghiên cứu political strategy một cách có cấu trúc và có dữ liệu.
+### Có thể triển khai ở Việt Nam không?
 
-### Event study quanh acquisitions
+Có thể, nhưng không nên bê nguyên outcome. Ở Việt Nam, thay vì PAC giving, nên nghĩ tới:
 
-Đây là chiến lược so sánh outcomes trước và sau một mốc acquisition. Điểm cốt lõi là nhìn xem similarity tăng có hệ thống ngay quanh event hay không, thay vì chỉ so sánh firms bị mua với firms không bị mua.
+- đóng góp vào các quỹ, hiệp hội, hay chương trình có yếu tố chính sách,
+- lựa chọn tham gia business associations,
+- hành vi CSR hoặc tài trợ có hàm ý xây dựng quan hệ,
+- phân bổ lobbying mềm thông qua gặp gỡ, kiến nghị, hoặc hợp tác với cơ quan công quyền.
 
-### Index inclusion as quasi-exogenous shock
+### Điều kiện cần
 
-Khi một stock được đưa vào index, index funds buộc phải nắm giữ nó. Đây là một nguồn biến thiên gần ngoại sinh cho ownership changes, nên thường được dùng để củng cố causal claims trong finance và political economy.
-
-### Corporate governance problem của intermediated ownership
-
-Khi owners cuối cùng không trực tiếp kiểm soát firm mà thông qua asset managers, sẽ phát sinh câu hỏi lợi ích và sở thích của intermediary có bị áp lên firm hay không. Paper này là một case study rất rõ cho loại agency problem đó.
-
-## 9. Limitations and open questions
-
-### Hạn chế chính
-
-1. PAC giving chỉ là một phần của political activity; còn lobbying, access, agenda setting, hay soft influence không được đo trực tiếp.
-2. Causal claim đã được củng cố khá tốt nhưng vẫn không phải randomized ownership.
-3. Paper tập trung vào U.S. institutional setting; external validity sang các nước có campaign finance rules khác sẽ không tự động giữ nguyên.
-
-### Giả định nhạy cảm
-
-- Index-driven acquisitions thực sự bớt nội sinh hơn enough để làm benchmark nhân quả.
-- Similarity in giving là thước đo tốt cho influence, chứ không chỉ cho correlated preferences.
-- Employee donations của investor là proxy hợp lý cho internal political tastes.
-
-### Câu hỏi mở
-
-- Investor influence này có lan sang lobbying, ESG, hay issue-specific advocacy không.
-- Shareholders cuối cùng của funds có đồng tình với political preferences được truyền qua firms hay không.
-- Các quy định disclosure hoặc governance reform nào có thể bó được channel này.
-
-## 10. Takeaways for a researcher
-
-1. Một câu hỏi lớn về quyền lực có thể được xử lý bằng một behavioral margin rất cụ thể.
-2. Hỏi “ai thay đổi nhiều hơn quanh event” là một cách rất mạnh để nói về chiều nhân quả khi data không cho direct observation.
-3. Heterogeneity by motive thường quan trọng ngang với main effect; nó giúp paper tránh being just another correlation study.
-4. Working paper và journal version có thể bổ sung cho nhau rất tốt: working paper cho chi tiết, journal article cho framing gọn và claims đã được tinh lọc.
-5. Political economy của firms ngày càng cần được nghiên cứu chung với corporate governance và ownership structure, không thể tách rời.
-
-## 11. Vietnam relevance and extension
-
-### Liên hệ với bối cảnh Việt Nam
-
-Việt Nam không có PAC system như Mỹ, nên không thể sao chép outcome variable của paper. Nhưng ý tưởng nền vẫn rất giàu giá trị: khi quyền sở hữu tập trung vào các trung gian tài chính hoặc các cổ đông lớn, liệu các firms trong danh mục có bị kéo theo preferences phi-lợi nhuận của họ hay không.
-
-### Có thể triển khai được ở Việt Nam không
-
-Có thể, nhưng phải đổi outcome. Những outcome tiềm năng hơn có thể là:
-
-- lựa chọn tài trợ cho các hiệp hội, hoạt động công chúng, hay CSR có màu sắc chính trị-ngầm,
-- cấu trúc đóng góp từ thiện/doanh nghiệp theo mạng lưới lợi ích,
-- hành vi truyền thông công ty quanh các chủ đề nhạy cảm,
-- patterns of board appointments, lobbying mềm, hoặc phân bổ hợp đồng tài trợ.
-
-### Điều kiện cần có để làm ở Việt Nam
-
-- Dữ liệu ownership đủ chi tiết qua thời gian.
-- Các event thay đổi sở hữu đủ rõ.
-- Một outcome phản ánh influence của owner/intermediary lên firm nhưng vẫn quan sát được tương đối sạch.
-- Hiểu biết thể chế sâu về các kênh influence không chính thức.
+- Dữ liệu ownership đủ chi tiết theo thời gian, nhất là institutional blocks.
+- Dữ liệu về board seats, đại diện sở hữu, hoặc quyền biểu quyết.
+- Một outcome quan sát được phản ánh non-market strategy của firm.
+- Một shock đủ sạch, chẳng hạn index inclusion, room changes, SCIC transactions, regulatory reclassification, hoặc một chương trình thoái vốn/niêm yết tạo thay đổi ownership tương đối exogenous.
 
 ### Trở ngại chính
 
-- Thiếu dữ liệu công khai kiểu PAC.
-- Influence chính trị ở Việt Nam có thể đi qua các kênh không minh bạch hơn nhiều.
-- Khó tách business motive khỏi network motive khi outcome không trực tiếp như political donations.
+- Thiếu dữ liệu công khai tương đương PAC giving.
+- Quan hệ chính trị thường đi qua kênh ít disclosure hơn.
+- Institutional investor ecosystem ở Việt Nam còn khác nhiều so với Mỹ.
+- Ownership nhà nước và ownership gia đình có thể quan trọng hơn asset managers trong nhiều ngành.
 
-### Một vài research questions cụ thể cho Việt Nam
+### Hướng mở rộng cho Việt Nam
 
-1. Khi một nhóm cổ đông lớn hoặc định chế tài chính nắm stake đáng kể ở nhiều firms, liệu các firms đó có hội tụ trong các lựa chọn tài trợ, hiệp hội, hay strategic communication không.
-2. Liệu state-linked investors và private investors tạo ra patterns influence khác nhau lên portfolio firms hay không.
-3. Trong các ngành regulated mạnh, ownership concentration có kéo firms về cùng một policy stance hoặc cùng mạng lưới quan hệ không.
+1. **Institutional ownership và non-market strategy của firms niêm yết:** dùng index changes hoặc room shocks để xem firms có đổi hành vi CSR, sponsorship, hay membership trong các hiệp hội ngành theo hướng giống owners lớn hơn không.
+2. **State capital representatives và chiến lược quan hệ của doanh nghiệp:** thay investor tư nhân bằng đại diện vốn nhà nước, xem việc thay đổi đại diện hoặc cấu trúc sở hữu có kéo theo thay đổi trong hành vi quan hệ với cơ quan quản lý hoặc đối tác công không.
+3. **Board interlocks như kênh influence:** nếu có dữ liệu hội đồng quản trị tốt, có thể kiểm tra liệu board representation của cổ đông lớn có làm doanh nghiệp điều chỉnh các khoản chi “ngoài core business” theo hướng ưu tiên của owner hay không.
 
-## 12. Vì sao paper này được chọn hôm nay
+### Một số research questions khả thi
 
-Mình chọn paper này vì đây vẫn là một top 5 khá mới, nằm chắc trong applied micro/political economy, có câu hỏi lớn về concentrated ownership và political influence, có design nhận dạng sắc dựa trên acquisition events, và có cả nguồn journal lẫn public PDF đủ mạnh để làm briefing chắc tay. So với nhiều paper khác, bài này cũng có ưu điểm là vừa topical vừa methodological: nó đáng đọc cả vì câu hỏi nghiên cứu lẫn vì cách tác giả bóc tách cơ chế.
+1. Khi một quỹ lớn hoặc cổ đông tổ chức vượt qua một ngưỡng sở hữu trong doanh nghiệp Việt Nam, doanh nghiệp có thay đổi pattern tài trợ, CSR, hoặc hiệp hội theo hướng giống nhóm cổ đông đó hơn không?
+2. Các cú shock index inclusion trên HOSE/HNX có làm firms điều chỉnh non-market strategies theo cấu trúc investor base mới không?
+3. Board representation của cổ đông lớn có làm doanh nghiệp dịch nguồn lực khỏi hoạt động có strategic relevance trực tiếp sang hoạt động quan hệ hoặc xây dựng ảnh hưởng hay không?
 
-## 13. Storage notes
+## Kết luận ngắn
 
+Đây là một applied paper rất đáng học vì nó làm ba việc cùng lúc: đặt ra một câu hỏi lớn, tìm được outcome quan sát phù hợp cho câu hỏi đó, và xây một chuỗi bằng chứng đủ dày để tách influence khỏi selection. Cái đẹp của paper không nằm ở một regression duy nhất, mà ở cách authors khiến người đọc thấy rằng sự tập trung ownership có thể đồng thời là sự tập trung political voice.
+
+## Storage notes
+
+- **GitHub repo đích:** `huylvu/00_reading`
 - **GitHub folder:** `Investing in Influence - Bertrand Bombardini Fisman Trebbi Yegen/`
-- **Mục tiêu lưu trên GitHub:** `analysis.md`, `analysis.html`
-- **Chưa coi là hoàn tất:** `analysis.pdf`, PDF gốc của paper
-- **Lý do chưa coi PDF là đã lưu:** môi trường shell trong các lượt gần đây vẫn bị chặn khi tải raw binary PDF từ nguồn ngoài; nếu lượt này vẫn vậy thì trạng thái trung thực phải là đã xác minh nguồn PDF công khai, chưa lưu file nhị phân lên GitHub.
-- **Drive:** Bỏ qua trong lượt này.
+- **`analysis.md`:** đã lưu trên GitHub tại `https://github.com/huylvu/00_reading/blob/main/Investing%20in%20Influence%20-%20Bertrand%20Bombardini%20Fisman%20Trebbi%20Yegen/analysis.md`
+- **`analysis.html`:** đã lưu trên GitHub tại `https://github.com/huylvu/00_reading/blob/main/Investing%20in%20Influence%20-%20Bertrand%20Bombardini%20Fisman%20Trebbi%20Yegen/analysis.html`
+- **`analysis.pdf`:** chưa tạo trong lượt chạy này.
+- **PDF gốc của paper:** đã xác minh được nguồn PDF công khai phù hợp, nhưng chưa lưu file nhị phân lên GitHub.
+- **Google Drive:** bỏ qua trong lượt này.
