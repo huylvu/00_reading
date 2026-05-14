@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Effects of Parental Death on Labor Market Outcomes - analysis</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      inline-size: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="effects-of-parental-death-on-labor-market-outcomes">Effects of Parental Death on Labor Market Outcomes</h1>
+<ul>
+<li><strong>Tac gia:</strong> Mathias Fjaellegaard Jensen, Ning Zhang</li>
+<li><strong>Journal:</strong> American Economic Review</li>
+<li><strong>Nam:</strong> 2026</li>
+<li><strong>Ngay agent chay:</strong> 2026-05-14 (Asia/Saigon, theo lich chay)</li>
+<li><strong>Nguon bai bao chinh:</strong> https://www.aeaweb.org/doi/10.1257/aer.20240432</li>
+<li><strong>Nguon PDF phan tich:</strong> https://fjaellegaard.com/files/Parental_death_and_employment.pdf</li>
+<li><strong>Trang thai luu tren GitHub:</strong> Ban phan tich da duoc tao cuc bo va dang cho xac nhan luu len repo <code>huylvu/00_reading</code></li>
+<li><strong>Trang thai luu tren Google Drive:</strong> Bo qua co chu dich trong luot nay vi chua co workflow du chac de tao Google Doc va tracker dung folder dich ma khong bao cao qua muc</li>
+</ul>
+<h2 id="metadata">1. Metadata</h2>
+<ul>
+<li><strong>Tieu de paper:</strong> <em>Effects of Parental Death on Labor Market Outcomes</em></li>
+<li><strong>Tac gia:</strong> Mathias Fjaellegaard Jensen, Ning Zhang</li>
+<li><strong>Journal:</strong> <em>American Economic Review</em>, Volume 116, Issue 5, May 2026, pages 1811-1836</li>
+<li><strong>Nam:</strong> 2026</li>
+<li><strong>Linh vuc:</strong> Applied micro / labor economics / family economics / health economics</li>
+<li><strong>Top 5 status:</strong> Co. AER la top 5 journal economics, va bai nay xuat hien trong so thang 5/2026</li>
+<li><strong>Link bai bao hoac trang nguon chinh:</strong> https://www.aeaweb.org/doi/10.1257/aer.20240432</li>
+<li><strong>Link PDF da dung de doc:</strong> https://fjaellegaard.com/files/Parental_death_and_employment.pdf</li>
+<li><strong>Trang thai PDF goc tren GitHub:</strong> Chua luu raw binary PDF trong luot nay. Trang thai trung thuc la da xac minh duoc nguon PDF cong khai tot nhat, nhung chua tai va upload file nhi phan goc vao repo</li>
+</ul>
+<h2 id="executive-summary">2. Executive summary</h2>
+<p>Day la mot paper applied micro rat "sach" va rat dang doc vi no dat mot cau hoi vua pho bien vua bi bo qua: khi nguoi truong thanh mat di mot cha me, tac dong lao dong va thu nhap cua ho keo dai den dau, va thong qua co che nao? Thay vi chi dung o phuc loi tam ly, paper dua cau hoi vao mot khung labor economics ro rang: parental death co de lai mot labor market penalty dai han hay khong.</p>
+<p>Tac gia dung du lieu hanh chinh toan dan cua Dan Mach, tap trung vao <strong>sudden first parental deaths</strong> trong giai doan 1985-2014 doi voi con truong thanh 25-50 tuoi, roi ghep tung nguoi bi tac dong voi mot matched control co dac diem quan sat tuong tu va uoc luong mot matched-control difference-in-differences / event-study. Y tuong nhan dang cot loi la neu cai chet den dot ngot, thi kha nang co anticipatory adjustment thap hon; neu chi xet <strong>first parental death</strong>, thi kenh thua ke hay dieu chinh quanh second death bi lam yeu di.</p>
+<p>Ket qua chinh rat ro: sau 5 nam, thu nhap cua con trai giam khoang <strong>2%</strong>, con thu nhap cua con gai giam khoang <strong>3%</strong> so voi matched controls. Cai chet cua <strong>me</strong> gay tac dong xau hon cai chet cua <strong>cha</strong> cho ca con trai lan con gai, va tac dong cua parental death lon hon voi <strong>phu nu</strong>. Khi di sau vao co che, paper cho thay suc khoe tam than xau di ro ret sau parental death, va phu nu co con nho mat thu nhap manh hon nhieu, phu hop voi kenh mat di informal childcare tu ong ba. Kenh eldercare cho parent con song co xuat hien, nhung co ve khong phai co che chinh.</p>
+<p>Bai nay dang doc vi no lam duoc ba viec cung luc: dat cau hoi quan trong, dung mot design rat hoc-thuat-ma-gon, va dua ra mot cau chuyen co che kha thuyet phuc. No bien bereavement thanh mot labor-market shock co the dinh luong duoc, tu do mo ra mot agenda policy va research rat ro.</p>
+<h2 id="research-question-and-motivation">3. Research question and motivation</h2>
+<h3 id="cau-hoi-nghien-cuu-trung-tam">Cau hoi nghien cuu trung tam</h3>
+<p>Parental death trong tuoi truong thanh anh huong the nao den employment va earnings cua con, va nhung tac dong do di qua kenh nao?</p>
+<h3 id="dong-luc-hoc-thuat-va-thuc-tien">Dong luc hoc thuat va thuc tien</h3>
+<p>Phan lon literature ve family health shocks tap trung vao cai chet hoac benh nang cua vo/chong, hoac cua con cai. Do la nhung cu soc rat nghiem trong, nhung hiem hoi hon va kho tong quat hoa ra toan bo dan so trong do tuoi lao dong. Parental death thi khac: day la mot bien co gan nhu pho quat. Chinh vi pho quat, ngay ca mot penalty thu nhap khong qua lon o cap ca nhan van co the co y nghia aggregate rat dang ke.</p>
+<p>Co it nhat bon co che hop ly: grief va xau di suc khoe tam than; mat informal childcare tu ong ba; tang nghia vu cham soc nguoi cha/me con song; va thay doi uu tien giua cong viec va gia dinh sau bien co lon. Khoang trong ma paper lap la o cho literature chua co mot empirical paper that chat nao noi ro parental death khi con da la nguoi lon se di vao labor market nhu the nao va qua kenh gi.</p>
+<h2 id="main-contribution">4. Main contribution</h2>
+<h3 id="dong-gop-chinh-so-voi-van-lieu-truoc">Dong gop chinh so voi van lieu truoc</h3>
+<p>Dong gop lon nhat cua paper la chi ra rang parental death khong chi la mot bien co tam ly hay gia dinh, ma la mot <strong>labor market shock co y nghia kinh te</strong> va keo dai nhieu nam. Diem nay thay doi framing: tu "bereavement" sang "earnings and employment consequences of family loss".</p>
+<h3 id="diem-moi-ve-du-lieu-va-thiet-ke">Diem moi ve du lieu va thiet ke</h3>
+<ul>
+<li>
