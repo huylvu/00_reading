@@ -6,7 +6,7 @@
 - **Ngay agent chay:** 2026-05-14 (Asia/Saigon, theo lich chay)
 - **Nguon bai bao chinh:** https://www.aeaweb.org/doi/10.1257/aer.20240432
 - **Nguon PDF phan tich:** https://fjaellegaard.com/files/Parental_death_and_employment.pdf
-- **Trang thai luu tren GitHub:** Ban phan tich da duoc tao cuc bo va dang cho xac nhan luu len repo `huylvu/00_reading`
+- **Trang thai luu tren GitHub:** `analysis.md` va `analysis.html` da duoc luu thanh cong trong thu muc `Effects of Parental Death on Labor Market Outcomes - Jensen Zhang/` cua repo `huylvu/00_reading`; `analysis.pdf` chua duoc tao va chua luu; PDF goc cua paper chua duoc tai va upload len repo trong luot nay
 - **Trang thai luu tren Google Drive:** Bo qua co chu dich trong luot nay vi chua co workflow du chac de tao Google Doc va tracker dung folder dich ma khong bao cao qua muc
 
 ## 1. Metadata
