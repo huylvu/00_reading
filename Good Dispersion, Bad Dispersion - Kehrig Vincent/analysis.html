@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Good Dispersion, Bad Dispersion</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0 auto; max-width: 860px; padding: 40px 20px; line-height: 1.65; color: #1f2937; }
+    h1, h2, h3 { color: #111827; }
+    h1 { font-size: 2.1rem; margin-bottom: 0.5rem; }
+    h2 { margin-top: 2rem; border-top: 1px solid #e5e7eb; padding-top: 1rem; }
+    code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 4px; }
+    ul, ol { padding-left: 1.4rem; }
+    a { color: #0f766e; }
+  </style>
+</head>
+<body>
+<h1 id="good-dispersion-bad-dispersion">Good Dispersion, Bad
+Dispersion</h1>
+<ul>
+<li>Tác giả: Matthias Kehrig, Nicolas Vincent</li>
+<li>Journal và năm: The Review of Economic Studies, 2026</li>
+<li>Ngày agent chạy: 2026-05-15</li>
+<li>Nguồn bài báo chính: <a
+href="https://academic.oup.com/restud/article/93/2/1103/8166644">https://academic.oup.com/restud/article/93/2/1103/8166644</a></li>
+<li>DOI: <a
+href="https://doi.org/10.1093/restud/rdaf042">https://doi.org/10.1093/restud/rdaf042</a></li>
+<li>Nguồn PDF tốt nhất đã xác minh: article PDF / accepted-public PDF
+trên Oxford Academic tại <a
+href="https://academic.oup.com/restud/article-pdf/93/2/1103/63565479/rdaf042.pdf">https://academic.oup.com/restud/article-pdf/93/2/1103/63565479/rdaf042.pdf</a></li>
+<li>Nguồn PDF công khai dùng để đọc sâu trong lượt chạy: CES Working
+Paper March 2024 tại <a
+href="https://www2.census.gov/ces/wp/2024/CES-WP-24-13.pdf">https://www2.census.gov/ces/wp/2024/CES-WP-24-13.pdf</a></li>
+<li>Trạng thái GitHub cuối lượt này:
+<ul>
+<li>Nếu bạn đang đọc file này trong repo <code>huylvu/00_reading</code>,
+thì <code>analysis.md</code> đã được lưu thành công.</li>
+<li><code>analysis.html</code> được tạo như bản dễ đọc đi kèm và được lưu
+cùng thư mục khi bước GitHub thành công.</li>
+<li><code>analysis.pdf</code>: chưa tạo, chưa lưu.</li>
+<li>PDF gốc của paper chỉ được coi là đã lưu khi file nhị phân thật sự
+được upload lên GitHub; lượt này ghi rõ trạng thái thực tế ở phần
+cuối.</li>
+</ul></li>
+<li>Trạng thái Google Drive: bỏ qua trong lượt chạy này nếu không thể
+tạo Google Doc và tracker đúng folder đích một cách chắc chắn.</li>
+</ul>
+<h2 id="metadata">1. Metadata</h2>
+<ul>
+<li>Tiêu đề paper: <em>Good Dispersion, Bad Dispersion</em></li>
+<li>Tác giả: Matthias Kehrig, Nicolas Vincent</li>
+<li>Journal: <em>The Review of Economic Studies</em></li>
+<li>Năm: 2026</li>
+<li>Volume / issue / pages: Volume 93, Issue 2, March 2026, pages
+1103-1136</li>
+<li>Link bài báo hoặc trang nguồn chính: <a
+href="https://academic.oup.com/restud/article/93/2/1103/8166644">https://academic.oup.com/restud/article/93/2/1103/8166644</a></li>
+<li>DOI: <a
+href="https://doi.org/10.1093/restud/rdaf042">https://doi.org/10.1093/restud/rdaf042</a></li>
+<li>Link PDF đã xác minh:
+<ul>
+<li>Bản gần phiên bản xuất bản nhất: Oxford article PDF</li>
+<li>Bản công khai đọc sâu trong lượt chạy: CES Working Paper 24-13,
+March 2024</li>
+</ul></li>
+</ul>
+<p>Ghi chú nguồn: Phân tích sâu bên dưới bám chủ yếu vào CES
+working-paper version tháng 3/2024 vì đây là bản full-text công khai và
+đọc ổn định trong lượt chạy. Metadata xuất bản và top-line framing được
+đối chiếu lại với ReStud 2026. Về logic lý thuyết, kết quả định tính,
+và các magnitudes lớn, working paper và published version rất gần
+nhau.</p>
+<h2 id="executive-summary">2. Executive summary</h2>
+<p>Paper đặt một câu hỏi rất cơ bản nhưng lại đụng đúng trái tim của
+misallocation literature: liệu dispersion trong marginal revenue
+products của inputs giữa các production units luôn là dấu hiệu “xấu”
+của méo mó phân bổ, hay đôi khi dispersion cao lại phản ánh một
+allocation tốt hơn?</p>
+<p>Câu trả lời của Kehrig và Vincent là: không phải mọi dispersion đều
+xấu. Trong môi trường multi-plant firms có internal capital markets và
+external finance đắt đỏ, firm tối ưu có thể chủ động <em>stagger
+investment</em> giữa các plants qua thời gian. Điều đó làm marginal
+revenue products của capital phân tán hơn giữa các plants tại một thời
+điểm, nhưng lại giúp output và efficiency cao hơn. Nói cách khác,
+dispersion có thể là byproduct của một second-best allocation tốt hơn,
+chứ không nhất thiết là dấu hiệu misallocation nặng hơn.</p>
+<p>Paper đi theo một logic rất đẹp. Đầu tiên, authors chỉ ra bằng dữ liệu
+U.S. Census rằng gần hai phần ba dispersion của marginal revenue
+products of capital xảy ra <strong>bên trong firms</strong>, giữa các
+plants cùng firm, chứ không phải giữa firms. Điều này đã đủ để khiến
+người đọc phải dừng lại, vì phần lớn misallocation literature quen nghĩ
+ở level market giữa firms. Sau đó, họ xây một model multi-plant firm với
+plant-level adjustment frictions và firm-level financing constraints.
+Trong mô hình này, internal capital markets cho phép firm dồn vốn vào
+một số plants trước, rồi luân phiên sang plants khác ở các kỳ sau. Chính
+sự luân phiên này tạo ra “good dispersion”.</p>
+<p>Kết quả định lượng rất mạnh. Khi “tắt” internal capital markets,
+aggregate capital giảm khoảng 12% và output giảm khoảng 8%, dù variance
+của marginal products lại thấp hơn khoảng 40%. Nghĩa là dispersion giảm
+nhưng allocation tệ đi. Từ đây, paper kết luận rằng dùng dispersion như
+một sufficient statistic cho misallocation là rất nguy hiểm. Hệ quả
+development quan trọng là: vì emerging economies có ít scope hơn cho
+good dispersion, nên chênh lệch misallocation giữa emerging và developed
+economies có thể còn lớn hơn những gì literature trước đây ước
+tính.</p>
+<h2 id="research-question-and-motivation">3. Research question and
+motivation</h2>
+<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung
+tâm</h3>
+<p>Paper hỏi ba điều gắn chặt với nhau:</p>
+<ol type="1">
+<li>Dispersion trong marginal revenue products có phải lúc nào cũng
+phản ánh bad misallocation hay không?</li>
+<li>Tại sao within-firm dispersion lại lớn đến vậy nếu firms được kỳ
+vọng là planners phân bổ vốn nội bộ?</li>
+<li>Nếu một phần dispersion là “good”, thì cách ta suy ra output losses
+ từ misallocation, đặc biệt khi so sánh developing và developed
+economies, cần sửa lại như thế nào?</li>
+</ol>
+<h3 id="bối-cảnh-học-thuật">Bối cảnh học thuật</h3>
+<p>Sau Hsieh-Klenow, một phần lớn literature coi dispersion trong revenue
+products là dấu vết của wedges và distortions. Từ dispersion đó,
+researchers thường suy ra potential gains from reallocation. Đây là một
+framework rất mạnh, nhưng nó ngầm dựa vào một trực giác một chiều:
+dispersion cao hơn nghĩa là allocation tệ hơn.</p>
+<p>Paper này đụng trực diện vào giả định đó. Nếu firms có cấu trúc tổ
+chức nhiều plants và có thể dùng internal capital markets để đối phó với
+external financing frictions, thì quan hệ giữa frictions và dispersion
+không còn monotonic. Có những tình huống nới lỏng một friction làm
+output tăng <strong>và</strong> dispersion tăng.</p>
+<h3 id="động-lực-thực-tiễn">Động lực thực tiễn</h3>
+<p>Điểm thực tiễn rất quan trọng là multi-plant firms chiếm phần lớn
+output và investment trong U.S. manufacturing. Nếu hầu hết dispersion
+nằm trong các firms như vậy, thì không thể tiếp tục nói về
+misallocation mà bỏ qua organizational structure của firm. Paper này vì
+thế không chỉ là một bài về productivity; nó còn là một bài về bản chất
+kinh tế của doanh nghiệp như một internal planner.</p>
+<h2 id="main-contribution">4. Main contribution</h2>
+<h3 id="đóng-góp-1-phân-biệt-good-dispersion-với-bad-dispersion">Đóng
+góp 1: phân biệt “good dispersion” với “bad dispersion”</h3>
+<p>Đây là đóng góp khái niệm lớn nhất. Paper không phủ nhận bad
+dispersion; ngược lại, nó nói rằng observable dispersion là hỗn hợp
+của:</p>
+<ul>
+<li><strong>bad dispersion</strong>: dispersion do frictions làm
+allocation tệ đi</li>
+<li><strong>good dispersion</strong>: dispersion phát sinh từ cách firm
+tối ưu nội bộ trong second-best world</li>
+</ul>
+<p>Điểm này thay đổi cách đọc cả một literature.</p>
+<h3 id="đóng-góp-2-chỉ-ra-vai-trò-kinh-tế-của-within-firm-allocation">Đóng
+góp 2: chỉ ra vai trò kinh tế của within-firm allocation</h3>
+<p>Paper cho thấy gần hai phần ba overall dispersion trong marginal
+revenue products of capital xảy ra giữa plants thuộc cùng firm. Đây là
+một empirical fact rất nặng ký, vì nó chuyển unit of analysis từ
+market-wide allocation sang internal organization of firms.</p>
+<h3 id="đóng-góp-3-model-multi-plant-firm-có-staggered-investment">Đóng
+góp 3: model multi-plant firm có staggered investment</h3>
+<p>Model của bài kết hợp:</p>
+<ul>
+<li>fixed và convex adjustment costs ở level plant</li>
+<li>external financing constraints ở level firm</li>
+<li>khả năng pool và reallocate funds qua internal capital markets</li>
+</ul>
+<p>Từ tổ hợp này, authors rút ra cơ chế staggered investment: firm không
+đầu tư đều ở tất cả plants cùng lúc, mà luân phiên tập trung nguồn lực
+vào vài plants, tạo dispersion nội bộ bền vững.</p>
+<h3 id="đóng-góp-4-hàm-ý-development-emerging-economies">Đóng góp 4:
+hàm ý development / emerging economies</h3>
+<p>Paper lập luận rằng nếu U.S. dispersion có một phần “good” nhờ
+multi-plant firms và internal capital markets, còn emerging economies có
+ít scope cho good dispersion hơn, thì khoảng cách misallocation thật sự
+giữa emerging và developed economies bị đánh giá thấp trong literature
+trước đó. Authors thậm chí gợi ý previous work có thể đã bỏ lỡ từ một
+phần mười đến một nửa output gains from reallocation.</p>
+<h2 id="identification-or-methodology">5. Identification or
+methodology</h2>
+<h3 id="empirical-fact-nền-tảng">Empirical fact nền tảng</h3>
+<p>Tác giả bắt đầu bằng một fact cực quan trọng từ U.S. Economic Census:
+gần hai phần ba dispersion của marginal revenue products of capital nằm
+<strong>trong nội bộ firms</strong>, giữa plants cùng firm, thay vì giữa
+firms. Fact này vừa là động lực, vừa là discipline device cho model: bất
+kỳ lý thuyết nào cũng phải giải thích tại sao firms “chịu đựng”
+dispersion nội bộ lớn như vậy.</p>
+<h3 id="mô-hình-lý-thuyết">Mô hình lý thuyết</h3>
+<p>Framework là một quantitative model của multi-plant firm. Mỗi plant
+đối mặt với technological frictions như fixed/convex adjustment costs. Ở
+level firm, có external financing constraints khiến việc gọi vốn bên
+ngoài đắt đỏ. Firm có thể dùng internal capital markets để pool funds và
+phân bổ lại giữa plants.</p>
+<p>Trong môi trường này, allocation tối ưu không phải là ép tất cả
+plants về cùng marginal revenue product tại mỗi thời điểm. Thay vào đó,
+firm có thể tối ưu bằng cách:</p>
+<ol type="1">
+<li>dồn internal funds vào một số plants trước,</li>
+<li>trì hoãn plants khác sang kỳ sau,</li>
+<li>luân phiên investment qua thời gian.</li>
+</ol>
+<p>Chính sách staggered này làm dispersion nội bộ tăng, nhưng giảm
+external finance costs và nâng output.</p>
+<h3 id="calibration-và-dữ-liệu">Calibration và dữ liệu</h3>
+<p>Model được calibrated bằng moments từ U.S. Annual Survey of
+Manufactures và các parameter chuẩn trong investment literature. Ở phần
+empirics, paper dùng plant-level Census data để kiểm tra các predictions
+về level và dispersion của revenue products, về nhu cầu external funds,
+và về cross-plant investment dynamics.</p>
+<h3 id="proxy-cho-internal-capital-market-frictions">Proxy cho internal
+capital market frictions</h3>
+<p>Một thủ pháp empirical rất hay của paper là dùng <strong>geographic
+distance giữa plants trong cùng firm</strong> làm proxy cho mức độ
+friction trong internal capital markets. Intuition là khi plants ở xa
+nhau hơn, headquarters khó gather information, evaluate capital needs,
+và reshuffle cash flows hiệu quả hơn. Authors cho thấy khi within-firm
+distance tăng, các patterns trong dữ liệu di chuyển đúng hướng model dự
+đoán.</p>
+<h3 id="điểm-mạnh-của-phương-pháp">Điểm mạnh của phương pháp</h3>
+<ul>
+<li>Paper có một motivating fact rất sắc và rất khó bỏ qua.</li>
+<li>Model nói đúng chỗ empirical fact yêu cầu: giải thích within-firm
+dispersion.</li>
+<li>Empirical exercise không chỉ test một sign; nó kiểm tra whole
+mechanism, từ dispersion tới external funds và investment
+correlations.</li>
+</ul>
+<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
+<ul>
+<li>Distance giữa plants là một proxy hợp lý nhưng không hoàn hảo cho
+frictions nội bộ.</li>
+<li>Kết quả định lượng phụ thuộc vào model structure và calibration.</li>
+<li>“Good dispersion” là một object khái niệm suy ra từ model-data fit;
+nó không quan sát trực tiếp như một biến độc lập.</li>
+</ul>
+<h2 id="results-and-interpretation">6. Results and interpretation</h2>
+<h3 id="kết-quả-1-phần-lớn-dispersion-là-within-firm">Kết quả 1: phần
+lớn dispersion là within-firm</h3>
+<p>Đây là kết quả mở đầu nhưng cũng là một trong những kết quả quan
+trọng nhất. Paper chỉ ra gần <strong>hai phần ba</strong> overall
+dispersion trong marginal revenue products of capital phát sinh giữa
+plants cùng firm. Điều này ngụ ý rằng nếu ta chỉ nhìn dispersion như
+một market-level pathology thì ta đang bỏ lỡ phần lớn hiện tượng kinh tế
+cần giải thích.</p>
+<h3 id="kết-quả-2-tắt-internal-capital-markets-làm-output-giảm-dù-dispersion-cũng-giảm">Kết
+quả 2: tắt internal capital markets làm output giảm dù dispersion cũng
+giảm</h3>
+<p>Trong model, shutting down internal capital markets làm:</p>
+<ul>
+<li>aggregate capital giảm khoảng <strong>12%</strong></li>
+<li>output giảm khoảng <strong>8%</strong></li>
+<li>variance của marginal products giảm khoảng
+<strong>40%</strong></li>
+</ul>
+<p>Đây là punchline của bài. Một allocation tệ hơn lại đi cùng
+dispersion thấp hơn. Vì vậy dispersion không thể là monotonic statistic
+cho misallocation.</p>
+<h3 id="kết-quả-3-cơ-chế-staggered-investment">Kết quả 3: cơ chế
+staggered investment</h3>
+<p>Khi firm bị external finance constraints nhưng vẫn còn internal
+capital markets, nó sẽ không chia vốn đều. Thay vào đó, nó tập trung
+funds vào một số plants trước rồi chuyển sang plants khác ở kỳ sau. Kết
+quả là:</p>
+<ul>
+<li>investment rates giữa plants bớt đồng bộ</li>
+<li>marginal revenue products phân tán hơn</li>
+<li>dispersion này persistent trong stochastic equilibrium</li>
+</ul>
+<p>Ý nghĩa kinh tế là firm đang tối ưu second-best, không phải behaving
+irrationally.</p>
+<h3 id="kết-quả-4-empirical-support-cho-mechanism">Kết quả 4: empirical
+support cho mechanism</h3>
+<p>Paper cho thấy khi internal capital market frictions lớn hơn, đo bằng
+khoảng cách địa lý giữa các plants trong cùng firm, thì:</p>
+<ul>
+<li>level và dispersion của revenue products</li>
+<li>nhu cầu external funds</li>
+<li>cross-plant investment dynamics</li>
+</ul>
+<p>đều biến động theo đúng hướng model dự đoán. Đây là phần rất quan
+trọng vì nó nối good dispersion từ lý thuyết về dữ liệu thật, thay vì
+chỉ dừng ở một calibration exercise đẹp.</p>
+<h3 id="kết-quả-5-hàm-ý-cho-emerging-economies">Kết quả 5: hàm ý cho
+emerging economies</h3>
+<p>Authors nhấn mạnh rằng scope cho good dispersion nhỏ hơn ở emerging
+economies. Nếu vậy, khi so China/India với U.S., phần dispersion “tốt”
+của U.S. phải được trừ đi trước khi suy ra bad misallocation thuần. Từ
+đó, chênh lệch misallocation thực sự giữa emerging và developed
+economies còn lớn hơn nhìn bề ngoài. Quantitatively, paper gợi ý
+literature trước có thể đã bỏ sót khoảng <strong>10% đến 50%</strong>
+output benefits from reallocation.</p>
+<h3 id="diễn-giải-kinh-tế">Diễn giải kinh tế</h3>
+<p>Bài này không nói dispersion nhìn chung là tốt. Nó nói rằng
+observable dispersion là một object pha trộn, và muốn suy ra distortions
+ từ nó thì phải hiểu organization of the firm. Đây là một subtle but
+deep point: cùng một số đo thống kê có thể đi lên vì economy tệ hơn,
+nhưng cũng có thể đi lên vì firm đang dùng internal allocation để đối
+phó tốt hơn với một friction khác.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">7. What is special
+or elegant about the paper</h2>
+<p>Điểm đẹp nhất của paper là nó đảo chiều một trực giác đã thành phản
+xạ trong macro-development-productivity literature: “dispersion cao =&gt;
+misallocation cao”. Authors không bác bỏ trực giác đó bằng lời, mà bằng
+một model cực kỳ trực diện và một empirical fact cực khó chối là
+dispersion chủ yếu nằm trong firms.</p>
+<p>Điểm đẹp thứ hai là cách bài gắn organization theory vào
+misallocation. Rất nhiều paper nói về firms như black boxes. Paper này
+mở chiếc hộp ra và nói: firms là planners, nhưng planners trong một
+second-best world với frictions riêng của họ. Khi đã nhìn như vậy,
+within-firm dispersion không còn là chuyện kỳ lạ nữa.</p>
+<p>Điểm đẹp thứ ba là hàm ý development rất gọn nhưng mạnh. Chỉ một
+insight “U.S. có nhiều scope cho good dispersion hơn emerging
+economies” đã làm thay đổi cách diễn giải cả một literature so sánh
+misallocation giữa nước giàu và nước nghèo.</p>
+<h2 id="required-background-knowledge">8. Required background
+knowledge</h2>
+<h3 id="misallocation-literature">Misallocation literature</h3>
+<p>Người đọc nên quen với trực giác của Hsieh-Klenow: dispersion trong
+revenue products thường được diễn giải như evidence của wedges làm
+marginal products không bằng nhau, từ đó gây output losses. Paper này
+đối thoại trực tiếp với framework đó.</p>
+<h3 id="multi-plant-firms">Multi-plant firms</h3>
+<p>Cần có intuition rằng firm nhiều plants không chỉ là “nhiều nhà máy
+đặt chung tên”. Nó là một tổ chức có thể phân bổ capital, cash flow,
+managerial attention, và headquarters support giữa các units. Điều đó
+tạo ra một tầng allocation mà models giữa-firms thường bỏ qua.</p>
+<h3 id="internal-vs-external-finance">Internal vs external
+finance</h3>
+<p>Ý tưởng cốt lõi là external funds đắt, nên firm cố tận dụng internal
+funds trước. Một khi internal funds khan hiếm, firm phải chọn plants nào
+được đầu tư ngay và plants nào phải chờ. Đó là gốc của staggered
+investment.</p>
+<h3 id="adjustment-costs">Adjustment costs</h3>
+<p>Fixed và convex adjustment costs khiến investment không thể được
+frictionlessly spread đều qua các plants. Nếu không có các costs này,
+logic good dispersion sẽ yếu đi nhiều.</p>
+<h2 id="limitations-and-open-questions">9. Limitations and open
+questions</h2>
+<h3 id="hạn-chế-chính">Hạn chế chính</h3>
+<ol type="1">
+<li>Good dispersion là một insight rất mạnh nhưng cũng khá
+model-dependent; cường độ của nó phụ thuộc vào cấu trúc frictions mà
+authors chọn.</li>
+<li>Distance giữa plants không chỉ phản ánh information frictions; nó
+còn có thể correlated với nhiều thứ khác về organization.</li>
+<li>Paper tập trung vào U.S. manufacturing multi-plant firms, nên
+external validity sang services, digital firms, hay các nước nghèo hơn
+cần thận trọng.</li>
+</ol>
+<h3 id="giả-định-nhạy-cảm">Giả định nhạy cảm</h3>
+<ul>
+<li>internal capital markets thật sự hoạt động như kênh bù đắp external
+finance frictions</li>
+<li>staggered investment là cơ chế chi phối thay vì chỉ là một behavior
+phụ</li>
+<li>measures của marginal revenue products đủ tốt để nói chuyện về
+dispersion theo nghĩa kinh tế</li>
+</ul>
+<h3 id="câu-hỏi-mở">Câu hỏi mở</h3>
+<ul>
+<li>Trong sectors nơi intangible capital quan trọng hơn physical
+capital, good dispersion có còn lớn như vậy không?</li>
+<li>Ở các nước đang phát triển, internal capital markets của business
+groups có tạo ra good dispersion tương tự hay lại chủ yếu sinh ra bad
+dispersion do tunneling và agency problems?</li>
+<li>Có thể tách empirical good dispersion và bad dispersion trực tiếp
+hơn, thay vì chủ yếu dựa vào structure-implied decomposition,
+không?</li>
+</ul>
+<h2 id="takeaways-for-a-researcher">10. Takeaways for a
+researcher</h2>
+<ol type="1">
+<li>Đừng quá tin một reduced-form statistic nếu chưa hiểu institution
+nào tạo ra nó.</li>
+<li>Một empirical fact tốt có thể buộc cả một literature phải điều
+chỉnh câu hỏi của mình; trong bài này, đó là fact “two-thirds dispersion
+is within-firm.”</li>
+<li>Khi lý thuyết nói một object quan sát được là mixture của nhiều
+forces, công việc nghiên cứu không chỉ là đo object đó giỏi hơn, mà là
+giải mixture đó.</li>
+<li>Organization of the firm không phải phần phụ; nó có thể thay đổi cả
+welfare interpretation của một statistic aggregate.</li>
+<li>Đây là ví dụ rất đáng học về cách làm paper “phản biện văn liệu” mà
+vẫn xây thứ gì đó tích cực và mới, thay vì chỉ nói literature cũ
+sai.</li>
+</ol>
+<h2 id="vietnam-relevance-and-extension">11. Vietnam relevance and
+extension</h2>
+<h3 id="liên-hệ-với-việt-nam">Liên hệ với Việt Nam</h3>
+<p>Paper này rất liên quan tới Việt Nam ở giao điểm productivity, firm
+organization, và development.</p>
+<p>Thứ nhất, nếu muốn hiểu misallocation ở Việt Nam, ta không thể chỉ
+nhìn khác biệt giữa firms. Rất nhiều conglomerates, business groups, và
+firms nhiều cơ sở sản xuất có internal allocation decisions quan trọng.
+Nếu internal capital markets ở các firms này hoạt động tốt, một phần
+observed dispersion có thể là good dispersion chứ không phải thuần bad
+misallocation.</p>
+<p>Thứ hai, ngược lại, trong bối cảnh institutional quality và agency
+problems khác với Mỹ, internal capital markets ở Việt Nam có thể vừa là
+thuốc vừa là bệnh. Chúng có thể giúp firms vượt qua credit frictions,
+nhưng cũng có thể bị lạm dụng. Vì vậy ý tưởng good dispersion đặc biệt
+đáng nghiên cứu ở Việt Nam.</p>
+<p>Thứ ba, paper gợi ý rằng khi so misallocation giữa Việt Nam và các
+nước phát triển, ta có thể đang bỏ sót vai trò của organizational form.
+Nếu developed economies có nhiều multi-plant firms vận hành internal
+markets hiệu quả hơn, thì phần dispersion “tốt” của họ cao hơn. Khi đó
+chênh lệch bad misallocation thật sự giữa Việt Nam và họ còn lớn hơn
+nhìn bề ngoài.</p>
+<h3 id="có-triển-khai-được-ở-việt-nam-không">Có triển khai được ở Việt
+Nam không?</h3>
+<p>Có thể, nhưng sẽ khó và rất đáng giá. Cần:</p>
+<ul>
+<li>dữ liệu plant-level hoặc establishment-level linked to firms</li>
+<li>thông tin về capital allocation, investment timing, và ownership
+structure</li>
+<li>khả năng nhận diện multi-plant firms và distances / frictions giữa
+units</li>
+</ul>
+<h3 id="trở-ngại-chính">Trở ngại chính</h3>
+<ul>
+<li>dữ liệu firm-plant linkage ở Việt Nam không sẵn như U.S. Census</li>
+<li>thông tin chi tiết về nội bộ tập đoàn, luồng vốn nội bộ, và cash
+reallocation khó tiếp cận</li>
+<li>đo marginal revenue products ở quality đủ cao là thách thức lớn</li>
+</ul>
+<h3 id="hướng-mở-rộng-cho-việt-nam">Hướng mở rộng cho Việt Nam</h3>
+<ol type="1">
+<li>Nghiên cứu xem dispersion trong revenue products giữa nhà máy cùng
+một công ty ở Việt Nam lớn đến đâu so với dispersion giữa firms.</li>
+<li>Kiểm tra xem business groups và tập đoàn nội địa có dùng internal
+capital markets để stagger investment giữa plants hay không.</li>
+<li>So sánh firms tư nhân lớn, FDI, và SOEs: ở đâu good dispersion có
+thể tồn tại, ở đâu bad dispersion lấn át.</li>
+</ol>
+<h3 id="một-vài-research-question-mới-cho-bối-cảnh-việt-nam">Một vài
+research question mới cho bối cảnh Việt Nam</h3>
+<ol type="1">
+<li>Trong manufacturing Việt Nam, chênh lệch productivity dispersion
+giữa multi-plant và single-plant firms nói gì về role của internal
+capital markets?</li>
+<li>Liệu các business groups ở Việt Nam đang mitigate hay magnify
+misallocation khi phân bổ vốn giữa các subsidiaries và plants?</li>
+<li>Nếu số hóa kế toán-quản trị giúp headquarters theo dõi plants tốt
+hơn, liệu điều đó làm giảm “bad dispersion” nhưng có thể tăng “good
+dispersion” theo cơ chế tối ưu second-best hay không?</li>
+</ol>
+<h2 id="vì-sao-chọn-paper-này-hôm-nay">12. Vì sao chọn paper này hôm
+nay</h2>
+<p>Mình chọn paper này vì nó thỏa đồng thời nhiều tiêu chí của agent:</p>
+<ul>
+<li>là bài trên <strong>ReStud 2026</strong>, tức top 5 journal
+ economics</li>
+<li>nằm ở giao điểm applied micro về firms/productivity và development
+qua hàm ý cho emerging economies</li>
+<li>có một conceptual twist rất đáng học</li>
+<li>có public PDF đủ tốt để đọc sâu mà không phải dựa vào nguồn mơ
+hồ</li>
+<li>quan trọng hơn, sau khi kiểm tra trực tiếp trên repo đích, bài này
+chưa xuất hiện ở <code>00_reading</code></li>
+</ul>
+<h2 id="trạng-thái-lưu-trữ-và-giới-hạn-thực-thi">13. Trạng thái lưu trữ
+và giới hạn thực thi</h2>
+<ul>
+<li>GitHub là nơi lưu trữ chính của lượt chạy này.</li>
+<li>Mục tiêu bắt buộc là lưu <code>analysis.md</code>; mục tiêu ưu tiên
+bổ sung là <code>analysis.html</code>.</li>
+<li><code>analysis.pdf</code> không phải điều kiện bắt buộc và lượt này
+không coi là hoàn tất nếu chưa có file PDF thật sự.</li>
+<li>PDF gốc của paper chỉ được coi là đã lưu nếu raw binary file được
+upload thành công lên repo.</li>
+<li>Nếu môi trường không chuyển được raw PDF vào GitHub trong cùng lượt
+chạy, trạng thái cuối phải ghi là đã xác minh nguồn PDF nhưng chưa lưu
+file PDF gốc.</li>
+<li>Google Drive bị bỏ qua nếu không thể chắc chắn tạo đúng Google Doc
+và tracker trong đúng folder đích.</li>
+</ul>
+<p>Trạng thái thực tế của lượt chạy này sẽ được phản ánh trung thực ở
+GitHub commit, trong email tóm tắt, và trong báo cáo cuối cùng của
+agent.</p>
+</body>
+</html>
