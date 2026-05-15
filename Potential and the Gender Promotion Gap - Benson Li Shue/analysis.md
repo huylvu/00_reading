@@ -6,8 +6,9 @@
 - **DOI / nguồn bài báo chính:** https://www.aeaweb.org/articles?id=10.1257/aer.20220831
 - **Nguồn PDF dùng để đọc sâu:** https://danielle.li/assets/docs/PotentialAndTheGenderPromotionGap.pdf
 - **Ngày agent chạy:** 2026-05-16 (Asia/Saigon)
-- **Trạng thái lưu trên GitHub:** analysis.md và analysis.html đang được lưu trong lượt chạy này; analysis.pdf chưa tạo; PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa tải và chưa upload vào repo
+- **Trạng thái lưu trên GitHub:** đã lưu thành công `analysis.md` và `analysis.html` vào repo `huylvu/00_reading` trong thư mục `Potential and the Gender Promotion Gap - Benson Li Shue/`; `analysis.pdf` chưa tạo; PDF gốc mới dừng ở mức xác minh nguồn công khai, chưa tải và chưa upload vào repo
 - **Trạng thái lưu trên Google Drive:** bỏ qua trong lượt chạy này
+- **Trạng thái email:** đã gửi tới `huymaeco@gmail.com`; email không có tệp đính kèm
 
 ## 1. Metadata
 
