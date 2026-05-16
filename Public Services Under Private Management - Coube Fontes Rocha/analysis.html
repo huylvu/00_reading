@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Public Services Under Private Management - Analysis</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Public Services Under Private Management -
+Analysis</h1>
+</header>
+<h1 id="public-services-under-private-management">Public Services Under
+Private Management</h1>
+<ul>
+<li><strong>Tác giả:</strong> Maíra Coube, Luiz Felipe Fontes, Rudi
+Rocha</li>
+<li><strong>Journal:</strong> The Quarterly Journal of Economics
+(accepted manuscript, open access)</li>
+<li><strong>Năm:</strong> 2026</li>
+<li><strong>Ngày agent chạy:</strong> 2026-05-16</li>
+<li><strong>Nguồn bài báo chính:</strong>
+https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag028/8676724</li>
+<li><strong>Nguồn PDF:</strong>
+https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag028/68275289/qjag028.pdf</li>
+<li><strong>Trạng thái lưu trên GitHub:</strong> Chưa lưu tại thời điểm
+soạn bản cục bộ; sẽ cập nhật sau khi thử thao tác GitHub trong lượt
+này.</li>
+<li><strong>Trạng thái lưu trên Google Drive:</strong> Chưa thực hiện;
+chỉ làm nếu tạo được Google Doc đúng folder đích một cách đáng tin
+cậy.</li>
+<li><strong>Ghi chú về PDF:</strong> Đây là accepted manuscript
+open-access của QJE. Môi trường shell trong lượt này không tải được file
+nhị phân trực tiếp từ nguồn ngoài do lỗi proxy, nên phần đọc sâu bám vào
+nội dung PDF truy cập được qua công cụ web tích hợp.</li>
+</ul>
+<h2 id="executive-summary">Executive summary</h2>
+<p>Bài này hỏi một câu rất thực tế nhưng cũng rất “QJE”: có thể giao
+<strong>quản lý</strong> dịch vụ công cho tư nhân mà vẫn giữ
+<strong>quyền sở hữu tài sản và quyền hưởng phần dư</strong> ở phía nhà
+nước, để lấy hiệu quả mà không đánh đổi chất lượng hay công bằng hay
+không?</p>
+<p>Trong bối cảnh bệnh viện công ở Brazil, tác giả nghiên cứu mô hình
+<code>OSS</code> (Organizações Sociais de Saúde), nơi bệnh viện vẫn là
+bệnh viện công, vẫn phục vụ phổ cập, nhưng khâu quản trị được giao cho
+tổ chức tư nhân phi lợi nhuận dưới các hợp đồng có chỉ tiêu hiệu suất.
+Dùng dữ liệu hành chính cực rộng về bệnh viện, nhân sự y tế, nhập viện
+và tử vong giai đoạn 2005-2022, bài dùng
+<code>staggered difference-in-differences</code> kết hợp matching để so
+sánh các bệnh viện chuyển sang OSS với các bệnh viện công tương đồng còn
+do nhà nước quản lý.</p>
+<p>Kết quả chính rất mạnh: số ca nhập viện tăng khoảng 40% so với
+baseline; productivity của bệnh viện tăng rõ, thể hiện qua bed turnover
+tăng 23%, occupancy tăng 14%, thời gian nằm viện giảm; nhưng không thấy
+xấu đi ở mortality nội trú, readmission hay profile bệnh nhân. Quan
+trọng hơn, bài cho thấy các bệnh viện OSS mở rộng tiếp cận điều trị cho
+dân địa phương và gắn với giảm khoảng 3% mortality ở cấp municipality.
+Cơ chế chính không phải là đổ thêm nhiều vốn hay thiết bị, mà là
+<strong>quản trị tốt hơn</strong>: linh hoạt hơn trong nhân sự, dùng
+nhiều hợp đồng theo hiệu suất hơn, tuyển bác sĩ chuyên môn cao hơn, và
+tỷ lệ rời đi cao hơn tập trung ở nhóm bác sĩ productivity thấp.</p>
+<p>Đây là paper đáng đọc vì nó không chỉ nói “tư hay công tốt hơn”, mà
+chỉ ra rằng <strong>thiết kế governance</strong> mới là mấu chốt. Khi
+private manager không giữ residual claimant rights và bị ràng buộc bởi
+mục tiêu công cùng universal access, trade-off quen thuộc giữa quantity
+và quality có thể dịu đi đáng kể.</p>
+<h2 id="research-question-and-motivation">Research question and
+motivation</h2>
+<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
+<p>Liệu outsourcing quản lý dịch vụ công sang khu vực tư nhân có thể cải
+thiện hiệu quả mà <strong>không</strong> làm giảm chất lượng và công
+bằng, đặc biệt trong những ngành như y tế nơi chất lượng khó contract và
+khó quan sát?</p>
+<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực
+tiễn</h3>
+<p>Văn liệu kinh tế về ownership và incomplete contracts từ Hart,
+Shleifer, Vishny, Besley-Ghatak đặt ra một tension rất rõ. Tư nhân có
+thể mạnh hơn về động lực cắt giảm lãng phí và tổ chức sản xuất, nhưng
+cũng có thể cắt nhầm vào quality hoặc loại bỏ đối tượng “khó phục vụ”
+khi hợp đồng không viết hết được mọi chiều chất lượng.</p>
+<p>Y tế là bài test đặc biệt khó vì:</p>
+<ul>
+<li>đầu ra vừa nhiều chiều vừa khó đo lường</li>
+<li>chất lượng lâm sàng không thể contract hóa đầy đủ</li>
+<li>bệnh viện có thể tăng volume nhưng làm xấu quality hoặc equity</li>
+<li>bệnh nhân nghèo, ca nặng, ca ít lợi nhuận dễ bị ảnh hưởng nếu
+incentive sai</li>
+</ul>
+<p>Vì vậy, câu hỏi không còn là “privatize hay không”, mà là
+<strong>privatize phần nào, với quyền gì, hợp đồng gì, residual claimant
+là ai</strong>.</p>
+<h3 id="khoảng-trống-mà-bài-muốn-lấp-vào">Khoảng trống mà bài muốn lấp
+vào</h3>
+<p>Lý thuyết ownership rất giàu, nhưng bằng chứng thực nghiệm về những
+mô hình governance lai giữa nhà nước và tư nhân trong dịch vụ công phức
+tạp vẫn còn mỏng. Nhiều nghiên cứu trước trong healthcare nhấn mạnh mặt
+trái của tư nhân hóa khi private operator có quyền mạnh về surplus hoặc
+khi quality phi hợp đồng hóa. Paper này lấp khoảng trống bằng cách xét
+một setting nơi:</p>
+<ul>
+<li>quản lý được giao cho tư nhân phi lợi nhuận</li>
+<li>tài sản và funding vẫn công</li>
+<li>bệnh viện vẫn universal-access, không thu phí, không cạnh tranh để
+chọn bệnh nhân</li>
+<li>surplus rights vẫn do nhà nước giữ</li>
+</ul>
+<p>Tức là bài test đúng một cấu hình governance mà theory dự đoán có thể
+cho kết quả khác với privatization kiểu đầy đủ.</p>
+<h2 id="main-contribution">Main contribution</h2>
+<h3
+id="đóng-góp-vào-tranh-luận-state-versus-market-theo-cách-tinh-hơn">1.
+Đóng góp vào tranh luận state versus market theo cách tinh hơn</h3>
+<p>Đóng góp lớn nhất của bài là chỉ ra rằng ranh giới “công” và “tư”
+không nên được hiểu theo nhị phân. Cái quan trọng là phân bổ quyền kiểm
+soát, quyền hưởng phần dư, độ linh hoạt quản trị, và các mục tiêu
+contractible được gắn vào operator. Đây là một đóng góp rất mạnh cho
+applied micro lẫn political economy of public service delivery.</p>
+<h3
+id="bằng-chứng-nhân-quả-quy-mô-lớn-trong-healthcare-public-management">2.
+Bằng chứng nhân quả quy mô lớn trong healthcare public management</h3>
+<p>Bài xây một bộ dữ liệu hành chính mới cho Brazil và khai thác 127
+bệnh viện công chuyển từ state management sang OSS trong giai đoạn
+2005-2022. Đó là một setting thực tế, quy mô lớn, và rất phù hợp để nói
+về external validity cho cải cách công.</p>
+<h3 id="mở-hộp-đen-cơ-chế-quản-trị">3. Mở “hộp đen” cơ chế quản trị</h3>
+<p>Nhiều paper chỉ dừng ở chuyện outcome tốt hơn hay xấu hơn. Bài này đi
+sâu hơn:</p>
+<ul>
+<li>cơ cấu bác sĩ thay đổi ra sao</li>
+<li>hợp đồng lao động thay đổi ra sao</li>
+<li>ai bị thay thế, ai được giữ lại</li>
+<li>productivity ở cấp worker thay đổi thế nào</li>
+<li>managerial experience của tổ chức quản lý có tạo ra heterogeneity
+hay không</li>
+</ul>
+<p>Đây là phần làm paper mạnh lên rất nhiều, vì nó nối kết outcome
+aggregate với organizational economics thực sự.</p>
+<h3 id="nêu-bật-vai-trò-của-managerial-capacity">4. Nêu bật vai trò của
+managerial capacity</h3>
+<p>Không chỉ “private management” nói chung mới quan trọng. Bài cho thấy
+bệnh viện do OSS nhiều kinh nghiệm quản lý đạt gain lớn hơn rõ rệt;
+ngược lại, OSS ít kinh nghiệm dựa nhiều hơn vào mở rộng capacity và tạo
+ra productivity gain yếu hơn. Đây là một kết quả rất đáng giá cho policy
+design.</p>
+<h2 id="identification-or-methodology">Identification or
+methodology</h2>
+<h3 id="setting-thể-chế">Setting thể chế</h3>
+<p>Mô hình <code>OSS</code> ở Brazil giao phần <strong>quản lý bệnh viện
+công</strong> cho tổ chức tư nhân phi lợi nhuận, nhưng:</p>
+<ul>
+<li>bệnh viện vẫn thuộc sở hữu công</li>
+<li>tài trợ vẫn công</li>
+<li>bệnh viện không thu phí và vẫn phổ cập</li>
+<li>hợp đồng gắn với chỉ tiêu output và quality có thể đo được</li>
+<li>tổ chức quản lý không được giữ budgetary surplus để phân phối cho
+mình; phần dư phải tái đầu tư vào cải thiện dịch vụ</li>
+</ul>
+<p>Điểm này cực kỳ quan trọng. Nó làm setting khác hẳn với privatization
+đơn thuần, nơi operator giữ residual claimant rights và có động cơ mạnh
+để cắt chi phí bằng cách hy sinh chiều chất lượng khó đo.</p>
+<h3 id="dữ-liệu">Dữ liệu</h3>
+<p>Paper dùng dữ liệu hành chính rất phong phú:</p>
+<ul>
+<li>dữ liệu admissions và outcomes của toàn hệ thống y tế công</li>
+<li>dữ liệu input bệnh viện từ <code>CNES</code></li>
+<li>dữ liệu nhân sự y tế, loại hợp đồng, tenure, chuyên môn</li>
+<li>dữ liệu định danh bác sĩ để đo kinh nghiệm và specialty</li>
+<li>dữ liệu municipality-level mortality</li>
+</ul>
+<p>Khoảng thời gian là 2005-2022. Tác giả ban đầu nhận diện 236 bệnh
+viện OSS, sau đó giữ lại <strong>127 switchers</strong> thực sự chuyển
+từ direct public administration sang OSS và loại các trường hợp
+always-OSS hay thiếu pre-period. Nhóm đối chứng xuất phát từ gần
+<strong>2,800 bệnh viện công</strong> vẫn do nhà nước quản lý.</p>
+<h3 id="chiến-lược-nhận-dạng">Chiến lược nhận dạng</h3>
+<p>Thiết kế chính là:</p>
+<ol type="1">
+<li>match từng bệnh viện treated với một control hospital tương đồng
+theo propensity score</li>
+<li>dùng <code>staggered DiD</code> vì thời điểm chuyển sang OSS khác
+nhau giữa các bệnh viện</li>
+<li>ước lượng theo khung <code>Callaway and Sant'Anna (2021)</code> để
+tránh các vấn đề của two-way fixed effects khi treatment timing khác
+nhau và effect dị biệt theo cohort/event time</li>
+</ol>
+<p>Matching dùng trung bình 5 năm pre-treatment của các biến như:</p>
+<ul>
+<li>số bệnh nhân</li>
+<li>số giường</li>
+<li>số nhân viên</li>
+<li>thiết bị</li>
+<li>macro-region</li>
+</ul>
+<p>Tác giả cố ý không match theo vị trí quá gần để giảm nguy cơ
+spillover trực tiếp, và sau đó còn kiểm tra spillover riêng.</p>
+<h3 id="giả-định-cốt-lõi">Giả định cốt lõi</h3>
+<p>Giả định nền là <code>conditional parallel trends</code>: sau khi
+điều kiện hóa theo region, size, patient volume và matching covariates,
+treated và control sẽ có xu hướng outcome giống nhau nếu không có
+OSS.</p>
+<h3 id="vì-sao-chiến-lược-này-mạnh">Vì sao chiến lược này mạnh</h3>
+<ul>
+<li>policy rollout có variation theo thời gian và giữa bệnh viện</li>
+<li>matching làm donor pool hợp lý hơn</li>
+<li>event-study/pre-trend checks giúp đánh giá giả định</li>
+<li>dữ liệu outcome rất gần với hoạt động thực tế, không chỉ là
+survey</li>
+<li>paper kiểm tra robustness với control groups khác, điều chỉnh trend
+theo covariates, patient characteristics theo thời gian, và phân tích ở
+mức dân số</li>
+</ul>
+<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
+<ul>
+<li>adoption OSS không phải random; dù pre-trends và robustness khá
+thuyết phục, luôn còn khả năng các bệnh viện chuyển đổi có lãnh đạo địa
+phương năng động hơn hoặc chịu áp lực cải cách khác</li>
+<li>quality trong y tế vẫn khó đo hết; mortality và readmission là tốt
+nhưng chưa bao trùm toàn bộ patient experience hay long-run health</li>
+<li>chi phí không phải outcome trung tâm có dữ liệu causal tốt như
+output và quality; phần cost-effectiveness vẫn còn chủ yếu là bằng chứng
+gợi ý</li>
+</ul>
+<h2 id="results-and-interpretation">Results and interpretation</h2>
+<h3 id="output-tăng-mạnh">1. Output tăng mạnh</h3>
+<p>Kết quả headline là admissions tăng khoảng <strong>40%</strong> so
+với baseline sau khi chuyển sang OSS. Đây là mức rất lớn và nhất quán
+giữa nhiều loại chăm sóc, kể cả các điều kiện ít defer được.</p>
+<p>Diễn giải kinh tế: trước cải cách có vẻ tồn tại slack rất lớn trong
+vận hành bệnh viện công. OSS giúp “mở nút thắt” quản trị hơn là chỉ tăng
+nguồn lực.</p>
+<h3 id="productivity-tăng-không-chỉ-capacity-tăng">2. Productivity tăng,
+không chỉ capacity tăng</h3>
+<p>Các chỉ số productivity cho thấy:</p>
+<ul>
+<li><code>bed turnover</code> tăng khoảng <strong>23%</strong></li>
+<li><code>occupancy rate</code> tăng khoảng <strong>14%</strong></li>
+<li><code>length of stay</code> giảm</li>
+</ul>
+<p>Đây là pattern rất đáng chú ý. Nếu admissions tăng chỉ vì thêm giường
+hoặc thêm thiết bị, ta không nhất thiết thấy turnover và occupancy cùng
+cải thiện như vậy. Bài cho thấy tăng capacity có tồn tại, nhưng chỉ giải
+thích <strong>một phần nhỏ</strong> của output growth.</p>
+<h3 id="chất-lượng-và-công-bằng-không-xấu-đi">3. Chất lượng và công bằng
+không xấu đi</h3>
+<p>Paper không tìm thấy bằng chứng rằng OSS làm xấu:</p>
+<ul>
+<li>risk-adjusted inpatient mortality</li>
+<li>readmission rates</li>
+<li>acute-case outcomes</li>
+<li>profile bệnh nhân theo tuổi, giới, income, risk indicators</li>
+</ul>
+<p>Điểm này cực kỳ quan trọng. Nó làm cho câu chuyện “admissions tăng”
+không bị hiểu là do cherry-picking bệnh nhân dễ điều trị hoặc chạy theo
+chỉ tiêu bằng cách đẩy chất lượng xuống.</p>
+<h3 id="hiệu-ứng-lan-sang-population-health">4. Hiệu ứng lan sang
+population health</h3>
+<p>Ở cấp municipality, các bệnh viện OSS làm tăng tiếp cận hospital care
+cho dân địa phương, đặc biệt ở khu vực underserved, và gắn với giảm
+khoảng <strong>3% mortality toàn bộ</strong>. Đây là một bước rất mạnh
+trong logic paper: họ không chỉ cải thiện chỉ số nội bộ của bệnh viện,
+mà còn tạo hệ quả y tế ở cấp dân số.</p>
+<h3 id="cơ-chế-chính-là-quản-trị-nhân-sự">5. Cơ chế chính là quản trị
+nhân sự</h3>
+<p>OSS dường như thay đổi mạnh “technology of management”:</p>
+<ul>
+<li>nhân sự tăng, nhưng nhìn theo số giường thì mức tăng không lớn, cho
+thấy không phải đơn thuần bơm thêm lao động</li>
+<li>bệnh viện OSS tuyển bác sĩ có chuyên môn cao hơn</li>
+<li>dịch chuyển sang hợp đồng linh hoạt hơn, đặc biệt independent
+contracting tăng gần <strong>65%</strong></li>
+<li>separation tăng tập trung ở nhóm bác sĩ productivity thấp</li>
+<li>output trên mỗi bác sĩ tăng</li>
+</ul>
+<p>Đây là phần rất đẹp của bài: productivity gain không được kể như một
+hộp đen, mà được nối trực tiếp với personnel reallocation.</p>
+<h3 id="managerial-experience-tạo-ra-heterogeneity-có-ý-nghĩa">6.
+Managerial experience tạo ra heterogeneity có ý nghĩa</h3>
+<p>Những OSS có nhiều kinh nghiệm quản lý bệnh viện tạo ra gain lớn hơn
+nhiều về output, productivity và giảm mortality. Trong khi đó, OSS ít
+kinh nghiệm dựa nhiều hơn vào mở rộng capacity. Hàm ý là private
+participation tự nó chưa đủ; chất lượng của organization được giao quản
+lý mới là điểm quyết định.</p>
+<h3 id="spillover-âm-không-phải-động-cơ-chính">7. Spillover âm không
+phải động cơ chính</h3>
+<p>Bài không tìm thấy bằng chứng rõ rằng bệnh viện OSS hút bác sĩ hay
+nguồn lực từ bệnh viện lân cận để tạo thành tích cho mình. Điều này giúp
+lập luận về scalability đáng tin hơn.</p>
+<h2 id="what-is-special-or-elegant-about-the-paper">What is special or
+elegant about the paper</h2>
+<p>Điểm đẹp nhất của paper là nó làm sáng rõ một ý rất kinh tế học:
+<strong>không phải cứ “tư nhân hóa” là một treatment đồng nhất</strong>.
+Phân bổ quyền residual claimant, contractible targets, và autonomy trong
+human-resource management mới là thứ quyết định equilibrium.</p>
+<p>Paper cũng rất thanh lịch ở chỗ:</p>
+<ul>
+<li>bắt đầu từ một tranh luận lý thuyết kinh điển về incomplete
+contracts</li>
+<li>tìm được một institutional setting gần như “designed experiment” cho
+tranh luận đó</li>
+<li>dùng dữ liệu hành chính đủ sâu để mở cơ chế</li>
+<li>đi từ hospital outcomes tới population outcomes</li>
+<li>thêm heterogeneity theo managerial capacity, nên paper không kết
+thúc ở một average treatment effect đơn giản</li>
+</ul>
+<p>Về mặt craft, đây là kiểu paper mà người đọc học được cách biến một
+câu hỏi tưởng như normative thành một bài applied micro có
+identification rõ và policy bite mạnh.</p>
+<h2 id="required-background-knowledge">Required background
+knowledge</h2>
+<h3 id="incomplete-contracts-và-ownership">1. Incomplete contracts và
+ownership</h3>
+<p>Ý cơ bản: hợp đồng không thể mô tả và enforce mọi chiều chất lượng.
+Khi private operator giữ quyền hưởng phần dư, họ có thể có động lực cắt
+giảm chi phí quá tay ở các chiều không đo được. Hart, Shleifer, Vishny
+là nền tảng quan trọng cho trực giác này.</p>
+<h3 id="residual-claimant-rights">2. Residual claimant rights</h3>
+<p>Ai giữ “phần còn lại” sau khi thu chi được quyết toán sẽ có động lực
+khác nhau. Nếu operator giữ surplus, họ sẽ nội hóa lợi ích của cắt chi
+phí. Nếu nhà nước giữ surplus và operator chỉ bị ràng buộc bởi contract
+targets, incentive có thể nghiêng nhiều hơn về hoàn thành nhiệm vụ
+công.</p>
+<h3 id="staggered-difference-in-differences">3. Staggered
+difference-in-differences</h3>
+<p>Khi các đơn vị nhận treatment ở các thời điểm khác nhau, TWFE cổ điển
+có thể trộn lẫn các comparison không mong muốn. Callaway-Sant’Anna giúp
+ước lượng effect theo cohort-event time một cách sạch hơn.</p>
+<h3 id="matching-như-design-choice">4. Matching như design choice</h3>
+<p>Matching ở đây không thay thế identification, nhưng làm nhóm control
+gần với treated hơn trước khi chạy DiD. Điều này giúp comparison dễ tin
+hơn trong một setting mà treated hospitals khác control khá xa về quy mô
+và vị trí.</p>
+<h3 id="risk-adjustment-trong-y-tế">5. Risk adjustment trong y tế</h3>
+<p>Khi so sánh mortality/readmission giữa bệnh viện, phải điều chỉnh
+case mix. Nếu không, bệnh viện nhận bệnh nặng hơn có thể bị đánh giá oan
+là quality thấp.</p>
+<h3 id="organizational-economics-và-quản-trị-nhân-sự">6. Organizational
+economics và quản trị nhân sự</h3>
+<p>Paper nằm ở giao điểm giữa public economics, health economics và
+organizational economics. Để hiểu paper sâu, nên nắm ý niệm rằng
+productivity không chỉ do capital hay technology, mà còn do cách tổ chức
+con người, contract, tuyển chọn và sa thải.</p>
+<h2 id="limitations-and-open-questions">Limitations and open
+questions</h2>
+<h3 id="hạn-chế-chính">Hạn chế chính</h3>
+<ol type="1">
+<li>Dù identification mạnh, đây vẫn là cải cách không random.</li>
+<li>Quality trong bệnh viện được đo tốt hơn nhiều paper khác, nhưng vẫn
+chưa bao trùm mọi khía cạnh như patient satisfaction, continuity of
+care, hay long-run morbidity.</li>
+<li>Dữ liệu chi phí còn hạn chế; bằng chứng về efficiency rất thuyết
+phục, nhưng cost-benefit toàn phần vẫn chưa đóng lại hoàn toàn.</li>
+<li>Setting là Brazil và một mô hình OSS khá đặc thù; external validity
+cần đi qua cấu trúc pháp lý và labor institutions của từng nước.</li>
+<li>Bài là accepted manuscript chứ chưa phải bản typeset cuối cùng; nội
+dung cốt lõi có thể giữ nguyên nhưng trình bày cuối cùng có thể khác
+nhẹ.</li>
+</ol>
+<h3 id="câu-hỏi-mở">Câu hỏi mở</h3>
+<ul>
+<li>Hiệu ứng còn giữ được khi scale lớn hơn nhiều hay không?</li>
+<li>Governance nào của contract là quan trọng nhất: target design,
+monitoring, provider selection, hay personnel autonomy?</li>
+<li>Có nguy cơ mission drift trong horizon dài hơn 5-10 năm không?</li>
+<li>Tác động lên các nhóm bệnh chuyên khoa khó đo chất lượng hơn có khác
+không?</li>
+<li>Liệu mô hình này có hiệu quả như nhau khi áp dụng cho các dịch vụ
+công khác ngoài hospital care?</li>
+</ul>
+<h2 id="takeaways-for-a-researcher">Takeaways for a researcher</h2>
+<ol type="1">
+<li>Đừng đóng khung câu hỏi kiểu “public versus private”. Hãy viết
+treatment theo ngôn ngữ của quyền kiểm soát, incentive, và governance
+design.</li>
+<li>Một paper applied mạnh thường thắng ở chỗ mở được cơ chế. Ở đây,
+worker-level personnel data là chìa khóa.</li>
+<li>Khi treatment rollout bị staggered, cần rất cẩn thận với estimator;
+chọn đúng công cụ econometrics là một phần của contribution.</li>
+<li>Policy relevance mạnh hơn nhiều khi nối được intermediate outcomes
+với welfare-relevant outcomes ở cấp dân số.</li>
+<li>Heterogeneity theo manager/provider quality thường không phải phụ
+lục; nhiều khi đó mới là insight trung tâm cho policy.</li>
+<li>Trong public-service settings, một kết quả “output tăng mà quality
+không giảm” vẫn chưa đủ; phải kiểm tra cả equity và spillovers.</li>
+</ol>
+<h2 id="vietnam-relevance-and-extension">Vietnam relevance and
+extension</h2>
+<h3 id="vì-sao-paper-này-gợi-ý-mạnh-cho-việt-nam">Vì sao paper này gợi ý
+mạnh cho Việt Nam</h3>
+<p>Việt Nam cũng có những căng thẳng rất giống bài này:</p>
+<ul>
+<li>bệnh viện công chịu nhiều ràng buộc hành chính</li>
+<li>nhu cầu nâng hiệu quả vận hành rất lớn</li>
+<li>câu chuyện tự chủ bệnh viện, liên doanh liên kết, thuê dịch vụ,
+khoán chi, hay trao quyền cho ban giám đốc luôn gây tranh luận</li>
+<li>nỗi lo lớn nhất vẫn là trade-off giữa efficiency với quality và công
+bằng tiếp cận</li>
+</ul>
+<p>Paper này gợi ý rằng câu hỏi đúng cho Việt Nam không phải “nên tư
+nhân hóa bệnh viện công hay không”, mà là:</p>
+<ul>
+<li>có thể trao quyền quản trị nhiều hơn ở khâu nào</li>
+<li>ai giữ quyền với phần dư tài chính</li>
+<li>chỉ tiêu nào nên contract hóa</li>
+<li>cơ chế kiểm soát equity và universal access ra sao</li>
+<li>chọn đơn vị quản lý theo năng lực thế nào</li>
+</ul>
+<h3 id="có-triển-khai-nghiên-cứu-tương-tự-ở-việt-nam-được-không">Có
+triển khai nghiên cứu tương tự ở Việt Nam được không?</h3>
+<p>Có thể, nhưng cần điều kiện dữ liệu và thể chế khá khó:</p>
+<ul>
+<li>dữ liệu panel bệnh viện theo năm về admissions, bed occupancy,
+length of stay, mortality, readmission</li>
+<li>dữ liệu nhân sự bệnh viện ở cấp bác sĩ/điều dưỡng, loại hợp đồng,
+tenure, specialty</li>
+<li>biến thể chế đủ rõ về thời điểm một bệnh viện được trao autonomy hay
+chuyển sang mô hình quản trị khác</li>
+<li>khả năng nối hospital-level outcomes với district/province-level
+health outcomes</li>
+</ul>
+<h3 id="trở-ngại-chính-ở-việt-nam">Trở ngại chính ở Việt Nam</h3>
+<ul>
+<li>dữ liệu hành chính thường phân tán giữa Bộ Y tế, BHYT, Sở Y tế, và
+từng bệnh viện</li>
+<li>thông tin về hợp đồng lao động và productivity cá nhân của bác sĩ có
+thể khó tiếp cận</li>
+<li>cải cách quản trị ở Việt Nam có thể ít “rạch ròi” hơn một switch
+institutionally clean như OSS</li>
+<li>measurement của quality và patient selection sẽ là thách thức
+lớn</li>
+</ul>
+<h3 id="hướng-cập-nhật-hoặc-làm-mới-cho-việt-nam">Hướng cập nhật hoặc
+làm mới cho Việt Nam</h3>
+<ol type="1">
+<li>So sánh các bệnh viện công được trao mức tự chủ khác nhau về tài
+chính và nhân sự để xem output, quality, và equity thay đổi ra sao.</li>
+<li>Nghiên cứu tác động của quyền linh hoạt nhân sự của ban giám đốc
+bệnh viện lên phân bổ bác sĩ, năng suất và kết quả điều trị.</li>
+<li>Đánh giá liệu các mô hình thuê ngoài khâu quản trị hoặc vận hành cận
+lâm sàng có tạo productivity gain mà không làm xấu outcome cho bệnh nhân
+BHYT hay không.</li>
+</ol>
+<h3 id="một-vài-research-question-có-thể-phát-triển-ở-việt-nam">Một vài
+research question có thể phát triển ở Việt Nam</h3>
+<ol type="1">
+<li>Trao quyền tuyển dụng và trả lương linh hoạt hơn cho bệnh viện công
+có làm tăng throughput và giảm thời gian chờ mà không làm xấu quality
+không?</li>
+<li>Các bệnh viện công có mức tự chủ cao hơn có tái phân bổ bác sĩ theo
+hướng trọng dụng người năng suất cao và loại bớt bottleneck nhân sự hay
+không?</li>
+<li>Nếu một số tỉnh áp dụng mô hình quản trị bệnh viện linh hoạt hơn sớm
+hơn, có thể dùng staggered reform design để đo tác động lên mortality
+tránh được hoặc utilization của người nghèo không?</li>
+</ol>
+<h2 id="notes-on-storage-and-execution-limits">Notes on storage and
+execution limits</h2>
+<ul>
+<li>Bản phân tích này hoàn thành dựa trên metadata và nội dung PDF đã
+được xác minh chắc từ QJE.</li>
+<li>Trong lượt chạy này, nguồn PDF chính thức đã được xác minh nhưng
+shell cục bộ không tải trực tiếp file nhị phân về do lỗi proxy
+<code>403 CONNECT tunnel failed</code>.</li>
+<li><code>analysis.pdf</code> không phải artifact bắt buộc và chưa được
+tạo trong lượt này.</li>
+<li>Nếu GitHub hoặc email không đi qua được ở bước sau, trạng thái cuối
+cùng cần hiểu là chỉ hoàn thành bản phân tích cục bộ và chưa hoàn tất
+lưu trữ/phát hành tương ứng.</li>
+</ul>
+</body>
+</html>
