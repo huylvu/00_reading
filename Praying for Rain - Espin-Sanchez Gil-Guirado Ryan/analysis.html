@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Praying for Rain - Analysis</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Praying for Rain - Analysis</h1>
+</header>
+<h1 id="praying-for-rain">Praying for Rain</h1>
+<ul>
+<li><strong>Tác giả:</strong> José-Antonio Espín-Sánchez, Salvador
+Gil-Guirado, Nicholas Ryan</li>
+<li><strong>Journal:</strong> The Quarterly Journal of Economics</li>
+<li><strong>Năm:</strong> 2026</li>
+<li><strong>Ngày agent chạy:</strong> 2026-05-16</li>
+<li><strong>Nguồn bài báo chính:</strong> <a
+href="https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag026/8676046">https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag026/8676046</a></li>
+<li><strong>Nguồn PDF dùng để phân tích:</strong> <a
+href="https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag026/68269215/qjag026.pdf">https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag026/68269215/qjag026.pdf</a></li>
+<li><strong>Trạng thái lưu trên GitHub tại thời điểm soạn file:</strong>
+<code>analysis.md</code> và <code>analysis.html</code> đã được chuẩn bị
+để lưu lên repo <code>huylvu/00_reading</code>;
+<code>analysis.pdf</code> chưa tạo; PDF gốc đã xác minh nguồn nhưng chưa
+tải và chưa lưu được dưới dạng file nhị phân trong môi trường này</li>
+<li><strong>Trạng thái lưu trên Google Drive tại thời điểm soạn
+file:</strong> bỏ qua trong lượt này nếu không tạo được Google Doc và
+tracker một cách nhất quán</li>
+</ul>
+<h2 id="1-metadata">1. Metadata</h2>
+<ul>
+<li><strong>Tiêu đề paper:</strong> Praying for Rain</li>
+<li><strong>Tác giả:</strong> José-Antonio Espín-Sánchez, Salvador
+Gil-Guirado, Nicholas Ryan</li>
+<li><strong>Journal:</strong> The Quarterly Journal of Economics</li>
+<li><strong>Năm:</strong> 2026</li>
+<li><strong>Link bài báo:</strong> <a
+href="https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag026/8676046">https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag026/8676046</a></li>
+<li><strong>Link PDF tốt nhất đã xác minh:</strong> <a
+href="https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag026/68269215/qjag026.pdf">https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag026/68269215/qjag026.pdf</a></li>
+<li><strong>Ghi chú về file PDF gốc:</strong> đã xác minh được PDF QJE
+chính thức open access, nhưng môi trường chạy bị chặn tải file nhị phân
+trực tiếp qua mạng ngoài nên chưa thể lưu raw PDF vào GitHub trong lượt
+này.</li>
+</ul>
+<h2 id="2-executive-summary">2. Executive summary</h2>
+<p>Paper hỏi một câu rất đẹp và khá táo bạo: nếu cầu mưa thực ra không
+làm mưa, vì sao niềm tin vào cầu mưa vẫn có thể bền vững trong rất nhiều
+xã hội? Thay vì xem đây chỉ là chuyện "mê tín", tác giả xây dựng một mô
+hình trong đó niềm tin mang tính công cụ có thể tồn tại khi nghi lễ được
+thực hiện trong một môi trường khí hậu khiến nó <strong>trông có vẻ hiệu
+quả</strong>.</p>
+<p>Paper trả lời bằng hai lớp bằng chứng. Thứ nhất, tác giả nghiên cứu
+rất sâu dữ liệu lịch sử hằng ngày về các đợt cầu mưa ở Murcia, Tây Ban
+Nha từ 1600 đến 1836, ghép hồ sơ nhà thờ với ghi chép mưa từ hội đồng
+thành phố. Thứ hai, tác giả tự xây một bộ dữ liệu mới về việc 1.208 nhóm
+sắc tộc trên thế giới có thực hành nghi lễ cầu mưa hay không, rồi nối dữ
+liệu đó với đặc tính của quá trình mưa tại địa bàn tổ tiên của từng
+nhóm.</p>
+<p>Kết quả chính là: cầu mưa phổ biến hơn đáng kể ở những nơi mà
+<strong>hazard của mưa tăng lên sau một đợt khô hạn dài</strong>, tức
+xác suất có mưa càng tăng khi hạn càng kéo dài. Trong setting đó, nếu
+lãnh đạo tôn giáo bắt đầu cầu đúng lúc, mưa dễ đến sau nghi lễ hơn, từ
+đó tạo cảm giác rằng nghi lễ "có tác dụng". Ở Murcia, cầu mưa trong
+tháng trước dự báo xác suất có một trận mưa đáng kể trong ngày cao hơn
+71% so với xác suất trung bình; ở dữ liệu toàn cầu, các nhóm sống trong
+môi trường có increasing hazard có xác suất thực hành cầu mưa cao hơn
+khoảng 14 điểm phần trăm, tức khoảng 47% cao hơn so với nhóm đối chứng
+cơ sở.</p>
+<p>Đây là bài đáng đọc vì nó làm ba việc cùng lúc: đưa ra một lý thuyết
+sắc về sự hình thành niềm tin công cụ, xây được dữ liệu gốc rất khó, và
+kiểm định được cùng một cơ chế ở cả một case lịch sử vi mô lẫn mặt cắt
+toàn cầu. Với người làm applied micro hay development, paper này là một
+ví dụ rất mạnh về cách nối theory, historical micro-data, climate
+process và comparative data vào cùng một design thống nhất.</p>
+<h2 id="3-research-question-and-motivation">3. Research question and
+motivation</h2>
+<h3 id="câu-hỏi-nghiên-cứu-trung-tâm">Câu hỏi nghiên cứu trung tâm</h3>
+<p>Vì sao con người duy trì niềm tin vào các thực hành tôn giáo mang
+tính công cụ, cụ thể là cầu mưa, dù bản thân nghi lễ không thật sự tạo
+ra mưa?</p>
+<h3 id="bối-cảnh-học-thuật-và-thực-tiễn">Bối cảnh học thuật và thực
+tiễn</h3>
+<p>Paper đứng ở giao điểm của economic history, development economics,
+economics of religion và anthropology. Câu hỏi lớn phía sau là: môi
+trường tự nhiên định hình niềm tin và thể chế như thế nào? Văn liệu
+trước đã chỉ ra khí hậu và địa lý ảnh hưởng đến phát triển kinh tế,
+thiết chế chính trị, mức độ gắn bó với truyền thống hay tôn giáo. Nhưng
+vẫn còn thiếu một cơ chế cụ thể giải thích <strong>vì sao một niềm tin
+công cụ cụ thể lại có vẻ đáng tin</strong>.</p>
+<p>Trong cách nói của paper, văn liệu đã nói khá nhiều về việc tôn giáo
+hữu ích ra sao sau khi đã tồn tại; còn paper này muốn lùi lại một bước
+và hỏi: điều gì khiến người ta thấy hợp lý để tin ngay từ đầu?</p>
+<h3 id="khoảng-trống-mà-paper-lấp-vào">Khoảng trống mà paper lấp
+vào</h3>
+<ul>
+<li>Thiếu một lý thuyết rõ ràng về <strong>formation of instrumental
+belief</strong>, chứ không chỉ lợi ích của tôn giáo sau khi niềm tin đã
+được thiết lập.</li>
+<li>Thiếu kiểm định thực nghiệm trực tiếp về việc một nghi lễ như cầu
+mưa có trở nên "thuyết phục" hơn trong một số môi trường khí hậu nhất
+định hay không.</li>
+<li>Thiếu dữ liệu so sánh có hệ thống trên quy mô toàn cầu về thực hành
+cầu mưa giữa các nhóm sắc tộc.</li>
+</ul>
+<h2 id="4-main-contribution">4. Main contribution</h2>
+<h3 id="đóng-góp-chính-so-với-văn-liệu-trước">Đóng góp chính so với văn
+liệu trước</h3>
+<p>Đóng góp cốt lõi của paper là chuyển câu chuyện từ "tôn giáo có thể
+hữu ích" sang "niềm tin công cụ xuất hiện và được duy trì khi nào". Đây
+là một chuyển động rất quan trọng. Tác giả không tranh luận rằng cầu mưa
+thật sự gây mưa; thay vào đó, paper nói cầu mưa bền vững ở nơi mà quá
+trình mưa khiến nghi lễ dễ <strong>được hiểu là thành công</strong>.</p>
+<h3 id="điểm-mới-về-dữ-liệu-mô-hình-và-cách-đặt-câu-hỏi">Điểm mới về dữ
+liệu, mô hình, và cách đặt câu hỏi</h3>
+<ul>
+<li>Một mô hình thuyết phục trong đó lãnh đạo tôn giáo chọn thời điểm
+cầu nguyện; niềm tin phụ thuộc vào khoảng cách giữa xác suất mưa "khi có
+cầu nguyện" và xác suất mưa mà người dân suy ra từ các giai đoạn không
+cầu nguyện.</li>
+<li>Một case study cực mạnh ở Murcia với dữ liệu hằng ngày trong hơn hai
+thế kỷ về thời điểm cầu mưa, cầu tạ ơn, và các sự kiện mưa đáng kể.</li>
+<li>Một bộ dữ liệu mới do tác giả tự thu thập về thực hành cầu mưa cho
+1.208 nhóm sắc tộc, dựa trên 370 nguồn nhân học.</li>
+<li>Một biến khí hậu rất tinh: không phải mức mưa trung bình, mà là
+<strong>dấu của đạo hàm hazard rate của mưa sau một đợt
+hạn</strong>.</li>
+</ul>
+<h3
+id="vì-sao-đóng-góp-này-quan-trọng-trong-applied-microdevelopment">Vì
+sao đóng góp này quan trọng trong applied micro/development</h3>
+<p>Điểm hay của paper là nó cho thấy "môi trường" không chỉ tác động lên
+kinh tế qua năng suất hay disease burden, mà còn qua tính thuyết phục
+của niềm tin và qua đó ảnh hưởng đến cấu trúc xã hội, quyền lực tôn
+giáo, và persistence của văn hóa. Đây là kiểu đóng góp rất hợp với
+development economics hiện đại: tìm một cơ chế vi mô cụ thể nối
+environment với beliefs, institutions và long-run outcomes.</p>
+<h2 id="5-identification-or-methodology">5. Identification or
+methodology</h2>
+<h2 id="51-mô-hình-lý-thuyết">5.1 Mô hình lý thuyết</h2>
+<p>Paper xây một mô hình trong đó một lãnh đạo tôn giáo không thể làm
+mưa thật, nhưng có thể chọn <strong>thời điểm bắt đầu cầu mưa</strong>.
+Người dân quan sát mưa sau khi nghi lễ bắt đầu và so sánh với xác suất
+mưa mà họ suy ra từ các giai đoạn không cầu nguyện. Nếu cầu nguyện
+thường bắt đầu đúng lúc xác suất mưa đang tăng, nghi lễ sẽ có vẻ hiệu
+quả.</p>
+<p>Khái niệm trung tâm là <strong>rainfall hazard</strong>: xác suất có
+mưa hôm nay, điều kiện trên số ngày đã trôi qua kể từ trận mưa trước.
+Kết quả lý thuyết cốt lõi là chỉ trong môi trường mà hazard tăng lên sau
+một đợt hạn dài thì lãnh đạo tôn giáo mới có thể thuyết phục được người
+dân rằng lời cầu có tác dụng. Trong phần mở rộng, paper còn cho phép lợi
+ích hữu hình của mưa và chi phí thực hành nghi lễ đi vào quyết định ủng
+hộ nghi lễ.</p>
+<h3 id="trực-giác-nhận-dạng-của-mô-hình">Trực giác nhận dạng của mô
+hình</h3>
+<ul>
+<li>Nếu hazard phẳng hoặc giảm, cầu nguyện không tạo được "seeming
+efficacy" ổn định.</li>
+<li>Nếu hazard tăng sau hạn dài, bắt đầu cầu đúng lúc sẽ khiến mưa đến
+sau nghi lễ với xác suất cao hơn.</li>
+<li>Qua quá trình cultural evolution, các thực hành có vẻ thành công sẽ
+tồn tại lâu hơn và trở nên phổ biến hơn.</li>
+</ul>
+<h2 id="52-phần-thực-nghiệm-1-murcia-tây-ban-nha">5.2 Phần thực nghiệm
+1: Murcia, Tây Ban Nha</h2>
+<p>Đây là phần gần causal nhất theo nghĩa paper kiểm tra trực diện cơ
+chế timing.</p>
+<ul>
+<li>Dữ liệu cầu mưa và cầu tạ ơn đến từ hồ sơ nhà thờ.</li>
+<li>Dữ liệu mưa đáng kể đến từ ghi chép độc lập của hội đồng thành
+phố.</li>
+<li>Mẫu chính chạy từ 1600 đến 1836; tác giả dừng trước giai đoạn quyền
+lực và tài chính của giáo hội thay đổi mạnh vì cải cách tịch thu tài sản
+và bãi bỏ thập phân.</li>
+</ul>
+<p>Tác giả ước lượng hazard mưa ở Murcia thật linh hoạt bằng
+<strong>cubic spline cho log cumulative hazard theo maximum
+likelihood</strong>, và đối chiếu với Nelson-Aalen nonparametric hazard.
+Kết quả cho thấy hazard của mưa ở Murcia giảm lúc đầu sau cơn mưa gần
+nhất, chạm đáy khoảng hai tháng sau, rồi tăng trở lại sau những đợt khô
+dài. Đây đúng là môi trường mà mô hình dự đoán nghi lễ có thể trở nên
+thuyết phục.</p>
+<p>Sau đó tác giả chạy distributed-lag regressions ở cấp ngày:</p>
+<ul>
+<li>Biến phụ thuộc là có ghi nhận một trận mưa đáng kể hay không, hoặc
+có lời cầu tạ ơn hay không.</li>
+<li>Biến giải thích chính là có lời cầu mưa nào trong 30 ngày gần nhất
+hay không.</li>
+<li>Có month fixed effects và các độ trễ của lời cầu để tách seasonality
+đơn thuần khỏi timing chiến lược.</li>
+<li>Standard errors dùng Newey-West để xử lý tự tương quan.</li>
+</ul>
+<h3 id="điểm-mạnh">Điểm mạnh</h3>
+<ul>
+<li>Dữ liệu timing rất hiếm và rất hợp với cơ chế.</li>
+<li>Có nguồn ghi mưa độc lập với nhà thờ, giảm bớt lo ngại "ghi mưa để
+hợp thức hóa phép màu".</li>
+<li>Có kiểm tra Granger causality với các độ trễ của chính
+rainfall.</li>
+</ul>
+<h3 id="điểm-dễ-bị-nghi-ngờ">Điểm dễ bị nghi ngờ</h3>
+<ul>
+<li>Đây vẫn là một case study duy nhất.</li>
+<li>Biến mưa "đáng kể" từ nguồn lịch sử có thể bị chọn lọc theo mức độ
+đáng chú ý.</li>
+<li>"Prayer Granger-causes rain" ở đây là ngôn ngữ predictive, không
+phải causal effect vật lý.</li>
+</ul>
+<h2 id="53-phần-thực-nghiệm-2-mặt-cắt-toàn-cầu">5.3 Phần thực nghiệm 2:
+mặt cắt toàn cầu</h2>
+<p>Paper mở rộng ra toàn cầu bằng cách augment Ethnographic Atlas:</p>
+<ul>
+<li>mã hóa thực hành cầu mưa cho 1.208/1.290 nhóm sắc tộc,</li>
+<li>dùng 370 nguồn nhân học,</li>
+<li>ghép từng nhóm với trạm khí tượng gần nhất để suy ra đặc điểm hazard
+của mưa tại địa bàn tổ tiên.</li>
+</ul>
+<p>Regression chính ở cấp ethnic group:</p>
+<p><code>RainRitual_i = beta_1 HazardIncreasing_i + controls + continent FE + error_i</code></p>
+<p>Controls gồm:</p>
+<ul>
+<li>climate controls: trung bình và độ lệch chuẩn của nhiệt độ, lượng
+mưa;</li>
+<li>geography controls: vĩ độ, kinh độ, khoảng cách tới biển, sông lớn,
+hồ lớn;</li>
+<li>topography controls: độ cao và ruggedness;</li>
+<li>continent fixed effects;</li>
+<li>Conley standard errors để xử lý spatial correlation.</li>
+</ul>
+<p>Paper còn thêm các test tinh hơn:</p>
+<ul>
+<li>tách hazard tăng trong growing season và ngoài growing season;</li>
+<li>kiểm tra vai trò của độ dài đợt hạn;</li>
+<li>thêm proxy demand từ mức phụ thuộc vào nông nghiệp;</li>
+<li>placebo outcome với niềm tin vào "high gods".</li>
+</ul>
+<h3 id="điểm-mạnh-1">Điểm mạnh</h3>
+<ul>
+<li>Cơ chế kiểm định rất cụ thể, không chỉ nói "nơi khô hơn thì cầu mưa
+nhiều hơn".</li>
+<li>Robustness tốt với spatial inference.</li>
+<li>Có phân biệt rõ persuasion channel và demand channel.</li>
+</ul>
+<h3 id="điểm-dễ-bị-nghi-ngờ-1">Điểm dễ bị nghi ngờ</h3>
+<ul>
+<li>Cross-section toàn cầu khó loại bỏ hoàn toàn omitted variables rất
+sâu về văn hóa hay lịch sử.</li>
+<li>Việc mã hóa từ nguồn nhân học luôn có nguy cơ sai lệch đo
+lường.</li>
+<li>Ghép weather station hiện đại vào ancestral homelands là hợp lý
+nhưng không hoàn hảo.</li>
+</ul>
+<h2 id="6-results-and-interpretation">6. Results and interpretation</h2>
+<h2 id="61-kết-quả-murcia">6.1 Kết quả Murcia</h2>
+<p>Murcia là một nơi có increasing hazard sau hạn dài, nên theo mô hình
+cầu mưa có thể trở nên thuyết phục. Dữ liệu xác nhận đúng pattern
+đó.</p>
+<p>Kết quả nổi bật nhất:</p>
+<ul>
+<li>Cầu mưa trong tháng trước làm xác suất có mưa đáng kể trong ngày cao
+hơn khoảng <strong>0.144 điểm phần trăm</strong> so với xác suất nền
+<strong>0.203 điểm phần trăm</strong>, tức tăng khoảng
+<strong>71%</strong>.</li>
+<li>Nếu dùng lời cầu tạ ơn như proxy đầy đủ hơn cho việc "mưa đã đến",
+hiệu ứng còn mạnh hơn nữa.</li>
+<li>Lời cầu từ 3 đến 12 tháng trước không còn sức dự báo, nghĩa là tín
+hiệu nằm ở timing gần, không phải tương quan mơ hồ dài hạn.</li>
+<li>Prayer vẫn có sức dự báo ngay cả khi đã kiểm soát month fixed
+effects, nên đây không chỉ là chuyện cầu nguyện vào mùa mưa.</li>
+</ul>
+<p>Diễn giải kinh tế ở đây rất hay: nghi lễ không cần thật sự hiệu quả
+để được duy trì; nó chỉ cần được đặt vào một thời điểm mà outcome tốt
+nhiều khả năng sẽ tới ngay sau đó. Nếu người dân học từ chuỗi quan sát
+như vậy qua nhiều thế hệ, niềm tin có thể bền vững hoàn toàn bằng logic
+cập nhật sai phảnfactual.</p>
+<h2 id="62-kết-quả-toàn-cầu">6.2 Kết quả toàn cầu</h2>
+<p>Ở dữ liệu ethnic-group toàn cầu:</p>
+<ul>
+<li>39% nhóm trong mẫu được mã hóa là có thực hành cầu mưa.</li>
+<li>Các nhóm sống trong môi trường có increasing hazard có xác suất cầu
+mưa cao hơn khoảng <strong>14 điểm phần trăm</strong>.</li>
+<li>Mức nền ở nhóm có decreasing hazard là khoảng <strong>30%</strong>,
+nên 14 điểm phần trăm tương đương khoảng <strong>47% tăng
+thêm</strong>.</li>
+<li>Hiệu ứng này rất ổn định khi thêm climate, geography và topography
+controls.</li>
+<li>Khi tách theo mùa, hazard chỉ có sức dự báo khi nó tăng trong
+<strong>growing season</strong>, đúng lúc nhu cầu mưa cao nhất.</li>
+<li>Mean rainfall, rainfall volatility, hay độ dài đợt hạn tự thân không
+còn giải thích được khi đã kiểm soát increasing hazard.</li>
+</ul>
+<p>Kết quả demand side cũng mạnh:</p>
+<ul>
+<li>Nhóm phụ thuộc vào nông nghiệp có xác suất cầu mưa cao hơn khoảng
+<strong>9.7 điểm phần trăm</strong>.</li>
+<li>Với agriculture dependence đo liên tục, mức phụ thuộc càng cao thì
+xác suất cầu mưa càng lớn.</li>
+<li>Nhóm làm <strong>intensive irrigated agriculture</strong> có xác
+suất cầu mưa cao hơn rất mạnh, hệ số khoảng <strong>0.37</strong>.</li>
+</ul>
+<h3 id="kết-quả-nào-thật-sự-nổi-bật">Kết quả nào thật sự nổi bật</h3>
+<p>Điểm nổi bật nhất không phải chỉ là "khí hậu có liên quan", mà là
+paper chốt được <strong>đúng đặc tính khí hậu mà mô hình dự
+đoán</strong>. Không phải nơi khô hơn, không phải nơi mưa biến động hơn,
+mà là nơi hazard tăng sau hạn dài, nhất là trong mùa cây trồng cần nước.
+Đây là một kiểu "over-identification by mechanism" rất đẹp.</p>
+<h2 id="7-what-is-special-or-elegant-about-the-paper">7. What is special
+or elegant about the paper</h2>
+<p>Có ít nhất bốn điểm làm bài này đáng nhớ.</p>
+<p>Thứ nhất, paper biến một câu hỏi tưởng như quá mềm của anthropology
+thành một câu hỏi applied micro rất sắc: nghi lễ có trở nên đáng tin khi
+nào?</p>
+<p>Thứ hai, biến giải thích trung tâm không phải level của khí hậu mà là
+<strong>shape của một stochastic process</strong>. Chỉ riêng việc nghĩ
+ra rằng "đạo hàm của hazard sau hạn dài" mới là đối tượng đúng để đo
+perceived efficacy đã là một đóng góp ý tưởng rất mạnh.</p>
+<p>Thứ ba, bài không dừng ở một narrative case study. Tác giả dùng
+Murcia để nhìn thấy cơ chế bằng kính hiển vi, rồi đưa đúng cơ chế đó lên
+mặt cắt toàn cầu bằng dữ liệu mới.</p>
+<p>Thứ tư, paper có tính "đẹp" ở chỗ theory và empirics khóa vào nhau
+rất chặt. Kết quả mạnh nhất cũng là kết quả đúng nhất theo mô hình:
+hazard tăng trong growing season, chứ không phải bất kỳ proxy khí hậu na
+ná nào.</p>
+<h2 id="8-required-background-knowledge">8. Required background
+knowledge</h2>
+<p>Để đọc paper này trơn tru, người đọc nên có mấy nền sau.</p>
+<h3 id="81-hazard-function">8.1 Hazard function</h3>
+<p>Hazard ở đây là xác suất có mưa hôm nay, với điều kiện đã không có
+mưa trong một số ngày trước đó. Một hazard tăng nghĩa là càng hạn lâu
+thì khả năng mưa hôm nay càng cao. Đây là khái niệm quen thuộc trong
+duration/survival analysis, nhưng paper dùng nó cho weather process.</p>
+<h3 id="82-counterfactual-reasoning-và-perceived-efficacy">8.2
+Counterfactual reasoning và perceived efficacy</h3>
+<p>Người dân không quan sát được phảnfactual: nếu hôm đó không cầu mưa
+thì trời có mưa không? Nếu họ so sánh sai giữa "sau khi cầu" và "một xác
+suất nền không đúng", họ có thể kết luận sai rằng nghi lễ hiệu quả.
+Paper về bản chất là một bài về inference under missing
+counterfactual.</p>
+<h3 id="83-cultural-evolution">8.3 Cultural evolution</h3>
+<p>Ý tưởng là các nghi lễ không tồn tại ngẫu nhiên. Những nghi lễ nào có
+vẻ thành công hơn sẽ được lặp lại, được hợp thức hóa và được truyền qua
+nhiều thế hệ. Đây là cách paper nối micro-updating của niềm tin với
+persistence dài hạn của văn hóa.</p>
+<h3 id="84-spatial-econometrics-và-conley-standard-errors">8.4 Spatial
+econometrics và Conley standard errors</h3>
+<p>Trong dữ liệu toàn cầu, các nhóm gần nhau có thể chia sẻ khí hậu và
+lịch sử tương tự, nên residuals có tương quan theo không gian. Conley
+standard errors là cách điều chỉnh inference cho tương quan không gian
+đó, tránh overstate precision.</p>
+<h3 id="85-ethnographic-atlas-và-historical-data-work">8.5 Ethnographic
+Atlas và historical data work</h3>
+<p>Paper dựa nhiều vào việc mã hóa định tính từ tài liệu nhân học và tư
+liệu lịch sử. Người đọc nên quen với việc biến narrative sources thành
+structured variables, cũng như hiểu rằng thách thức lớn nhất nằm ở
+measurement và coding consistency.</p>
+<h2 id="9-limitations-and-open-questions">9. Limitations and open
+questions</h2>
+<h3 id="hạn-chế-chính">Hạn chế chính</h3>
+<ul>
+<li>Murcia là một case rất giàu dữ liệu nhưng vẫn chỉ là một case.</li>
+<li>Phần toàn cầu là cross-section; dù controls rất nhiều, vẫn khó loại
+bỏ hoàn toàn historical confounders.</li>
+<li>Mã hóa "có cầu mưa hay không" từ 370 nguồn chắc chắn vẫn có
+measurement error, đặc biệt với những nhóm ít được mô tả.</li>
+<li>Hazard hiện đại tại vùng tổ tiên là proxy hợp lý nhưng không hoàn
+hảo cho climate beliefs lịch sử.</li>
+</ul>
+<h3 id="giả-định-nhạy-cảm">Giả định nhạy cảm</h3>
+<ul>
+<li>Người dân và lãnh đạo tôn giáo phản ứng đủ nhiều với timing để
+ritual selection hoạt động.</li>
+<li>Ghi chép mưa và cầu nguyện ở Murcia phản ánh timing thực khá trung
+thực.</li>
+<li>Increasing hazard đo ở phần đuôi dài của dry spell mới là đối tượng
+đúng; paper có robustness cho chuyện này, nhưng kết quả phụ thuộc vào
+việc xác định đuôi hazard đủ chính xác.</li>
+</ul>
+<h3 id="câu-hỏi-mở">Câu hỏi mở</h3>
+<ul>
+<li>Từ rainmaking có đi xa hơn sang các hình thức niềm tin công cụ khác
+như chữa bệnh, chống dịch, hay fertility rituals không?</li>
+<li>Khi nào seeming efficacy chuyển hóa thành quyền lực chính trị hoặc
+fiscal extraction mạnh hơn của tổ chức tôn giáo?</li>
+<li>Formal insurance, irrigation infrastructure hay weather forecasting
+hiện đại có làm suy yếu rainmaking theo đúng kênh mà paper gợi ý
+không?</li>
+</ul>
+<h2 id="10-takeaways-for-a-researcher">10. Takeaways for a
+researcher</h2>
+<ol type="1">
+<li>Một câu hỏi lớn về văn hóa hay niềm tin vẫn có thể trở thành một
+paper applied micro rất sạch nếu tìm được một cơ chế đủ cụ thể và đo
+được.</li>
+<li>Thay vì dùng level của biến môi trường, đôi khi thứ thật sự quan
+trọng là <strong>shape của quá trình động</strong>.</li>
+<li>A good paper often uses one setting for mechanism visibility and
+another for external validity. Murcia làm việc thứ nhất, dữ liệu
+ethnic-group toàn cầu làm việc thứ hai.</li>
+<li>Dữ liệu mới không nhất thiết phải là administrative data hiện đại;
+coding nghiêm túc từ nguồn lịch sử và nhân học vẫn có thể tạo ra đóng
+góp lớn.</li>
+<li>Robustness tốt nhất là robustness theo cơ chế: paper không chỉ thêm
+controls, mà còn chứng minh đúng lúc, đúng mùa, đúng tail của hazard mới
+quan trọng.</li>
+<li>Placebo outcome rất đáng học. Việc hazard không dự báo niềm tin vào
+high gods giúp paper nói rõ mình đang đo cái gì và không đo cái gì.</li>
+</ol>
+<h2 id="11-vietnam-relevance-and-extension">11. Vietnam relevance and
+extension</h2>
+<h3 id="ý-tưởng-này-có-liên-quan-gì-tới-việt-nam">Ý tưởng này có liên
+quan gì tới Việt Nam?</h3>
+<p>Có, và theo mình là khá nhiều. Việt Nam có lịch sử nông nghiệp phụ
+thuộc mạnh vào mưa, thủy lợi, mùa vụ và tín ngưỡng dân gian rất phong
+phú. Vì vậy, câu hỏi "môi trường nào khiến một niềm tin công cụ trở nên
+có vẻ đáng tin" hoàn toàn có thể được đặt lại trong bối cảnh Việt
+Nam.</p>
+<h3 id="có-triển-khai-nghiên-cứu-tương-tự-ở-việt-nam-được-không">Có
+triển khai nghiên cứu tương tự ở Việt Nam được không?</h3>
+<p>Có thể, nhưng sẽ khó hơn Murcia vì dữ liệu hằng ngày về nghi lễ và
+outcome thường phân tán hơn. Một thiết kế khả thi sẽ cần ít nhất:</p>
+<ul>
+<li>tư liệu địa phương hoặc văn khắc về lễ cầu mưa, lễ cầu đảo, lễ tạ
+ơn, hoặc nghi lễ nông nghiệp;</li>
+<li>dữ liệu khí tượng lịch sử hoặc proxy khí hậu đủ chi tiết theo không
+gian;</li>
+<li>bản đồ vùng canh tác, cây trồng và mùa vụ;</li>
+<li>nếu làm contemporary setting, có thể dùng survey hoặc ethnographic
+fieldwork kết hợp dữ liệu weather station.</li>
+</ul>
+<h3 id="trở-ngại-chính-ở-việt-nam">Trở ngại chính ở Việt Nam</h3>
+<ul>
+<li>Dữ liệu lịch sử phân tán giữa đình, chùa, thần tích, địa chí và lưu
+trữ hành chính.</li>
+<li>Khó mã hóa thống nhất ritual practice giữa các vùng.</li>
+<li>Khó nối ritual timing với outcome khí tượng nếu không có nhật ký
+hoặc biên niên đủ dày.</li>
+</ul>
+<h3 id="hướng-mở-rộng-phù-hợp-hơn-với-việt-nam">Hướng mở rộng phù hợp
+hơn với Việt Nam</h3>
+<ul>
+<li>Không nhất thiết bám đúng "cầu mưa". Có thể mở sang nghi lễ liên
+quan tới lũ, xâm nhập mặn, thủy thần, mùa màng hoặc sức khỏe vật
+nuôi.</li>
+<li>Có thể nghiên cứu tác động của hệ thống thủy lợi hiện đại, dự báo
+thời tiết, hoặc bảo hiểm nông nghiệp lên persistence của niềm tin công
+cụ.</li>
+<li>Có thể nối sang economy of adaptation: nơi có climate risk cao nhưng
+infrastructure bảo vệ yếu thì vai trò của ritual có tăng không?</li>
+</ul>
+<h3 id="1-đến-3-research-design--research-question-ở-việt-nam">1 đến 3
+research design / research question ở Việt Nam</h3>
+<ol type="1">
+<li><strong>Ritual và hazard của lũ/mưa ở đồng bằng sông Cửu
+Long:</strong> các địa phương có pattern khí hậu nào duy trì mạnh hơn
+các nghi lễ liên quan đến nước và mùa vụ?</li>
+<li><strong>Thủy lợi hiện đại và suy giảm tín ngưỡng công cụ:</strong>
+việc mở rộng hồ chứa, đê điều, hay hệ thống dự báo thời tiết có làm giảm
+tần suất các nghi lễ cầu thời tiết cực đoan không?</li>
+<li><strong>So sánh vùng lúa mưa trời với vùng tưới chủ động:</strong>
+mức phụ thuộc vào rainfed agriculture có dự báo khác biệt trong
+persistence của tín ngưỡng nông nghiệp hay không?</li>
+</ol>
+<h2 id="12-vì-sao-chọn-paper-này-cho-lượt-hôm-nay">12. Vì sao chọn paper
+này cho lượt hôm nay</h2>
+<p>Mình chọn paper này vì ba lý do.</p>
+<ul>
+<li>Đây là <strong>QJE top-5</strong> và rất mới: published online ngày
+<strong>11/05/2026</strong>.</li>
+<li>Paper nằm đúng vùng giao giữa development, applied micro, economic
+history và political-cultural foundations của development.</li>
+<li>Thiết kế nghiên cứu rất đáng học: một mô hình cơ chế rõ, một case
+lịch sử cực sâu để nhìn timing, rồi một bộ dữ liệu toàn cầu tự xây để
+kiểm tra external validity.</li>
+</ul>
+<h2 id="13-trạng-thái-lưu-trữ-và-giới-hạn-của-lượt-chạy">13. Trạng thái
+lưu trữ và giới hạn của lượt chạy</h2>
+<ul>
+<li><code>analysis.md</code>: đã tạo cục bộ và sẵn sàng cho bước lưu
+GitHub.</li>
+<li><code>analysis.html</code>: đã tạo cục bộ từ nội dung này và sẵn
+sàng cho bước lưu GitHub.</li>
+<li><code>analysis.pdf</code>: chưa tạo trong lượt này.</li>
+<li><code>paper.pdf</code> gốc: đã xác minh được nguồn PDF chính thức
+QJE, nhưng chưa tải được file nhị phân về môi trường chạy do truy cập
+ngoài bị chặn <code>403</code>, nên chưa thể lưu raw PDF lên
+GitHub.</li>
+<li>Google Drive: trong lượt này chỉ thực hiện nếu thật sự tạo được
+Google Doc dễ đọc và tracker một cách nhất quán; nếu không sẽ bỏ qua
+hoàn toàn và ghi rõ trong email.</li>
+</ul>
+</body>
+</html>
