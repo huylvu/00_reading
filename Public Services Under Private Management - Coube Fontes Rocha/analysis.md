@@ -6,8 +6,8 @@
 - **Ngày agent chạy:** 2026-05-16
 - **Nguồn bài báo chính:** https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjag028/8676724
 - **Nguồn PDF:** https://academic.oup.com/qje/advance-article-pdf/doi/10.1093/qje/qjag028/68275289/qjag028.pdf
-- **Trạng thái lưu trên GitHub:** Chưa lưu tại thời điểm soạn bản cục bộ; sẽ cập nhật sau khi thử thao tác GitHub trong lượt này.
-- **Trạng thái lưu trên Google Drive:** Chưa thực hiện; chỉ làm nếu tạo được Google Doc đúng folder đích một cách đáng tin cậy.
+- **Trạng thái lưu trên GitHub:** Đã lưu `analysis.md` và `analysis.html` vào repo `huylvu/00_reading` tại thư mục `Public Services Under Private Management - Coube Fontes Rocha/`.
+- **Trạng thái lưu trên Google Drive:** Bỏ qua trong lượt này để tránh báo cáo quá mức khi chưa tạo Google Doc và tracker trong đúng folder đích một cách nhất quán.
 - **Ghi chú về PDF:** Đây là accepted manuscript open-access của QJE. Môi trường shell trong lượt này không tải được file nhị phân trực tiếp từ nguồn ngoài do lỗi proxy, nên phần đọc sâu bám vào nội dung PDF truy cập được qua công cụ web tích hợp.
 
 ## Executive summary
@@ -310,4 +310,6 @@ Có thể, nhưng cần điều kiện dữ liệu và thể chế khá khó:
 - Bản phân tích này hoàn thành dựa trên metadata và nội dung PDF đã được xác minh chắc từ QJE.
 - Trong lượt chạy này, nguồn PDF chính thức đã được xác minh nhưng shell cục bộ không tải trực tiếp file nhị phân về do lỗi proxy `403 CONNECT tunnel failed`.
 - `analysis.pdf` không phải artifact bắt buộc và chưa được tạo trong lượt này.
-- Nếu GitHub hoặc email không đi qua được ở bước sau, trạng thái cuối cùng cần hiểu là chỉ hoàn thành bản phân tích cục bộ và chưa hoàn tất lưu trữ/phát hành tương ứng.
+- `analysis.md` và `analysis.html` đã lưu thành công lên GitHub.
+- Google Drive bị bỏ qua có chủ đích trong lượt này.
+- Email được xử lý ở bước cuối của workflow; nếu bước đó thất bại thì cần hiểu là phần lưu trữ GitHub đã hoàn tất còn email thì chưa.
