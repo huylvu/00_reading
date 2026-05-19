@@ -6,7 +6,7 @@
 - **Ngày agent chạy:** 2026-05-19
 - **Nguồn bài báo chính:** https://doi.org/10.1093/qje/qjaf056
 - **Nguồn PDF tốt nhất đã xác minh trong lượt này:** đã xác minh có accepted version trên LSE Research Online tại https://eprints.lse.ac.uk/129614/ nhưng bản PDF này đang bị khóa truy cập công khai; bài published open-access đọc được đầy đủ trên Oxford Academic tại https://academic.oup.com/qje/article/141/2/1761/8424246
-- **Trạng thái lưu trên GitHub:** sẽ cập nhật sau bước lưu trữ
+- **Trạng thái lưu trên GitHub:** `analysis.md` và `analysis.html` đã được lưu thành công trong repo `huylvu/00_reading` tại thư mục `Growth Experiences and Trust in Government - Besley Dann Dray/`; chưa lưu được `analysis.pdf`; chưa lưu được raw PDF gốc vì chưa có file PDF công khai tải được trong môi trường hiện tại
 - **Trạng thái lưu trên Google Drive:** chưa thực hiện
 
 ## 1. Metadata
